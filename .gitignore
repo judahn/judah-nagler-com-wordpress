@@ -1,0 +1,6 @@
+.DS_Store
+.htaccess
+.sass-cache
+sitemap.xml
+*.log
+sitemap.xml.gz
