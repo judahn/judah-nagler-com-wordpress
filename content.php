@@ -5,12 +5,12 @@
 ?>
 
 
-<?php // Styling Tip! 
+<?php // Styling Tip!
 
 // Want to wrap for example the post content in blog listings with a thin outline in Bootstrap style?
-// Just add the class "panel" to the article tag here that starts below. 
-// Simply replace post_class() with post_class('panel') and check your site!   
-// Remember to do this for all content templates you want to have this, 
+// Just add the class "panel" to the article tag here that starts below.
+// Simply replace post_class() with post_class('panel') and check your site!
+// Remember to do this for all content templates you want to have this,
 // for example content-single.php for the post single view. ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -63,10 +63,10 @@
 			<?php endif; // End if $tags_list ?>
 		<?php endif; // End if 'post' == get_post_type() ?>
 
-		<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
+		<!--<?php if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
 		<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', '_tk' ), __( '1 Comment', '_tk' ), __( '% Comments', '_tk' ) ); ?></span>
 		<?php endif; ?>
 
-		<?php edit_post_link( __( 'Edit', '_tk' ), '<span class="edit-link">', '</span>' ); ?>
+		<?php edit_post_link( __( 'Edit', '_tk' ), '<span class="edit-link">', '</span>' ); ?>-->
 	</footer><!-- .entry-meta -->
 </article><!-- #post-## -->

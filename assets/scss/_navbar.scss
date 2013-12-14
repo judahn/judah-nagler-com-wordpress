@@ -6,7 +6,7 @@
     margin-left: 0px !important;
 }
 .navbar-inverse .navbar-brand {
-    color: $red;
+    color: $cyan;
 }
 /* Navbar */
 
@@ -35,13 +35,7 @@
     a{
         font-size: 15px;
         letter-spacing: 3px;
-        @include transition-property(color);
-        @include transition-duration(0.5s);
 
-        &:hover{
-            @include transition-property(color);
-            @include transition-duration(0.25s);
-        }
         &.active {
             color: white !important;
         }

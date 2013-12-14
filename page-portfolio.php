@@ -16,36 +16,48 @@
 
  ?>
 
-<?php get_template_part( 'content', 'page' ); ?>
 
-<div class="clearfix row row-thumbnails">
 
-	<!-- While posts exist, display them here -->
-	<?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+ <div class="main-content">
+	<div class="container">
+		<div class="row">
+			<div class="main-content-inner">
 
-		<!-- Linked Title -->
+				<?php get_template_part( 'content', 'page' ); ?>
 
-		<div class="col-sm-4 col-lg-3">
-			<a href="<?php the_permalink(); ?>" class="thumbnail">
-				<div class="thumb-content">
-					<?php if ( has_post_thumbnail() ) {
-						the_post_thumbnail(' img-responsive');
-					} else {?>
-						<img class="attachment- img-responsive wp-post-image" src="holder.js/300x200/industrial">
-					<?php } ?>
-					<h3><?php the_title(); ?></h3>
-					<!--<p><?php the_field( 'description'); ?></p>-->
+				<div class="clearfix row row-thumbnails">
+
+					<!-- While posts exist, display them here -->
+					<?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
+						<!-- Linked Title -->
+
+						<div class="col-sm-4 col-lg-3">
+							<a href="<?php the_permalink(); ?>" class="thumbnail">
+								<div class="thumb-content">
+									<?php if ( has_post_thumbnail() ) {
+										the_post_thumbnail(' img-responsive');
+									} else {?>
+										<img class="attachment- img-responsive wp-post-image" src="holder.js/800x600/industrial">
+									<?php } ?>
+									<h3><?php the_title(); ?></h3>
+									<!--<p><?php the_field( 'description'); ?></p>-->
+								</div>
+							</a>
+						</div>
+
+					<?php endwhile; else: ?>
+
+					<!-- If no posts, display this message -->
+						<p>There are no posts or pages here</p>
+
+					<?php endif; ?>
 				</div>
-			</a>
-		</div>
 
-	<?php endwhile; else: ?>
-
-	<!-- If no posts, display this message -->
-		<p>There are no posts or pages here</p>
-
-	<?php endif; ?>
-</div>
+			</div><!-- close .*-inner (main-content or sidebar, depending if sidebar is used) -->
+		</div><!-- close .row -->
+	</div><!-- close .container -->
+</div><!-- close .main-content -->
 
 
 <?php get_footer(); ?>
