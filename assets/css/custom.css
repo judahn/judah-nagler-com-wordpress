@@ -892,7 +892,7 @@ body {
 
 /* line 34, ../scss/custom.scss */
 .main-content-inner {
-  padding: 70px 0 30px 0;
+  padding: 30px 0 30px 0;
 }
 @media only all and (min-width: 768px) {
   /* line 34, ../scss/custom.scss */

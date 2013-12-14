@@ -16,7 +16,7 @@ get_header(); ?>
 	<div class="col-sm-8 no-pad">
 
 	<div class="page-header">
-		<h1>Log</h1>
+		<h1>Blog</h1>
 	</div>
 
 	<?php if ( have_posts() ) : ?>

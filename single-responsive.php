@@ -10,7 +10,7 @@ get_header(); ?>
 <?php
 
   $args = array(
-    'post_type' => 'interactive'
+    'post_type' => 'responsive'
   );
 
   $the_query = new WP_Query( $args );
@@ -19,7 +19,7 @@ get_header(); ?>
 
 	<?php while ( have_posts() ) : the_post(); ?>
 
-		<?php get_template_part( 'content', 'interactive' ); ?>
+		<?php get_template_part( 'content', 'responsive' ); ?>
 		<?php _tk_content_nav( 'nav-below' ); ?>
 
 	<?php endwhile; // end of the loop. ?>

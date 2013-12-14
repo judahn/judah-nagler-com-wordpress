@@ -8,7 +8,7 @@
   <article id="post-<?php the_ID(); ?>" class="no-pad col-md-6" >
 
       <header class="page-header">
-        <h1 class="entry-title">Portfolio <br><span><?php the_title(); ?></span></h1>
+        <h1 class="entry-title">Responsive <br><span><?php the_title(); ?></span></h1>
       </header><!-- .entry-header -->
 
       <div>
