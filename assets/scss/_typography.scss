@@ -1,0 +1,91 @@
+/*
+ * TYPOGRAPHY
+ */
+
+@import "responsive";
+@import "mixins";
+@import "compass/css3/text-shadow";
+
+@include font-face("Raleway Dots",  font-files("RalewayDots-Regular.ttf"));
+@include font-face("Dosis",         font-files("Dosis-Regular.ttf"));
+
+@mixin verticalRhythm($scale){
+	$fontRhythm:  $font-size-base 	* $scale;
+	$lineRhythm: ($line-height-base	* $scale) * 0.8;
+}
+
+
+$default-text-shadow-color:     rgba(black, 0.6);
+$default-text-shadow-blur:      3px;
+$default-text-shadow-h-offset:  2px;
+$default-text-shadow-v-offset:  2px;
+
+
+
+/*
+ *	BASICS
+ */
+
+body {
+    font-family:    "Dosis", sans-serif;
+    color:          #ccc;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family:    "Raleway Dots", sans-serif;
+    text-transform: uppercase;
+    color: white;
+    span{
+        color: #999;
+    }
+    a:hover {
+        text-decoration: none;
+    }
+}
+h1 {
+    // @extend %redtape;
+    font-size:      60px;
+    margin-bottom:  30px;
+    margin-left:    -4px;
+    @media screen and (max-width: 1200px) {
+        font-size: 49px;
+    }
+    span {
+        // color: $red;
+    }
+}
+h2 {
+    // @extend %redtape;
+    font-size: 230%;
+    // color: $cyan;
+}
+h3 {
+    // @extend %redtape;
+    // color: $cyan;
+    margin: 0px 0 15px 0;
+    padding: 5px 7px 5px;
+    font-size: 130%;
+    line-height: 130%;
+    letter-spacing: 1px;
+
+    /* @include transition (background, 0.75s);
+    @include transition (padding, 0.75s);
+
+    &:hover {
+        background-color: $blue;
+        padding-top: 20px;
+        @include transition (background, 0.2s);
+        @include transition (padding, 0.2s);
+    } */
+}
+h3 {
+    font-size: 130%;
+    @include single-text-shadow;
+}
+p {
+    color:          #aaa;
+    font-family:    "Dosis", sans-serif;
+    font-size:      16px;
+    line-height:    23px;
+    font-weight:    100;
+    letter-spacing: 1px;
+}

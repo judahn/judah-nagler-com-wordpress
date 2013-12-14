@@ -1,0 +1,46 @@
+@import "vars";
+@import "mixins";
+
+:focus, a:focus {
+    outline: -webkit-focus-ring-color auto 0;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+.row {
+    margin-left:    0;
+    margin-right:   0;
+}
+.container {
+    padding: 0;
+
+    @include max_tablet {
+        padding: 0 25px 5px;
+    }
+}
+.modal {
+    top: 10%;
+}
+.page-header {
+    border: 0;
+    margin: 40px 0 0;
+}
+.post {
+    margin: 0 0 20px 0;
+}
+
+code {
+    @extend %darkBg;
+}
+pre, .highlight {
+    @extend %darkBg;
+}
+pre {
+    color: #666;
+    margin: 30px 0;
+}
+time {
+	color: $red;
+}

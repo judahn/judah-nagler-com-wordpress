@@ -1,0 +1,115 @@
+@import "mixins";
+@import "responsive";
+
+.home {
+    .content {
+        width: 45%;
+        @include max_tablet {
+            width: 100%;
+        }
+    }
+}
+
+.portfolio {
+	.image {
+		margin-top: 10px;
+		padding: 0;
+	}
+}
+
+.single-portfolio {
+	.wrap {
+		@include center-vertically(350px, 330px);
+		height: 350px;
+		padding-top: 0 !important;
+		@include max_laptop {
+			padding-top: 180px !important;
+		}
+		.container {
+			height: 350px !important;
+		}
+	}
+	.image {
+		@extend %boxShadow;
+
+		img {
+			height: auto !important;
+		}
+
+		@include max_laptop {
+			width: 100%;
+			img {
+				width: 100% !important;
+			}
+		}
+	}
+}
+
+.row-thumbnails {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.thumbnail {
+    @extend %transBg;
+    min-height:     285px;
+    padding:        0;
+    margin-bottom:  30px;
+
+    @include transition(all, 0s);
+
+	// Responsive
+
+    @include laptop {
+        min-height: 	230px;
+    }
+    /* @include max_tablet{
+        width:          47%;
+        float:          left;
+        margin-bottom:  15px;
+    } */
+    @include max_phone {
+        width: 100%;
+        clear: both;
+        min-height: 0;
+    }
+
+    h3 {
+        @include transition (background-color, 0.5s);
+        @include transition (padding,    0.5s);
+    }
+    img {
+        height: auto !important;
+        // border: 1px dotted #444;
+        // @include transition(border, 0.75s);
+
+        @include max_tablet {
+        	width: 100% !important;
+        }
+    }
+
+    .thumb-content {
+        @extend %boxShadow;
+        background-color: black;
+    }
+    .caption {
+        text-align: center;
+        padding: 10px 0 0 0;
+    }
+
+    // Hover states
+
+    &:hover {
+    	@include min_tablet {
+	        img {
+	            // border: 1px dotted $blue;
+	            // @include transition(border, 0.5s);
+	        }
+	        h3 {
+	            background: $blue;
+	            padding-top: 20px;
+	            @include transition (background-color, 0.2s);
+	            @include transition (padding, 0.2s);
+	        }
+	    }
+    }
+}

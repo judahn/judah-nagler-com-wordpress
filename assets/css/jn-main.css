@@ -1,7 +1,300 @@
-/*
- *	CUSTOM SCSS
- */
 /* Imports */
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+/* line 19, ../scss/_html5-bp.scss */
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
+
+/* line 23, ../scss/_html5-bp.scss */
+html {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+/* line 34, ../scss/_html5-bp.scss */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* line 39, ../scss/_html5-bp.scss */
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+/* line 48, ../scss/_html5-bp.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+/* line 65, ../scss/_html5-bp.scss */
+audio,
+canvas,
+img,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+/* line 73, ../scss/_html5-bp.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+/* line 83, ../scss/_html5-bp.scss */
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+/* line 91, ../scss/_html5-bp.scss */
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Image replacement
+ */
+/* line 126, ../scss/_html5-bp.scss */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px;
+}
+
+/* line 134, ../scss/_html5-bp.scss */
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+/* line 145, ../scss/_html5-bp.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+/* line 154, ../scss/_html5-bp.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+/* line 171, ../scss/_html5-bp.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+/* line 184, ../scss/_html5-bp.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+/* line 201, ../scss/_html5-bp.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+/* line 206, ../scss/_html5-bp.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+/* line 215, ../scss/_html5-bp.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+@media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+@media print {
+  /* line 242, ../scss/_html5-bp.scss */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* line 250, ../scss/_html5-bp.scss */
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 254, ../scss/_html5-bp.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 258, ../scss/_html5-bp.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  /* line 268, ../scss/_html5-bp.scss */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  /* line 273, ../scss/_html5-bp.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 278, ../scss/_html5-bp.scss */
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */
+  }
+
+  /* line 283, ../scss/_html5-bp.scss */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  /* line 287, ../scss/_html5-bp.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+}
+
+  /* line 297, ../scss/_html5-bp.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 303, ../scss/_html5-bp.scss */
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
 /* line 17, ../../../../../../../../../Users/judah/.rvm/gems/ruby-2.0.0-p247@global/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -889,7 +1182,7 @@ code, pre, .highlight {
   }
 }
 
-/* line 19, ../scss/custom.scss */
+/* line 15, ../scss/jn-main.scss */
 body {
   overflow-x: hidden;
   padding-top: 0px;
@@ -897,57 +1190,57 @@ body {
   background: url('/wp-content/themes/jn-wpbs/assets/img/bg/stripes.png?1385804855') black;
 }
 
-/* line 29, ../scss/custom.scss */
+/* line 25, ../scss/jn-main.scss */
 .wrap {
   padding-top: 180px;
   height: 100%;
 }
 
-/* line 34, ../scss/custom.scss */
+/* line 30, ../scss/jn-main.scss */
 .single .wrap {
   padding-top: 270px;
 }
 
-/* line 38, ../scss/custom.scss */
+/* line 34, ../scss/jn-main.scss */
 .content {
   margin-left: 15px;
   margin-right: 15px;
 }
 @media only all and (max-width: 767px) {
-  /* line 38, ../scss/custom.scss */
+  /* line 34, ../scss/jn-main.scss */
   .content {
     margin-left: 0;
     margin-right: 0;
   }
 }
 
-/* line 46, ../scss/custom.scss */
+/* line 42, ../scss/jn-main.scss */
 .btn {
   margin: 30px 0;
 }
-/* line 48, ../scss/custom.scss */
+/* line 44, ../scss/jn-main.scss */
 .btn a {
   text-transform: uppercase;
   color: white;
 }
-/* line 51, ../scss/custom.scss */
+/* line 47, ../scss/jn-main.scss */
 .btn a:hover {
   color: white;
   text-decoration: none;
 }
 
-/* line 58, ../scss/custom.scss */
+/* line 54, ../scss/jn-main.scss */
 .pad-content {
   padding: 10px 0;
 }
 
-/* line 61, ../scss/custom.scss */
+/* line 57, ../scss/jn-main.scss */
 .pad-none {
   padding: 0;
 }
 
 /* IE 'browse happy' */
-/* line 66, ../scss/custom.scss */
+/* line 62, ../scss/jn-main.scss */
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -955,11 +1248,11 @@ body {
   padding: 0.2em 0;
 }
 
-/* line 73, ../scss/custom.scss */
+/* line 69, ../scss/jn-main.scss */
 #root-footer, #footer {
   height: 30px;
 }
-/* line 75, ../scss/custom.scss */
+/* line 71, ../scss/jn-main.scss */
 #root-footer p, #footer p {
   color: #666;
 }

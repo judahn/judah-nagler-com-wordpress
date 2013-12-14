@@ -1,0 +1,140 @@
+@import "mixins";
+@import "responsive";
+
+.row-content {
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+section {
+    height:     $section_height;
+    min-height: $section_height;
+    max-height: $section_height - 50px;
+    padding:    90px 0;
+
+    // @media screen and (max-width: 768px) { 
+    @include max_tablet {
+        padding:    40px 0;
+    }
+    .col-sm-5, .col-md-6 {
+        padding-left: 0;
+    }
+}
+
+/* Masthead row above navigation */
+#row-masthead {
+    height: $masthead_height;
+    @extend %section;
+
+    @include max_desktop {
+        height: 600px;
+    }
+
+    @include max_phone{
+        display: none;
+    }
+}
+
+/* .content {
+    background-attachment: fixed;
+
+    @include max_tablet {
+        width: 50%;
+    }
+    @include max_phone {
+        width: 100%;
+        padding-left:  0px;
+        padding-right: 0px;
+    }
+} */
+
+/* Sections */
+#section-1 {
+    height: 600px;
+    @include background(image-url("bg/bg-black.jpg"));
+    background-color: black;
+    background-attachment: fixed;
+    background-size: cover;
+
+    @include max_desktop {
+        height: 520px;
+    }
+
+    @include max_laptop {
+        height: 610px;
+    }
+
+    @include max_tablet {
+        height: 550px;
+    }
+
+    @include max_phone {
+        margin-top: 100px;
+    }
+}
+#section-2 {
+    @include background(image-url("bg/bg-dkblue.jpg"));
+    background-color: black;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#section-3 {
+    background-color: #6d838e;
+    @include background(image-url("bg/bg-grey.jpg"));
+    background-color: black;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#section-4 {
+    @include background(image-url("bg/bg-red.jpg"));
+    background-color: black;
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+
+
+
+
+/* Spaceshio */
+
+#ship {
+    position:   absolute;
+    top:        10px;
+    left:       auto !important;
+    right:      -60px;
+    z-index:    999;
+    // max-width:  708px;
+    
+    @include max_desktop {
+        right: -120px;
+    }
+    @include max_laptop {
+        width: 74%;
+        right: -140px;
+    }
+    @include max_tablet {
+        width: 64%;
+        height: auto;
+    }
+    @include max_phone {
+        width: 100%;
+        height: auto;
+        margin-top: -220px;
+        // display: none !important;
+    }
+}
+
+@include max_tablet {
+    #section-1,
+    #section-2,
+    #section-3,
+    #section-4 {
+        background-attachment: scroll;
+        background-position: 0 0 !important;
+    }
+}
