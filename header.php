@@ -81,8 +81,8 @@
 	</div><!-- .container -->
 </nav><!-- .site-navigation -->
 
-<!-- <div class="main-content">
+<div class="main-content">
 	<div class="container">
 		<div class="row">
-			<div class="main-content-inner"> -->
+			<div class="main-content-inner">
 

@@ -8,7 +8,7 @@
 
 	</div><!-- close .main-content-inner -->
 
-	<div class="sidebar col-md-4">
+	<div class="sidebar col-sm-4 no-pad">
 
 		<?php // add the class "panel" below here to wrap the sidebar in Bootstrap style ;) ?>
 		<div class="sidebar-padder">
@@ -27,14 +27,14 @@
 					</ul>
 				</aside>
 
-				<aside id="meta" class="widget widget_meta">
+				<!-- <aside id="meta" class="widget widget_meta">
 					<h3 class="widget-title"><?php _e( 'Meta', '_tk' ); ?></h3>
 					<ul>
 						<?php wp_register(); ?>
 						<li><?php wp_loginout(); ?></li>
 						<?php wp_meta(); ?>
 					</ul>
-				</aside>
+				</aside> -->
 
 			<?php endif; ?>
 

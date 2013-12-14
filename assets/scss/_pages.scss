@@ -29,20 +29,21 @@
 			height: 350px !important;
 		}
 	}
-	.image {
-		@extend %boxShadow;
+}
 
-		img {
-			height: auto !important;
-		}
+.image {
+    @extend %boxShadow;
 
-		@include max_laptop {
-			width: 100%;
-			img {
-				width: 100% !important;
-			}
-		}
-	}
+    img {
+        height: auto !important;
+    }
+
+    @include max_laptop {
+        width: 100%;
+        img {
+            width: 100% !important;
+        }
+    }
 }
 
 .row-thumbnails {

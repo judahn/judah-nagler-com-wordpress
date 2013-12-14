@@ -7,17 +7,20 @@
 
 get_header(); ?>
 
+<?php
+
+  $args = array(
+    'post_type' => 'portfolio'
+  );
+
+  $the_query = new WP_Query( $args );
+
+?>
+
 	<?php while ( have_posts() ) : the_post(); ?>
 
-		<?php get_template_part( 'content', 'single' ); ?>
-
+		<?php get_template_part( 'content', 'portfolio' ); ?>
 		<?php _tk_content_nav( 'nav-below' ); ?>
-
-		<?php
-			// If comments are open or we have at least one comment, load up the comment template
-			// if ( comments_open() || '0' != get_comments_number() )
-			// comments_template();
-		?>
 
 	<?php endwhile; // end of the loop. ?>
 
