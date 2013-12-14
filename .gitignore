@@ -4,3 +4,5 @@
 sitemap.xml
 *.log
 sitemap.xml.gz
+_psd/
+_psd/*.*
