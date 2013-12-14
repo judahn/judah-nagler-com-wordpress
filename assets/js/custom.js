@@ -16,9 +16,8 @@ $j(document).ready(function() {
 	if (pathname.indexOf("portfolio") >= 0) {
 		nav_portfolio.addClass("active");
 	}
-});
 
-$j(window).load(function (){
-	console.log($j(".image"));
-	$j(".image").height("auto").css({"padding-bottom":"0 !important"});
+	$j(".image").load(function(){
+		$j(this).height("auto").css({"padding-bottom":"0 !important"});
+	});
 });

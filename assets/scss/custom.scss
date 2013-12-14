@@ -19,7 +19,7 @@
 body {
     overflow-x: hidden;
     padding-top:        0px;
-    background-color:   #666;
+    background-color:   #ccc;
     @include background(image-url("bg/stripes.png") #000);
 }
 .wrap {
@@ -63,6 +63,11 @@ body {
 .pad-none {
     padding: 0;
 }
+.width-100 {
+    width: 100%;
+}
+
+
 
 /* IE 'browse happy' */
 .browsehappy {

@@ -15,6 +15,10 @@ get_header(); ?>
 
 	<div class="col-sm-8 no-pad">
 
+	<div class="page-header">
+		<h1>Log</h1>
+	</div>
+
 	<?php if ( have_posts() ) : ?>
 
 		<?php /* Start the Loop */ ?>

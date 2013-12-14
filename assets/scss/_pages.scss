@@ -17,9 +17,9 @@
 	}
 }
 
-.single-portfolio {
+.single-portfolio, .main-content-inner {
 	.wrap {
-		@include center-vertically(350px, 330px);
+		// @include center-vertically(420px, 330px);
 		height: 350px;
 		padding-top: 0 !important;
 		@include max_laptop {
@@ -32,7 +32,9 @@
 }
 
 .image {
-    @extend %boxShadow;
+     @if $use_shadows {
+        @extend %boxShadow;
+    }
 
     img {
         height: auto !important;
@@ -61,13 +63,8 @@
 	// Responsive
 
     @include laptop {
-        min-height: 	230px;
+        min-height: 	250px;
     }
-    /* @include max_tablet{
-        width:          47%;
-        float:          left;
-        margin-bottom:  15px;
-    } */
     @include max_phone {
         width: 100%;
         clear: both;
@@ -80,8 +77,6 @@
     }
     img {
         height: auto !important;
-        // border: 1px dotted #444;
-        // @include transition(border, 0.75s);
 
         @include max_tablet {
         	width: 100% !important;

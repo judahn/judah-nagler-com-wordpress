@@ -28,8 +28,8 @@ get_header(); ?>
 
 </div>
 
-<div class="col-sm-6">
+<!-- <div class="col-sm-6">
 	<img class="page-header image" src="holder.js/800x600/industrial">
-</div>
+</div> -->
 
 <?php get_footer(); ?>
