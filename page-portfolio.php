@@ -16,7 +16,9 @@
 
  ?>
 
-<div class="grid_12 omega clearfix row row-thumbnails">
+<?php get_template_part( 'content', 'page' ); ?>
+
+<div class="clearfix row row-thumbnails">
 
 	<!-- While posts exist, display them here -->
 	<?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>

@@ -12,7 +12,7 @@
  */
 
 get_header(); ?>
-	
+
 	<?php if ( have_posts() ) : ?>
 
 		<?php /* Start the Loop */ ?>
@@ -36,5 +36,4 @@ get_header(); ?>
 
 	<?php endif; ?>
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

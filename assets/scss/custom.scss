@@ -21,10 +21,6 @@ body {
     padding-top:        0px;
     background-color:   #666;
     @include background(image-url("bg/stripes.png") #000);
-    // @include background(image-url("bg/bg-black.jpg") #000);
-}
-header {
-    // margin-bottom: 30px;
 }
 .wrap {
     padding-top: 180px;
@@ -34,6 +30,9 @@ header {
     .wrap {
         padding-top: 270px;
     }
+}
+.main-content-inner {
+    padding-top: 70px;
 }
 .content{
     margin-left: 15px;
