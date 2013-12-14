@@ -5,28 +5,25 @@
 ?>
 
 <div class="single-portfolio">
-  <article id="post-<?php the_ID(); ?>" class="no-pad col-md-6" >
+  <article id="post-<?php the_ID(); ?>" class="row" >
 
-      <header class="page-header">
+      <header class="page-header col-sm-6 no-pad">
         <h1 class="entry-title">Responsive <br><span><?php the_title(); ?></span></h1>
       </header><!-- .entry-header -->
 
-      <div>
+      <di class="col-sm-6 no-pad">
           <?php the_field( 'description' ); ?><br>
         <button class="btn btn-primary btn-large"><a href="<?php the_field( 'url_to_website' ); ?>">Visit site</a></button>
       </div>
 
+
+
+      <ul class="list-inline mq-list">
+        <li class="smartphone"><img src="<?php the_field( 'smartphone_thumb'); ?>" alt="" /></li>
+        <li class="tablet"><img src="<?php the_field( 'tablet_thumb'); ?>" alt="" /></li>
+        <li class="netbook"><img src="<?php the_field( 'netbook_thumb'); ?>" alt="" /></li>
+        <li class="desktop"><img src="<?php the_field( 'desktop_thumb'); ?>" alt="" /></li>
+      </ul>
+
   </article><!-- #post-## -->
-
-
-
-
-  <div class="page-header image col-md-6 pull-right no-pad">
-
-    <?php if ( has_post_thumbnail() ) { the_post_thumbnail(' ');
-      } else {?>
-      <img class="img-responsive" src="holder.js/600x400/industrial">
-    <?php } ?>
-
-  </div>
 </div>

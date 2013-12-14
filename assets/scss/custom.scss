@@ -67,7 +67,25 @@ body {
     width: 100%;
 }
 
-
+.mq-list {
+    .smartphone {
+        max-width: 5em;
+        width: 7.8125%;
+    }
+    .tablet {
+        max-width: 12em;
+        width: 18.75%;
+    }
+    .netbook {
+        max-width: 16em;
+        width: 25%;
+    }
+    .desktop {
+        margin-right: 0;
+        max-width: 25em;
+        width: 39.0625%;
+    }
+}
 
 /* IE 'browse happy' */
 .browsehappy {
