@@ -13,7 +13,13 @@
 
 get_header(); ?>
 
-	<div class="col-sm-8 no-pad">
+<?php include 'section-opener.php' ?>
+
+
+
+
+
+<div class="col-sm-8 no-pad">
 
 	<div class="page-header">
 		<h1>Blog</h1>
@@ -42,7 +48,13 @@ get_header(); ?>
 
 	<?php endif; ?>
 
-	</div>
+</div>
+
+
+
+
+<?php include 'section-opener.php' ?>
 
 <?php get_sidebar(); ?>
+
 <?php get_footer(); ?>

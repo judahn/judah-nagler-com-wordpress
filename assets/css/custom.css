@@ -1031,7 +1031,7 @@ body {
 
 /* line 49, ../scss/custom.scss */
 .main-content {
-  padding: 80px 15px 30px 15px;
+  padding: 50px 15px 30px 15px;
 }
 @media only all and (max-width: 767px) {
   /* line 49, ../scss/custom.scss */

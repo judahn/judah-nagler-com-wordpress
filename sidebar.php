@@ -6,7 +6,6 @@
  */
 ?>
 
-	</div><!-- close .main-content-inner -->
 
 	<div class="sidebar col-sm-4 no-pad">
 
@@ -39,3 +38,4 @@
 			<?php endif; ?>
 
 		</div><!-- close .sidebar-padder -->
+	</div>

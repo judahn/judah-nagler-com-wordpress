@@ -12,6 +12,12 @@
 
 get_header(); ?>
 
+<?php include 'section-opener.php' ?>
+
+
+
+
+
 <div class="col-sm-6 no-pad">
 
 	<?php while ( have_posts() ) : the_post(); ?>
@@ -27,6 +33,12 @@ get_header(); ?>
 	<?php endwhile; // end of the loop. ?>
 
 </div>
+
+
+
+
+
+<?php include 'section-closer.php' ?>
 
 <!-- <div class="col-sm-6">
 	<img class="page-header image" src="holder.js/800x600/industrial">

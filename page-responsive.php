@@ -6,6 +6,11 @@
 
 <?php get_header(); ?>
 
+<?php include 'section-opener.php' ?>
+
+
+
+
 <?php
 
 	$args = array(
@@ -47,5 +52,9 @@
 	<?php endif; ?>
 </div>
 
+
+
+
+<?php include 'section-closer.php' ?>
 
 <?php get_footer(); ?>
