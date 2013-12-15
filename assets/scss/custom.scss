@@ -127,8 +127,10 @@ body {
         border: $blue;
         background-color: $blue;
         color: white;
+        @include transition(background-color, 0.25s);
         &:hover {
             background-color: $cyan;
+            @include transition(background-color, 0.25s);
         }
     }
 }

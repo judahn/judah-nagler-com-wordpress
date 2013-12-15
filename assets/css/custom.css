@@ -1137,71 +1137,79 @@ body {
   border: #0074a2;
   background-color: #0074a2;
   color: white;
+  -webkit-transition: background-color, 0.25s;
+  -moz-transition: background-color, 0.25s;
+  -o-transition: background-color, 0.25s;
+  transition: background-color, 0.25s;
 }
-/* line 130, ../scss/custom.scss */
+/* line 131, ../scss/custom.scss */
 #frmCSCF .btn:hover {
   background-color: #2ea2cc;
+  -webkit-transition: background-color, 0.25s;
+  -moz-transition: background-color, 0.25s;
+  -o-transition: background-color, 0.25s;
+  transition: background-color, 0.25s;
 }
 
-/* line 138, ../scss/custom.scss */
+/* line 140, ../scss/custom.scss */
 .mq-list {
   padding-top: 30px;
 }
-/* line 140, ../scss/custom.scss */
+/* line 142, ../scss/custom.scss */
 .mq-list li {
   margin-right: 18px;
   padding: 0;
 }
 @media only all and (max-width: 1199px) {
-  /* line 140, ../scss/custom.scss */
+  /* line 142, ../scss/custom.scss */
   .mq-list li {
     margin-right: 15px;
   }
 }
 @media only all and (max-width: 991px) {
-  /* line 140, ../scss/custom.scss */
+  /* line 142, ../scss/custom.scss */
   .mq-list li {
     margin-right: 10px;
   }
 }
 @media only all and (max-width: 767px) {
-  /* line 140, ../scss/custom.scss */
+  /* line 142, ../scss/custom.scss */
   .mq-list li {
     margin-right: 0.9%;
   }
 }
-/* line 155, ../scss/custom.scss */
+/* line 157, ../scss/custom.scss */
 .mq-list .smartphone {
   width: 8.1%;
 }
 @media only all and (max-width: 1199px) {
-  /* line 155, ../scss/custom.scss */
+  /* line 157, ../scss/custom.scss */
   .mq-list .smartphone {
     width: 8%;
   }
 }
-/* line 161, ../scss/custom.scss */
+/* line 163, ../scss/custom.scss */
 .mq-list .tablet {
   width: 19.4%;
 }
-/* line 164, ../scss/custom.scss */
+/* line 166, ../scss/custom.scss */
 .mq-list .netbook {
   width: 25.9%;
 }
-/* line 167, ../scss/custom.scss */
+/* line 169, ../scss/custom.scss */
 .mq-list .desktop {
   margin-right: 0;
   width: 40.5%;
 }
 
 /* Admin Menu */
-/* line 175, ../scss/custom.scss */
+/* line 177, ../scss/custom.scss */
 #adminmenu #menu-posts-design .wp-menu-image:before {
   content: '\f85' !important;
 }
 
 /* IE 'browse happy' */
-/* line 180, ../scss/custom.scss */
+/* line 182, ../scss/custom.scss */
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -1209,11 +1217,11 @@ body {
   padding: 0.2em 0;
 }
 
-/* line 187, ../scss/custom.scss */
+/* line 189, ../scss/custom.scss */
 #root-footer, #footer {
   height: 30px;
 }
-/* line 189, ../scss/custom.scss */
+/* line 191, ../scss/custom.scss */
 #root-footer p, #footer p {
   color: #666;
 }
