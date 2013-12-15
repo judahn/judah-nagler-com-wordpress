@@ -2,8 +2,7 @@
 =============
 
 Wordpress / Bootstrap Starter Theme  
-by Judah Nagler  
-based on '_tk' theme
+by Judah Nagler (based on '_tk' theme)
 
 Hi. I'm a starter theme called `JN-WPBS`. I'm a theme meant for hacking so don't use me as just as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
 
