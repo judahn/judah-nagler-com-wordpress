@@ -33,9 +33,5 @@
 
 <div class="page-header image col-md-6 pull-right no-pad">
 
-  <?php if ( has_post_thumbnail() ) { the_post_thumbnail(' ');
-    } else {?>
-    <img class="img-responsive" src="holder.js/600x400/industrial">
-  <?php } ?>
-
+  <?php if ( has_post_thumbnail() ) { the_post_thumbnail(' '); }?>
 </div>

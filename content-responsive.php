@@ -27,7 +27,7 @@
         <div class="table-responsive no-border">
           <table class="table ">
             <tr>
-              <td class="col-sm-4">Developed for: </td>
+              <td class="col-xs-3 col-sm-4 col-md-3">Developed for: </td>
               <td><a href="#"><?php the_field( 'client' ); ?></a></td>
             </tr>
             <tr>
