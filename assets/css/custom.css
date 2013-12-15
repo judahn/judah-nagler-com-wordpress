@@ -1070,33 +1070,38 @@ body {
   text-decoration: none;
 }
 
-/* line 78, ../scss/custom.scss */
+/* line 77, ../scss/custom.scss */
+.entry-meta {
+  margin-bottom: 10px;
+}
+
+/* line 81, ../scss/custom.scss */
 #social-nav {
   position: relative;
 }
-/* line 81, ../scss/custom.scss */
+/* line 84, ../scss/custom.scss */
 #social-nav ul {
   position: absolute;
   top: -35px;
   right: 0px;
 }
 @media only all and (max-width: 767px) {
-  /* line 81, ../scss/custom.scss */
+  /* line 84, ../scss/custom.scss */
   #social-nav ul {
     right: 60px;
   }
 }
-/* line 90, ../scss/custom.scss */
+/* line 93, ../scss/custom.scss */
 #social-nav ul li {
   padding-left: 0;
   padding-right: 3px;
 }
-/* line 95, ../scss/custom.scss */
+/* line 98, ../scss/custom.scss */
 #social-nav img {
   width: 17px;
   height: 17px;
 }
-/* line 100, ../scss/custom.scss */
+/* line 103, ../scss/custom.scss */
 #social-nav a img {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=68);
   opacity: 0.68;
@@ -1108,7 +1113,7 @@ body {
   -o-transition: filter, 0.5s;
   transition: filter, 0.5s;
 }
-/* line 106, ../scss/custom.scss */
+/* line 109, ../scss/custom.scss */
 #social-nav a:hover img {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
@@ -1122,17 +1127,17 @@ body {
 }
 
 /* Contact Form */
-/* line 117, ../scss/custom.scss */
+/* line 120, ../scss/custom.scss */
 .cscfForm > p {
   margin-bottom: 20px;
 }
-/* line 120, ../scss/custom.scss */
+/* line 123, ../scss/custom.scss */
 .cscfForm label {
   margin-bottom: 10px;
   color: #2ea2cc;
 }
 
-/* line 126, ../scss/custom.scss */
+/* line 129, ../scss/custom.scss */
 #frmCSCF .btn {
   border: #0074a2;
   background-color: #0074a2;
@@ -1142,7 +1147,7 @@ body {
   -o-transition: background-color, 0.25s;
   transition: background-color, 0.25s;
 }
-/* line 131, ../scss/custom.scss */
+/* line 134, ../scss/custom.scss */
 #frmCSCF .btn:hover {
   background-color: #2ea2cc;
   -webkit-transition: background-color, 0.25s;
@@ -1151,65 +1156,65 @@ body {
   transition: background-color, 0.25s;
 }
 
-/* line 140, ../scss/custom.scss */
+/* line 143, ../scss/custom.scss */
 .mq-list {
   padding-top: 30px;
 }
-/* line 142, ../scss/custom.scss */
+/* line 145, ../scss/custom.scss */
 .mq-list li {
   margin-right: 18px;
   padding: 0;
 }
 @media only all and (max-width: 1199px) {
-  /* line 142, ../scss/custom.scss */
+  /* line 145, ../scss/custom.scss */
   .mq-list li {
     margin-right: 15px;
   }
 }
 @media only all and (max-width: 991px) {
-  /* line 142, ../scss/custom.scss */
+  /* line 145, ../scss/custom.scss */
   .mq-list li {
     margin-right: 10px;
   }
 }
 @media only all and (max-width: 767px) {
-  /* line 142, ../scss/custom.scss */
+  /* line 145, ../scss/custom.scss */
   .mq-list li {
     margin-right: 0.9%;
   }
 }
-/* line 157, ../scss/custom.scss */
+/* line 160, ../scss/custom.scss */
 .mq-list .smartphone {
   width: 8.1%;
 }
 @media only all and (max-width: 1199px) {
-  /* line 157, ../scss/custom.scss */
+  /* line 160, ../scss/custom.scss */
   .mq-list .smartphone {
     width: 8%;
   }
 }
-/* line 163, ../scss/custom.scss */
+/* line 166, ../scss/custom.scss */
 .mq-list .tablet {
   width: 19.4%;
 }
-/* line 166, ../scss/custom.scss */
+/* line 169, ../scss/custom.scss */
 .mq-list .netbook {
   width: 25.9%;
 }
-/* line 169, ../scss/custom.scss */
+/* line 172, ../scss/custom.scss */
 .mq-list .desktop {
   margin-right: 0;
   width: 40.5%;
 }
 
 /* Admin Menu */
-/* line 177, ../scss/custom.scss */
+/* line 180, ../scss/custom.scss */
 #adminmenu #menu-posts-design .wp-menu-image:before {
   content: '\f85' !important;
 }
 
 /* IE 'browse happy' */
-/* line 182, ../scss/custom.scss */
+/* line 185, ../scss/custom.scss */
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -1217,11 +1222,11 @@ body {
   padding: 0.2em 0;
 }
 
-/* line 189, ../scss/custom.scss */
+/* line 192, ../scss/custom.scss */
 #root-footer, #footer {
   height: 30px;
 }
-/* line 191, ../scss/custom.scss */
+/* line 194, ../scss/custom.scss */
 #root-footer p, #footer p {
   color: #666;
 }

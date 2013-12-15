@@ -7,14 +7,12 @@
 
 <div class="col-md-8 no-pad">
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-		<header class="page-header">
 			<h1 class="page-title"><?php the_title(); ?></h1>
 
 			<div class="entry-meta">
 				<?php _tk_posted_on(); ?>
 			</div><!-- .entry-meta -->
 			<?php the_content(); ?>
-		</header><!-- .entry-header -->
 
 		<div class="entry-content">
 			<?php
