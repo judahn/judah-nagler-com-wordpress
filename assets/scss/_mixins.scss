@@ -6,6 +6,13 @@
 .no-pad {
 	padding: 0;
 }
+.no-border, .no-border tbody > tr > td {
+    border: 0;
+    border-top: 0;
+}
+.v-pad {
+    padding: 15px 0;
+}
 
 @mixin center-vertically($h1, $h2) {
     position: fixed;

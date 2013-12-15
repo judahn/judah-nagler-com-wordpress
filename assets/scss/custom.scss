@@ -16,10 +16,25 @@
 @import "sections";
 @import "pages";
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    vertical-align: top;
+}
+
 body {
     overflow-x: hidden;
-    padding-top:        0px;
-    background-color:   #ccc;
+    background-color:   darken($blue, 17%);
     @include background(image-url("bg/stripes.png") #000);
 }
 .wrap {
@@ -31,10 +46,10 @@ body {
         padding-top: 270px;
     }
 }
-.main-content-inner {
+.main-content{
     padding: 30px 0 30px 0;
     @include min_tablet {
-        padding: 70px 15px 30px 15px;
+        padding: 70px 15px 70px 15px;
     }
 }
 .content{
@@ -46,7 +61,7 @@ body {
     }
 }
 .btn {
-    margin: 30px 0;
+    // margin: 30px 0;
     a {
         text-transform: uppercase;
         color: white;
@@ -67,24 +82,42 @@ body {
     width: 100%;
 }
 
+
+// Media Queries examples
+
 .mq-list {
+    padding-top: 30px;
+    li {
+        margin-right: 18px;
+        padding: 0;
+        @if $use_shadows { @extend %boxShadow; }
+
+        @include max_laptop {
+            margin-right: 13px;
+        }
+        @include max_tablet {
+            margin-right: 1.4%;
+        }
+    }
     .smartphone {
-        max-width: 5em;
-        width: 7.8125%;
+        width: 7.9%;
     }
     .tablet {
-        max-width: 12em;
-        width: 18.75%;
+        width: 19%;
     }
     .netbook {
-        max-width: 16em;
-        width: 25%;
+        width: 25.5%;
     }
     .desktop {
         margin-right: 0;
-        max-width: 25em;
-        width: 39.0625%;
+        width: 40%;
     }
+}
+
+
+/* Admin Menu */
+#adminmenu #menu-posts-design .wp-menu-image:before {
+    content: '\f85' !important;
 }
 
 /* IE 'browse happy' */

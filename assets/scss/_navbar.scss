@@ -3,19 +3,10 @@
 /* Logo */
 .navbar-brand {
     padding: 15px 30px 0 15px;
-    margin-left: 0px !important;
 }
 .navbar-inverse .navbar-brand {
     color: $cyan;
 }
-
-/* Contact */
-#contact-link {
-    a {
-
-    }
-}
-
 
 /* Navbar */
 
@@ -62,9 +53,7 @@
 .navbar-inverse {
     background-color: rgba(black, 1);
     border: 0;
-    @if $use_shadows {
-        @include box-shadow(2px 2px 10px rgba(black, 0.5));
-    }
+    @if $use_shadows { @include box-shadow(2px 2px 10px rgba(black, 0.5)); }
 }
 /* .navbar-collapse{
     border: 0 !important;

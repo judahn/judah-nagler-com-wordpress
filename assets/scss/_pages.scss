@@ -17,6 +17,10 @@
 	}
 }
 
+.portfolio-desc {
+    padding: 15px 0 45px 0;
+}
+
 .single-portfolio, .main-content-inner {
 	.wrap {
 		// @include center-vertically(420px, 330px);
@@ -37,6 +41,7 @@
     }
 
     img {
+        width: 100% !important;
         height: auto !important;
     }
 
@@ -84,7 +89,7 @@
     }
 
     .thumb-content {
-        @extend %boxShadow;
+        @if $use_shadows { @extend %boxShadow; }
         background-color: black;
     }
     .caption {

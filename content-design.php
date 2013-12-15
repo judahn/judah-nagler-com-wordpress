@@ -4,29 +4,38 @@
  */
 ?>
 
-<div class="single-portfolio">
-  <article id="post-<?php the_ID(); ?>" class="no-pad col-md-6" >
+<article id="post-<?php the_ID(); ?>" class="no-pad col-md-6" >
 
-      <header class="page-header">
-        <h1 class="entry-title">Design <br><span><?php the_title(); ?></span></h1>
-      </header><!-- .entry-header -->
+    <header class="page-header">
+      <h1 class="entry-title"><?php the_title(); ?></h1>
+    </header><!-- .entry-header -->
 
-      <div>
-          <?php the_field( 'description' ); ?><br>
-        <button class="btn btn-primary btn-large"><a href="<?php the_field( 'url_to_website' ); ?>">Visit site</a></button>
-      </div>
+    <?php the_field( 'description' ); ?><br>
 
-  </article><!-- #post-## -->
+    <div class="table-responsive no-border">
+      <table class="table ">
+        <tr>
+          <td class="col-sm-4">Developed for: </td>
+          <td><?php the_field( 'client' ); ?></td>
+        </tr>
+        <tr>
+          <td>Designed by: </td>
+          <td><?php the_field( 'client' ); ?></td>
+        </tr>
+      </table>
+    </div>
+
+    <button class="btn btn-primary btn-large"><a href="<?php the_field( 'url_to_website' ); ?>">Visit site</a></button>
+
+</article><!-- #post-## -->
 
 
 
+<div class="page-header image col-md-6 pull-right no-pad">
 
-  <div class="page-header image col-md-6 pull-right no-pad">
+  <?php if ( has_post_thumbnail() ) { the_post_thumbnail(' ');
+    } else {?>
+    <img class="img-responsive" src="holder.js/600x400/industrial">
+  <?php } ?>
 
-    <?php if ( has_post_thumbnail() ) { the_post_thumbnail(' ');
-      } else {?>
-      <img class="img-responsive" src="holder.js/600x400/industrial">
-    <?php } ?>
-
-  </div>
 </div>
