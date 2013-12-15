@@ -5,6 +5,7 @@
 // Breakpoints
 $pager:                     320px;
 $phone:                     480px;
+$tablet_sm:                 600px;
 $tablet:                    768px;
 $laptop:                    992px;
 $desktop:                   1200px;
@@ -80,6 +81,10 @@ $tablet_landscape:          $laptop;
 // Tablet
 @mixin min_tablet {                 @include bp_min($tablet) {@content;}}
 @mixin max_tablet {                 @include bp_max($tablet) {@content;}}
+
+// Tablet Small
+@mixin min_tablet_sm {             	@include bp_min($tablet_sm) {@content;}}
+@mixin max_tablet_sm {             	@include bp_max($tablet_sm) {@content;}}
 
 // Laptop
 @mixin min_laptop {                 @include bp_min($laptop) {@content;}}

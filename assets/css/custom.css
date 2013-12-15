@@ -1008,125 +1008,131 @@ body {
 
 /* line 49, ../scss/custom.scss */
 .main-content {
-  padding: 30px 0 30px 0;
+  padding: 80px 15px 30px 15px;
 }
-@media only all and (min-width: 768px) {
+@media only all and (max-width: 767px) {
   /* line 49, ../scss/custom.scss */
   .main-content {
-    padding: 70px 15px 70px 15px;
+    padding: 65px 0 30px 0;
+  }
+}
+@media only all and (max-width: 479px) {
+  /* line 49, ../scss/custom.scss */
+  .main-content {
+    padding: 40px 0 30px 0;
   }
 }
 
-/* line 55, ../scss/custom.scss */
+/* line 58, ../scss/custom.scss */
 .content {
   margin-left: 15px;
   margin-right: 15px;
 }
 @media only all and (max-width: 767px) {
-  /* line 55, ../scss/custom.scss */
+  /* line 58, ../scss/custom.scss */
   .content {
     margin-left: 0;
     margin-right: 0;
   }
 }
 
-/* line 65, ../scss/custom.scss */
+/* line 68, ../scss/custom.scss */
 .btn a {
   text-transform: uppercase;
   color: white;
 }
-/* line 68, ../scss/custom.scss */
+/* line 71, ../scss/custom.scss */
 .btn a:hover {
   color: white;
   text-decoration: none;
 }
 
-/* line 75, ../scss/custom.scss */
+/* line 78, ../scss/custom.scss */
 #social-nav {
   position: relative;
 }
-/* line 78, ../scss/custom.scss */
+/* line 81, ../scss/custom.scss */
 #social-nav ul {
   position: absolute;
   top: -35px;
   right: 0px;
 }
 @media only all and (max-width: 767px) {
-  /* line 78, ../scss/custom.scss */
+  /* line 81, ../scss/custom.scss */
   #social-nav ul {
     right: 60px;
   }
 }
-/* line 87, ../scss/custom.scss */
+/* line 90, ../scss/custom.scss */
 #social-nav ul li {
   padding-left: 0;
   padding-right: 3px;
 }
-/* line 92, ../scss/custom.scss */
+/* line 95, ../scss/custom.scss */
 #social-nav img {
   width: 17px;
   height: 17px;
 }
 
-/* line 101, ../scss/custom.scss */
+/* line 104, ../scss/custom.scss */
 .mq-list {
   padding-top: 30px;
 }
-/* line 103, ../scss/custom.scss */
+/* line 106, ../scss/custom.scss */
 .mq-list li {
   margin-right: 18px;
   padding: 0;
 }
 @media only all and (max-width: 1199px) {
-  /* line 103, ../scss/custom.scss */
+  /* line 106, ../scss/custom.scss */
   .mq-list li {
     margin-right: 15px;
   }
 }
 @media only all and (max-width: 991px) {
-  /* line 103, ../scss/custom.scss */
+  /* line 106, ../scss/custom.scss */
   .mq-list li {
     margin-right: 10px;
   }
 }
 @media only all and (max-width: 767px) {
-  /* line 103, ../scss/custom.scss */
+  /* line 106, ../scss/custom.scss */
   .mq-list li {
     margin-right: 0.9%;
   }
 }
-/* line 118, ../scss/custom.scss */
+/* line 121, ../scss/custom.scss */
 .mq-list .smartphone {
   width: 8.1%;
 }
 @media only all and (max-width: 1199px) {
-  /* line 118, ../scss/custom.scss */
+  /* line 121, ../scss/custom.scss */
   .mq-list .smartphone {
     width: 8%;
   }
 }
-/* line 124, ../scss/custom.scss */
+/* line 127, ../scss/custom.scss */
 .mq-list .tablet {
   width: 19.4%;
 }
-/* line 127, ../scss/custom.scss */
+/* line 130, ../scss/custom.scss */
 .mq-list .netbook {
   width: 25.9%;
 }
-/* line 130, ../scss/custom.scss */
+/* line 133, ../scss/custom.scss */
 .mq-list .desktop {
   margin-right: 0;
   width: 40.5%;
 }
 
 /* Admin Menu */
-/* line 138, ../scss/custom.scss */
+/* line 141, ../scss/custom.scss */
 #adminmenu #menu-posts-design .wp-menu-image:before {
   content: '\f85' !important;
 }
 
 /* IE 'browse happy' */
-/* line 143, ../scss/custom.scss */
+/* line 146, ../scss/custom.scss */
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -1134,11 +1140,11 @@ body {
   padding: 0.2em 0;
 }
 
-/* line 150, ../scss/custom.scss */
+/* line 153, ../scss/custom.scss */
 #root-footer, #footer {
   height: 30px;
 }
-/* line 152, ../scss/custom.scss */
+/* line 155, ../scss/custom.scss */
 #root-footer p, #footer p {
   color: #666;
 }
