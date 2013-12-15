@@ -126,7 +126,7 @@ code, pre, .highlight {
 }
 
 /* line 63, ../scss/_mixins.scss */
-.image, .thumbnail .thumb-content, .mq-list li {
+.image, .sidebar, .thumbnail .thumb-content, .mq-list li {
   -webkit-box-shadow: 0px 2px 30px black;
   -moz-box-shadow: 0px 2px 30px black;
   box-shadow: 0px 2px 30px black;
@@ -157,10 +157,6 @@ a:hover {
   margin-right: 0;
 }
 
-/* line 22, ../scss/_overrides.scss */
-.container {
-  padding: 0;
-}
 @media only all and (max-width: 767px) {
   /* line 22, ../scss/_overrides.scss */
   .container {
@@ -250,7 +246,7 @@ code, pre, .highlight {
 }
 
 /* line 63, ../scss/_mixins.scss */
-.image, .thumbnail .thumb-content, .mq-list li {
+.image, .sidebar, .thumbnail .thumb-content, .mq-list li {
   -webkit-box-shadow: 0px 2px 30px black;
   -moz-box-shadow: 0px 2px 30px black;
   box-shadow: 0px 2px 30px black;
@@ -554,7 +550,7 @@ code, pre, .highlight {
 }
 
 /* line 63, ../scss/_mixins.scss */
-.image, .thumbnail .thumb-content, .mq-list li {
+.image, .sidebar, .thumbnail .thumb-content, .mq-list li {
   -webkit-box-shadow: 0px 2px 30px black;
   -moz-box-shadow: 0px 2px 30px black;
   box-shadow: 0px 2px 30px black;
@@ -774,7 +770,7 @@ code, pre, .highlight {
 }
 
 /* line 63, ../scss/_mixins.scss */
-.image, .thumbnail .thumb-content, .mq-list li {
+.image, .sidebar, .thumbnail .thumb-content, .mq-list li {
   -webkit-box-shadow: 0px 2px 30px black;
   -moz-box-shadow: 0px 2px 30px black;
   box-shadow: 0px 2px 30px black;
@@ -792,67 +788,57 @@ code, pre, .highlight {
 /*
  *  MIN / MAX
  */
-/* line 5, ../scss/_pages.scss */
-.home .content {
-  width: 45%;
-}
-@media only all and (max-width: 767px) {
-  /* line 5, ../scss/_pages.scss */
-  .home .content {
-    width: 100%;
-  }
-}
-
-/* line 14, ../scss/_pages.scss */
-.portfolio .image {
-  margin-top: 10px;
-  padding: 0;
-}
-
-/* line 20, ../scss/_pages.scss */
+/* line 4, ../scss/_pages.scss */
 .portfolio-desc {
   padding: 15px 0 45px 0;
 }
 
-/* line 25, ../scss/_pages.scss */
+/* line 9, ../scss/_pages.scss */
 .single-portfolio .wrap, .main-content-inner .wrap {
   height: 350px;
   padding-top: 0 !important;
 }
 @media only all and (max-width: 991px) {
-  /* line 25, ../scss/_pages.scss */
+  /* line 9, ../scss/_pages.scss */
   .single-portfolio .wrap, .main-content-inner .wrap {
     padding-top: 180px !important;
   }
 }
-/* line 32, ../scss/_pages.scss */
+/* line 16, ../scss/_pages.scss */
 .single-portfolio .wrap .container, .main-content-inner .wrap .container {
   height: 350px !important;
 }
 
-/* line 43, ../scss/_pages.scss */
+/* line 25, ../scss/_pages.scss */
 .image img {
   width: 100% !important;
   height: auto !important;
 }
 @media only all and (max-width: 991px) {
-  /* line 38, ../scss/_pages.scss */
+  /* line 22, ../scss/_pages.scss */
   .image {
     width: 100%;
   }
-  /* line 50, ../scss/_pages.scss */
+  /* line 32, ../scss/_pages.scss */
   .image img {
     width: 100% !important;
   }
 }
 
-/* line 56, ../scss/_pages.scss */
+/* line 38, ../scss/_pages.scss */
+.sidebar {
+  padding: 20px;
+  margin-top: 20px;
+  background-color: black;
+}
+
+/* line 45, ../scss/_pages.scss */
 .row-thumbnails {
   margin-left: -15px;
   margin-right: -15px;
 }
 
-/* line 60, ../scss/_pages.scss */
+/* line 49, ../scss/_pages.scss */
 .thumbnail {
   min-height: 285px;
   padding: 0;
@@ -863,20 +849,20 @@ code, pre, .highlight {
   transition: all, 0s;
 }
 @media only all and (min-width: 768px) and (max-width: 991px) {
-  /* line 60, ../scss/_pages.scss */
+  /* line 49, ../scss/_pages.scss */
   .thumbnail {
     min-height: 250px;
   }
 }
 @media only all and (max-width: 479px) {
-  /* line 60, ../scss/_pages.scss */
+  /* line 49, ../scss/_pages.scss */
   .thumbnail {
     width: 100%;
     clear: both;
     min-height: 0;
   }
 }
-/* line 79, ../scss/_pages.scss */
+/* line 68, ../scss/_pages.scss */
 .thumbnail h3 {
   -webkit-transition: background-color, 0.5s;
   -moz-transition: background-color, 0.5s;
@@ -887,27 +873,27 @@ code, pre, .highlight {
   -o-transition: padding, 0.5s;
   transition: padding, 0.5s;
 }
-/* line 83, ../scss/_pages.scss */
+/* line 72, ../scss/_pages.scss */
 .thumbnail img {
   height: auto !important;
 }
 @media only all and (max-width: 767px) {
-  /* line 83, ../scss/_pages.scss */
+  /* line 72, ../scss/_pages.scss */
   .thumbnail img {
     width: 100% !important;
   }
 }
-/* line 91, ../scss/_pages.scss */
+/* line 80, ../scss/_pages.scss */
 .thumbnail .thumb-content {
   background-color: black;
 }
-/* line 95, ../scss/_pages.scss */
+/* line 84, ../scss/_pages.scss */
 .thumbnail .caption {
   text-align: center;
   padding: 10px 0 0 0;
 }
 @media only all and (min-width: 768px) {
-  /* line 108, ../scss/_pages.scss */
+  /* line 97, ../scss/_pages.scss */
   .thumbnail:hover h3 {
     background: #0074a2;
     padding-top: 20px;

@@ -27,7 +27,7 @@
 
 </article><!-- #post-## -->
 
-<article class="page-header col-sm-6 pull-right">
+<article class="sidebar page-header col-sm-6 pull-right">
   <?php the_field( 'description' ); ?><br>
 </article>
 

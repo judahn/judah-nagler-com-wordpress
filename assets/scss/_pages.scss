@@ -1,22 +1,6 @@
 @import "mixins";
 @import "responsive";
 
-.home {
-    .content {
-        width: 45%;
-        @include max_tablet {
-            width: 100%;
-        }
-    }
-}
-
-.portfolio {
-	.image {
-		margin-top: 10px;
-		padding: 0;
-	}
-}
-
 .portfolio-desc {
     padding: 15px 0 45px 0;
 }
@@ -36,9 +20,7 @@
 }
 
 .image {
-     @if $use_shadows {
-        @extend %boxShadow;
-    }
+     @if $use_shadows { @extend %boxShadow; }
 
     img {
         width: 100% !important;
@@ -51,6 +33,13 @@
             width: 100% !important;
         }
     }
+}
+
+.sidebar {
+    @if $use_shadows { @extend %boxShadow; }
+    padding: 20px;
+    margin-top: 20px;
+    background-color: black;
 }
 
 .row-thumbnails {
