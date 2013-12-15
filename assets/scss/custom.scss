@@ -72,14 +72,27 @@ body {
     }
 }
 
-.pad-content {
-    padding: 10px 0;
-}
-.pad-none {
-    padding: 0;
-}
-.width-100 {
-    width: 100%;
+#social-nav {
+    position: relative;
+
+    ul {
+        position: absolute;
+        top: -35px;
+        right: 0px;
+
+        @include max_tablet {
+            right: 60px;
+        }
+
+        li {
+            padding-left: 0;
+            padding-right: 3px;
+        }
+    }
+    img {
+        width:  17px;
+        height: 17px;
+    }
 }
 
 
@@ -92,25 +105,31 @@ body {
         padding: 0;
         @if $use_shadows { @extend %boxShadow; }
 
+        @include max_desktop {
+            margin-right: 15px;
+        }
         @include max_laptop {
-            margin-right: 13px;
+            margin-right: 10px;
         }
         @include max_tablet {
-            margin-right: 1.4%;
+            margin-right: 0.9%;
         }
     }
     .smartphone {
-        width: 7.9%;
+        width: 8.1%;
+        @include max_desktop {
+            width: 8%;
+        }
     }
     .tablet {
-        width: 19%;
+        width: 19.4%;
     }
     .netbook {
-        width: 25.5%;
+        width: 25.9%;
     }
     .desktop {
         margin-right: 0;
-        width: 40%;
+        width: 40.5%;
     }
 }
 

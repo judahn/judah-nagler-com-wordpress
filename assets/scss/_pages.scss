@@ -78,7 +78,7 @@
     }
 
     .thumb-content {
-        @if $use_shadows { @extend %boxShadow; }
+        @extend %boxShadow;
         background-color: black;
     }
     .caption {

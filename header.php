@@ -73,6 +73,51 @@
 								'walker' => new wp_bootstrap_navwalker()
 							)
 						); ?>
+						
+						<div id="social-nav" class="hidden-xs hidden-sm">
+							<ul class="list-inline pull-right">
+								<li>
+									<a href="http://www.facebook.com/judah.nagler" target="_blank">
+										<img src="<?php echo get_site_url() . '/wp-content/themes/jn-wpbs/assets/img/social/icon-facebook.png' ?>" alt="">
+									</a>
+								</li>
+								<li>
+									<a href="http://www.twitter.com/judahnagler" target="_blank">
+										<img src="<?php echo get_site_url() . '/wp-content/themes/jn-wpbs/assets/img/social/icon-twitter.png' ?>" alt="">
+									</a>
+								</li>
+								<li>
+									<a href="http://www.linkedin.com/in/judahnagler" target="_blank">
+										<img src="<?php echo get_site_url() . '/wp-content/themes/jn-wpbs/assets/img/social/icon-linkedin.png' ?>" alt="">
+									</a>
+								</li>
+								<li>
+									<a href="http://www.github.com/judahn" target="_blank">
+										<img src="<?php echo get_site_url() . '/wp-content/themes/jn-wpbs/assets/img/social/icon-github.png' ?>" alt="">
+									</a>
+								</li>
+								<li>
+									<a href="http://www.bitbucket.org/judahn" target="_blank">
+										<img src="<?php echo get_site_url() . '/wp-content/themes/jn-wpbs/assets/img/social/icon-bitbucket.png' ?>" alt="">
+									</a>
+								</li>
+								<!-- <li>
+									<a href="http://www.google.com/+JudahNagler" target="_blank">
+										<img src="<?php echo get_site_url() . '/wp-content/themes/jn-wpbs/assets/img/social/icon-google.png' ?>" alt="">
+									</a>
+								</li>
+								<li>
+									<a href="http://www.vimeo.com/judahnagler" target="_blank">
+										<img src="<?php echo get_site_url() . '/wp-content/themes/jn-wpbs/assets/img/social/icon-vimeo.png' ?>" alt="">
+									</a>
+								</li>
+								<li>
+									<a href="http://www.youtube.com/user/judahnagler" target="_blank">
+										<img src="<?php echo get_site_url() . '/wp-content/themes/jn-wpbs/assets/img/social/icon-youtube.png' ?>" alt="">
+									</a>
+								</li> -->
+							</ul>
+						</div>
 					</div>
 
 				</div><!-- .navbar -->
