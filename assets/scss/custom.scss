@@ -96,6 +96,20 @@ body {
         width:  17px;
         height: 17px;
     }
+    a {
+        img {
+            @include opacity(0.68);
+            @include filter(grayscale(100%));
+            @include transition(filter, 0.5s);
+        }
+        &:hover {
+            img {
+                @include opacity(1);
+                @include filter(grayscale(0%));
+                @include transition(filter, 0.35s);
+            }
+        }
+    }
 }
 
 

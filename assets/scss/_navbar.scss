@@ -1,29 +1,30 @@
 @import "responsive";
 
+
+
 /* Logo */
+
 .navbar-brand {
     padding: 15px 30px 0 15px;
+    @include max_laptop {
+        padding: 15px 23px 0 15px;
+    }
 }
 .navbar-inverse .navbar-brand {
     color: $cyan;
 }
 
-/* Navbar */
 
-.navbar-nav {
-    margin: 0 0 0 -15px;
-}
-#nav-row{
-    height: $nav_height;
-    background-color: #000;
-    z-index: 999;
-    position: fixed;
 
-}
+/* Nav */
 
 .nav > li > a {
+    padding: 15px;
+    @include max_desktop {
+        padding: 15px 11px;
+    }
     @include max_laptop {
-        padding: 15px 9px 15px;
+        padding: 15px 6px 15px;
     }
     @include max_tablet{
         padding: 0 0 15px 15px;
@@ -34,6 +35,10 @@
     }
 }
 
+
+
+
+/* Navbar */
 .navbar {
     margin-bottom: -150px;
     font-family: "Dosis", sans-serif;
@@ -43,26 +48,38 @@
         font-size: 15px;
         letter-spacing: 3px;
 
+        @include laptop {
+            font-size: 13px;
+            letter-spacing: 2px;
+        }
+
         &.active {
             color: white !important;
         }
     }
 }
-
-.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
+.navbar-nav {
+    margin: 0 0 0 -15px;
+}
+.navbar-inverse .navbar-nav>.active>a {
     background-color: transparent;
-
+    &:hover, &:focus {
+        background-color: transparent;
+    }
 }
 .navbar-inverse {
     background-color: rgba(black, 1);
     border: 0;
     @if $use_shadows { @include box-shadow(2px 2px 10px rgba(black, 0.5)); }
 }
-/* .navbar-collapse{
-    border: 0 !important;
-    border-color: transparent !important;
-    border-top: 0 !important;
-} */
+
+#nav-row{
+    height: $nav_height;
+    background-color: #000;
+    z-index: 999;
+    position: fixed;
+
+}
 
 
 /* Buttons */
@@ -70,12 +87,12 @@
 .btn-primary {
     background-color: $blue;
     border-color: $blue;
-    @include transition(background-color, 0.25s);
+    @include transition(background-color, 0.5s);
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
     background-color: $cyan; //lighten($red, 5%);
     border-color: $cyan;
-    @include transition(background-color, 0.25s);
+    @include transition(background-color, 0.5s);
 }
 
 /* Affix */

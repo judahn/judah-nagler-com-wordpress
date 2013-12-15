@@ -404,23 +404,95 @@ p {
  *  MIN / MAX
  */
 /* Logo */
-/* line 4, ../scss/_navbar.scss */
+/* line 7, ../scss/_navbar.scss */
 .navbar-brand {
   padding: 15px 30px 0 15px;
 }
+@media only all and (max-width: 991px) {
+  /* line 7, ../scss/_navbar.scss */
+  .navbar-brand {
+    padding: 15px 23px 0 15px;
+  }
+}
 
-/* line 7, ../scss/_navbar.scss */
+/* line 13, ../scss/_navbar.scss */
 .navbar-inverse .navbar-brand {
   color: #2ea2cc;
 }
 
+/* Nav */
+/* line 21, ../scss/_navbar.scss */
+.nav > li > a {
+  padding: 15px;
+}
+@media only all and (max-width: 1199px) {
+  /* line 21, ../scss/_navbar.scss */
+  .nav > li > a {
+    padding: 15px 11px;
+  }
+}
+@media only all and (max-width: 991px) {
+  /* line 21, ../scss/_navbar.scss */
+  .nav > li > a {
+    padding: 15px 6px 15px;
+  }
+}
+@media only all and (max-width: 767px) {
+  /* line 21, ../scss/_navbar.scss */
+  .nav > li > a {
+    padding: 0 0 15px 15px;
+  }
+}
+/* line 33, ../scss/_navbar.scss */
+.nav > li > a:hover, .nav > li > a:focus {
+  background-color: transparent;
+}
+
 /* Navbar */
-/* line 13, ../scss/_navbar.scss */
+/* line 42, ../scss/_navbar.scss */
+.navbar {
+  margin-bottom: -150px;
+  font-family: "Dosis", sans-serif;
+  text-transform: uppercase;
+}
+/* line 47, ../scss/_navbar.scss */
+.navbar a {
+  font-size: 15px;
+  letter-spacing: 3px;
+}
+@media only all and (min-width: 768px) and (max-width: 991px) {
+  /* line 47, ../scss/_navbar.scss */
+  .navbar a {
+    font-size: 13px;
+    letter-spacing: 2px;
+  }
+}
+/* line 56, ../scss/_navbar.scss */
+.navbar a.active {
+  color: white !important;
+}
+
+/* line 61, ../scss/_navbar.scss */
 .navbar-nav {
   margin: 0 0 0 -15px;
 }
 
-/* line 16, ../scss/_navbar.scss */
+/* line 64, ../scss/_navbar.scss */
+.navbar-inverse .navbar-nav > .active > a {
+  background-color: transparent;
+}
+/* line 66, ../scss/_navbar.scss */
+.navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+  background-color: transparent;
+}
+
+/* line 70, ../scss/_navbar.scss */
+.navbar-inverse {
+  background-color: black;
+  border: 0;
+}
+
+/* line 76, ../scss/_navbar.scss */
 #nav-row {
   height: 50px;
   background-color: #000;
@@ -428,95 +500,46 @@ p {
   position: fixed;
 }
 
-@media only all and (max-width: 991px) {
-  /* line 24, ../scss/_navbar.scss */
-  .nav > li > a {
-    padding: 15px 9px 15px;
-  }
-}
-@media only all and (max-width: 767px) {
-  /* line 24, ../scss/_navbar.scss */
-  .nav > li > a {
-    padding: 0 0 15px 15px;
-  }
-}
-/* line 32, ../scss/_navbar.scss */
-.nav > li > a:hover, .nav > li > a:focus {
-  background-color: transparent;
-}
-
-/* line 37, ../scss/_navbar.scss */
-.navbar {
-  margin-bottom: -150px;
-  font-family: "Dosis", sans-serif;
-  text-transform: uppercase;
-}
-/* line 42, ../scss/_navbar.scss */
-.navbar a {
-  font-size: 15px;
-  letter-spacing: 3px;
-}
-/* line 46, ../scss/_navbar.scss */
-.navbar a.active {
-  color: white !important;
-}
-
-/* line 52, ../scss/_navbar.scss */
-.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-  background-color: transparent;
-}
-
-/* line 56, ../scss/_navbar.scss */
-.navbar-inverse {
-  background-color: black;
-  border: 0;
-}
-
-/* .navbar-collapse{
-    border: 0 !important;
-    border-color: transparent !important;
-    border-top: 0 !important;
-} */
 /* Buttons */
-/* line 70, ../scss/_navbar.scss */
+/* line 87, ../scss/_navbar.scss */
 .btn-primary {
   background-color: #0074a2;
   border-color: #0074a2;
-  -webkit-transition: background-color, 0.25s;
-  -moz-transition: background-color, 0.25s;
-  -o-transition: background-color, 0.25s;
-  transition: background-color, 0.25s;
+  -webkit-transition: background-color, 0.5s;
+  -moz-transition: background-color, 0.5s;
+  -o-transition: background-color, 0.5s;
+  transition: background-color, 0.5s;
 }
 
-/* line 75, ../scss/_navbar.scss */
+/* line 92, ../scss/_navbar.scss */
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
   background-color: #2ea2cc;
   border-color: #2ea2cc;
-  -webkit-transition: background-color, 0.25s;
-  -moz-transition: background-color, 0.25s;
-  -o-transition: background-color, 0.25s;
-  transition: background-color, 0.25s;
+  -webkit-transition: background-color, 0.5s;
+  -moz-transition: background-color, 0.5s;
+  -o-transition: background-color, 0.5s;
+  transition: background-color, 0.5s;
 }
 
 /* Affix */
-/* line 82, ../scss/_navbar.scss */
+/* line 99, ../scss/_navbar.scss */
 #home .affix {
   width: 100%;
   top: 0;
 }
 
-/* line 86, ../scss/_navbar.scss */
+/* line 103, ../scss/_navbar.scss */
 #home .affix-top {
   margin-top: -50px;
 }
 @media only all and (max-width: 767px) {
-  /* line 86, ../scss/_navbar.scss */
+  /* line 103, ../scss/_navbar.scss */
   #home .affix-top {
     margin-top: 0;
   }
 }
 
-/* line 94, ../scss/_navbar.scss */
+/* line 111, ../scss/_navbar.scss */
 #standard .affix,
 #standard .affix-top {
   width: 100%;
@@ -525,7 +548,7 @@ p {
 
 /* Responsive: Portrait mobile and below */
 @media screen and (max-width: 768px) {
-  /* line 102, ../scss/_navbar.scss */
+  /* line 119, ../scss/_navbar.scss */
   .affix-top {
     width: 100%;
     position: fixed;
@@ -534,12 +557,12 @@ p {
   }
 
   /* Logo */
-  /* line 109, ../scss/_navbar.scss */
+  /* line 126, ../scss/_navbar.scss */
   .navbar-brand {
     padding-left: 15px;
   }
 
-  /* line 112, ../scss/_navbar.scss */
+  /* line 129, ../scss/_navbar.scss */
   .navbar-collapse {
     background-color: #000;
   }
@@ -1073,66 +1096,90 @@ body {
   width: 17px;
   height: 17px;
 }
+/* line 100, ../scss/custom.scss */
+#social-nav a img {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=68);
+  opacity: 0.68;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: filter, 0.5s;
+  -moz-transition: filter, 0.5s;
+  -o-transition: filter, 0.5s;
+  transition: filter, 0.5s;
+}
+/* line 106, ../scss/custom.scss */
+#social-nav a:hover img {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  filter: grayscale(0%);
+  -webkit-transition: filter, 0.35s;
+  -moz-transition: filter, 0.35s;
+  -o-transition: filter, 0.35s;
+  transition: filter, 0.35s;
+}
 
-/* line 104, ../scss/custom.scss */
+/* line 118, ../scss/custom.scss */
 .mq-list {
   padding-top: 30px;
 }
-/* line 106, ../scss/custom.scss */
+/* line 120, ../scss/custom.scss */
 .mq-list li {
   margin-right: 18px;
   padding: 0;
 }
 @media only all and (max-width: 1199px) {
-  /* line 106, ../scss/custom.scss */
+  /* line 120, ../scss/custom.scss */
   .mq-list li {
     margin-right: 15px;
   }
 }
 @media only all and (max-width: 991px) {
-  /* line 106, ../scss/custom.scss */
+  /* line 120, ../scss/custom.scss */
   .mq-list li {
     margin-right: 10px;
   }
 }
 @media only all and (max-width: 767px) {
-  /* line 106, ../scss/custom.scss */
+  /* line 120, ../scss/custom.scss */
   .mq-list li {
     margin-right: 0.9%;
   }
 }
-/* line 121, ../scss/custom.scss */
+/* line 135, ../scss/custom.scss */
 .mq-list .smartphone {
   width: 8.1%;
 }
 @media only all and (max-width: 1199px) {
-  /* line 121, ../scss/custom.scss */
+  /* line 135, ../scss/custom.scss */
   .mq-list .smartphone {
     width: 8%;
   }
 }
-/* line 127, ../scss/custom.scss */
+/* line 141, ../scss/custom.scss */
 .mq-list .tablet {
   width: 19.4%;
 }
-/* line 130, ../scss/custom.scss */
+/* line 144, ../scss/custom.scss */
 .mq-list .netbook {
   width: 25.9%;
 }
-/* line 133, ../scss/custom.scss */
+/* line 147, ../scss/custom.scss */
 .mq-list .desktop {
   margin-right: 0;
   width: 40.5%;
 }
 
 /* Admin Menu */
-/* line 141, ../scss/custom.scss */
+/* line 155, ../scss/custom.scss */
 #adminmenu #menu-posts-design .wp-menu-image:before {
   content: '\f85' !important;
 }
 
 /* IE 'browse happy' */
-/* line 146, ../scss/custom.scss */
+/* line 160, ../scss/custom.scss */
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -1140,11 +1187,11 @@ body {
   padding: 0.2em 0;
 }
 
-/* line 153, ../scss/custom.scss */
+/* line 167, ../scss/custom.scss */
 #root-footer, #footer {
   height: 30px;
 }
-/* line 155, ../scss/custom.scss */
+/* line 169, ../scss/custom.scss */
 #root-footer p, #footer p {
   color: #666;
 }
