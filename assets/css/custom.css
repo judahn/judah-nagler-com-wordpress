@@ -141,7 +141,7 @@ code, pre, .highlight {
 }
 
 /* line 72, ../scss/_mixins.scss */
-.thumbnail .thumb-content {
+.thumbnail .thumb-content, .mq-list li {
   -webkit-box-shadow: 0px 2px 30px black;
   -moz-box-shadow: 0px 2px 30px black;
   box-shadow: 0px 2px 30px black;
@@ -276,7 +276,7 @@ code, pre, .highlight {
 }
 
 /* line 72, ../scss/_mixins.scss */
-.thumbnail .thumb-content {
+.thumbnail .thumb-content, .mq-list li {
   -webkit-box-shadow: 0px 2px 30px black;
   -moz-box-shadow: 0px 2px 30px black;
   box-shadow: 0px 2px 30px black;
@@ -621,7 +621,7 @@ code, pre, .highlight {
 }
 
 /* line 72, ../scss/_mixins.scss */
-.thumbnail .thumb-content {
+.thumbnail .thumb-content, .mq-list li {
   -webkit-box-shadow: 0px 2px 30px black;
   -moz-box-shadow: 0px 2px 30px black;
   box-shadow: 0px 2px 30px black;
@@ -856,7 +856,7 @@ code, pre, .highlight {
 }
 
 /* line 72, ../scss/_mixins.scss */
-.thumbnail .thumb-content {
+.thumbnail .thumb-content, .mq-list li {
   -webkit-box-shadow: 0px 2px 30px black;
   -moz-box-shadow: 0px 2px 30px black;
   box-shadow: 0px 2px 30px black;
@@ -1015,7 +1015,7 @@ time, mark, audio, video {
 body {
   overflow-x: hidden;
   background-color: #00364b;
-  background: url('/wp-content/themes/jn-wpbs/assets/img/bg/stripes.png?1385804855') black;
+  background: url('/wp-content/themes/jn-wpbs/assets/img/bg/stripes.png?1385804855') black fixed;
 }
 
 /* line 40, ../scss/custom.scss */

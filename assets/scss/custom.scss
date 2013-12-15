@@ -35,7 +35,7 @@ time, mark, audio, video {
 body {
     overflow-x: hidden;
     background-color:   darken($blue, 17%);
-    @include background(image-url("bg/stripes.png") #000);
+    @include background(image-url("bg/stripes.png") #000 fixed);
 }
 .wrap {
     padding-top: 180px;
@@ -120,7 +120,7 @@ body {
     li {
         margin-right: 18px;
         padding: 0;
-        @if $use_shadows { @extend %boxShadow; }
+        @extend %boxShadow;
 
         @include max_desktop {
             margin-right: 15px;
