@@ -112,6 +112,26 @@ body {
     }
 }
 
+/* Contact Form */
+.cscfForm {
+    > p {
+        margin-bottom: 20px;
+    }
+    label {
+        margin-bottom: 10px;
+        color: $cyan;
+    }
+}
+#frmCSCF {
+    .btn {
+        border: $blue;
+        background-color: $blue;
+        color: white;
+        &:hover {
+            background-color: $cyan;
+        }
+    }
+}
 
 // Media Queries examples
 

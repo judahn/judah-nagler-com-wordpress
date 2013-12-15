@@ -1121,65 +1121,87 @@ body {
   transition: filter, 0.35s;
 }
 
-/* line 118, ../scss/custom.scss */
+/* Contact Form */
+/* line 117, ../scss/custom.scss */
+.cscfForm > p {
+  margin-bottom: 20px;
+}
+/* line 120, ../scss/custom.scss */
+.cscfForm label {
+  margin-bottom: 10px;
+  color: #2ea2cc;
+}
+
+/* line 126, ../scss/custom.scss */
+#frmCSCF .btn {
+  border: #0074a2;
+  background-color: #0074a2;
+  color: white;
+}
+/* line 130, ../scss/custom.scss */
+#frmCSCF .btn:hover {
+  background-color: #2ea2cc;
+}
+
+/* line 138, ../scss/custom.scss */
 .mq-list {
   padding-top: 30px;
 }
-/* line 120, ../scss/custom.scss */
+/* line 140, ../scss/custom.scss */
 .mq-list li {
   margin-right: 18px;
   padding: 0;
 }
 @media only all and (max-width: 1199px) {
-  /* line 120, ../scss/custom.scss */
+  /* line 140, ../scss/custom.scss */
   .mq-list li {
     margin-right: 15px;
   }
 }
 @media only all and (max-width: 991px) {
-  /* line 120, ../scss/custom.scss */
+  /* line 140, ../scss/custom.scss */
   .mq-list li {
     margin-right: 10px;
   }
 }
 @media only all and (max-width: 767px) {
-  /* line 120, ../scss/custom.scss */
+  /* line 140, ../scss/custom.scss */
   .mq-list li {
     margin-right: 0.9%;
   }
 }
-/* line 135, ../scss/custom.scss */
+/* line 155, ../scss/custom.scss */
 .mq-list .smartphone {
   width: 8.1%;
 }
 @media only all and (max-width: 1199px) {
-  /* line 135, ../scss/custom.scss */
+  /* line 155, ../scss/custom.scss */
   .mq-list .smartphone {
     width: 8%;
   }
 }
-/* line 141, ../scss/custom.scss */
+/* line 161, ../scss/custom.scss */
 .mq-list .tablet {
   width: 19.4%;
 }
-/* line 144, ../scss/custom.scss */
+/* line 164, ../scss/custom.scss */
 .mq-list .netbook {
   width: 25.9%;
 }
-/* line 147, ../scss/custom.scss */
+/* line 167, ../scss/custom.scss */
 .mq-list .desktop {
   margin-right: 0;
   width: 40.5%;
 }
 
 /* Admin Menu */
-/* line 155, ../scss/custom.scss */
+/* line 175, ../scss/custom.scss */
 #adminmenu #menu-posts-design .wp-menu-image:before {
   content: '\f85' !important;
 }
 
 /* IE 'browse happy' */
-/* line 160, ../scss/custom.scss */
+/* line 180, ../scss/custom.scss */
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -1187,11 +1209,11 @@ body {
   padding: 0.2em 0;
 }
 
-/* line 167, ../scss/custom.scss */
+/* line 187, ../scss/custom.scss */
 #root-footer, #footer {
   height: 30px;
 }
-/* line 169, ../scss/custom.scss */
+/* line 189, ../scss/custom.scss */
 #root-footer p, #footer p {
   color: #666;
 }

@@ -27,7 +27,12 @@
 
 </article><!-- #post-## -->
 
-<article class="sidebar page-header col-sm-6 pull-right">
+<article class="sidebar page-header hidden-xs col-sm-6 pull-right">
   <?php the_field( 'description' ); ?><br>
+</article>
+
+<article class="visible-xs">
+  <h3></h3>
+  <alert class="alert alert-danger">Flash examples visible only on desktop site.</alert>
 </article>
 
