@@ -1,10 +1,11 @@
-== _tk ==
-=========
+== JN-WPBS ==
+=============
 
-ThemeKraft Starter Theme
+Wordpress / Bootstrap Starter Theme  
+by Judah Nagler  
+based on '_tk' theme
 
-
-Hi. I'm a starter theme called `_tk`. I'm a theme meant for hacking so don't use me as just as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
+Hi. I'm a starter theme called `JN-WPBS`. I'm a theme meant for hacking so don't use me as just as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
 
 My ultra-minimal CSS might make me look like theme tartare but that means less stuff to get in your way when you're designing your awesome theme. Here are some of the other more interesting things you'll find here:
 
@@ -47,18 +48,10 @@ Good luck!
 == Changelog ==
 ---------------
 
-= 1.1 =
+== 0.0 ==
 
-12.12.2013
+12.13.2013
 
-Bootstrap update to 3.0.3.
-Add the Bootstrap LESS and JS files.
-Minor CSS fix for wordwrap.
-
-== 1.0 ==
-
-08.08.2013
-
-Initial release.
+Development
 
 
