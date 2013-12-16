@@ -73,11 +73,9 @@ body {
 }
 
 .main-content{
-    padding: 50px 15px 30px 15px;
+    padding: 65px 0 30px 0;
+
     @include max_tablet{
-        padding: 65px 0 30px 0;
-    }
-    @include max_phone{
         padding: 40px 0 30px 0;
     }
 }

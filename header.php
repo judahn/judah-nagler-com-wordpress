@@ -73,11 +73,11 @@
 										<img src="<?php echo get_template_directory_uri() . '/assets/img/social/icon-twitter.png' ?>" alt="">
 									</a>
 								</li>
-								<li>
+								<!-- <li>
 									<a href="http://www.facebook.com/judah.nagler" target="_blank">
 										<img src="<?php echo get_template_directory_uri() . '/assets/img/social/icon-facebook.png' ?>" alt="">
 									</a>
-								</li>
+								</li> -->
 								<li>
 									<a href="http://www.vimeo.com/judahnagler" target="_blank">
 										<img src="<?php echo get_template_directory_uri() . '/assets/img/social/icon-vimeo.png' ?>" alt="">
@@ -93,6 +93,11 @@
 										<img src="<?php echo get_template_directory_uri() . '/assets/img/social/icon-youtube.png' ?>" alt="">
 									</a>
 								</li> -->
+								<li>
+									<a href="http://www.torproject.org" target="_blank">
+										<img src="<?php echo get_template_directory_uri() . '/assets/img/social/icon-tor.png' ?>" alt="">
+									</a>
+								</li>
 							</ul>
 						</div>
 					</div>

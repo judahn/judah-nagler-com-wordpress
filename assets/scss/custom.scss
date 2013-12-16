@@ -2,9 +2,6 @@
  *	CUSTOM SCSS
  */
 
- /* Imports */
-
-// @import "html5-bp";
 @import "compass/css3";
 @import "compass/reset";
 @import "compass/layout";
@@ -32,46 +29,10 @@ time, mark, audio, video {
 @import "navbar";
 @import "sections";
 @import "pages";
+@import "social";
 
 .entry-meta {
     margin-bottom: 10px;
-}
-
-#social-nav {
-    position: relative;
-
-    ul {
-        position: absolute;
-        top: -35px;
-        right: 0px;
-
-        @include max_tablet {
-            right: 60px;
-        }
-
-        li {
-            padding-left: 0;
-            padding-right: 3px;
-        }
-    }
-    img {
-        width:  17px;
-        height: 17px;
-    }
-    a {
-        img {
-            @include opacity(0.68);
-            @include filter(grayscale(100%));
-            @include transition(filter, 0.5s);
-        }
-        &:hover {
-            img {
-                @include opacity(1);
-                @include filter(grayscale(0%));
-                @include transition(filter, 0.35s);
-            }
-        }
-    }
 }
 
 /* Contact Form */
@@ -138,14 +99,6 @@ time, mark, audio, video {
 /* Admin Menu */
 #adminmenu #menu-posts-design .wp-menu-image:before {
     content: '\f85' !important;
-}
-
-/* IE 'browse happy' */
-.browsehappy {
-    margin:     0.2em 0;
-    background: #ccc;
-    color:      #000;
-    padding:    0.2em 0;
 }
 
 #root-footer, #footer {

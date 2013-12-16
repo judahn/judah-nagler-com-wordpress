@@ -1,0 +1,36 @@
+#social-nav {
+    position: relative;
+
+    ul {
+        position: absolute;
+        top: -35px;
+        right: 0px;
+
+        @include max_tablet {
+            right: 60px;
+        }
+
+        li {
+            padding-left: 0;
+            padding-right: 3px;
+        }
+    }
+    img {
+        width:  17px;
+        height: 17px;
+    }
+    a {
+        img {
+            @include opacity(0.68);
+            @include filter(grayscale(100%));
+            @include transition(filter, 0.5s);
+        }
+        &:hover {
+            img {
+                @include opacity(1);
+                @include filter(grayscale(0%));
+                @include transition(filter, 0.25s);
+            }
+        }
+    }
+}

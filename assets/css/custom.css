@@ -1,7 +1,6 @@
 /*
  *	CUSTOM SCSS
  */
-/* Imports */
 /* line 17, ../../../../../../../../../Users/judah/.rvm/gems/ruby-2.0.0-p247@global/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -67,7 +66,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 24, ../scss/custom.scss */
+/* line 21, ../scss/custom.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -244,28 +243,22 @@ body {
 
 /* line 75, ../scss/_overrides.scss */
 .main-content {
-  padding: 50px 15px 30px 15px;
+  padding: 65px 0 30px 0;
 }
 @media only all and (max-width: 767px) {
-  /* line 75, ../scss/_overrides.scss */
-  .main-content {
-    padding: 65px 0 30px 0;
-  }
-}
-@media only all and (max-width: 479px) {
   /* line 75, ../scss/_overrides.scss */
   .main-content {
     padding: 40px 0 30px 0;
   }
 }
 
-/* line 84, ../scss/_overrides.scss */
+/* line 82, ../scss/_overrides.scss */
 .content {
   margin-left: 15px;
   margin-right: 15px;
 }
 @media only all and (max-width: 767px) {
-  /* line 84, ../scss/_overrides.scss */
+  /* line 82, ../scss/_overrides.scss */
   .content {
     margin-left: 0;
     margin-right: 0;
@@ -1059,38 +1052,33 @@ code, pre, .highlight {
   }
 }
 
-/* line 36, ../scss/custom.scss */
-.entry-meta {
-  margin-bottom: 10px;
-}
-
-/* line 40, ../scss/custom.scss */
+/* line 1, ../scss/_social.scss */
 #social-nav {
   position: relative;
 }
-/* line 43, ../scss/custom.scss */
+/* line 4, ../scss/_social.scss */
 #social-nav ul {
   position: absolute;
   top: -35px;
   right: 0px;
 }
 @media only all and (max-width: 767px) {
-  /* line 43, ../scss/custom.scss */
+  /* line 4, ../scss/_social.scss */
   #social-nav ul {
     right: 60px;
   }
 }
-/* line 52, ../scss/custom.scss */
+/* line 13, ../scss/_social.scss */
 #social-nav ul li {
   padding-left: 0;
   padding-right: 3px;
 }
-/* line 57, ../scss/custom.scss */
+/* line 18, ../scss/_social.scss */
 #social-nav img {
   width: 17px;
   height: 17px;
 }
-/* line 62, ../scss/custom.scss */
+/* line 23, ../scss/_social.scss */
 #social-nav a img {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=68);
   opacity: 0.68;
@@ -1102,31 +1090,36 @@ code, pre, .highlight {
   -o-transition: filter, 0.5s;
   transition: filter, 0.5s;
 }
-/* line 68, ../scss/custom.scss */
+/* line 29, ../scss/_social.scss */
 #social-nav a:hover img {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
   -webkit-filter: grayscale(0%);
   -moz-filter: grayscale(0%);
   filter: grayscale(0%);
-  -webkit-transition: filter, 0.35s;
-  -moz-transition: filter, 0.35s;
-  -o-transition: filter, 0.35s;
-  transition: filter, 0.35s;
+  -webkit-transition: filter, 0.25s;
+  -moz-transition: filter, 0.25s;
+  -o-transition: filter, 0.25s;
+  transition: filter, 0.25s;
+}
+
+/* line 34, ../scss/custom.scss */
+.entry-meta {
+  margin-bottom: 10px;
 }
 
 /* Contact Form */
-/* line 79, ../scss/custom.scss */
+/* line 40, ../scss/custom.scss */
 .cscfForm > p {
   margin-bottom: 20px;
 }
-/* line 82, ../scss/custom.scss */
+/* line 43, ../scss/custom.scss */
 .cscfForm label {
   margin-bottom: 10px;
   color: #2ea2cc;
 }
 
-/* line 88, ../scss/custom.scss */
+/* line 49, ../scss/custom.scss */
 #frmCSCF .btn {
   border: #0074a2;
   background-color: #0074a2;
@@ -1136,7 +1129,7 @@ code, pre, .highlight {
   -o-transition: background-color, 0.25s;
   transition: background-color, 0.25s;
 }
-/* line 93, ../scss/custom.scss */
+/* line 54, ../scss/custom.scss */
 #frmCSCF .btn:hover {
   background-color: #2ea2cc;
   -webkit-transition: background-color, 0.25s;
@@ -1145,77 +1138,68 @@ code, pre, .highlight {
   transition: background-color, 0.25s;
 }
 
-/* line 102, ../scss/custom.scss */
+/* line 63, ../scss/custom.scss */
 .mq-list {
   padding-top: 30px;
 }
-/* line 104, ../scss/custom.scss */
+/* line 65, ../scss/custom.scss */
 .mq-list li {
   margin-right: 18px;
   padding: 0;
 }
 @media only all and (max-width: 1199px) {
-  /* line 104, ../scss/custom.scss */
+  /* line 65, ../scss/custom.scss */
   .mq-list li {
     margin-right: 15px;
   }
 }
 @media only all and (max-width: 991px) {
-  /* line 104, ../scss/custom.scss */
+  /* line 65, ../scss/custom.scss */
   .mq-list li {
     margin-right: 10px;
   }
 }
 @media only all and (max-width: 767px) {
-  /* line 104, ../scss/custom.scss */
+  /* line 65, ../scss/custom.scss */
   .mq-list li {
     margin-right: 0.9%;
   }
 }
-/* line 119, ../scss/custom.scss */
+/* line 80, ../scss/custom.scss */
 .mq-list .smartphone {
   width: 8.1%;
 }
 @media only all and (max-width: 1199px) {
-  /* line 119, ../scss/custom.scss */
+  /* line 80, ../scss/custom.scss */
   .mq-list .smartphone {
     width: 8%;
   }
 }
-/* line 125, ../scss/custom.scss */
+/* line 86, ../scss/custom.scss */
 .mq-list .tablet {
   width: 19.4%;
 }
-/* line 128, ../scss/custom.scss */
+/* line 89, ../scss/custom.scss */
 .mq-list .netbook {
   width: 25.9%;
 }
-/* line 131, ../scss/custom.scss */
+/* line 92, ../scss/custom.scss */
 .mq-list .desktop {
   margin-right: 0;
   width: 40.5%;
 }
 
 /* Admin Menu */
-/* line 139, ../scss/custom.scss */
+/* line 100, ../scss/custom.scss */
 #adminmenu #menu-posts-design .wp-menu-image:before {
   content: '\f85' !important;
 }
 
-/* IE 'browse happy' */
-/* line 144, ../scss/custom.scss */
-.browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
-
-/* line 151, ../scss/custom.scss */
+/* line 104, ../scss/custom.scss */
 #root-footer, #footer {
   height: 30px;
 }
-/* line 153, ../scss/custom.scss */
+/* line 106, ../scss/custom.scss */
 #root-footer p, #footer p {
   color: #666;
 }
