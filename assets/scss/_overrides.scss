@@ -51,6 +51,9 @@ body {
     background-color:   darken($blue, 17%);
     @include background(image-url("bg/stripes.png") #000 fixed);
 }
+article {
+    padding-left: 0 !important;
+}
 .row {
     margin-left:    0;
     margin-right:   0;

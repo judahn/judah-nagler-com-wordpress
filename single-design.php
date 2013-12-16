@@ -6,10 +6,7 @@
  */
 
 get_header(); ?>
-
 <?php include 'section-opener.php' ?>
-
-
 
 <?php
 
@@ -18,19 +15,15 @@ get_header(); ?>
   );
 
   $the_query = new WP_Query( $args );
-
+  
 ?>
 
 <?php while ( have_posts() ) : the_post(); ?>
-
 	<?php get_template_part( 'content', 'design' ); ?>
-	<?php _tk_content_nav( 'nav-below' ); ?>
-
+	<div class="row">
+		<?php _tk_content_nav( 'nav-below' ); ?>
+	</div>
 <?php endwhile; // end of the loop. ?>
 
-
-
-
 <?php include 'section-opener.php' ?>
-
 <?php get_footer(); ?>

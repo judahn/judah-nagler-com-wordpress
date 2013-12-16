@@ -212,53 +212,58 @@ body {
 }
 
 /* line 54, ../scss/_overrides.scss */
+article {
+  padding-left: 0 !important;
+}
+
+/* line 57, ../scss/_overrides.scss */
 .row {
   margin-left: 0;
   margin-right: 0;
 }
 
 @media only all and (max-width: 767px) {
-  /* line 58, ../scss/_overrides.scss */
+  /* line 61, ../scss/_overrides.scss */
   .container {
     padding: 0 25px 5px;
   }
 }
 
-/* line 63, ../scss/_overrides.scss */
+/* line 66, ../scss/_overrides.scss */
 .modal {
   top: 10%;
 }
 
-/* line 66, ../scss/_overrides.scss */
+/* line 69, ../scss/_overrides.scss */
 .page-header {
   border: 0;
   margin: 40px 0 0;
   padding-bottom: 0;
 }
 
-/* line 71, ../scss/_overrides.scss */
+/* line 74, ../scss/_overrides.scss */
 .post {
   margin: 0 0 20px 0;
 }
 
-/* line 75, ../scss/_overrides.scss */
+/* line 78, ../scss/_overrides.scss */
 .main-content {
   padding: 65px 0 30px 0;
 }
 @media only all and (max-width: 767px) {
-  /* line 75, ../scss/_overrides.scss */
+  /* line 78, ../scss/_overrides.scss */
   .main-content {
     padding: 40px 0 30px 0;
   }
 }
 
-/* line 82, ../scss/_overrides.scss */
+/* line 85, ../scss/_overrides.scss */
 .content {
   margin-left: 15px;
   margin-right: 15px;
 }
 @media only all and (max-width: 767px) {
-  /* line 82, ../scss/_overrides.scss */
+  /* line 85, ../scss/_overrides.scss */
   .content {
     margin-left: 0;
     margin-right: 0;

@@ -24,18 +24,7 @@
       </header><!-- .entry-header -->
 
       <div class="page-header col-sm-6 no-pad">
-        <div class="table-responsive no-border">
-          <table class="table ">
-            <tr>
-              <td class="col-xs-3 col-sm-4 col-md-3">Developed for: </td>
-              <td><a href="<?php the_field( 'client_url' ); ?>" target="_blank"><?php the_field( 'client' ); ?></a></td>
-            </tr>
-            <tr>
-              <td>Designed by: </td>
-              <td><a href="<?php the_field( 'designer_url' ); ?>" target="_blank"><?php the_field( 'designer' ); ?></a></td>
-            </tr>
-          </table>
-        </div>
+        <?php include 'credits.php' ?>
         <!-- <button class="btn btn-primary btn-large"><a href="<?php the_field( 'url_to_website' ); ?>">Visit site</a></button> -->
       </div>
 
