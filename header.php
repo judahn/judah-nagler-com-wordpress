@@ -58,11 +58,11 @@
 										<img src="<?php echo get_template_directory_uri() . '/assets/img/social/icon-github.png' ?>" alt="">
 									</a>
 								</li>
-								<!-- <li>
+								<li>
 									<a href="http://www.bitbucket.org/judahn" target="_blank">
 										<img src="<?php echo get_template_directory_uri() . '/assets/img/social/icon-bitbucket.png' ?>" alt="">
 									</a>
-								</li> -->
+								</li>
 								<li>
 									<a href="http://www.linkedin.com/in/judahnagler" target="_blank">
 										<img src="<?php echo get_template_directory_uri() . '/assets/img/social/icon-linkedin.png' ?>" alt="">
@@ -73,16 +73,17 @@
 										<img src="<?php echo get_template_directory_uri() . '/assets/img/social/icon-twitter.png' ?>" alt="">
 									</a>
 								</li>
-								<!-- <li>
-									<a href="http://www.facebook.com/judah.nagler" target="_blank">
-										<img src="<?php echo get_template_directory_uri() . '/assets/img/social/icon-facebook.png' ?>" alt="">
-									</a>
-								</li>
 								<li>
 									<a href="http://www.vimeo.com/judahnagler" target="_blank">
 										<img src="<?php echo get_template_directory_uri() . '/assets/img/social/icon-vimeo.png' ?>" alt="">
 									</a>
 								</li>
+								<!-- <li>
+									<a href="http://www.facebook.com/judah.nagler" target="_blank">
+										<img src="<?php echo get_template_directory_uri() . '/assets/img/social/icon-facebook.png' ?>" alt="">
+									</a>
+								</li>
+								
 								<li>
 									<a href="http://www.instagram.com/menelec" target="_blank">
 										<img src="<?php echo get_template_directory_uri() . '/assets/img/social/icon-instagram.png' ?>" alt="">
