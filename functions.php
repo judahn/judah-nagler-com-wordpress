@@ -186,3 +186,7 @@ require get_template_directory() . '/includes/jetpack.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/includes/bootstrap-wp-navwalker.php';
+/**
+ * Load Custom Post Types file.
+ */
+require get_template_directory() . '/includes/custom-post-types.php';
