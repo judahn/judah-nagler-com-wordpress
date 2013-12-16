@@ -40,8 +40,4 @@ get_header(); ?>
 
 <?php include 'section-closer.php' ?>
 
-<!-- <div class="col-sm-6">
-	<img class="page-header image" src="holder.js/800x600/industrial">
-</div> -->
-
 <?php get_footer(); ?>
