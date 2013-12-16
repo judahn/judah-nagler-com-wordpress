@@ -1,6 +1,8 @@
 @import "vars";
 @import "mixins";
 
+// Links
+
 :focus, a:focus {
     outline: -webkit-focus-ring-color auto 0;
 }
@@ -14,14 +16,46 @@ a{
 a:hover {
     text-decoration: none !important;
 }
+.btn {
+    // margin: 30px 0;
+    a {
+        text-transform: uppercase;
+        color: white;
+        &:hover {
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
 
+// Type
+
+code {
+    @extend %darkBg;
+}
+pre, .highlight {
+    @extend %darkBg;
+}
+pre {
+    color: #666;
+    margin: 30px 0;
+}
+time {
+    color: #999;
+}
+
+// Structure
+
+body {
+    overflow-x: hidden;
+    background-color:   darken($blue, 17%);
+    @include background(image-url("bg/stripes.png") #000 fixed);
+}
 .row {
     margin-left:    0;
     margin-right:   0;
 }
 .container {
-    // padding: 0;
-
     @include max_tablet {
         padding: 0 25px 5px;
     }
@@ -38,16 +72,20 @@ a:hover {
     margin: 0 0 20px 0;
 }
 
-code {
-    @extend %darkBg;
+.main-content{
+    padding: 50px 15px 30px 15px;
+    @include max_tablet{
+        padding: 65px 0 30px 0;
+    }
+    @include max_phone{
+        padding: 40px 0 30px 0;
+    }
 }
-pre, .highlight {
-    @extend %darkBg;
-}
-pre {
-    color: #666;
-    margin: 30px 0;
-}
-time {
-	color: #999;
+.content{
+    margin-left: 15px;
+    margin-right: 15px;
+    @include max_tablet {
+        margin-left: 0;
+        margin-right: 0;
+    }
 }

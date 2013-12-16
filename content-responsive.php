@@ -28,11 +28,11 @@
           <table class="table ">
             <tr>
               <td class="col-xs-3 col-sm-4 col-md-3">Developed for: </td>
-              <td><a href="#"><?php the_field( 'client' ); ?></a></td>
+              <td><a href="<?php the_field( 'client_url' ); ?>" target="_blank"><?php the_field( 'client' ); ?></a></td>
             </tr>
             <tr>
               <td>Designed by: </td>
-              <td><a href="#"><?php the_field( 'designer' ); ?></a></td>
+              <td><a href="<?php the_field( 'designer_url' ); ?>" target="_blank"><?php the_field( 'designer' ); ?></a></td>
             </tr>
           </table>
         </div>
