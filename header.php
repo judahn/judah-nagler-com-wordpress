@@ -58,11 +58,11 @@
 										<img src="<?php echo get_template_directory_uri() . '/assets/img/social/icon-github.png' ?>" alt="">
 									</a>
 								</li>
-								<li>
+								<!-- <li>
 									<a href="http://www.bitbucket.org/judahn" target="_blank">
 										<img src="<?php echo get_template_directory_uri() . '/assets/img/social/icon-bitbucket.png' ?>" alt="">
 									</a>
-								</li>
+								</li> -->
 								<li>
 									<a href="http://www.linkedin.com/in/judahnagler" target="_blank">
 										<img src="<?php echo get_template_directory_uri() . '/assets/img/social/icon-linkedin.png' ?>" alt="">
