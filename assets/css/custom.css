@@ -1145,7 +1145,7 @@ code, pre, .highlight {
 
 /* line 40, ../scss/custom.scss */
 .soliloquy-container {
-  margin: 26px 0;
+  margin: 26px 0 !important;
 }
 
 /* line 43, ../scss/custom.scss */
