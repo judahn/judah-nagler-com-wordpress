@@ -21,9 +21,12 @@
 
 <div class="col-md-6 pull-right">
 
-  <?php if ( has_post_thumbnail() ) { the_post_thumbnail(' ');
-    } else {?>
-    <!-- <img class="img-responsive" src="holder.js/600x400/industrial"> -->
-  <?php } ?>
+  <?php if( get_field('slider') ): ?>
+     <?php the_field( 'slider' ); ?>
+
+     <?php elseif (has_post_thumbnail()): ?>
+      <?php get_the_post_thumbnail(); ?>
+  <?php endif; ?>
+
 
 </div>

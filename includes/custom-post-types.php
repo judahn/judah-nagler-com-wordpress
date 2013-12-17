@@ -17,7 +17,7 @@ register_post_type('responsive', array(
 'rewrite' => array('slug' => 'responsive', 'with_front' => true),
 'query_var' => true,
 'menu_icon' => '/wp-content/themes/jn-wpbs/assets/img/social/admin-responsive.png',
-'supports' => array('title','editor','excerpt','revisions','thumbnail'),
+'supports' => array('title','editor','excerpt','thumbnail'),
 'labels' => array (
   'name' => 'Responsive',
   'singular_name' => 'Project',
@@ -53,7 +53,7 @@ register_post_type('interactive', array(
 'rewrite' => array('slug' => 'interactive', 'with_front' => true),
 'query_var' => true,
 'menu_icon' => '/wp-content/themes/jn-wpbs/assets/img/social/admin-interactive.png',
-'supports' => array('title','editor','excerpt','revisions','thumbnail'),
+'supports' => array('title','editor','excerpt','thumbnail'),
 'labels' => array (
   'name' => 'Interactive',
   'singular_name' => 'Project',
@@ -89,7 +89,7 @@ register_post_type('design', array(
 'rewrite' => array('slug' => 'design', 'with_front' => true),
 'query_var' => true,
 'menu_icon' => '/wp-content/themes/jn-wpbs/assets/img/social/admin-design.png',
-'supports' => array('title','editor','excerpt','revisions','thumbnail'),
+'supports' => array('title','editor','excerpt','thumbnail'),
 'labels' => array (
   'name' => 'Design',
   'singular_name' => 'Project',

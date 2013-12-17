@@ -1117,58 +1117,60 @@ code, pre, .highlight {
 }
 
 /* line 41, ../scss/custom.scss */
+.visit-site {
+  margin: 40px 0;
+}
+
+/* line 45, ../scss/custom.scss */
 .col-content {
   padding-left: 0px;
   padding-right: 50px;
 }
 @media only all and (max-width: 991px) {
-  /* line 41, ../scss/custom.scss */
+  /* line 45, ../scss/custom.scss */
   .col-content {
     padding-right: 40px;
   }
 }
 @media only all and (max-width: 767px) {
-  /* line 41, ../scss/custom.scss */
+  /* line 45, ../scss/custom.scss */
   .col-content {
     padding-right: 0;
   }
 }
 
-/* line 53, ../scss/custom.scss */
+/* line 57, ../scss/custom.scss */
 .portfolio-desc {
   padding: 15px 0 45px 0;
 }
 
-/* line 58, ../scss/custom.scss */
-.main-content-inner .wrap {
-  height: 350px;
-  padding-top: 0 !important;
-}
-@media only all and (max-width: 991px) {
-  /* line 58, ../scss/custom.scss */
-  .main-content-inner .wrap {
-    padding-top: 180px !important;
-  }
-}
-/* line 65, ../scss/custom.scss */
-.main-content-inner .wrap .container {
-  height: 350px !important;
-}
-
+/* .main-content-inner {
+    .wrap {
+        // @include center-vertically(420px, 330px);
+        height: 350px;
+        padding-top: 0 !important;
+        @include max_laptop {
+            padding-top: 180px !important;
+        }
+        .container {
+            height: 350px !important;
+        }
+    }
+} */
 /* 
  *  Contact Form 
  */
-/* line 78, ../scss/custom.scss */
+/* line 82, ../scss/custom.scss */
 .cscfForm > p {
   margin-bottom: 20px;
 }
-/* line 81, ../scss/custom.scss */
+/* line 85, ../scss/custom.scss */
 .cscfForm label {
   margin-bottom: 10px;
   color: #2ea2cc;
 }
 
-/* line 87, ../scss/custom.scss */
+/* line 91, ../scss/custom.scss */
 #frmCSCF .btn {
   border: #0074a2;
   background-color: #0074a2;
@@ -1178,7 +1180,7 @@ code, pre, .highlight {
   -o-transition: background-color, 0.25s;
   transition: background-color, 0.25s;
 }
-/* line 92, ../scss/custom.scss */
+/* line 96, ../scss/custom.scss */
 #frmCSCF .btn:hover {
   background-color: #2ea2cc;
   -webkit-transition: background-color, 0.25s;
@@ -1190,52 +1192,52 @@ code, pre, .highlight {
 /* 
  *  Media Queries thumbs
  */
-/* line 103, ../scss/custom.scss */
+/* line 107, ../scss/custom.scss */
 .mq-list {
   padding-top: 30px;
 }
-/* line 105, ../scss/custom.scss */
+/* line 109, ../scss/custom.scss */
 .mq-list li {
   margin-right: 18px;
   padding: 0;
 }
 @media only all and (max-width: 1199px) {
-  /* line 105, ../scss/custom.scss */
+  /* line 109, ../scss/custom.scss */
   .mq-list li {
     margin-right: 15px;
   }
 }
 @media only all and (max-width: 991px) {
-  /* line 105, ../scss/custom.scss */
+  /* line 109, ../scss/custom.scss */
   .mq-list li {
     margin-right: 10px;
   }
 }
 @media only all and (max-width: 767px) {
-  /* line 105, ../scss/custom.scss */
+  /* line 109, ../scss/custom.scss */
   .mq-list li {
     margin-right: 0.9%;
   }
 }
-/* line 120, ../scss/custom.scss */
+/* line 124, ../scss/custom.scss */
 .mq-list .smartphone {
   width: 8.1%;
 }
 @media only all and (max-width: 1199px) {
-  /* line 120, ../scss/custom.scss */
+  /* line 124, ../scss/custom.scss */
   .mq-list .smartphone {
     width: 8%;
   }
 }
-/* line 126, ../scss/custom.scss */
+/* line 130, ../scss/custom.scss */
 .mq-list .tablet {
   width: 19.4%;
 }
-/* line 129, ../scss/custom.scss */
+/* line 133, ../scss/custom.scss */
 .mq-list .netbook {
   width: 25.9%;
 }
-/* line 132, ../scss/custom.scss */
+/* line 136, ../scss/custom.scss */
 .mq-list .desktop {
   margin-right: 0;
   width: 40.5%;
@@ -1244,7 +1246,7 @@ code, pre, .highlight {
 /*
  *  Admin Menu 
  */
-/* line 143, ../scss/custom.scss */
+/* line 147, ../scss/custom.scss */
 #adminmenu #menu-posts-design .wp-menu-image:before {
   content: '\f85' !important;
 }
@@ -1252,11 +1254,11 @@ code, pre, .highlight {
 /* 
  *  Footer
  */
-/* line 151, ../scss/custom.scss */
+/* line 155, ../scss/custom.scss */
 #root-footer, #footer {
   height: 30px;
 }
-/* line 153, ../scss/custom.scss */
+/* line 157, ../scss/custom.scss */
 #root-footer p, #footer p {
   color: #666;
 }

@@ -156,7 +156,6 @@ add_action( 'wp_enqueue_scripts', '_tk_scripts' );
 
 
 
-
 /**
  * Implement the Custom Header feature.
  */
