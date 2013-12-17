@@ -121,7 +121,7 @@ article {
 }
 
 .sidebar {
-    @if $use_shadows { @extend %boxShadow; }
+    // @if $use_shadows { @extend %boxShadow; }
     padding: 20px;
     margin-top: 20px;
     background-color: black;

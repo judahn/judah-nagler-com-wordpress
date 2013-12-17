@@ -157,7 +157,7 @@ code, pre, .highlight {
 }
 
 /* line 72, ../scss/_mixins.scss */
-.image, .sidebar, .thumbnail .thumb-content, .design-slider, .mq-list li {
+.image, .thumbnail .thumb-content, .design-slider, .mq-list li {
   -webkit-box-shadow: 0px 2px 30px black;
   -moz-box-shadow: 0px 2px 30px black;
   box-shadow: 0px 2px 30px black;
@@ -450,7 +450,7 @@ code, pre, .highlight {
 }
 
 /* line 72, ../scss/_mixins.scss */
-.image, .sidebar, .thumbnail .thumb-content, .design-slider, .mq-list li {
+.image, .thumbnail .thumb-content, .design-slider, .mq-list li {
   -webkit-box-shadow: 0px 2px 30px black;
   -moz-box-shadow: 0px 2px 30px black;
   box-shadow: 0px 2px 30px black;
@@ -813,7 +813,7 @@ code, pre, .highlight {
 }
 
 /* line 72, ../scss/_mixins.scss */
-.image, .sidebar, .thumbnail .thumb-content, .design-slider, .mq-list li {
+.image, .thumbnail .thumb-content, .design-slider, .mq-list li {
   -webkit-box-shadow: 0px 2px 30px black;
   -moz-box-shadow: 0px 2px 30px black;
   box-shadow: 0px 2px 30px black;
@@ -1048,7 +1048,7 @@ code, pre, .highlight {
 }
 
 /* line 72, ../scss/_mixins.scss */
-.image, .sidebar, .thumbnail .thumb-content, .design-slider, .mq-list li {
+.image, .thumbnail .thumb-content, .design-slider, .mq-list li {
   -webkit-box-shadow: 0px 2px 30px black;
   -moz-box-shadow: 0px 2px 30px black;
   box-shadow: 0px 2px 30px black;
