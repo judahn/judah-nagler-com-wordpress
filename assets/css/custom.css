@@ -1059,11 +1059,11 @@ code, pre, .highlight {
  */
 /* line 5, ../scss/_pages.scss */
 .single-design .main-content {
-  padding: 0;
+  padding: 0 !important;
   position: fixed;
   top: 50%;
   left: 50%;
-  margin-top: -175px;
+  margin-top: -162.5px;
   margin-left: -585px;
 }
 @media only all and (max-width: 1199px) {

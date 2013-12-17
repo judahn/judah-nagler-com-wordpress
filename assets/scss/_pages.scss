@@ -3,7 +3,7 @@
 
 .single-design {
 	.main-content {
-		padding: 0;
-		@include center-vertically(350px, 300px);
+		padding: 0 !important;
+		@include center-vertically(325px, 300px);
 	}
 }
