@@ -31,6 +31,13 @@ time, mark, audio, video {
 @import "pages";
 @import "social";
 
+#avatar {
+    width:  17px;
+    height: 17px;
+    margin-top: 1px;
+    margin-right: 13px;
+}
+
 .col-content {
     padding-left:  0px;
     padding-right: 50px;
@@ -42,11 +49,31 @@ time, mark, audio, video {
         padding-right: 0;
     }
 }
-.entry-meta {
-    margin-bottom: 10px;
+
+.portfolio-desc {
+    padding: 15px 0 45px 0;
 }
 
-/* Contact Form */
+.main-content-inner {
+    .wrap {
+        // @include center-vertically(420px, 330px);
+        height: 350px;
+        padding-top: 0 !important;
+        @include max_laptop {
+            padding-top: 180px !important;
+        }
+        .container {
+            height: 350px !important;
+        }
+    }
+}
+
+
+
+/* 
+ *  Contact Form 
+ */
+
 .cscfForm {
     > p {
         margin-bottom: 20px;
@@ -69,7 +96,9 @@ time, mark, audio, video {
     }
 }
 
-// Media Queries examples
+/* 
+ *  Media Queries thumbs
+ */
 
 .mq-list {
     padding-top: 30px;
@@ -107,11 +136,18 @@ time, mark, audio, video {
 }
 
 
-/* Admin Menu */
+/*
+ *  Admin Menu 
+ */
+
 #adminmenu #menu-posts-design .wp-menu-image:before {
     content: '\f85' !important;
 }
 
+
+/* 
+ *  Footer
+ */
 #root-footer, #footer {
     height: 30px;
     p {
@@ -121,4 +157,4 @@ time, mark, audio, video {
 #footer {
     // background-color: #000;
 }
-@include sticky-footer(30px, "#root", "#root-footer", "#footer")
+@include sticky-footer(30px, "#root", "#root-footer", "#footer");
