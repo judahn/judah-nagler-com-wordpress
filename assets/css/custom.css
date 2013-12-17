@@ -1143,30 +1143,35 @@ code, pre, .highlight {
   margin-right: 13px;
 }
 
-/* line 41, ../scss/custom.scss */
+/* line 40, ../scss/custom.scss */
+.soliloquy-container {
+  margin: 26px 0;
+}
+
+/* line 43, ../scss/custom.scss */
 .visit-site {
   margin: 40px 0;
 }
 
-/* line 45, ../scss/custom.scss */
+/* line 47, ../scss/custom.scss */
 .col-content {
   padding-left: 0px;
   padding-right: 50px;
 }
 @media only all and (max-width: 991px) {
-  /* line 45, ../scss/custom.scss */
+  /* line 47, ../scss/custom.scss */
   .col-content {
     padding-right: 40px;
   }
 }
 @media only all and (max-width: 767px) {
-  /* line 45, ../scss/custom.scss */
+  /* line 47, ../scss/custom.scss */
   .col-content {
     padding-right: 0;
   }
 }
 
-/* line 57, ../scss/custom.scss */
+/* line 59, ../scss/custom.scss */
 .portfolio-desc {
   padding: 15px 0 45px 0;
 }
@@ -1187,17 +1192,17 @@ code, pre, .highlight {
 /* 
  *  Contact Form 
  */
-/* line 82, ../scss/custom.scss */
+/* line 84, ../scss/custom.scss */
 .cscfForm > p {
   margin-bottom: 20px;
 }
-/* line 85, ../scss/custom.scss */
+/* line 87, ../scss/custom.scss */
 .cscfForm label {
   margin-bottom: 10px;
   color: #2ea2cc;
 }
 
-/* line 91, ../scss/custom.scss */
+/* line 93, ../scss/custom.scss */
 #frmCSCF .btn {
   border: #0074a2;
   background-color: #0074a2;
@@ -1207,7 +1212,7 @@ code, pre, .highlight {
   -o-transition: background-color, 0.25s;
   transition: background-color, 0.25s;
 }
-/* line 96, ../scss/custom.scss */
+/* line 98, ../scss/custom.scss */
 #frmCSCF .btn:hover {
   background-color: #2ea2cc;
   -webkit-transition: background-color, 0.25s;
@@ -1219,52 +1224,52 @@ code, pre, .highlight {
 /* 
  *  Media Queries thumbs
  */
-/* line 107, ../scss/custom.scss */
+/* line 109, ../scss/custom.scss */
 .mq-list {
   padding-top: 30px;
 }
-/* line 109, ../scss/custom.scss */
+/* line 111, ../scss/custom.scss */
 .mq-list li {
   margin-right: 18px;
   padding: 0;
 }
 @media only all and (max-width: 1199px) {
-  /* line 109, ../scss/custom.scss */
+  /* line 111, ../scss/custom.scss */
   .mq-list li {
     margin-right: 15px;
   }
 }
 @media only all and (max-width: 991px) {
-  /* line 109, ../scss/custom.scss */
+  /* line 111, ../scss/custom.scss */
   .mq-list li {
     margin-right: 10px;
   }
 }
 @media only all and (max-width: 767px) {
-  /* line 109, ../scss/custom.scss */
+  /* line 111, ../scss/custom.scss */
   .mq-list li {
     margin-right: 0.9%;
   }
 }
-/* line 124, ../scss/custom.scss */
+/* line 126, ../scss/custom.scss */
 .mq-list .smartphone {
   width: 8.1%;
 }
 @media only all and (max-width: 1199px) {
-  /* line 124, ../scss/custom.scss */
+  /* line 126, ../scss/custom.scss */
   .mq-list .smartphone {
     width: 8%;
   }
 }
-/* line 130, ../scss/custom.scss */
+/* line 132, ../scss/custom.scss */
 .mq-list .tablet {
   width: 19.4%;
 }
-/* line 133, ../scss/custom.scss */
+/* line 135, ../scss/custom.scss */
 .mq-list .netbook {
   width: 25.9%;
 }
-/* line 136, ../scss/custom.scss */
+/* line 138, ../scss/custom.scss */
 .mq-list .desktop {
   margin-right: 0;
   width: 40.5%;
@@ -1273,7 +1278,7 @@ code, pre, .highlight {
 /*
  *  Admin Menu 
  */
-/* line 147, ../scss/custom.scss */
+/* line 149, ../scss/custom.scss */
 #adminmenu #menu-posts-design .wp-menu-image:before {
   content: '\f85' !important;
 }
@@ -1281,11 +1286,11 @@ code, pre, .highlight {
 /* 
  *  Footer
  */
-/* line 155, ../scss/custom.scss */
+/* line 157, ../scss/custom.scss */
 #root-footer, #footer {
   height: 30px;
 }
-/* line 157, ../scss/custom.scss */
+/* line 159, ../scss/custom.scss */
 #root-footer p, #footer p {
   color: #666;
 }
