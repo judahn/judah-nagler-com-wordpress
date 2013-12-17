@@ -16,7 +16,7 @@
 
 </article><!-- #post-## -->
 
-<article class="sidebar page-header hidden-xs col-sm-6 pull-right">
+<article class="sidebar hidden-xs col-sm-6 pull-right">
   <!--<?php the_field( 'description' ); ?><br>-->
   	<?php if( get_field('swf_a_url') ): ?>
 	[kml_flashembed movie="<?php the_field('swf_a_url') ?>" width="<?php the_field('swf_a_width') ?>" height="<?php the_field('swf_a_height') ?>"]
