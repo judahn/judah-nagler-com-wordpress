@@ -5,7 +5,6 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" class="col-md-6" >
-
     <header class="page-header">
       <h1 class="entry-title"><?php the_title(); ?></h1>
     </header><!-- .entry-header -->
@@ -14,7 +13,6 @@
     <?php if( get_field('url_to_website') ): ?>
     	<button class="btn btn-primary btn-large"><a href="<?php the_field( 'url_to_website' ); ?>">Visit site</a></button>
     <?php endif; ?>
-
 </article><!-- #post-## -->
 
 
@@ -27,6 +25,4 @@
      <?php elseif (has_post_thumbnail()): ?>
       <?php get_the_post_thumbnail(); ?>
   <?php endif; ?>
-
-
 </div>
