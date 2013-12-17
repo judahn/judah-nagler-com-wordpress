@@ -39,6 +39,7 @@ time, mark, audio, video {
 }
 .design-slider {
     margin: 26px 0;
+    @extend %boxShadow;
 }
 .visit-site {
     margin: 40px 0;
