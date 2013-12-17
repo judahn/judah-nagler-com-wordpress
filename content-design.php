@@ -19,7 +19,7 @@
 
 
 
-<div class="col-md-6 pull-right">
+<div class="col-md-6 pull-right no-pad">
 
   <?php if( get_field('slider') ): ?>
      <?php the_field( 'slider' ); ?>
