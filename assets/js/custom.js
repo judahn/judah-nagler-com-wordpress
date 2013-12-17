@@ -18,7 +18,7 @@ $j(document).ready(function() {
 	var nav_about       = $j("#menu-item-130");
 	var nav_blog        = $j("#menu-item-97");
 	var nav_responsive  = $j("#menu-item-143");
-	var nav_interactive = $j("#menu-item-146");
+	var nav_interactive = $j("#menu-item-160");
 	var nav_design      = $j("#menu-item-135");
 	var nav_contact  	= $j("#menu-item-145");
 
