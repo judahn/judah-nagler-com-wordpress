@@ -1113,24 +1113,36 @@ code, pre, .highlight {
   padding-left: 0px;
   padding-right: 50px;
 }
+@media only all and (max-width: 991px) {
+  /* line 34, ../scss/custom.scss */
+  .col-content {
+    padding-right: 40px;
+  }
+}
+@media only all and (max-width: 767px) {
+  /* line 34, ../scss/custom.scss */
+  .col-content {
+    padding-right: 0;
+  }
+}
 
-/* line 38, ../scss/custom.scss */
+/* line 45, ../scss/custom.scss */
 .entry-meta {
   margin-bottom: 10px;
 }
 
 /* Contact Form */
-/* line 44, ../scss/custom.scss */
+/* line 51, ../scss/custom.scss */
 .cscfForm > p {
   margin-bottom: 20px;
 }
-/* line 47, ../scss/custom.scss */
+/* line 54, ../scss/custom.scss */
 .cscfForm label {
   margin-bottom: 10px;
   color: #2ea2cc;
 }
 
-/* line 53, ../scss/custom.scss */
+/* line 60, ../scss/custom.scss */
 #frmCSCF .btn {
   border: #0074a2;
   background-color: #0074a2;
@@ -1140,7 +1152,7 @@ code, pre, .highlight {
   -o-transition: background-color, 0.25s;
   transition: background-color, 0.25s;
 }
-/* line 58, ../scss/custom.scss */
+/* line 65, ../scss/custom.scss */
 #frmCSCF .btn:hover {
   background-color: #2ea2cc;
   -webkit-transition: background-color, 0.25s;
@@ -1149,68 +1161,68 @@ code, pre, .highlight {
   transition: background-color, 0.25s;
 }
 
-/* line 67, ../scss/custom.scss */
+/* line 74, ../scss/custom.scss */
 .mq-list {
   padding-top: 30px;
 }
-/* line 69, ../scss/custom.scss */
+/* line 76, ../scss/custom.scss */
 .mq-list li {
   margin-right: 18px;
   padding: 0;
 }
 @media only all and (max-width: 1199px) {
-  /* line 69, ../scss/custom.scss */
+  /* line 76, ../scss/custom.scss */
   .mq-list li {
     margin-right: 15px;
   }
 }
 @media only all and (max-width: 991px) {
-  /* line 69, ../scss/custom.scss */
+  /* line 76, ../scss/custom.scss */
   .mq-list li {
     margin-right: 10px;
   }
 }
 @media only all and (max-width: 767px) {
-  /* line 69, ../scss/custom.scss */
+  /* line 76, ../scss/custom.scss */
   .mq-list li {
     margin-right: 0.9%;
   }
 }
-/* line 84, ../scss/custom.scss */
+/* line 91, ../scss/custom.scss */
 .mq-list .smartphone {
   width: 8.1%;
 }
 @media only all and (max-width: 1199px) {
-  /* line 84, ../scss/custom.scss */
+  /* line 91, ../scss/custom.scss */
   .mq-list .smartphone {
     width: 8%;
   }
 }
-/* line 90, ../scss/custom.scss */
+/* line 97, ../scss/custom.scss */
 .mq-list .tablet {
   width: 19.4%;
 }
-/* line 93, ../scss/custom.scss */
+/* line 100, ../scss/custom.scss */
 .mq-list .netbook {
   width: 25.9%;
 }
-/* line 96, ../scss/custom.scss */
+/* line 103, ../scss/custom.scss */
 .mq-list .desktop {
   margin-right: 0;
   width: 40.5%;
 }
 
 /* Admin Menu */
-/* line 104, ../scss/custom.scss */
+/* line 111, ../scss/custom.scss */
 #adminmenu #menu-posts-design .wp-menu-image:before {
   content: '\f85' !important;
 }
 
-/* line 108, ../scss/custom.scss */
+/* line 115, ../scss/custom.scss */
 #root-footer, #footer {
   height: 30px;
 }
-/* line 110, ../scss/custom.scss */
+/* line 117, ../scss/custom.scss */
 #root-footer p, #footer p {
   color: #666;
 }

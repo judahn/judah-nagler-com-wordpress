@@ -34,6 +34,13 @@ time, mark, audio, video {
 .col-content {
     padding-left:  0px;
     padding-right: 50px;
+
+    @include max_laptop {
+        padding-right: 40px;
+    }
+    @include max_tablet {
+        padding-right: 0;
+    }
 }
 .entry-meta {
     margin-bottom: 10px;
