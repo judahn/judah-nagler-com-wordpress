@@ -1109,22 +1109,28 @@ code, pre, .highlight {
 }
 
 /* line 34, ../scss/custom.scss */
+.col-content {
+  padding-left: 0px;
+  padding-right: 50px;
+}
+
+/* line 38, ../scss/custom.scss */
 .entry-meta {
   margin-bottom: 10px;
 }
 
 /* Contact Form */
-/* line 40, ../scss/custom.scss */
+/* line 44, ../scss/custom.scss */
 .cscfForm > p {
   margin-bottom: 20px;
 }
-/* line 43, ../scss/custom.scss */
+/* line 47, ../scss/custom.scss */
 .cscfForm label {
   margin-bottom: 10px;
   color: #2ea2cc;
 }
 
-/* line 49, ../scss/custom.scss */
+/* line 53, ../scss/custom.scss */
 #frmCSCF .btn {
   border: #0074a2;
   background-color: #0074a2;
@@ -1134,7 +1140,7 @@ code, pre, .highlight {
   -o-transition: background-color, 0.25s;
   transition: background-color, 0.25s;
 }
-/* line 54, ../scss/custom.scss */
+/* line 58, ../scss/custom.scss */
 #frmCSCF .btn:hover {
   background-color: #2ea2cc;
   -webkit-transition: background-color, 0.25s;
@@ -1143,68 +1149,68 @@ code, pre, .highlight {
   transition: background-color, 0.25s;
 }
 
-/* line 63, ../scss/custom.scss */
+/* line 67, ../scss/custom.scss */
 .mq-list {
   padding-top: 30px;
 }
-/* line 65, ../scss/custom.scss */
+/* line 69, ../scss/custom.scss */
 .mq-list li {
   margin-right: 18px;
   padding: 0;
 }
 @media only all and (max-width: 1199px) {
-  /* line 65, ../scss/custom.scss */
+  /* line 69, ../scss/custom.scss */
   .mq-list li {
     margin-right: 15px;
   }
 }
 @media only all and (max-width: 991px) {
-  /* line 65, ../scss/custom.scss */
+  /* line 69, ../scss/custom.scss */
   .mq-list li {
     margin-right: 10px;
   }
 }
 @media only all and (max-width: 767px) {
-  /* line 65, ../scss/custom.scss */
+  /* line 69, ../scss/custom.scss */
   .mq-list li {
     margin-right: 0.9%;
   }
 }
-/* line 80, ../scss/custom.scss */
+/* line 84, ../scss/custom.scss */
 .mq-list .smartphone {
   width: 8.1%;
 }
 @media only all and (max-width: 1199px) {
-  /* line 80, ../scss/custom.scss */
+  /* line 84, ../scss/custom.scss */
   .mq-list .smartphone {
     width: 8%;
   }
 }
-/* line 86, ../scss/custom.scss */
+/* line 90, ../scss/custom.scss */
 .mq-list .tablet {
   width: 19.4%;
 }
-/* line 89, ../scss/custom.scss */
+/* line 93, ../scss/custom.scss */
 .mq-list .netbook {
   width: 25.9%;
 }
-/* line 92, ../scss/custom.scss */
+/* line 96, ../scss/custom.scss */
 .mq-list .desktop {
   margin-right: 0;
   width: 40.5%;
 }
 
 /* Admin Menu */
-/* line 100, ../scss/custom.scss */
+/* line 104, ../scss/custom.scss */
 #adminmenu #menu-posts-design .wp-menu-image:before {
   content: '\f85' !important;
 }
 
-/* line 104, ../scss/custom.scss */
+/* line 108, ../scss/custom.scss */
 #root-footer, #footer {
   height: 30px;
 }
-/* line 106, ../scss/custom.scss */
+/* line 110, ../scss/custom.scss */
 #root-footer p, #footer p {
   color: #666;
 }

@@ -19,7 +19,7 @@ get_header(); ?>
 
 
 
-<div class="col-sm-8 no-pad">
+<div class="col-sm-8 col-content">
 
 	<div class="page-header">
 		<h1>Blog</h1>

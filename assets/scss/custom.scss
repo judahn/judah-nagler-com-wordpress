@@ -31,6 +31,10 @@ time, mark, audio, video {
 @import "pages";
 @import "social";
 
+.col-content {
+    padding-left:  0px;
+    padding-right: 50px;
+}
 .entry-meta {
     margin-bottom: 10px;
 }
