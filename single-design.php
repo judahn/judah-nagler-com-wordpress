@@ -25,5 +25,5 @@ get_header(); ?>
 	</div>
 <?php endwhile; // end of the loop. ?>
 
-<?php include 'section-opener.php' ?>
+<?php include 'section-closer.php' ?>
 <?php get_footer(); ?>

@@ -39,7 +39,6 @@
 						<img class="attachment- img-responsive wp-post-image" src="holder.js/800x600/industrial">
 					<?php } ?>
 					<h3><?php the_title(); ?></h3>
-					<!--<p><?php the_field( 'description'); ?></p>-->
 				</div>
 			</a>
 		</div>
@@ -55,6 +54,6 @@
 
 
 
-<?php include 'section-opener.php' ?>
+<?php include 'section-closer.php' ?>
 
 <?php get_footer(); ?>

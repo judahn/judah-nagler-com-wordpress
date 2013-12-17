@@ -53,8 +53,9 @@ get_header(); ?>
 
 
 
-<?php include 'section-opener.php' ?>
 
 <?php get_sidebar(); ?>
+
+<?php include 'section-closer.php' ?>
 
 <?php get_footer(); ?>

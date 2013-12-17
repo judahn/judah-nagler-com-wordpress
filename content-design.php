@@ -21,8 +21,5 @@
 
   <?php if( get_field('slider') ): ?>
      <?php the_field( 'slider' ); ?>
-
-     <?php elseif (has_post_thumbnail()): ?>
-      <?php get_the_post_thumbnail(); ?>
   <?php endif; ?>
 </div>
