@@ -199,9 +199,14 @@ time, mark, audio, video {
 .media, .description{
     margin-bottom: 30px;
 }
-.media img {
-    @extend %img-full;
-    margin: 0;
+.media {
+    img {
+        @extend %img-full;
+        margin: 0;
+    }
+    object {
+        margin-right: 20px;
+    }
 }
 .single-design .media {
     @extend %boxShadow;
