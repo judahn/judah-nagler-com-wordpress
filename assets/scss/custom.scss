@@ -92,8 +92,6 @@ time, mark, audio, video {
     line-height: 19px !important;
     margin: 15px 0 !important;
 }
-.kebo-tweets .ktweet .ktext {
-}
 
 /* .main-content-inner {
     .wrap {
@@ -187,6 +185,11 @@ time, mark, audio, video {
 }
 .media img {
     @extend %img-full;
+    margin: 0;
+}
+.media {
+    @extend %boxShadow;
+    border: 1px solid black;
 }
 
 
