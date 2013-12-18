@@ -22,13 +22,6 @@
 
     <div class="col-sm-6 no-pad">
       <?php include 'credits.php' ?>
-
-      <div class="description">
-        <!-- Description -->
-        <?php if( get_field('description') ): ?> 
-           <?php the_field( 'description' ); ?>
-        <?php endif; ?>
-      </div>
       
       <?php if( get_field('url_to_live_site') ): ?> 
         <button class="btn btn-primary btn-large pull-left"><a href="<?php the_field( 'url_to_live_site' ); ?>">Visit site</a></button>
@@ -40,6 +33,13 @@
     </div>
 
 </article><!-- #post-## -->
+
+<div class="description row">
+  <!-- Description -->
+  <?php if( get_field('description') ): ?> 
+     <?php the_field( 'description' ); ?>
+  <?php endif; ?>
+</div>
 
 <?php edit_post_link( __( 'Edit', '_tk' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>
 
