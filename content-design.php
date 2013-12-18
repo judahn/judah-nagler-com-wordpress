@@ -7,10 +7,7 @@
 <article class="row">
 	<div class="container">
 
-		<!-- Soliloquy Slider -->
-		<?php if( get_field('slider') ): ?>
-		 <?php the_field( 'slider' ); ?>
-		<?php endif; ?>
+
 	</div>
 </article>
 
@@ -30,3 +27,14 @@
 	<?php endif; ?>
 
 </article><!-- #post-## -->
+
+<article class="row">
+	<div class="col-sm-3">
+		
+
+	<!-- Soliloquy Slider -->
+		<?php if( get_field('slider') ): ?>
+		 <?php the_field( 'slider' ); ?>
+		<?php endif; ?>
+	</div>
+</article>

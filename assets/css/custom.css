@@ -1068,11 +1068,6 @@ code, pre, .highlight {
 /*
  *  MIN / MAX
  */
-/* line 5, ../scss/_pages.scss */
-.single-design .main-content {
-  padding: 0 !important;
-}
-
 /* line 1, ../scss/_social.scss */
 #social-nav {
   position: relative;
