@@ -1499,8 +1499,8 @@ code, pre, .highlight {
 }
 /* line 207, ../scss/custom.scss */
 .media object {
-  margin-right: 5px !important;
-  margin-bottom: 5px !important;
+  margin-right: 10px !important;
+  margin-bottom: 15px !important;
 }
 
 /* line 212, ../scss/custom.scss */
