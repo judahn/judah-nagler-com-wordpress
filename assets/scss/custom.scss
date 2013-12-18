@@ -62,6 +62,10 @@ time, mark, audio, video {
 }
 
 .soliloquy-container {
+    img{
+        width: 100%;
+        height: auto;
+    }
     .soliloquy-direction-nav {
         display: block !important;
     }

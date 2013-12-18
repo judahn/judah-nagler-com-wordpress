@@ -9,21 +9,20 @@ get_header(); ?>
 <?php include 'section-opener.php' ?>
 
 <?php
-
-  $args = array(
-    'post_type' => 'design'
-  );
-
+  $args = array( 'post_type' => 'design' );
   $the_query = new WP_Query( $args );
-  
 ?>
+
+<!-- Begin Loop -->
 
 <?php while ( have_posts() ) : the_post(); ?>
 	<?php get_template_part( 'content', 'design' ); ?>
 	<div class="row">
 		<?php _tk_content_nav( 'nav-below' ); ?>
 	</div>
-<?php endwhile; // end of the loop. ?>
+<?php endwhile; ?>
+
+<!-- End Loop -->
 
 <?php include 'section-closer.php' ?>
 <?php get_footer(); ?>

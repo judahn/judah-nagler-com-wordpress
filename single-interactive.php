@@ -9,19 +9,18 @@ get_header(); ?>
 <?php include 'section-opener.php' ?>
 
 <?php
-
-  $args = array(
-    'post_type' => 'interactive'
-  );
-
+  $args = array( 'post_type' => 'interactive' );
   $the_query = new WP_Query( $args );
-
 ?>
+
+<!-- Begin Loop -->
 
 <?php while ( have_posts() ) : the_post(); ?>
 	<?php get_template_part( 'content', 'interactive' ); ?>
 	<?php _tk_content_nav( 'nav-below' ); ?>
-<?php endwhile; // end of the loop. ?>
+<?php endwhile; ?>
+
+<!-- End Loop -->
 
 <?php include 'section-closer.php' ?>
 <?php get_footer(); ?>
