@@ -163,6 +163,13 @@ time, mark, audio, video {
     }
 }
 
+.media, .description{
+    margin-bottom: 30px;
+}
+.media img {
+    @extend %img-full;
+}
+
 
 /*
  *  Admin Menu 

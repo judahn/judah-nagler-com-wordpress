@@ -137,26 +137,32 @@ time, mark, audio, video {
   width: 100%;
 }
 
-/* line 49, ../scss/_mixins.scss */
+/* line 25, ../scss/_mixins.scss */
+.media img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 53, ../scss/_mixins.scss */
 #row-masthead {
   background-color: black;
   background-attachment: fixed;
   background-size: cover;
 }
 
-/* line 64, ../scss/_mixins.scss */
+/* line 68, ../scss/_mixins.scss */
 code, pre, .highlight {
   background-color: #666;
   border-color: #666;
 }
 
-/* line 68, ../scss/_mixins.scss */
+/* line 72, ../scss/_mixins.scss */
 .thumbnail {
   background-color: transparent;
   border: 0;
 }
 
-/* line 72, ../scss/_mixins.scss */
+/* line 76, ../scss/_mixins.scss */
 .image, .thumbnail .thumb-content, .design-slider, .mq-list li {
   -webkit-box-shadow: 0px 2px 30px black;
   -moz-box-shadow: 0px 2px 30px black;
@@ -170,7 +176,7 @@ code, pre, .highlight {
 
 /* line 10, ../scss/_overrides.scss */
 a {
-  color: #2ea2cc;
+  color: #0074a2;
 }
 /* line 12, ../scss/_overrides.scss */
 a:hover {
@@ -207,7 +213,7 @@ time {
 /* line 49, ../scss/_overrides.scss */
 body {
   overflow-x: hidden;
-  background-color: #1e6a85;
+  background-color: #00364b;
   background: url('/wp-content/themes/jn-wpbs/assets/img/bg/stripes.png?1385804855') black fixed;
 }
 
@@ -370,7 +376,7 @@ article {
 @media only all and (min-width: 768px) {
   /* line 182, ../scss/_overrides.scss */
   .thumbnail:hover h3 {
-    background: #2ea2cc;
+    background: #0074a2;
     padding-top: 20px;
     -webkit-transition: background-color, 0.2s;
     -moz-transition: background-color, 0.2s;
@@ -432,26 +438,32 @@ article {
   width: 100%;
 }
 
-/* line 49, ../scss/_mixins.scss */
+/* line 25, ../scss/_mixins.scss */
+.media img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 53, ../scss/_mixins.scss */
 #row-masthead {
   background-color: black;
   background-attachment: fixed;
   background-size: cover;
 }
 
-/* line 64, ../scss/_mixins.scss */
+/* line 68, ../scss/_mixins.scss */
 code, pre, .highlight {
   background-color: #666;
   border-color: #666;
 }
 
-/* line 68, ../scss/_mixins.scss */
+/* line 72, ../scss/_mixins.scss */
 .thumbnail {
   background-color: transparent;
   border: 0;
 }
 
-/* line 72, ../scss/_mixins.scss */
+/* line 76, ../scss/_mixins.scss */
 .image, .thumbnail .thumb-content, .design-slider, .mq-list li {
   -webkit-box-shadow: 0px 2px 30px black;
   -moz-box-shadow: 0px 2px 30px black;
@@ -559,7 +571,6 @@ a:hover {
 
 /* line 93, ../scss/_typography.scss */
 p {
-  padding: 15px 0;
   color: #aaa;
   font-family: "Dosis", sans-serif;
   font-size: 16px;
@@ -694,18 +705,26 @@ p {
   position: fixed;
 }
 
+/* Nav Below */
+/* Nav Prev / Next  */
+/* line 102, ../scss/_navbar.scss */
+.nav-previous {
+  float: left;
+  margin-right: 20px;
+}
+
 /* Buttons */
-/* line 98, ../scss/_navbar.scss */
+/* line 109, ../scss/_navbar.scss */
 .btn-primary {
-  background-color: #2ea2cc;
-  border-color: #2ea2cc;
+  background-color: #0074a2;
+  border-color: #0074a2;
   -webkit-transition: background-color, 0.5s;
   -moz-transition: background-color, 0.5s;
   -o-transition: background-color, 0.5s;
   transition: background-color, 0.5s;
 }
 
-/* line 103, ../scss/_navbar.scss */
+/* line 114, ../scss/_navbar.scss */
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
   background-color: #2ea2cc;
   border-color: #2ea2cc;
@@ -716,24 +735,24 @@ p {
 }
 
 /* Affix */
-/* line 110, ../scss/_navbar.scss */
+/* line 121, ../scss/_navbar.scss */
 #home .affix {
   width: 100%;
   top: 0;
 }
 
-/* line 114, ../scss/_navbar.scss */
+/* line 125, ../scss/_navbar.scss */
 #home .affix-top {
   margin-top: -50px;
 }
 @media only all and (max-width: 767px) {
-  /* line 114, ../scss/_navbar.scss */
+  /* line 125, ../scss/_navbar.scss */
   #home .affix-top {
     margin-top: 0;
   }
 }
 
-/* line 122, ../scss/_navbar.scss */
+/* line 133, ../scss/_navbar.scss */
 #standard .affix,
 #standard .affix-top {
   width: 100%;
@@ -742,7 +761,7 @@ p {
 
 /* Responsive: Portrait mobile and below */
 @media screen and (max-width: 768px) {
-  /* line 130, ../scss/_navbar.scss */
+  /* line 141, ../scss/_navbar.scss */
   .affix-top {
     width: 100%;
     position: fixed;
@@ -751,12 +770,12 @@ p {
   }
 
   /* Logo */
-  /* line 137, ../scss/_navbar.scss */
+  /* line 148, ../scss/_navbar.scss */
   .navbar-brand {
     padding-left: 15px;
   }
 
-  /* line 140, ../scss/_navbar.scss */
+  /* line 151, ../scss/_navbar.scss */
   .navbar-collapse {
     background-color: #000;
   }
@@ -795,26 +814,32 @@ p {
   width: 100%;
 }
 
-/* line 49, ../scss/_mixins.scss */
+/* line 25, ../scss/_mixins.scss */
+.media img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 53, ../scss/_mixins.scss */
 #row-masthead {
   background-color: black;
   background-attachment: fixed;
   background-size: cover;
 }
 
-/* line 64, ../scss/_mixins.scss */
+/* line 68, ../scss/_mixins.scss */
 code, pre, .highlight {
   background-color: #666;
   border-color: #666;
 }
 
-/* line 68, ../scss/_mixins.scss */
+/* line 72, ../scss/_mixins.scss */
 .thumbnail {
   background-color: transparent;
   border: 0;
 }
 
-/* line 72, ../scss/_mixins.scss */
+/* line 76, ../scss/_mixins.scss */
 .image, .thumbnail .thumb-content, .design-slider, .mq-list li {
   -webkit-box-shadow: 0px 2px 30px black;
   -moz-box-shadow: 0px 2px 30px black;
@@ -1030,26 +1055,32 @@ section .col-sm-5, section .col-md-6 {
   width: 100%;
 }
 
-/* line 49, ../scss/_mixins.scss */
+/* line 25, ../scss/_mixins.scss */
+.media img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 53, ../scss/_mixins.scss */
 #row-masthead {
   background-color: black;
   background-attachment: fixed;
   background-size: cover;
 }
 
-/* line 64, ../scss/_mixins.scss */
+/* line 68, ../scss/_mixins.scss */
 code, pre, .highlight {
   background-color: #666;
   border-color: #666;
 }
 
-/* line 68, ../scss/_mixins.scss */
+/* line 72, ../scss/_mixins.scss */
 .thumbnail {
   background-color: transparent;
   border: 0;
 }
 
-/* line 72, ../scss/_mixins.scss */
+/* line 76, ../scss/_mixins.scss */
 .image, .thumbnail .thumb-content, .design-slider, .mq-list li {
   -webkit-box-shadow: 0px 2px 30px black;
   -moz-box-shadow: 0px 2px 30px black;
@@ -1216,8 +1247,8 @@ code, pre, .highlight {
 
 /* line 115, ../scss/custom.scss */
 #frmCSCF .btn {
-  border: #2ea2cc;
-  background-color: #2ea2cc;
+  border: #0074a2;
+  background-color: #0074a2;
   color: white;
   -webkit-transition: background-color, 0.25s;
   -moz-transition: background-color, 0.25s;
@@ -1287,10 +1318,15 @@ code, pre, .highlight {
   width: 40.5%;
 }
 
+/* line 166, ../scss/custom.scss */
+.media, .description {
+  margin-bottom: 30px;
+}
+
 /*
  *  Admin Menu 
  */
-/* line 171, ../scss/custom.scss */
+/* line 178, ../scss/custom.scss */
 #adminmenu #menu-posts-design .wp-menu-image:before {
   content: '\f85' !important;
 }
@@ -1298,11 +1334,11 @@ code, pre, .highlight {
 /* 
  *  Footer
  */
-/* line 179, ../scss/custom.scss */
+/* line 186, ../scss/custom.scss */
 #root-footer, #footer {
   height: 30px;
 }
-/* line 181, ../scss/custom.scss */
+/* line 188, ../scss/custom.scss */
 #root-footer p, #footer p {
   color: #666;
 }

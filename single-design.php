@@ -24,5 +24,8 @@ get_header(); ?>
 </div>
 <!-- End Loop -->
 
+<!-- Edit link -->
+<?php edit_post_link( __( 'Edit', '_tk' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>
+
 <?php include 'section-closer.php' ?>
 <?php get_footer(); ?>

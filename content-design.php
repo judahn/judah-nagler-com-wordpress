@@ -11,22 +11,28 @@
 		<h1 class="entry-title"><?php the_title(); ?></h1>
 	</header><!-- .entry-header -->
 
-	<!-- Description -->
-	<?php if( get_field('description') ): ?><?php the_field( 'description' ); ?><br><?php endif; ?>
-
-	<!-- URL to website -->
-	<?php if( get_field('url_to_website') ): ?>
-		<button class="btn btn-primary btn-large"><a href="<?php the_field( 'url_to_website' ); ?>">Visit site</a></button>
+	<!-- Check for Description -->
+	<?php if( get_field('description') ): ?>
+		<!-- Place Description -->
+		<?php the_field( 'description' ); ?><br>
+	<!-- End -->
 	<?php endif; ?>
 
-</article><!-- #post-## -->
+	<!-- Check for URL to website -->
+	<?php if( get_field('url_to_website') ): ?>
+		<!-- Place Visit Button -->
+		<button class="btn btn-primary btn-large"><a href="<?php the_field( 'url_to_website' ); ?>">Visit site</a></button>
+	<!-- End -->
+	<?php endif; ?>
 
-<article class="row">
-	<div class="container">
-
-	<!-- Soliloquy Slider -->
-		<?php if( get_field('slider') ): ?>
-		 <?php the_field( 'slider' ); ?>
+	<div class="media">
+		<!-- Check for media -->
+		<?php if( get_field('media') ): ?>
+			<!-- Place media -->
+			<?php the_field( 'media' ); ?>
+		<!-- End -->
 		<?php endif; ?>
 	</div>
-</article>
+
+
+</article><!-- #post-## -->
