@@ -3,21 +3,40 @@
 
     ul {
         position: absolute;
-        top: -35px;
+        top: -37px;
         right: 0px;
 
+        @include max_laptop{
+            top: -34px;
+        }
         @include max_tablet {
             right: 60px;
         }
 
         li {
             padding-left: 0;
-            padding-right: 3px;
+            padding-right: 5px;
+
+            @include max_desktop{
+                padding-right: 4px;
+            }
+            @include max_tablet {
+                padding-right: 3px;
+            }
         }
     }
     img {
-        width:  17px;
-        height: 17px;
+        width:  22px;
+        height: 22px;
+
+        @include max_desktop{
+            width:  21px;
+            height: 21px;
+        }
+        @include max_laptop{
+            width:  17px;
+            height: 17px;
+        }
     }
     a {
         img {

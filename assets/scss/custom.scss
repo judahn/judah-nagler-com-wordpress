@@ -80,8 +80,19 @@ time, mark, audio, video {
         }   
     }
 }
+
+/* Twitter feed */
+
+.kmeta {
+    @include max_laptop {
+        font-size: 15px;
+    }
+}
 .ktext {
-    line-height: 19px;
+    line-height: 19px !important;
+    margin: 15px 0 !important;
+}
+.kebo-tweets .ktweet .ktext {
 }
 
 /* .main-content-inner {
