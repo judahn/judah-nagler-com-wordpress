@@ -4,13 +4,6 @@
  */
 ?>
 
-<article class="row">
-	<div class="container">
-
-
-	</div>
-</article>
-
 <article id="post-<?php the_ID(); ?>" class="row" >
 
 	<!-- Entry header -->
@@ -30,7 +23,6 @@
 
 <article class="row">
 	<div class="container">
-		
 
 	<!-- Soliloquy Slider -->
 		<?php if( get_field('slider') ): ?>
