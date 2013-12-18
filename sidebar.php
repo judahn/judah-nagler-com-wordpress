@@ -26,14 +26,14 @@
 					</ul>
 				</aside>
 
-				<!-- <aside id="meta" class="widget widget_meta">
+				<aside id="meta" class="widget widget_meta">
 					<h3 class="widget-title"><?php _e( 'Meta', '_tk' ); ?></h3>
 					<ul>
 						<?php wp_register(); ?>
 						<li><?php wp_loginout(); ?></li>
 						<?php wp_meta(); ?>
 					</ul>
-				</aside> -->
+				</aside>
 
 			<?php endif; ?>
 
