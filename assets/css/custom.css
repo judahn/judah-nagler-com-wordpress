@@ -222,8 +222,8 @@ time {
 
 /* line 46, ../scss/_overrides.scss */
 table {
-  border-spacing: 0;
-  border-color: transparent;
+  border-spacing: 0 !important;
+  border-color: transparent !important;
 }
 
 /* line 53, ../scss/_overrides.scss */
