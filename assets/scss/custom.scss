@@ -189,6 +189,20 @@ time, mark, audio, video {
     }
 }
 
+.credits {
+    margin-top: 22px;
+    td {
+        padding: 3px !important;
+    }
+    @include max_desktop{
+        margin-top: 22px;
+
+        td {
+            padding: 1px !important;
+        }
+    }
+}
+
 .media, .description{
     margin-bottom: 30px;
 }

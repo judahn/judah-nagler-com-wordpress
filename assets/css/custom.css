@@ -1457,16 +1457,35 @@ code, pre, .highlight {
 }
 
 /* line 192, ../scss/custom.scss */
+.credits {
+  margin-top: 22px;
+}
+/* line 194, ../scss/custom.scss */
+.credits td {
+  padding: 3px !important;
+}
+@media only all and (max-width: 1199px) {
+  /* line 192, ../scss/custom.scss */
+  .credits {
+    margin-top: 22px;
+  }
+  /* line 200, ../scss/custom.scss */
+  .credits td {
+    padding: 1px !important;
+  }
+}
+
+/* line 206, ../scss/custom.scss */
 .media, .description {
   margin-bottom: 30px;
 }
 
-/* line 195, ../scss/custom.scss */
+/* line 209, ../scss/custom.scss */
 .media img {
   margin: 0;
 }
 
-/* line 199, ../scss/custom.scss */
+/* line 213, ../scss/custom.scss */
 .single-design .media {
   border: 1px solid black;
 }
@@ -1474,7 +1493,7 @@ code, pre, .highlight {
 /*
  *  Admin Menu 
  */
-/* line 209, ../scss/custom.scss */
+/* line 223, ../scss/custom.scss */
 #adminmenu #menu-posts-design .wp-menu-image:before {
   content: '\f85' !important;
 }
@@ -1482,11 +1501,11 @@ code, pre, .highlight {
 /* 
  *  Footer
  */
-/* line 217, ../scss/custom.scss */
+/* line 231, ../scss/custom.scss */
 #root-footer, #footer {
   height: 30px;
 }
-/* line 219, ../scss/custom.scss */
+/* line 233, ../scss/custom.scss */
 #root-footer p, #footer p {
   color: #666;
 }

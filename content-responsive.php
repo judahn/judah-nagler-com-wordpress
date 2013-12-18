@@ -26,7 +26,7 @@
       </div>
     </header><!-- .entry-header -->
 
-    <div class="page-header col-sm-6 no-pad">
+    <div class="col-sm-6 no-pad">
       <?php include 'credits.php' ?>
       <!-- <button class="btn btn-primary btn-large"><a href="<?php the_field( 'url_to_website' ); ?>">Visit site</a></button> -->
     </div>

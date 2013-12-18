@@ -1,4 +1,4 @@
-    <div class="table-responsive no-border">
+    <div class="credits table-responsive no-border">
       <table class="table">
 
         <?php if( get_field('client') ): ?>
