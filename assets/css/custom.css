@@ -641,92 +641,114 @@ p {
     padding: 15px 23px 0 15px;
   }
 }
+@media only all and (max-width: 767px) {
+  /* line 7, ../scss/_navbar.scss */
+  .navbar-brand {
+    padding-top: 12px;
+  }
+  /* line 15, ../scss/_navbar.scss */
+  .navbar-brand #avatar {
+    width: 24px;
+    height: 24px;
+  }
+}
 
-/* line 20, ../scss/_navbar.scss */
+/* line 26, ../scss/_navbar.scss */
 .navbar-inverse .navbar-brand {
   color: #2ea2cc;
 }
 
-/* line 24, ../scss/_navbar.scss */
+/* line 30, ../scss/_navbar.scss */
 .site-navigation-inner {
   padding-left: 0;
   padding-right: 0;
 }
 
 @media only all and (max-width: 767px) {
-  /* line 29, ../scss/_navbar.scss */
+  /* line 35, ../scss/_navbar.scss */
   .navbar-fixed-top {
     position: relative;
   }
 }
 
 /* Nav */
-/* line 38, ../scss/_navbar.scss */
+/* line 44, ../scss/_navbar.scss */
 .nav > li > a {
   padding: 15px;
 }
 @media only all and (max-width: 1199px) {
-  /* line 38, ../scss/_navbar.scss */
+  /* line 44, ../scss/_navbar.scss */
   .nav > li > a {
     padding: 15px 11px;
   }
 }
 @media only all and (max-width: 991px) {
-  /* line 38, ../scss/_navbar.scss */
+  /* line 44, ../scss/_navbar.scss */
   .nav > li > a {
     padding: 15px 6px 15px;
   }
 }
 @media only all and (max-width: 767px) {
-  /* line 38, ../scss/_navbar.scss */
+  /* line 44, ../scss/_navbar.scss */
   .nav > li > a {
-    padding: 0 0 15px 15px;
+    padding: 0 0 15px 51px;
   }
 }
-/* line 50, ../scss/_navbar.scss */
+/* line 56, ../scss/_navbar.scss */
 .nav > li > a:hover, .nav > li > a:focus {
   background-color: transparent;
 }
 
 /* Navbar */
-/* line 59, ../scss/_navbar.scss */
+/* line 65, ../scss/_navbar.scss */
 .navbar {
   margin-bottom: -150px;
   font-family: "Dosis", sans-serif;
   text-transform: uppercase;
 }
-/* line 64, ../scss/_navbar.scss */
+/* line 70, ../scss/_navbar.scss */
 .navbar a {
   font-size: 15px;
   letter-spacing: 3px;
 }
 @media only all and (min-width: 768px) and (max-width: 991px) {
-  /* line 64, ../scss/_navbar.scss */
+  /* line 70, ../scss/_navbar.scss */
   .navbar a {
     font-size: 13px;
     letter-spacing: 2px;
   }
 }
-/* line 73, ../scss/_navbar.scss */
+@media only all and (max-width: 767px) {
+  /* line 70, ../scss/_navbar.scss */
+  .navbar a {
+    font-size: 17px;
+    line-height: 27px;
+    -webkit-transition: all, 0;
+    -moz-transition: all, 0;
+    -o-transition: all, 0;
+    transition: all, 0;
+  }
+}
+/* line 84, ../scss/_navbar.scss */
 .navbar a.active {
   color: white !important;
 }
 
-/* line 78, ../scss/_navbar.scss */
+/* line 89, ../scss/_navbar.scss */
 .navbar-nav {
   margin: 0 0 0 -15px;
 }
 
-/* line 81, ../scss/_navbar.scss */
+/* line 92, ../scss/_navbar.scss */
 .navbar-inverse .navbar-nav > .active > a {
   background-color: transparent;
 }
-/* line 83, ../scss/_navbar.scss */
+/* line 94, ../scss/_navbar.scss */
 .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
   background-color: transparent;
 }
 
-/* line 87, ../scss/_navbar.scss */
+/* line 98, ../scss/_navbar.scss */
 .navbar-inverse {
   background-color: black;
   border: 0;
@@ -735,7 +757,7 @@ p {
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* line 92, ../scss/_navbar.scss */
+/* line 103, ../scss/_navbar.scss */
 .navbar-collapse {
   -webkit-box-shadow: 0;
   -moz-box-shadow: 0;
@@ -743,7 +765,7 @@ p {
   border-top: 0;
 }
 
-/* line 97, ../scss/_navbar.scss */
+/* line 108, ../scss/_navbar.scss */
 #nav-row {
   height: 50px;
   background-color: #000;
@@ -752,20 +774,20 @@ p {
 }
 
 /* Nav Below */
-/* line 108, ../scss/_navbar.scss */
+/* line 119, ../scss/_navbar.scss */
 #nav-below .btn-primary {
   margin-top: 10px;
 }
 
 /* Nav Prev / Next  */
-/* line 115, ../scss/_navbar.scss */
+/* line 126, ../scss/_navbar.scss */
 .nav-previous {
   float: left;
   margin-right: 20px;
 }
 
 /* Buttons */
-/* line 122, ../scss/_navbar.scss */
+/* line 133, ../scss/_navbar.scss */
 .btn-primary {
   background-color: #0074a2;
   border-color: #0074a2;
@@ -775,7 +797,7 @@ p {
   transition: background-color, 0.5s;
 }
 
-/* line 127, ../scss/_navbar.scss */
+/* line 138, ../scss/_navbar.scss */
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
   background-color: #2ea2cc;
   border-color: #2ea2cc;
@@ -786,24 +808,24 @@ p {
 }
 
 /* Affix */
-/* line 134, ../scss/_navbar.scss */
+/* line 145, ../scss/_navbar.scss */
 #home .affix {
   width: 100%;
   top: 0;
 }
 
-/* line 138, ../scss/_navbar.scss */
+/* line 149, ../scss/_navbar.scss */
 #home .affix-top {
   margin-top: -50px;
 }
 @media only all and (max-width: 767px) {
-  /* line 138, ../scss/_navbar.scss */
+  /* line 149, ../scss/_navbar.scss */
   #home .affix-top {
     margin-top: 0;
   }
 }
 
-/* line 146, ../scss/_navbar.scss */
+/* line 157, ../scss/_navbar.scss */
 #standard .affix,
 #standard .affix-top {
   width: 100%;
@@ -812,7 +834,7 @@ p {
 
 /* Responsive: Portrait mobile and below */
 @media screen and (max-width: 768px) {
-  /* line 154, ../scss/_navbar.scss */
+  /* line 165, ../scss/_navbar.scss */
   .affix-top {
     width: 100%;
     position: fixed;
@@ -821,12 +843,12 @@ p {
   }
 
   /* Logo */
-  /* line 161, ../scss/_navbar.scss */
+  /* line 172, ../scss/_navbar.scss */
   .navbar-brand {
     padding-left: 15px;
   }
 
-  /* line 164, ../scss/_navbar.scss */
+  /* line 175, ../scss/_navbar.scss */
   .navbar-collapse {
     background-color: #000;
   }

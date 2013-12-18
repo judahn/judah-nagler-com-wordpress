@@ -9,7 +9,13 @@
     @include max_laptop {
         padding: 15px 23px 0 15px;
     }
-    #avatar {
+    @include max_tablet {
+        padding-top: 12px;
+
+        #avatar {
+            width:  24px;   
+            height: 24px;
+        }
     }
 
     &:hover {
@@ -44,7 +50,7 @@
         padding: 15px 6px 15px;
     }
     @include max_tablet{
-        padding: 0 0 15px 15px;
+        padding: 0 0 15px 51px;
     }
     &:hover,
     &:focus {
@@ -68,6 +74,11 @@
         @include laptop {
             font-size: 13px;
             letter-spacing: 2px;
+        }
+        @include max_tablet {
+            font-size: 17px;
+            line-height: 27px;
+            @include transition(all, 0);
         }
 
         &.active {
