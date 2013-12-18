@@ -18,18 +18,27 @@
     <!-- Entry Header -->
     <header class="page-header col-sm-6 no-pad-left">
       <h1 class="entry-title"><?php the_title(); ?></h1>
+    </header><!-- .entry-header -->
+
+    <div class="col-sm-6 no-pad">
+      <?php include 'credits.php' ?>
+
       <div class="description">
         <!-- Description -->
         <?php if( get_field('description') ): ?> 
            <?php the_field( 'description' ); ?>
         <?php endif; ?>
       </div>
-    </header><!-- .entry-header -->
+      
+      <?php if( get_field('url_to_live_site') ): ?> 
+        <button class="btn btn-primary btn-large pull-left"><a href="<?php the_field( 'url_to_live_site' ); ?>">Visit site</a></button>
+      <?php endif; ?>
 
-    <div class="col-sm-6 no-pad">
-      <?php include 'credits.php' ?>
-      <!-- <button class="btn btn-primary btn-large"><a href="<?php the_field( 'url_to_website' ); ?>">Visit site</a></button> -->
+      <?php if( get_field('url_to_templates') ): ?> 
+        <button class="btn btn-primary btn-large pull-left"><a href="<?php the_field( 'url_to_templates' ); ?>">View templates</a></button>
+      <?php endif; ?>
     </div>
+
 </article><!-- #post-## -->
 
 <?php edit_post_link( __( 'Edit', '_tk' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>
