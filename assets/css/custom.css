@@ -1500,9 +1500,10 @@ code, pre, .highlight {
 /* line 207, ../scss/custom.scss */
 .media object {
   margin-right: 5px !important;
+  margin-bottom: 5px !important;
 }
 
-/* line 211, ../scss/custom.scss */
+/* line 212, ../scss/custom.scss */
 .single-design .media {
   border: 1px solid black;
 }
@@ -1510,7 +1511,7 @@ code, pre, .highlight {
 /*
  *  Admin Menu 
  */
-/* line 221, ../scss/custom.scss */
+/* line 222, ../scss/custom.scss */
 #adminmenu #menu-posts-design .wp-menu-image:before {
   content: '\f85' !important;
 }
@@ -1518,11 +1519,11 @@ code, pre, .highlight {
 /* 
  *  Footer
  */
-/* line 229, ../scss/custom.scss */
+/* line 230, ../scss/custom.scss */
 #root-footer, #footer {
   height: 30px;
 }
-/* line 231, ../scss/custom.scss */
+/* line 232, ../scss/custom.scss */
 #root-footer p, #footer p {
   color: #666;
 }
