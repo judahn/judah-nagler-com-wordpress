@@ -170,7 +170,7 @@ code, pre, .highlight {
 
 /* line 10, ../scss/_overrides.scss */
 a {
-  color: #0074a2;
+  color: #2ea2cc;
 }
 /* line 12, ../scss/_overrides.scss */
 a:hover {
@@ -207,7 +207,7 @@ time {
 /* line 49, ../scss/_overrides.scss */
 body {
   overflow-x: hidden;
-  background-color: #00364b;
+  background-color: #1e6a85;
   background: url('/wp-content/themes/jn-wpbs/assets/img/bg/stripes.png?1385804855') black fixed;
 }
 
@@ -370,7 +370,7 @@ article {
 @media only all and (min-width: 768px) {
   /* line 182, ../scss/_overrides.scss */
   .thumbnail:hover h3 {
-    background: #0074a2;
+    background: #2ea2cc;
     padding-top: 20px;
     -webkit-transition: background-color, 0.2s;
     -moz-transition: background-color, 0.2s;
@@ -697,8 +697,8 @@ p {
 /* Buttons */
 /* line 98, ../scss/_navbar.scss */
 .btn-primary {
-  background-color: #0074a2;
-  border-color: #0074a2;
+  background-color: #2ea2cc;
+  border-color: #2ea2cc;
   -webkit-transition: background-color, 0.5s;
   -moz-transition: background-color, 0.5s;
   -o-transition: background-color, 0.5s;
@@ -1187,6 +1187,29 @@ code, pre, .highlight {
   padding: 15px 0 45px 0;
 }
 
+/* line 65, ../scss/custom.scss */
+.soliloquy-container .soliloquy-direction-nav {
+  display: block !important;
+}
+/* line 68, ../scss/custom.scss */
+.soliloquy-container .soliloquy-control-nav, .soliloquy-container .soliloquy-prev, .soliloquy-container .soliloquy-next {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: opacity, 0.5s;
+  -moz-transition: opacity, 0.5s;
+  -o-transition: opacity, 0.5s;
+  transition: opacity, 0.5s;
+}
+/* line 73, ../scss/custom.scss */
+.soliloquy-container:hover .soliloquy-control-nav, .soliloquy-container:hover .soliloquy-prev, .soliloquy-container:hover .soliloquy-next {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+  -webkit-transition: opacity, 0.5s;
+  -moz-transition: opacity, 0.5s;
+  -o-transition: opacity, 0.5s;
+  transition: opacity, 0.5s;
+}
+
 /* .main-content-inner {
     .wrap {
         // @include center-vertically(420px, 330px);
@@ -1203,27 +1226,27 @@ code, pre, .highlight {
 /* 
  *  Contact Form 
  */
-/* line 85, ../scss/custom.scss */
+/* line 102, ../scss/custom.scss */
 .cscfForm > p {
   margin-bottom: 20px;
 }
-/* line 88, ../scss/custom.scss */
+/* line 105, ../scss/custom.scss */
 .cscfForm label {
   margin-bottom: 10px;
   color: #2ea2cc;
 }
 
-/* line 94, ../scss/custom.scss */
+/* line 111, ../scss/custom.scss */
 #frmCSCF .btn {
-  border: #0074a2;
-  background-color: #0074a2;
+  border: #2ea2cc;
+  background-color: #2ea2cc;
   color: white;
   -webkit-transition: background-color, 0.25s;
   -moz-transition: background-color, 0.25s;
   -o-transition: background-color, 0.25s;
   transition: background-color, 0.25s;
 }
-/* line 99, ../scss/custom.scss */
+/* line 116, ../scss/custom.scss */
 #frmCSCF .btn:hover {
   background-color: #2ea2cc;
   -webkit-transition: background-color, 0.25s;
@@ -1235,52 +1258,52 @@ code, pre, .highlight {
 /* 
  *  Media Queries thumbs
  */
-/* line 110, ../scss/custom.scss */
+/* line 127, ../scss/custom.scss */
 .mq-list {
   padding-top: 30px;
 }
-/* line 112, ../scss/custom.scss */
+/* line 129, ../scss/custom.scss */
 .mq-list li {
   margin-right: 18px;
   padding: 0;
 }
 @media only all and (max-width: 1199px) {
-  /* line 112, ../scss/custom.scss */
+  /* line 129, ../scss/custom.scss */
   .mq-list li {
     margin-right: 15px;
   }
 }
 @media only all and (max-width: 991px) {
-  /* line 112, ../scss/custom.scss */
+  /* line 129, ../scss/custom.scss */
   .mq-list li {
     margin-right: 10px;
   }
 }
 @media only all and (max-width: 767px) {
-  /* line 112, ../scss/custom.scss */
+  /* line 129, ../scss/custom.scss */
   .mq-list li {
     margin-right: 0.9%;
   }
 }
-/* line 127, ../scss/custom.scss */
+/* line 144, ../scss/custom.scss */
 .mq-list .smartphone {
   width: 8.1%;
 }
 @media only all and (max-width: 1199px) {
-  /* line 127, ../scss/custom.scss */
+  /* line 144, ../scss/custom.scss */
   .mq-list .smartphone {
     width: 8%;
   }
 }
-/* line 133, ../scss/custom.scss */
+/* line 150, ../scss/custom.scss */
 .mq-list .tablet {
   width: 19.4%;
 }
-/* line 136, ../scss/custom.scss */
+/* line 153, ../scss/custom.scss */
 .mq-list .netbook {
   width: 25.9%;
 }
-/* line 139, ../scss/custom.scss */
+/* line 156, ../scss/custom.scss */
 .mq-list .desktop {
   margin-right: 0;
   width: 40.5%;
@@ -1289,7 +1312,7 @@ code, pre, .highlight {
 /*
  *  Admin Menu 
  */
-/* line 150, ../scss/custom.scss */
+/* line 167, ../scss/custom.scss */
 #adminmenu #menu-posts-design .wp-menu-image:before {
   content: '\f85' !important;
 }
@@ -1297,11 +1320,11 @@ code, pre, .highlight {
 /* 
  *  Footer
  */
-/* line 158, ../scss/custom.scss */
+/* line 175, ../scss/custom.scss */
 #root-footer, #footer {
   height: 30px;
 }
-/* line 160, ../scss/custom.scss */
+/* line 177, ../scss/custom.scss */
 #root-footer p, #footer p {
   color: #666;
 }

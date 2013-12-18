@@ -61,6 +61,23 @@ time, mark, audio, video {
     padding: 15px 0 45px 0;
 }
 
+.soliloquy-container {
+    .soliloquy-direction-nav {
+        display: block !important;
+    }
+    .soliloquy-control-nav, .soliloquy-prev, .soliloquy-next {
+        @include opacity(0);
+        @include transition(opacity, 0.5s);
+    }    
+    &:hover {
+        .soliloquy-control-nav, .soliloquy-prev, .soliloquy-next {
+            @include opacity(1);
+            @include transition(opacity, 0.5s);
+        }   
+    }
+}
+
+
 /* .main-content-inner {
     .wrap {
         // @include center-vertically(420px, 330px);
