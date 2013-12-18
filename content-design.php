@@ -11,13 +11,6 @@
 		<h1 class="entry-title"><?php the_title(); ?></h1>
 	</header><!-- .entry-header -->
 
-	<!-- Check for Description -->
-	<?php if( get_field('description') ): ?>
-		<!-- Place Description -->
-		<?php the_field( 'description' ); ?><br>
-	<!-- End -->
-	<?php endif; ?>
-
 	<!-- Check for URL to website -->
 	<?php if( get_field('url_to_website') ): ?>
 		<!-- Place Visit Button -->
@@ -34,5 +27,13 @@
 		<?php endif; ?>
 	</div>
 
+	<div class="description">
+		<!-- Check for Description -->
+		<?php if( get_field('description') ): ?>
+			<!-- Place Description -->
+			<?php the_field( 'description' ); ?>
+		<!-- End -->
+		<?php endif; ?>
+	</div>
 
 </article><!-- #post-## -->

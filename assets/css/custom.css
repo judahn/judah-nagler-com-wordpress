@@ -112,57 +112,67 @@ time, mark, audio, video {
 }
 
 /* line 9, ../scss/_mixins.scss */
+.no-pad-left {
+  padding-left: 0 !important;
+}
+
+/* line 12, ../scss/_mixins.scss */
+.no-pad-right {
+  padding-right: 0 !important;
+}
+
+/* line 15, ../scss/_mixins.scss */
 .no-border, .no-border tbody > tr > td {
   border: 0;
   border-top: 0;
 }
 
-/* line 13, ../scss/_mixins.scss */
+/* line 19, ../scss/_mixins.scss */
 .v-pad {
   padding: 15px 0;
 }
 
-/* line 16, ../scss/_mixins.scss */
+/* line 22, ../scss/_mixins.scss */
 .pad-content {
   padding: 10px 0;
 }
 
-/* line 19, ../scss/_mixins.scss */
+/* line 25, ../scss/_mixins.scss */
 .pad-none {
   padding: 0;
 }
 
-/* line 22, ../scss/_mixins.scss */
+/* line 28, ../scss/_mixins.scss */
 .width-100 {
   width: 100%;
 }
 
-/* line 25, ../scss/_mixins.scss */
+/* line 31, ../scss/_mixins.scss */
 .media img {
   width: 100%;
   height: auto;
 }
 
-/* line 53, ../scss/_mixins.scss */
+/* line 59, ../scss/_mixins.scss */
 #row-masthead {
   background-color: black;
   background-attachment: fixed;
   background-size: cover;
 }
 
-/* line 68, ../scss/_mixins.scss */
+/* line 74, ../scss/_mixins.scss */
 code, pre, .highlight {
   background-color: #666;
   border-color: #666;
 }
 
-/* line 72, ../scss/_mixins.scss */
+/* line 78, ../scss/_mixins.scss */
 .thumbnail {
   background-color: transparent;
   border: 0;
 }
 
-/* line 76, ../scss/_mixins.scss */
+/* line 82, ../scss/_mixins.scss */
 .image, .thumbnail .thumb-content, .design-slider, .mq-list li {
   -webkit-box-shadow: 0px 2px 30px black;
   -moz-box-shadow: 0px 2px 30px black;
@@ -413,57 +423,67 @@ article {
 }
 
 /* line 9, ../scss/_mixins.scss */
+.no-pad-left {
+  padding-left: 0 !important;
+}
+
+/* line 12, ../scss/_mixins.scss */
+.no-pad-right {
+  padding-right: 0 !important;
+}
+
+/* line 15, ../scss/_mixins.scss */
 .no-border, .no-border tbody > tr > td {
   border: 0;
   border-top: 0;
 }
 
-/* line 13, ../scss/_mixins.scss */
+/* line 19, ../scss/_mixins.scss */
 .v-pad {
   padding: 15px 0;
 }
 
-/* line 16, ../scss/_mixins.scss */
+/* line 22, ../scss/_mixins.scss */
 .pad-content {
   padding: 10px 0;
 }
 
-/* line 19, ../scss/_mixins.scss */
+/* line 25, ../scss/_mixins.scss */
 .pad-none {
   padding: 0;
 }
 
-/* line 22, ../scss/_mixins.scss */
+/* line 28, ../scss/_mixins.scss */
 .width-100 {
   width: 100%;
 }
 
-/* line 25, ../scss/_mixins.scss */
+/* line 31, ../scss/_mixins.scss */
 .media img {
   width: 100%;
   height: auto;
 }
 
-/* line 53, ../scss/_mixins.scss */
+/* line 59, ../scss/_mixins.scss */
 #row-masthead {
   background-color: black;
   background-attachment: fixed;
   background-size: cover;
 }
 
-/* line 68, ../scss/_mixins.scss */
+/* line 74, ../scss/_mixins.scss */
 code, pre, .highlight {
   background-color: #666;
   border-color: #666;
 }
 
-/* line 72, ../scss/_mixins.scss */
+/* line 78, ../scss/_mixins.scss */
 .thumbnail {
   background-color: transparent;
   border: 0;
 }
 
-/* line 76, ../scss/_mixins.scss */
+/* line 82, ../scss/_mixins.scss */
 .image, .thumbnail .thumb-content, .design-slider, .mq-list li {
   -webkit-box-shadow: 0px 2px 30px black;
   -moz-box-shadow: 0px 2px 30px black;
@@ -577,12 +597,6 @@ p {
   line-height: 23px;
   font-weight: 100;
   letter-spacing: 1px;
-}
-@media only all and (max-width: 767px) {
-  /* line 93, ../scss/_typography.scss */
-  p {
-    padding: 10px 0;
-  }
 }
 
 /*
@@ -789,57 +803,67 @@ p {
 }
 
 /* line 9, ../scss/_mixins.scss */
+.no-pad-left {
+  padding-left: 0 !important;
+}
+
+/* line 12, ../scss/_mixins.scss */
+.no-pad-right {
+  padding-right: 0 !important;
+}
+
+/* line 15, ../scss/_mixins.scss */
 .no-border, .no-border tbody > tr > td {
   border: 0;
   border-top: 0;
 }
 
-/* line 13, ../scss/_mixins.scss */
+/* line 19, ../scss/_mixins.scss */
 .v-pad {
   padding: 15px 0;
 }
 
-/* line 16, ../scss/_mixins.scss */
+/* line 22, ../scss/_mixins.scss */
 .pad-content {
   padding: 10px 0;
 }
 
-/* line 19, ../scss/_mixins.scss */
+/* line 25, ../scss/_mixins.scss */
 .pad-none {
   padding: 0;
 }
 
-/* line 22, ../scss/_mixins.scss */
+/* line 28, ../scss/_mixins.scss */
 .width-100 {
   width: 100%;
 }
 
-/* line 25, ../scss/_mixins.scss */
+/* line 31, ../scss/_mixins.scss */
 .media img {
   width: 100%;
   height: auto;
 }
 
-/* line 53, ../scss/_mixins.scss */
+/* line 59, ../scss/_mixins.scss */
 #row-masthead {
   background-color: black;
   background-attachment: fixed;
   background-size: cover;
 }
 
-/* line 68, ../scss/_mixins.scss */
+/* line 74, ../scss/_mixins.scss */
 code, pre, .highlight {
   background-color: #666;
   border-color: #666;
 }
 
-/* line 72, ../scss/_mixins.scss */
+/* line 78, ../scss/_mixins.scss */
 .thumbnail {
   background-color: transparent;
   border: 0;
 }
 
-/* line 76, ../scss/_mixins.scss */
+/* line 82, ../scss/_mixins.scss */
 .image, .thumbnail .thumb-content, .design-slider, .mq-list li {
   -webkit-box-shadow: 0px 2px 30px black;
   -moz-box-shadow: 0px 2px 30px black;
@@ -1030,57 +1054,67 @@ section .col-sm-5, section .col-md-6 {
 }
 
 /* line 9, ../scss/_mixins.scss */
+.no-pad-left {
+  padding-left: 0 !important;
+}
+
+/* line 12, ../scss/_mixins.scss */
+.no-pad-right {
+  padding-right: 0 !important;
+}
+
+/* line 15, ../scss/_mixins.scss */
 .no-border, .no-border tbody > tr > td {
   border: 0;
   border-top: 0;
 }
 
-/* line 13, ../scss/_mixins.scss */
+/* line 19, ../scss/_mixins.scss */
 .v-pad {
   padding: 15px 0;
 }
 
-/* line 16, ../scss/_mixins.scss */
+/* line 22, ../scss/_mixins.scss */
 .pad-content {
   padding: 10px 0;
 }
 
-/* line 19, ../scss/_mixins.scss */
+/* line 25, ../scss/_mixins.scss */
 .pad-none {
   padding: 0;
 }
 
-/* line 22, ../scss/_mixins.scss */
+/* line 28, ../scss/_mixins.scss */
 .width-100 {
   width: 100%;
 }
 
-/* line 25, ../scss/_mixins.scss */
+/* line 31, ../scss/_mixins.scss */
 .media img {
   width: 100%;
   height: auto;
 }
 
-/* line 53, ../scss/_mixins.scss */
+/* line 59, ../scss/_mixins.scss */
 #row-masthead {
   background-color: black;
   background-attachment: fixed;
   background-size: cover;
 }
 
-/* line 68, ../scss/_mixins.scss */
+/* line 74, ../scss/_mixins.scss */
 code, pre, .highlight {
   background-color: #666;
   border-color: #666;
 }
 
-/* line 72, ../scss/_mixins.scss */
+/* line 78, ../scss/_mixins.scss */
 .thumbnail {
   background-color: transparent;
   border: 0;
 }
 
-/* line 76, ../scss/_mixins.scss */
+/* line 82, ../scss/_mixins.scss */
 .image, .thumbnail .thumb-content, .design-slider, .mq-list li {
   -webkit-box-shadow: 0px 2px 30px black;
   -moz-box-shadow: 0px 2px 30px black;

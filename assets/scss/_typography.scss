@@ -98,8 +98,4 @@ p {
     line-height:    23px;
     font-weight:    100;
     letter-spacing: 1px;
-
-    @include max_tablet {
-        padding: 10px 0;
-    }
 }
