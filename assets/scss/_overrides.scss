@@ -63,9 +63,6 @@ article {
         padding: 0 25px 5px;
     }
 }
-.modal {
-    top: 10%;
-}
 .page-header {
     border: 0;
     margin: 20px 0 0;
@@ -78,9 +75,8 @@ article {
     margin-bottom: 20px;
     line-height: 150%;
 }
-
 .main-content{
-    padding: 80px 0 30px 0;
+    padding-top: 80px;
 
     @include max_desktop {
         padding-top: 70px;  
@@ -92,15 +88,6 @@ article {
         padding-top: 60px;
     }
 }
-.main-content-inner {
-    /* ul {
-        list-style: circle;
-        margin-left: 27px;
-    } */
-}
-
-
-
 .content{
     margin-left: 15px;
     margin-right: 15px;
@@ -201,4 +188,8 @@ article {
             }
         }
     }
+}
+
+.modal {
+    top: 10%;
 }
