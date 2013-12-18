@@ -158,12 +158,18 @@ time, mark, audio, video {
     }
     .smartphone {
         width: 8.1%;
-        @include max_desktop {
+        @include tablet {
             width: 8%;
+        }
+        @include max_tablet{
+            width: 8.1%;
         }
     }
     .tablet {
-        width: 19.4%;
+        width: 19.5%;
+        @include max_tablet{
+            width: 19.4%;
+        }
     }
     .netbook {
         width: 25.9%;
