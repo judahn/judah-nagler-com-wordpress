@@ -80,10 +80,16 @@ article {
 }
 
 .main-content{
-    padding: 65px 0 30px 0;
+    padding: 80px 0 30px 0;
 
+    @include max_desktop {
+        padding-top: 70px;  
+    }
+    @include max_laptop {
+        padding-top: 60px;  
+    }
     @include max_tablet{
-        padding: 40px 0 30px 0;
+        padding-top: 60px;
     }
 }
 .main-content-inner {

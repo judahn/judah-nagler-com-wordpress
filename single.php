@@ -20,9 +20,7 @@ get_header(); ?>
 
 
 
-<div class="page-header">
 <?php get_sidebar(); ?>
-</div>
 
 <?php include 'section-closer.php' ?>
 

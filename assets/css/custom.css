@@ -270,16 +270,28 @@ article {
 
 /* line 82, ../scss/_overrides.scss */
 .main-content {
-  padding: 65px 0 30px 0;
+  padding: 80px 0 30px 0;
+}
+@media only all and (max-width: 1199px) {
+  /* line 82, ../scss/_overrides.scss */
+  .main-content {
+    padding-top: 70px;
+  }
+}
+@media only all and (max-width: 991px) {
+  /* line 82, ../scss/_overrides.scss */
+  .main-content {
+    padding-top: 60px;
+  }
 }
 @media only all and (max-width: 767px) {
   /* line 82, ../scss/_overrides.scss */
   .main-content {
-    padding: 40px 0 30px 0;
+    padding-top: 60px;
   }
 }
 
-/* line 89, ../scss/_overrides.scss */
+/* line 95, ../scss/_overrides.scss */
 .main-content-inner {
   /* ul {
       list-style: circle;
@@ -287,49 +299,49 @@ article {
   } */
 }
 
-/* line 98, ../scss/_overrides.scss */
+/* line 104, ../scss/_overrides.scss */
 .content {
   margin-left: 15px;
   margin-right: 15px;
 }
 @media only all and (max-width: 767px) {
-  /* line 98, ../scss/_overrides.scss */
+  /* line 104, ../scss/_overrides.scss */
   .content {
     margin-left: 0;
     margin-right: 0;
   }
 }
 
-/* line 110, ../scss/_overrides.scss */
+/* line 116, ../scss/_overrides.scss */
 .image img {
   width: 100% !important;
   height: auto !important;
 }
 @media only all and (max-width: 991px) {
-  /* line 107, ../scss/_overrides.scss */
+  /* line 113, ../scss/_overrides.scss */
   .image {
     width: 100%;
   }
-  /* line 117, ../scss/_overrides.scss */
+  /* line 123, ../scss/_overrides.scss */
   .image img {
     width: 100% !important;
   }
 }
 
-/* line 123, ../scss/_overrides.scss */
+/* line 129, ../scss/_overrides.scss */
 .sidebar {
   padding: 20px;
   margin-top: 20px;
   background-color: black;
 }
 
-/* line 130, ../scss/_overrides.scss */
+/* line 136, ../scss/_overrides.scss */
 .row-thumbnails {
   margin-left: -15px;
   margin-right: -15px;
 }
 
-/* line 134, ../scss/_overrides.scss */
+/* line 140, ../scss/_overrides.scss */
 .thumbnail {
   min-height: 285px;
   padding: 0;
@@ -340,20 +352,20 @@ article {
   transition: all, 0s;
 }
 @media only all and (min-width: 768px) and (max-width: 991px) {
-  /* line 134, ../scss/_overrides.scss */
+  /* line 140, ../scss/_overrides.scss */
   .thumbnail {
     min-height: 250px;
   }
 }
 @media only all and (max-width: 479px) {
-  /* line 134, ../scss/_overrides.scss */
+  /* line 140, ../scss/_overrides.scss */
   .thumbnail {
     width: 100%;
     clear: both;
     min-height: 0;
   }
 }
-/* line 153, ../scss/_overrides.scss */
+/* line 159, ../scss/_overrides.scss */
 .thumbnail h3 {
   -webkit-transition: background-color, 0.5s;
   -moz-transition: background-color, 0.5s;
@@ -364,27 +376,27 @@ article {
   -o-transition: padding, 0.5s;
   transition: padding, 0.5s;
 }
-/* line 157, ../scss/_overrides.scss */
+/* line 163, ../scss/_overrides.scss */
 .thumbnail img {
   height: auto !important;
 }
 @media only all and (max-width: 767px) {
-  /* line 157, ../scss/_overrides.scss */
+  /* line 163, ../scss/_overrides.scss */
   .thumbnail img {
     width: 100% !important;
   }
 }
-/* line 165, ../scss/_overrides.scss */
+/* line 171, ../scss/_overrides.scss */
 .thumbnail .thumb-content {
   background-color: black;
 }
-/* line 169, ../scss/_overrides.scss */
+/* line 175, ../scss/_overrides.scss */
 .thumbnail .caption {
   text-align: center;
   padding: 10px 0 0 0;
 }
 @media only all and (min-width: 768px) {
-  /* line 182, ../scss/_overrides.scss */
+  /* line 188, ../scss/_overrides.scss */
   .thumbnail:hover h3 {
     background: #0074a2;
     padding-top: 20px;
@@ -1352,7 +1364,12 @@ code, pre, .highlight {
   width: 40.5%;
 }
 
-/* line 166, ../scss/custom.scss */
+/* line 167, ../scss/custom.scss */
+.entry-content img {
+  margin: 10px 0 30px;
+}
+
+/* line 172, ../scss/custom.scss */
 .media, .description {
   margin-bottom: 30px;
 }
@@ -1360,7 +1377,7 @@ code, pre, .highlight {
 /*
  *  Admin Menu 
  */
-/* line 178, ../scss/custom.scss */
+/* line 184, ../scss/custom.scss */
 #adminmenu #menu-posts-design .wp-menu-image:before {
   content: '\f85' !important;
 }
@@ -1368,11 +1385,11 @@ code, pre, .highlight {
 /* 
  *  Footer
  */
-/* line 186, ../scss/custom.scss */
+/* line 192, ../scss/custom.scss */
 #root-footer, #footer {
   height: 30px;
 }
-/* line 188, ../scss/custom.scss */
+/* line 194, ../scss/custom.scss */
 #root-footer p, #footer p {
   color: #666;
 }
