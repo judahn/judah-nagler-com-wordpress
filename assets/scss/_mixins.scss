@@ -80,5 +80,14 @@
     border: 0;
 }
 %boxShadow {
+    @include box-shadow(0px 2px 30px rgba(black, 0.7));
+}
+%boxShadowLg {
     @include box-shadow(0px 2px 60px rgba(black, 1));
+}
+%boxShadowMd {
+    @include box-shadow(0px 2px 30px rgba(black, 1));
+}
+%boxShadowSm {
+    @include box-shadow(0px 2px 10px rgba(black, 1));
 }

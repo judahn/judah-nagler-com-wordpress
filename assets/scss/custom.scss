@@ -37,10 +37,6 @@ time, mark, audio, video {
     margin-top: 1px;
     margin-right: 13px;
 }
-.design-slider {
-    margin: 26px 0;
-    @extend %boxShadow;
-}
 .visit-site {
     margin: 40px 0;
 }
@@ -60,6 +56,10 @@ time, mark, audio, video {
 .portfolio-desc {
     padding: 15px 0 45px 0;
 }
+
+/* 
+ *  Soliloquy Slider 
+ */
 
 .soliloquy-container {
     img{
@@ -81,7 +81,15 @@ time, mark, audio, video {
     }
 }
 
-/* Twitter feed */
+.design-slider {
+    margin: 26px 0;
+    @extend %boxShadow;
+}
+
+
+/* 
+ *  Twitter feed 
+ */
 
 .kmeta {
     @include max_laptop {
@@ -92,21 +100,6 @@ time, mark, audio, video {
     line-height: 19px !important;
     margin: 15px 0 !important;
 }
-
-/* .main-content-inner {
-    .wrap {
-        // @include center-vertically(420px, 330px);
-        height: 350px;
-        padding-top: 0 !important;
-        @include max_laptop {
-            padding-top: 180px !important;
-        }
-        .container {
-            height: 350px !important;
-        }
-    }
-} */
-
 
 
 /* 
