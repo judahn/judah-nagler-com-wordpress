@@ -336,20 +336,21 @@ article {
 }
 /* line 135, ../scss/_overrides.scss */
 .sidebar h3 {
-  padding: 5px 0;
+  padding: 0 0 15px;
+  margin: 0 !important;
 }
-/* line 138, ../scss/_overrides.scss */
+/* line 139, ../scss/_overrides.scss */
 .sidebar .nav > li > a {
   padding: 10px 0;
 }
 
-/* line 143, ../scss/_overrides.scss */
+/* line 144, ../scss/_overrides.scss */
 .row-thumbnails {
   margin-left: -15px;
   margin-right: -15px;
 }
 
-/* line 147, ../scss/_overrides.scss */
+/* line 148, ../scss/_overrides.scss */
 .thumbnail {
   min-height: 285px;
   padding: 0;
@@ -360,20 +361,20 @@ article {
   transition: all, 0s;
 }
 @media only all and (min-width: 768px) and (max-width: 991px) {
-  /* line 147, ../scss/_overrides.scss */
+  /* line 148, ../scss/_overrides.scss */
   .thumbnail {
     min-height: 250px;
   }
 }
 @media only all and (max-width: 479px) {
-  /* line 147, ../scss/_overrides.scss */
+  /* line 148, ../scss/_overrides.scss */
   .thumbnail {
     width: 100%;
     clear: both;
     min-height: 0;
   }
 }
-/* line 166, ../scss/_overrides.scss */
+/* line 167, ../scss/_overrides.scss */
 .thumbnail h3 {
   -webkit-transition: background-color, 0.5s;
   -moz-transition: background-color, 0.5s;
@@ -384,27 +385,27 @@ article {
   -o-transition: padding, 0.5s;
   transition: padding, 0.5s;
 }
-/* line 170, ../scss/_overrides.scss */
+/* line 171, ../scss/_overrides.scss */
 .thumbnail img {
   height: auto !important;
 }
 @media only all and (max-width: 767px) {
-  /* line 170, ../scss/_overrides.scss */
+  /* line 171, ../scss/_overrides.scss */
   .thumbnail img {
     width: 100% !important;
   }
 }
-/* line 178, ../scss/_overrides.scss */
+/* line 179, ../scss/_overrides.scss */
 .thumbnail .thumb-content {
   background-color: black;
 }
-/* line 182, ../scss/_overrides.scss */
+/* line 183, ../scss/_overrides.scss */
 .thumbnail .caption {
   text-align: center;
   padding: 10px 0 0 0;
 }
 @media only all and (min-width: 768px) {
-  /* line 195, ../scss/_overrides.scss */
+  /* line 196, ../scss/_overrides.scss */
   .thumbnail:hover h3 {
     background: #0074a2;
     padding-top: 20px;
