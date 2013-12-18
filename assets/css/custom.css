@@ -263,10 +263,12 @@ article {
   }
 }
 
-/* line 90, ../scss/_overrides.scss */
-.main-content-inner ul {
-  list-style: circle;
-  margin-left: 27px;
+/* line 89, ../scss/_overrides.scss */
+.main-content-inner {
+  /* ul {
+      list-style: circle;
+      margin-left: 27px;
+  } */
 }
 
 /* line 98, ../scss/_overrides.scss */
