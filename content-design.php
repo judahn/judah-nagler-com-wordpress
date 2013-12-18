@@ -29,7 +29,7 @@
 </article><!-- #post-## -->
 
 <article class="row">
-	<div class="col-sm-3">
+	<div class="container">
 		
 
 	<!-- Soliloquy Slider -->
