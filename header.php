@@ -20,9 +20,7 @@
 <body <?php body_class(); ?>>
 	<?php do_action( 'before' ); ?>
 
-<nav class="site-navigation">
-	<div class="container">
-		<div class="row">
+<nav class="site-navigation" role="navigation">
 			<div class="site-navigation-inner col-sm-12">
 				<div class="navbar navbar-inverse navbar-fixed-top">
 					<div class="container">
@@ -110,7 +108,5 @@
 
 				</div><!-- .navbar -->
 			</div>
-		</div>
-	</div><!-- .container -->
 </nav><!-- .site-navigation -->
 
