@@ -173,7 +173,7 @@ code, pre, .highlight {
 }
 
 /* line 82, ../scss/_mixins.scss */
-.image, .thumbnail .thumb-content, .design-slider, .mq-list li, .media {
+.image, .thumbnail .thumb-content, .design-slider, .mq-list li, .single-design .media {
   -webkit-box-shadow: 0px 2px 60px black;
   -moz-box-shadow: 0px 2px 60px black;
   box-shadow: 0px 2px 60px black;
@@ -505,7 +505,7 @@ code, pre, .highlight {
 }
 
 /* line 82, ../scss/_mixins.scss */
-.image, .thumbnail .thumb-content, .design-slider, .mq-list li, .media {
+.image, .thumbnail .thumb-content, .design-slider, .mq-list li, .single-design .media {
   -webkit-box-shadow: 0px 2px 60px black;
   -moz-box-shadow: 0px 2px 60px black;
   box-shadow: 0px 2px 60px black;
@@ -885,7 +885,7 @@ code, pre, .highlight {
 }
 
 /* line 82, ../scss/_mixins.scss */
-.image, .thumbnail .thumb-content, .design-slider, .mq-list li, .media {
+.image, .thumbnail .thumb-content, .design-slider, .mq-list li, .single-design .media {
   -webkit-box-shadow: 0px 2px 60px black;
   -moz-box-shadow: 0px 2px 60px black;
   box-shadow: 0px 2px 60px black;
@@ -1136,7 +1136,7 @@ code, pre, .highlight {
 }
 
 /* line 82, ../scss/_mixins.scss */
-.image, .thumbnail .thumb-content, .design-slider, .mq-list li, .media {
+.image, .thumbnail .thumb-content, .design-slider, .mq-list li, .single-design .media {
   -webkit-box-shadow: 0px 2px 60px black;
   -moz-box-shadow: 0px 2px 60px black;
   box-shadow: 0px 2px 60px black;
@@ -1435,7 +1435,7 @@ code, pre, .highlight {
 }
 
 /* line 190, ../scss/custom.scss */
-.media {
+.single-design .media {
   border: 1px solid black;
 }
 
