@@ -186,7 +186,7 @@ code, pre, .highlight {
 body {
   overflow-x: hidden;
   background-color: #d2322d;
-  background: url('/wp-content/themes/jn-wpbs/assets/img/bg/stripes-blue.png?1387451394') black fixed;
+  background: url('/wp-content/themes/jn-wpbs/assets/img/bg/stripes-red.png?1387461761') black fixed;
 }
 
 /* line 14, ../scss/_overrides.scss */
@@ -362,7 +362,7 @@ article {
 @media only all and (min-width: 768px) {
   /* line 151, ../scss/_overrides.scss */
   .thumbnail:hover h3 {
-    background: #d2322d;
+    background: #0074a2;
     padding-top: 20px;
     -webkit-transition: background-color, 0.2s;
     -moz-transition: background-color, 0.2s;
