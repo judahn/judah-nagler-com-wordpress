@@ -67,9 +67,10 @@ h3 {
     // color: $cyan;
     margin: 0px 0 15px 0;
     padding: 5px 7px 5px;
-    font-size: 130%;
+    font-size: 110%;
     line-height: 130%;
     letter-spacing: 1px;
+    @include single-text-shadow;
 
     /* @include transition (background, 0.75s);
     @include transition (padding, 0.75s);
@@ -80,10 +81,6 @@ h3 {
         @include transition (background, 0.2s);
         @include transition (padding, 0.2s);
     } */
-}
-h3 {
-    font-size: 130%;
-    @include single-text-shadow;
 }
 a{
     @include transition(color, 0.25s);

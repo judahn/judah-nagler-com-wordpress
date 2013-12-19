@@ -186,7 +186,7 @@ code, pre, .highlight {
 body {
   overflow-x: hidden;
   background-color: #0074a2;
-  background: url('/wp-content/themes/jn-wpbs/assets/img/bg/stripes-blue.png?1387451394') black fixed;
+  background: url('/wp-content/themes/jn-wpbs/assets/img/bg/stripes.png?1385804855') black fixed;
 }
 
 /* line 14, ../scss/_overrides.scss */
@@ -583,9 +583,10 @@ h2 {
 h3 {
   margin: 0px 0 15px 0;
   padding: 5px 7px 5px;
-  font-size: 130%;
+  font-size: 110%;
   line-height: 130%;
   letter-spacing: 1px;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.6);
     /* @include transition (background, 0.75s);
     @include transition (padding, 0.75s);
 
@@ -597,20 +598,14 @@ h3 {
     } */
 }
 
-/* line 84, ../scss/_typography.scss */
-h3 {
-  font-size: 130%;
-  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.6);
-}
-
-/* line 88, ../scss/_typography.scss */
+/* line 85, ../scss/_typography.scss */
 a {
   -webkit-transition: color, 0.25s;
   -moz-transition: color, 0.25s;
   -o-transition: color, 0.25s;
   transition: color, 0.25s;
 }
-/* line 90, ../scss/_typography.scss */
+/* line 87, ../scss/_typography.scss */
 a:hover {
   -webkit-transition: color, 0.25s;
   -moz-transition: color, 0.25s;
@@ -618,7 +613,7 @@ a:hover {
   transition: color, 0.25s;
 }
 
-/* line 94, ../scss/_typography.scss */
+/* line 91, ../scss/_typography.scss */
 p {
   color: #ccc;
   font-family: "Dosis", sans-serif;
