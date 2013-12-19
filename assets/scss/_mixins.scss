@@ -86,7 +86,7 @@
     @include box-shadow(0px 2px 60px rgba(black, 1));
 }
 %boxShadowMd {
-    @include box-shadow(0px 2px 30px rgba(black, 1));
+    @include box-shadow(0px 2px 20px rgba(black, 1));
 }
 %boxShadowSm {
     @include box-shadow(0px 2px 10px rgba(black, 1));

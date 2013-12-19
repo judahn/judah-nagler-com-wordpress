@@ -173,10 +173,17 @@ code, pre, .highlight {
 }
 
 /* line 82, ../scss/_mixins.scss */
-.image, .thumbnail .thumb-content, .design-slider, .mq-list li, .single-design .media {
+.image, .design-slider, .mq-list li, .single-design .media {
   -webkit-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
   -moz-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
   box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
+}
+
+/* line 88, ../scss/_mixins.scss */
+.thumbnail .thumb-content {
+  -webkit-box-shadow: 0px 2px 20px black;
+  -moz-box-shadow: 0px 2px 20px black;
+  box-shadow: 0px 2px 20px black;
 }
 
 /* 
@@ -244,7 +251,7 @@ article {
 @media only all and (max-width: 767px) {
   /* line 38, ../scss/_overrides.scss */
   .main-content {
-    padding-top: 160px;
+    padding-top: 60px;
   }
 }
 
@@ -512,10 +519,17 @@ code, pre, .highlight {
 }
 
 /* line 82, ../scss/_mixins.scss */
-.image, .thumbnail .thumb-content, .design-slider, .mq-list li, .single-design .media {
+.image, .design-slider, .mq-list li, .single-design .media {
   -webkit-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
   -moz-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
   box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
+}
+
+/* line 88, ../scss/_mixins.scss */
+.thumbnail .thumb-content {
+  -webkit-box-shadow: 0px 2px 20px black;
+  -moz-box-shadow: 0px 2px 20px black;
+  box-shadow: 0px 2px 20px black;
 }
 
 @font-face {
@@ -567,7 +581,7 @@ h1 {
 }
 /* line 53, ../scss/_typography.scss */
 h1 a {
-  color: #ccc;
+  color: #0074a2;
 }
 /* line 55, ../scss/_typography.scss */
 h1 a:hover {
@@ -577,6 +591,7 @@ h1 a:hover {
 /* line 60, ../scss/_typography.scss */
 h2 {
   font-size: 230%;
+  color: #0074a2;
 }
 
 /* line 65, ../scss/_typography.scss */
@@ -667,64 +682,66 @@ p {
 .site-navigation-inner {
   padding-left: 0;
   padding-right: 0;
+  z-index: 999;
+  width: 100%;
 }
 
 @media only all and (max-width: 767px) {
-  /* line 30, ../scss/_navbar.scss */
+  /* line 32, ../scss/_navbar.scss */
   .navbar-fixed-top {
     position: relative;
   }
 }
 
 /* Nav */
-/* line 39, ../scss/_navbar.scss */
+/* line 41, ../scss/_navbar.scss */
 .nav > li > a {
   padding: 15px;
 }
 @media only all and (max-width: 1199px) {
-  /* line 39, ../scss/_navbar.scss */
+  /* line 41, ../scss/_navbar.scss */
   .nav > li > a {
     padding: 15px 11px;
   }
 }
 @media only all and (max-width: 991px) {
-  /* line 39, ../scss/_navbar.scss */
+  /* line 41, ../scss/_navbar.scss */
   .nav > li > a {
     padding: 15px 6px 15px;
   }
 }
 @media only all and (max-width: 767px) {
-  /* line 39, ../scss/_navbar.scss */
+  /* line 41, ../scss/_navbar.scss */
   .nav > li > a {
     padding: 0 0 15px 51px;
   }
 }
-/* line 51, ../scss/_navbar.scss */
+/* line 53, ../scss/_navbar.scss */
 .nav > li > a:hover, .nav > li > a:focus {
   background-color: transparent;
 }
 
 /* Navbar */
-/* line 60, ../scss/_navbar.scss */
+/* line 62, ../scss/_navbar.scss */
 .navbar {
   margin-bottom: -150px;
   font-family: "Dosis", sans-serif;
   text-transform: uppercase;
 }
-/* line 65, ../scss/_navbar.scss */
+/* line 67, ../scss/_navbar.scss */
 .navbar a {
   font-size: 15px;
   letter-spacing: 3px;
 }
 @media only all and (min-width: 768px) and (max-width: 991px) {
-  /* line 65, ../scss/_navbar.scss */
+  /* line 67, ../scss/_navbar.scss */
   .navbar a {
     font-size: 13px;
     letter-spacing: 2px;
   }
 }
 @media only all and (max-width: 767px) {
-  /* line 65, ../scss/_navbar.scss */
+  /* line 67, ../scss/_navbar.scss */
   .navbar a {
     font-size: 17px;
     line-height: 27px;
@@ -734,17 +751,17 @@ p {
     transition: all, 0;
   }
 }
-/* line 79, ../scss/_navbar.scss */
+/* line 81, ../scss/_navbar.scss */
 .navbar a.active {
   color: #d2322d !important;
 }
 
-/* line 84, ../scss/_navbar.scss */
+/* line 86, ../scss/_navbar.scss */
 .navbar-nav {
   margin: 0 0 0 -15px;
 }
 
-/* line 89, ../scss/_navbar.scss */
+/* line 91, ../scss/_navbar.scss */
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
@@ -752,7 +769,7 @@ p {
   color: #d2322d;
 }
 
-/* line 93, ../scss/_navbar.scss */
+/* line 95, ../scss/_navbar.scss */
 .navbar-inverse {
   background-color: black;
   border: 0;
@@ -761,7 +778,7 @@ p {
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* line 98, ../scss/_navbar.scss */
+/* line 100, ../scss/_navbar.scss */
 .navbar-collapse {
   -webkit-box-shadow: 0;
   -moz-box-shadow: 0;
@@ -769,7 +786,7 @@ p {
   border-top: 0;
 }
 
-/* line 103, ../scss/_navbar.scss */
+/* line 105, ../scss/_navbar.scss */
 #nav-row {
   height: 50px;
   background-color: #000;
@@ -778,25 +795,25 @@ p {
 }
 
 /* Nav Below */
-/* line 114, ../scss/_navbar.scss */
+/* line 116, ../scss/_navbar.scss */
 #nav-below .btn-primary {
   margin-top: 10px;
 }
 
 /* Nav Prev / Next  */
-/* line 121, ../scss/_navbar.scss */
+/* line 123, ../scss/_navbar.scss */
 .nav-previous {
   float: left;
   margin-right: 20px;
 }
 
 /* Buttons */
-/* line 128, ../scss/_navbar.scss */
+/* line 130, ../scss/_navbar.scss */
 button {
   margin-right: 10px !important;
 }
 
-/* line 131, ../scss/_navbar.scss */
+/* line 133, ../scss/_navbar.scss */
 .btn-primary {
   background-color: #d2322d;
   border-color: #d2322d;
@@ -806,10 +823,10 @@ button {
   transition: background-color, 0.5s;
 }
 
-/* line 136, ../scss/_navbar.scss */
+/* line 138, ../scss/_navbar.scss */
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
-  background-color: #d64742;
-  border-color: #d2322d;
+  background-color: #0074a2;
+  border-color: #0074a2;
   -webkit-transition: background-color, 0.5s;
   -moz-transition: background-color, 0.5s;
   -o-transition: background-color, 0.5s;
@@ -817,22 +834,11 @@ button {
 }
 
 /* Affix */
-/* #home .affix {
-    width: 100%;
-    top: 0;
+/* line 145, ../scss/_navbar.scss */
+.affix {
+  top: 0;
 }
-#home .affix-top {
-    margin-top: -50px;
 
-    @include max_tablet {
-        margin-top: 0;
-    }
-}
-#standard .affix,
-#standard .affix-top {
-    width: 100%;
-    position: fixed;
-} */
 /* Responsive: Portrait mobile and below */
 @media screen and (max-width: 768px) {
   /* .affix-top {
@@ -842,12 +848,12 @@ button {
       margin-top: 0;
   } */
   /* Logo */
-  /* line 170, ../scss/_navbar.scss */
+  /* line 159, ../scss/_navbar.scss */
   .navbar-brand {
     padding-left: 15px;
   }
 
-  /* line 173, ../scss/_navbar.scss */
+  /* line 162, ../scss/_navbar.scss */
   .navbar-collapse {
     background-color: #000;
   }
@@ -922,10 +928,17 @@ code, pre, .highlight {
 }
 
 /* line 82, ../scss/_mixins.scss */
-.image, .thumbnail .thumb-content, .design-slider, .mq-list li, .single-design .media {
+.image, .design-slider, .mq-list li, .single-design .media {
   -webkit-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
   -moz-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
   box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
+}
+
+/* line 88, ../scss/_mixins.scss */
+.thumbnail .thumb-content {
+  -webkit-box-shadow: 0px 2px 20px black;
+  -moz-box-shadow: 0px 2px 20px black;
+  box-shadow: 0px 2px 20px black;
 }
 
 /*
@@ -1173,10 +1186,17 @@ code, pre, .highlight {
 }
 
 /* line 82, ../scss/_mixins.scss */
-.image, .thumbnail .thumb-content, .design-slider, .mq-list li, .single-design .media {
+.image, .design-slider, .mq-list li, .single-design .media {
   -webkit-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
   -moz-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
   box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
+}
+
+/* line 88, ../scss/_mixins.scss */
+.thumbnail .thumb-content {
+  -webkit-box-shadow: 0px 2px 20px black;
+  -moz-box-shadow: 0px 2px 20px black;
+  box-shadow: 0px 2px 20px black;
 }
 
 /*
@@ -1538,6 +1558,7 @@ code, pre, .highlight {
 #footer {
   background-color: #000;
   height: 300px;
+  z-index: -1;
 }
 
 /* line 10, ../../../../../../../../../Users/judah/.rvm/gems/ruby-2.0.0-p247@global/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */

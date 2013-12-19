@@ -26,8 +26,8 @@
 		
 	</article>
 
-	<nav class="site-navigation" role="navigation">
-		<div class="site-navigation-inner col-sm-12">
+	<nav class="site-navigation" role="navigation" >
+		<div class="site-navigation-inner col-sm-12 row affix-top" data-spy="affix" data-offset-top="500">
 			<div class="navbar navbar-inverse navbar-static-top">
 				<div class="container">
 					<div class="navbar-header">

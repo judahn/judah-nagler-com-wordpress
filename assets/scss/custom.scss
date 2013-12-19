@@ -241,5 +241,6 @@ time, mark, audio, video {
 #footer {
     background-color: #000;
     height: 300px;
+    z-index: -1;
 }
 @include sticky-footer(300px, "#root", "#root-footer", "#footer");

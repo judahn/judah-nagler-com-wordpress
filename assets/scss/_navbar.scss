@@ -25,6 +25,8 @@
 .site-navigation-inner {
     padding-left: 0;
     padding-right: 0;
+    z-index: 999;
+    width: 100%;
 }
 
 .navbar-fixed-top {
@@ -134,28 +136,15 @@ button {
     @include transition(background-color, 0.5s);
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
-    background-color: lighten($red, 5%);
-    border-color: $red;
+    background-color: $blue;//lighten($red, 5%);
+    border-color: $blue;
     @include transition(background-color, 0.5s);
 }
 
 /* Affix */
-/* #home .affix {
-    width: 100%;
+.affix {
     top: 0;
 }
-#home .affix-top {
-    margin-top: -50px;
-
-    @include max_tablet {
-        margin-top: 0;
-    }
-}
-#standard .affix,
-#standard .affix-top {
-    width: 100%;
-    position: fixed;
-} */
 
 /* Responsive: Portrait mobile and below */
 @media screen and (max-width: 768px) {

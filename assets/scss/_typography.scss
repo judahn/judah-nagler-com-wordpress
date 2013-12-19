@@ -51,7 +51,7 @@ h1 {
         font-size: 49px;
     }
     a{
-        color: #ccc;
+        color: $blue;
         &:hover {
             color: white;
         }
@@ -60,7 +60,7 @@ h1 {
 h2 {
     // @extend %redtape;
     font-size: 230%;
-    // color: $cyan;
+    color: $blue;
 }
 h3 {
     // @extend %redtape;

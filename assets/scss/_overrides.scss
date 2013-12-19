@@ -45,7 +45,7 @@ article {
         padding-top: 60px;  
     }
     @include max_tablet{
-        padding-top: 160px;
+        padding-top: 60px;
     }
 }
 .content{
@@ -132,7 +132,7 @@ article {
     }
 
     .thumb-content {
-        @extend %boxShadow;
+        @extend %boxShadowMd;
         background-color: black;
     }
     .caption {
