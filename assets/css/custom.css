@@ -186,7 +186,7 @@ code, pre, .highlight {
 body {
   overflow-x: hidden;
   background-color: #0074a2;
-  background: url('/wp-content/themes/jn-wpbs/assets/img/bg/stripes.png?1385804855') black fixed;
+  background: url('/wp-content/themes/jn-wpbs/assets/img/bg/goth.jpg?1387464063') black fixed;
 }
 
 /* line 14, ../scss/_overrides.scss */
@@ -362,7 +362,7 @@ article {
 @media only all and (min-width: 768px) {
   /* line 151, ../scss/_overrides.scss */
   .thumbnail:hover h3 {
-    background: #0074a2;
+    background: #d2322d;
     padding-top: 20px;
     -webkit-transition: background-color, 0.2s;
     -moz-transition: background-color, 0.2s;
@@ -798,8 +798,8 @@ button {
 
 /* line 131, ../scss/_navbar.scss */
 .btn-primary {
-  background-color: #0074a2;
-  border-color: #0074a2;
+  background-color: #d2322d;
+  border-color: #d2322d;
   -webkit-transition: background-color, 0.5s;
   -moz-transition: background-color, 0.5s;
   -o-transition: background-color, 0.5s;
@@ -808,8 +808,8 @@ button {
 
 /* line 136, ../scss/_navbar.scss */
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
-  background-color: #2ea2cc;
-  border-color: #2ea2cc;
+  background-color: #d64742;
+  border-color: #d2322d;
   -webkit-transition: background-color, 0.5s;
   -moz-transition: background-color, 0.5s;
   -o-transition: background-color, 0.5s;

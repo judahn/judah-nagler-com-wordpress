@@ -9,7 +9,7 @@
 body {
     overflow-x: hidden;
     background-color: $blue;//darken($blue, 17%);
-    @include background(image-url("bg/stripes.png") #000 fixed);
+    @include background(image-url("bg/goth.jpg") #000 fixed);
 }
 article {
     padding-left: 0 !important;
@@ -149,7 +149,7 @@ article {
                 // @include transition(border, 0.5s);
             }
             h3 {
-                background: $blue;
+                background: $red;
                 padding-top: 20px;
                 @include transition (background-color, 0.2s);
                 @include transition (padding, 0.2s);

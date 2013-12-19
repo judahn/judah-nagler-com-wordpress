@@ -129,13 +129,13 @@ button {
     margin-right: 10px !important;
 }
 .btn-primary {
-    background-color: $blue;
-    border-color: $blue;
+    background-color: $red;
+    border-color: $red;
     @include transition(background-color, 0.5s);
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
-    background-color: $cyan; //lighten($red, 5%);
-    border-color: $cyan;
+    background-color: lighten($red, 5%);
+    border-color: $red;
     @include transition(background-color, 0.5s);
 }
 
