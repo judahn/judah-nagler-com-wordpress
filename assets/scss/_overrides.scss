@@ -36,16 +36,16 @@ article {
     line-height: 150%;
 }
 .main-content{
-    padding-top: 80px;
+    padding-top: 100px;
 
     @include max_desktop {
-        padding-top: 70px;  
+        padding-top: 90px;  
     }
     @include max_laptop {
-        padding-top: 60px;  
+        padding-top: 80px;  
     }
     @include max_tablet{
-        padding-top: 60px;
+        padding-top: 70px;
     }
 }
 .content{

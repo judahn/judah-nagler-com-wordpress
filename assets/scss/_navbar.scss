@@ -77,15 +77,14 @@
             line-height: 27px;
             @include transition(all, 0);
         }
-
-        &.active {
-            color: $red !important;
-        }
     }
 }
 .navbar-nav {
     margin: 0 0 0 -15px;
 }
+
+/* active */
+
 .navbar-inverse .navbar-nav > .active > a, 
 .navbar-inverse .navbar-nav > .active > a:hover, 
 .navbar-inverse .navbar-nav > .active > a:focus {
