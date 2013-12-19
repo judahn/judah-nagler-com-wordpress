@@ -14,7 +14,8 @@
 <?php
 
 	$args = array(
-		'post_type' => 'design'
+		'post_type' => 'design',
+		'posts_per_page' => '-1'
 	);
 
 	$the_query = new WP_Query( $args );

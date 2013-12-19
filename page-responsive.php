@@ -14,7 +14,8 @@
 <?php
 
 	$args = array(
-		'post_type' => 'responsive'
+		'post_type' => 'responsive',
+		'posts_per_page' => '-1'
 	);
 
 	$the_query = new WP_Query( $args );
