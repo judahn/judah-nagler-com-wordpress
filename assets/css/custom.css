@@ -417,18 +417,25 @@ a:hover {
   text-decoration: none;
 }
 
-/* line 202, ../scss/_overrides.scss */
+/* line 193, ../scss/_overrides.scss */
+.btn-block {
+  margin-bottom: 20px;
+  color: black;
+  font-size: 100%;
+}
+
+/* line 207, ../scss/_overrides.scss */
 pre {
   color: #666;
   margin: 30px 0;
 }
 
-/* line 206, ../scss/_overrides.scss */
+/* line 211, ../scss/_overrides.scss */
 time {
   color: #999;
 }
 
-/* line 209, ../scss/_overrides.scss */
+/* line 214, ../scss/_overrides.scss */
 table {
   border-spacing: 0 !important;
   border-color: transparent !important;

@@ -19,7 +19,7 @@
 	<!-- End -->
 	<?php endif; ?>
 
-	<div class="media hidden-xs">
+	<div class="media hidden-xs hidden-sm">
 		<!-- Description -->
 		<?php if( get_field('media') ): ?> 
 			 <?php the_field( 'media' ); ?>
@@ -33,5 +33,5 @@
 		<?php endif; ?>
 	</div>
 
-	<button class="alert alert-danger visible-xs">Flash examples visible only on desktop site.</button>
+	<button class="btn btn-warning visible-xs visible-sm btn-block">Flash examples visible only on desktop site.</button>
 </article>
