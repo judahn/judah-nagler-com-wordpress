@@ -31,6 +31,11 @@ time, mark, audio, video {
 @import "pages";
 @import "social";
 
+.above-header {
+    height: 500px;
+    background-color: black;
+}
+
 #avatar {
     width:  17px;
     height: 17px;
@@ -228,12 +233,13 @@ time, mark, audio, video {
  *  Footer
  */
 #root-footer, #footer {
-    height: 30px;
+    height: 300px;
     p {
         color: #666;
     }
 }
 #footer {
-    // background-color: #000;
+    background-color: #000;
+    height: 300px;
 }
-@include sticky-footer(30px, "#root", "#root-footer", "#footer");
+@include sticky-footer(300px, "#root", "#root-footer", "#footer");

@@ -31,11 +31,11 @@ body {
     color:          #ccc;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-family:    "Raleway Dots", sans-serif;
+    font-family: "Raleway Dots", sans-serif;
     text-transform: uppercase;
     color: white;
     span{
-        color: #999;
+        color: #ccc;
     }
     a:hover {
         text-decoration: none;
@@ -46,11 +46,12 @@ h1 {
     font-size:      60px;
     margin-bottom:  30px;
     margin-left:    -4px;
+    @include single-text-shadow;
     @include max_desktop {
         font-size: 49px;
     }
     a{
-        color: $cyan;
+        color: #ccc;
         &:hover {
             color: white;
         }
@@ -92,7 +93,7 @@ a{
 }
 p {
     // padding:        15px 0;
-    color:          #aaa;
+    color:          #ccc;
     font-family:    "Dosis", sans-serif;
     font-size:      16px;
     line-height:    23px;

@@ -17,11 +17,6 @@
             height: 24px;
         }
     }
-
-    &:hover {
-        #avatar {
-        }
-    }
 }
 .navbar-inverse .navbar-brand {
     color: $cyan;
@@ -82,18 +77,18 @@
         }
 
         &.active {
-            color: white !important;
+            color: $red !important;
         }
     }
 }
 .navbar-nav {
     margin: 0 0 0 -15px;
 }
-.navbar-inverse .navbar-nav>.active>a {
+.navbar-inverse .navbar-nav > .active > a, 
+.navbar-inverse .navbar-nav > .active > a:hover, 
+.navbar-inverse .navbar-nav > .active > a:focus {
     background-color: transparent;
-    &:hover, &:focus {
-        background-color: transparent;
-    }
+    color: $red;
 }
 .navbar-inverse {
     background-color: rgba(black, 1);
