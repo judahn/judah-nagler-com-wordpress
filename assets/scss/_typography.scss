@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     // @extend %redtape;
     font-size:      60px;
-    margin-bottom:  30px;
+    margin-bottom:  50px;
     margin-left:    -4px;
     @include single-text-shadow;
     @include max_desktop {
