@@ -166,7 +166,7 @@ a:hover {
     margin-right: -15px;
 
     li {
-        @include max_pager{
+        @include max($pager + 1){
             width: 100% !important;
             clear: both;
             min-height: 0;
@@ -175,9 +175,8 @@ a:hover {
 }
 .thumbnail {
     @extend %transBg;
-    // min-height:     250px;
     padding:        0;
-    margin-bottom:  30px;
+    margin-bottom:  1%;
 
     @include transition(all, 0s);
 
@@ -185,6 +184,8 @@ a:hover {
         @include transition (background-color, 0.5s);
         @include transition (padding,    0.5s);
         // color: $rust;
+        @extend %boxShadowMd;
+        background-color: black;
     }
     img {
         height: auto !important;
@@ -196,8 +197,7 @@ a:hover {
     }
 
     .thumb-content {
-        @extend %boxShadowMd;
-        background-color: black;
+        
     }
     .caption {
         text-align: center;
@@ -225,6 +225,13 @@ a:hover {
         }
     }
 }
+.thumb-title {
+    min-height: 58px;
+    @include max($pager + 1){
+        min-height: 35px;
+    }
+}
+
 
 .modal {
     top: 10%;

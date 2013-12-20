@@ -39,7 +39,7 @@
 					} else {?>
 						<img class="attachment- img-responsive wp-post-image" src="holder.js/300x200/industrial">
 					<?php } ?>
-					<h3><i class="fa fa-arrow-right"></i><?php the_title(); ?></h3>
+					<div class="thumb-title"><h3><i class="fa fa-arrow-right"></i><?php the_title(); ?></h3></div>
 					<!--<p><?php the_field( 'description'); ?></p>-->
 				</div>
 			</a>
