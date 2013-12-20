@@ -175,7 +175,7 @@ a:hover {
 }
 .thumbnail {
     @extend %transBg;
-    min-height:     285px;
+    min-height:     250px;
     padding:        0;
     margin-bottom:  30px;
 
@@ -183,11 +183,11 @@ a:hover {
 
     // Responsive
 
-    @include laptop {
-        min-height:     245px;
-    }
     @include max_laptop{
-        min-height: 245px;
+        min-height: 220px;
+    }
+    @include max_tablet{
+        min-height: 230px;
     }
 
     h3 {
