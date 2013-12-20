@@ -14,7 +14,7 @@
 	<!-- Check for URL to website -->
 	<?php if( get_field('url_to_website') ): ?>
 		<!-- Place Visit Button -->
-		<button class="btn btn-primary btn-large"><a href="<?php the_field( 'url_to_website' ); ?>">Visit site</a></button>
+		<button class="btn btn-danger btn-large"><a href="<?php the_field( 'url_to_website' ); ?>">Visit site</a></button>
 	<!-- End -->
 	<?php endif; ?>
 

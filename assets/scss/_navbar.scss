@@ -58,7 +58,10 @@
 
 
 
-/* Navbar */
+/* 
+ *   Navbar 
+ */
+
 .navbar {
     margin-bottom: -150px;
     font-family: "Dosis", sans-serif;
@@ -83,7 +86,9 @@
     margin: 0 0 0 -15px;
 }
 
-/* active */
+/* 
+ *  Active 
+ */
 
 .navbar-inverse .navbar-nav > .active > a, 
 .navbar-inverse .navbar-nav > .active > a:hover, 
@@ -109,22 +114,22 @@
 
 }
 
-/* Nav Below */
+//  Nav Below
 
 #nav-below {
     .btn-primary {
         margin-top: 10px;
     }
-    // margin-top: 30px;
 }
 
-/* Nav Prev / Next  */
+//  Nav Prev / Next
+
 .nav-previous {
     float: left;
     margin-right: 20px;
 }
 
-/* Buttons */
+//  Buttons
 
 button {
     margin-right: 10px !important;
@@ -140,20 +145,15 @@ button {
     @include transition(background-color, 0.5s);
 }
 
-/* Affix */
+//  Affix
+
 .affix {
     top: 0;
 }
 
-/* Responsive: Portrait mobile and below */
-@media screen and (max-width: 768px) {
+//  Responsive: Portrait mobile and below
 
-    /* .affix-top {
-        width:      100%;
-        position:   fixed;
-        top:        0;
-        margin-top: 0;
-    } */
+@include max_tablet{
     /* Logo */
     .navbar-brand {
         padding-left: 15px;

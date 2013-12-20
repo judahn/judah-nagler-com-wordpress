@@ -10,13 +10,13 @@
 
 
 
-	<!-- <div id="root-footer"></div> -->
+	<div id="root-footer"></div>
 </div>
 
 <footer id="footer" class="site-footer footer row" role="contentinfo">
-	<div class="container">
-		
-	</div><!-- close .container -->
+  <div class="container">
+  	
+  </div><!-- close .container -->
 </footer><!-- close #colophon -->
 
 <?php wp_footer(); ?>

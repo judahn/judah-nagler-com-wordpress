@@ -2,6 +2,8 @@
 @import "mixins";
 
 
+
+
 /* 
  *  Elements
  */
@@ -72,6 +74,8 @@ article {
     }
 }
 
+
+
 /* 
  *  Sidebar
  */
@@ -91,10 +95,11 @@ article {
     }
 }
 
+
+
 /* 
  *  Thumbnails
  */
-
 
 .row-thumbnails {
     margin-left: -15px;
@@ -164,7 +169,9 @@ article {
 
 
 
-// Links
+/* 
+ *  Links 
+ */
 
 :focus, a:focus {
     outline: -webkit-focus-ring-color auto 0;
@@ -196,7 +203,11 @@ a:hover {
     font-size: 100%;
 }
 
-// Type
+
+
+/*  
+ *  Type 
+ */
 
 code {
     @extend %darkBg;

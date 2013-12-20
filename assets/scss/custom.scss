@@ -5,31 +5,237 @@
 @import "compass/css3";
 @import "compass/reset";
 @import "compass/layout";
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    vertical-align: top;
-}
-
 @import "vars";
+@import "reset";
 @import "responsive";
-@import "overrides";
 @import "typography";
 @import "navbar";
 @import "sections";
 @import "pages";
 @import "social";
+
+
+body {
+    overflow-x: hidden;
+    background-color: black;//darken($blue, 17%);
+    @include background(image-url("bg/goth.jpg") #000 fixed);
+}
+article {
+    padding-left: 0 !important;
+}
+
+code {
+    @extend %darkBg;
+}
+pre, .highlight {
+    @extend %darkBg;
+}
+pre {
+    color: #666;
+    margin: 30px 0;
+}
+time {
+    color: #999;
+}
+table {
+    border-spacing: 0 !important;
+    border-color: transparent !important;
+}
+
+:focus, a:focus {
+    outline: -webkit-focus-ring-color auto 0;
+}
+
+a{
+    color: $blue;
+    &:hover {
+        color: $cyan;
+    }
+}
+a:hover {
+    text-decoration: none !important;
+}
+
+.btn {
+    // margin: 30px 0;
+    a {
+        text-transform: uppercase;
+        color: white;
+        &:hover {
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
+.btn-block{
+    margin-bottom: 20px;
+    color: black;
+    font-size: 100%;
+}
+
+
+/* Divs */
+
+.row {
+    margin-left:    0;
+    margin-right:   0;
+}
+.container {
+    @include max_tablet {
+        padding: 0 25px 5px;
+    }
+}
+.page-header {
+    border: 0;
+    margin: 20px 0 0;
+    padding-bottom: 0;
+}
+.post {
+    margin: 0 0 40px 0;
+}
+.entry-meta {
+    margin-bottom: 20px;
+    line-height: 150%;
+}
+.main-content{
+    padding-top: 100px;
+
+    @include max_desktop {
+        padding-top: 90px;  
+    }
+    @include max_laptop {
+        padding-top: 80px;  
+    }
+    @include max_tablet{
+        padding-top: 70px;
+    }
+}
+.content{
+    margin-left: 15px;
+    margin-right: 15px;
+    @include max_tablet {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+.image {
+     @if $use_shadows { @extend %boxShadow; }
+
+    img {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    @include max_laptop {
+        width: 100%;
+        img {
+            width: 100% !important;
+        }
+    }
+}
+
+
+
+/* 
+ *  Sidebar
+ */
+
+.sidebar {
+    // @if $use_shadows { @extend %boxShadow; }
+    padding: 20px;
+    margin-top: 20px;
+    background-color: black;
+
+    h3 {
+        padding: 0 0 10px;
+        margin: 0 !important;
+    }
+    .nav>li>a {
+        padding: 10px 0;
+    }
+}
+
+
+
+/* 
+ *  Thumbnails
+ */
+
+.row-thumbnails {
+    margin-left: -15px;
+    margin-right: -15px;
+
+    li {
+        @include max_phone{
+            width: 100% !important;
+            clear: both;
+            min-height: 0;
+        }
+    }
+}
+.thumbnail {
+    @extend %transBg;
+    min-height:     285px;
+    padding:        0;
+    margin-bottom:  30px;
+
+    @include transition(all, 0s);
+
+    // Responsive
+
+    @include laptop {
+        min-height:     245px;
+    }
+    @include max_laptop{
+        min-height: 245px;
+    }
+
+    h3 {
+        @include transition (background-color, 0.5s);
+        @include transition (padding,    0.5s);
+    }
+    img {
+        height: auto !important;
+
+        @include max_tablet {
+            width: 100% !important;
+        }
+    }
+
+    .thumb-content {
+        @extend %boxShadowMd;
+        background-color: black;
+    }
+    .caption {
+        text-align: center;
+        padding: 10px 0 0 0;
+    }
+
+    // Hover states
+
+    &:hover {
+        @include min_tablet {
+            img {
+                // border: 1px dotted $blue;
+                // @include transition(border, 0.5s);
+            }
+            h3 {
+                background: $red;
+                padding-top: 20px;
+                @include transition (background-color, 0.2s);
+                @include transition (padding, 0.2s);
+            }
+        }
+    }
+}
+
+.modal {
+    top: 10%;
+}
+
+
+
+
 
 .above-header {
     height: 500px;
@@ -220,18 +426,10 @@ time, mark, audio, video {
 }
 
 
-/*
- *  Admin Menu 
- */
-
-#adminmenu #menu-posts-design .wp-menu-image:before {
-    content: '\f85' !important;
-}
-
-
 /* 
  *  Footer
  */
+
 #root-footer, #footer {
     height: 300px;
     p {
@@ -244,3 +442,12 @@ time, mark, audio, video {
     z-index: -1;
 }
 @include sticky-footer(300px, "#root", "#root-footer", "#footer");
+
+
+/*
+ *  Admin Menu 
+ */
+
+#adminmenu #menu-posts-design .wp-menu-image:before {
+    content: '\f85' !important;
+}

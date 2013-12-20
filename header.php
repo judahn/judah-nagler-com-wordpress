@@ -20,10 +20,12 @@
 <body <?php body_class(); ?>>
 	<?php do_action( 'before' ); ?>
 
-<div class="wrap">
+<div class="root">
 
 	<article class="row above-header">
-		
+		<div class="container">
+			<!-- <h1 class="pull-right"><?php the_title(); ?></h1> -->
+		</div>
 	</article>
 
 	<nav class="site-navigation" role="navigation" >
@@ -111,7 +113,6 @@
 						</ul>
 					</div>
 				</div>
-
 			</div><!-- .navbar -->
 		</div>
 	</nav><!-- .site-navigation -->
