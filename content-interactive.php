@@ -33,5 +33,5 @@
 		<?php endif; ?>
 	</div>
 
-	<button class="btn btn-warning visible-xs visible-sm btn-block">Flash examples visible only on desktop site.</button>
+	<button class="btn btn-warning visible-xs visible-sm btn-block">Flash examples only visible on desktop site.</button>
 </article>

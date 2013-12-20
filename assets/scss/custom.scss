@@ -166,7 +166,7 @@ a:hover {
     margin-right: -15px;
 
     li {
-        @include max_phone{
+        @include max_pager{
             width: 100% !important;
             clear: both;
             min-height: 0;
@@ -175,7 +175,7 @@ a:hover {
 }
 .thumbnail {
     @extend %transBg;
-    min-height:     250px;
+    // min-height:     250px;
     padding:        0;
     margin-bottom:  30px;
 
@@ -183,13 +183,15 @@ a:hover {
 
     // Responsive
 
-    @include max_laptop{
+    /* @include max_laptop{
         min-height: 220px;
     }
     @include max_tablet{
         min-height: 230px;
     }
-
+    @include max_phone {
+        min-height: 190px;
+    } */
     h3 {
         @include transition (background-color, 0.5s);
         @include transition (padding,    0.5s);
