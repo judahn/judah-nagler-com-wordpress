@@ -75,6 +75,12 @@ h3 {
     letter-spacing: 1px;
     @include single-text-shadow;
 
+    i {
+        margin-right: 5px;
+        margin-top: 1px;
+        color: $blue;
+    }
+
     /* @include transition (background, 0.75s);
     @include transition (padding, 0.75s);
 
