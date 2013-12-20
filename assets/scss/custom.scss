@@ -181,23 +181,14 @@ a:hover {
 
     @include transition(all, 0s);
 
-    // Responsive
-
-    /* @include max_laptop{
-        min-height: 220px;
-    }
-    @include max_tablet{
-        min-height: 230px;
-    }
-    @include max_phone {
-        min-height: 190px;
-    } */
     h3 {
         @include transition (background-color, 0.5s);
         @include transition (padding,    0.5s);
+        // color: $rust;
     }
     img {
         height: auto !important;
+        border: 3px solid black;
 
         @include max_tablet {
             width: 100% !important;
@@ -218,14 +209,18 @@ a:hover {
     &:hover {
         @include min_tablet {
             img {
-                // border: 1px dotted $blue;
-                // @include transition(border, 0.5s);
+                border: 3px solid darken($blue, 10%);
+                @include transition(border, 0.5s);
             }
             h3 {
-                background: $red;
+                background: darken($blue, 10%);
+                // color: lighten($rust, 5%);
                 // padding-top: 20px;
                 @include transition (background-color, 0.2s);
                 @include transition (padding, 0.2s);
+            }
+            i {
+                color: white;
             }
         }
     }
