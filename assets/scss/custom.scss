@@ -223,7 +223,7 @@ a:hover {
             }
             h3 {
                 background: $red;
-                padding-top: 20px;
+                // padding-top: 20px;
                 @include transition (background-color, 0.2s);
                 @include transition (padding, 0.2s);
             }
@@ -396,12 +396,12 @@ a:hover {
 }
 
 .credits {
-    margin-top: 22px;
+    // margin-top: 22px;
     td {
         padding: 3px !important;
     }
     @include max_desktop{
-        margin-top: 22px;
+        // margin-top: 22px;
 
         td {
             padding: 1px !important;

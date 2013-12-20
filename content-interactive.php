@@ -9,7 +9,7 @@
 
 	<!-- Entry Header -->
 	<header class="page-header">
-		<h1 class="entry-title"><?php the_title(); ?></h1>
+		<h1 class="entry-title"> <?php the_title(); ?></h1>
 	</header><!-- .entry-header -->
 		
 	<!-- Check for URL to website -->

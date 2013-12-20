@@ -16,11 +16,18 @@
 <article id="post-<?php the_ID(); ?>" class="row" >
 
     <!-- Entry Header -->
-    <header class="page-header col-sm-6 no-pad-left">
+    <header class="page-header no-pad-left">
       <h1 class="entry-title"><?php the_title(); ?></h1>
     </header><!-- .entry-header -->
 
-    <div class="col-sm-6 no-pad">
+    <div class="description col-sm-6 col-content">
+      <!-- Description -->
+      <?php if( get_field('description') ): ?> 
+         <?php the_field( 'description' ); ?>
+      <?php endif; ?>
+    </div>
+
+    <div class="col-sm-6 col-content">
       <?php include 'credits.php' ?>
       
       <?php if( get_field('url_to_live_site') ): ?> 
@@ -33,13 +40,6 @@
     </div>
 
 </article><!-- #post-## -->
-
-<div class="description row">
-  <!-- Description -->
-  <?php if( get_field('description') ): ?> 
-     <?php the_field( 'description' ); ?>
-  <?php endif; ?>
-</div>
 
 <?php edit_post_link( __( 'Edit', '_tk' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>
 
