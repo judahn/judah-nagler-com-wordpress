@@ -430,10 +430,14 @@ a:hover {
     border: 1px solid black;
 }
 
-.mergeRow {
-    display: none !important;
+#mc_signup_form {
     padding: 0 !important;
+    .mergeRow {
+        display: none !important;
+        padding: 0 !important;
+    }    
 }
+
 
 
 /* 

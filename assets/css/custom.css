@@ -1499,7 +1499,11 @@ a:hover {
 }
 
 /* line 433, ../scss/custom.scss */
-.mergeRow {
+#mc_signup_form {
+  padding: 0 !important;
+}
+/* line 435, ../scss/custom.scss */
+#mc_signup_form .mergeRow {
   display: none !important;
   padding: 0 !important;
 }
@@ -1507,16 +1511,16 @@ a:hover {
 /* 
  *  Footer
  */
-/* line 443, ../scss/custom.scss */
+/* line 447, ../scss/custom.scss */
 #root-footer, #footer {
   height: auto;
 }
-/* line 445, ../scss/custom.scss */
+/* line 449, ../scss/custom.scss */
 #root-footer p, #footer p {
   color: #666;
 }
 
-/* line 449, ../scss/custom.scss */
+/* line 453, ../scss/custom.scss */
 #footer {
   background-color: #000;
 }
@@ -1524,7 +1528,7 @@ a:hover {
 /*
  *  Admin Menu 
  */
-/* line 459, ../scss/custom.scss */
+/* line 463, ../scss/custom.scss */
 #adminmenu #menu-posts-design .wp-menu-image:before {
   content: '\f85' !important;
 }
