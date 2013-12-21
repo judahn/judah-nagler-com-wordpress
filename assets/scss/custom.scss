@@ -442,10 +442,10 @@ a:hover {
     width: 100% !important;
     background: $red;
     padding: 10px;
-    margin-top: 0;
+    margin-top: 0 !important;
     border: 0;
     color: white;
-    @include border-radius(10px);
+    @include border-radius(3px);
     @include transition(background-color, 0.25s);
     &:hover {
         background-color: $blue;
