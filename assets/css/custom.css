@@ -1517,11 +1517,11 @@ a:hover {
   margin-top: 0 !important;
   border: 0;
   color: white;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
-  border-radius: 3px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
   -webkit-transition: background-color, 0.25s;
   -moz-transition: background-color, 0.25s;
   -o-transition: background-color, 0.25s;

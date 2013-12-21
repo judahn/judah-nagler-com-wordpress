@@ -445,7 +445,7 @@ a:hover {
     margin-top: 0 !important;
     border: 0;
     color: white;
-    @include border-radius(3px);
+    @include border-radius(2px);
     @include transition(background-color, 0.25s);
     &:hover {
         background-color: $blue;
