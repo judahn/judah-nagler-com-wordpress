@@ -12,15 +12,15 @@
 
 
 <?php
-
 	$args = array(
-		'post_type' => 'interactive',
-		'posts_per_page' => '-1'
+		'post_type' => 'design',
+		'posts_per_page' => '-1',
+		'orderby' => 'menu_order',
+		'order' => 'ASC',
 	);
-
 	$the_query = new WP_Query( $args );
-
- ?>
+    $the_query->get_posts();
+?>
 
 <?php get_template_part( 'content', 'page' ); ?>
 

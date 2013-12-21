@@ -187,17 +187,10 @@ code, pre, .highlight {
 }
 
 /* line 82, ../scss/_mixins.scss */
-.image, .design-slider, .mq-list li, .single-design .media {
+.design-slider, .mq-list li, .single-design .media {
   -webkit-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
   -moz-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
   box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
-}
-
-/* line 88, ../scss/_mixins.scss */
-.thumbnail h3 {
-  -webkit-box-shadow: 0px 2px 20px black;
-  -moz-box-shadow: 0px 2px 20px black;
-  box-shadow: 0px 2px 20px black;
 }
 
 @font-face {
@@ -454,9 +447,6 @@ p {
 .navbar-inverse {
   background-color: black;
   border: 0;
-  -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* line 104, ../scss/_navbar.scss */
@@ -616,17 +606,10 @@ code, pre, .highlight {
 }
 
 /* line 82, ../scss/_mixins.scss */
-.image, .design-slider, .mq-list li, .single-design .media {
+.design-slider, .mq-list li, .single-design .media {
   -webkit-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
   -moz-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
   box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
-}
-
-/* line 88, ../scss/_mixins.scss */
-.thumbnail h3 {
-  -webkit-box-shadow: 0px 2px 20px black;
-  -moz-box-shadow: 0px 2px 20px black;
-  box-shadow: 0px 2px 20px black;
 }
 
 /*
@@ -874,17 +857,10 @@ code, pre, .highlight {
 }
 
 /* line 82, ../scss/_mixins.scss */
-.image, .design-slider, .mq-list li, .single-design .media {
+.design-slider, .mq-list li, .single-design .media {
   -webkit-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
   -moz-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
   box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
-}
-
-/* line 88, ../scss/_mixins.scss */
-.thumbnail h3 {
-  -webkit-box-shadow: 0px 2px 20px black;
-  -moz-box-shadow: 0px 2px 20px black;
-  box-shadow: 0px 2px 20px black;
 }
 
 /*
@@ -985,8 +961,7 @@ code, pre, .highlight {
 /* line 18, ../scss/custom.scss */
 body {
   overflow-x: hidden;
-  background-color: black;
-  background: url('/wp-content/themes/jn-wpbs/assets/img/bg/goth.jpg?1387464063') black fixed;
+  background-color: #333;
 }
 
 /* line 23, ../scss/custom.scss */

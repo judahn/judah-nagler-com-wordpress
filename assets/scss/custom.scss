@@ -17,8 +17,8 @@
 
 body {
     overflow-x: hidden;
-    background-color: black;//darken($blue, 17%);
-    @include background(image-url("bg/goth.jpg") #000 fixed);
+    background-color: #333;//darken($blue, 17%);
+    // @include background(image-url("bg/stripes-blue.png") #000 fixed);
 }
 article {
     padding-left: 0 !important;
@@ -184,7 +184,7 @@ a:hover {
         @include transition (background-color, 0.5s);
         @include transition (padding,    0.5s);
         // color: $rust;
-        @extend %boxShadowMd;
+        // @extend %boxShadowMd;
         background-color: black;
     }
     img {
