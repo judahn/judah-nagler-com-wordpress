@@ -535,23 +535,45 @@ button {
   margin-top: 30px;
 }
 /* line 177, ../scss/_navbar.scss */
-.footer-widgets .widget h3 {
+.footer-widgets .widget h2 {
   font-family: "Dosis", sans-serif !important;
+  font-size: 100%;
+  color: white;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+}
+/* line 185, ../scss/_navbar.scss */
+.footer-widgets .menu-item {
+  margin: 10px 0;
+  text-transform: uppercase;
+  /* a {
+      color: #666;
+      &:hover {
+          color: $blue;
+      }
+  } */
+}
+/* line 189, ../scss/_navbar.scss */
+.footer-widgets .menu-item:before {
+  margin-left: 10px;
+  margin-right: 5px;
+  content: "\00bb ";
+  color: #d2322d;
 }
 
-/* line 184, ../scss/_navbar.scss */
+/* line 205, ../scss/_navbar.scss */
 #footer-menu li {
   width: 100%;
 }
 
 @media only all and (max-width: 767px) {
   /* Logo */
-  /* line 193, ../scss/_navbar.scss */
+  /* line 214, ../scss/_navbar.scss */
   .navbar-brand {
     padding-left: 15px;
   }
 
-  /* line 196, ../scss/_navbar.scss */
+  /* line 217, ../scss/_navbar.scss */
   .navbar-collapse {
     background-color: #000;
   }

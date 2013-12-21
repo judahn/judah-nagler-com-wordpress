@@ -16,36 +16,11 @@
 <footer id="footer" class="site-footer footer row" role="contentinfo">
 	<div class="container">
 		<div class="footer-widgets row">
-			<div class="col-sm-4 no-pad">
-				<div class="widget">
-					<h3>Widget 1</h3>
-					<!-- The WordPress Menu goes here -->
-					<!--<?php wp_nav_menu(
-						array(
-							'theme_location' => 'primary',
-							'container_class' => '',
-							'menu_class' => 'nav navbar-nav list-unstyled',
-							'fallback_cb' => '',
-							'menu_id' => 'footer-menu',
-							'walker' => new wp_bootstrap_navwalker()
-						)
-					); ?>-->
-					<!-- <img id="avatar-wide" src="<?php echo get_template_directory_uri() . '/assets/img/avatar.jpg' ?>" alt=""> -->
-				</div>
-			</div>
-			<div class="col-sm-4 no-pad">
-				<div class="widget">
-					<h3>Widget 2</h3>
-				</div>
-			</div>
-			<div class="col-sm-4 no-pad">
-				<div class="widget">
-					<h3>Widget 3</h3>
-				</div>
-			</div>	
+			<?php if ( dynamic_sidebar('Footer') ) : else : endif; ?>
 		</div>	
 	</div><!-- close .container -->
 </footer><!-- close #colophon -->
+
 
 <?php wp_footer(); ?>
 

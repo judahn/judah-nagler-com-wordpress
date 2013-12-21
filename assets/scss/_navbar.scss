@@ -174,9 +174,30 @@ button {
         border-left: 1px solid #222;
         padding: 10px;
         margin-top: 30px;
-        h3 {
+        h2 {
             font-family: "Dosis", sans-serif !important;
+            font-size: 100%;
+            color: white;
+            margin-bottom: 20px;
+            letter-spacing: 3px;
         }
+    }
+    .menu-item {
+        margin: 10px 0;
+        text-transform: uppercase;
+
+        &:before {
+            margin-left: 10px;
+            margin-right: 5px;
+            content: "\00bb ";
+            color: $red;
+        }
+        /* a {
+            color: #666;
+            &:hover {
+                color: $blue;
+            }
+        } */
     }
 }
 
