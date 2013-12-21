@@ -1498,19 +1498,25 @@ a:hover {
   border: 1px solid black;
 }
 
+/* line 433, ../scss/custom.scss */
+.mergeRow {
+  display: none;
+  padding: 0;
+}
+
 /* 
  *  Footer
  */
-/* line 438, ../scss/custom.scss */
+/* line 443, ../scss/custom.scss */
 #root-footer, #footer {
   height: auto;
 }
-/* line 440, ../scss/custom.scss */
+/* line 445, ../scss/custom.scss */
 #root-footer p, #footer p {
   color: #666;
 }
 
-/* line 444, ../scss/custom.scss */
+/* line 449, ../scss/custom.scss */
 #footer {
   background-color: #000;
 }
@@ -1518,7 +1524,7 @@ a:hover {
 /*
  *  Admin Menu 
  */
-/* line 454, ../scss/custom.scss */
+/* line 459, ../scss/custom.scss */
 #adminmenu #menu-posts-design .wp-menu-image:before {
   content: '\f85' !important;
 }
