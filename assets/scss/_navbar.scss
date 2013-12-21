@@ -161,6 +161,11 @@ button {
 .affix {
     top: 0;
 }
+.affix-top {
+    @include max_tablet {
+        position: fixed;
+    }
+}
 
 // Footer menu
 
@@ -211,6 +216,22 @@ button {
                 color: $blue;
             }
         } */
+    }
+}
+
+#calendar_wrap {
+    padding: 0;
+    // color: #999;
+
+    .table-striped > tbody > tr:nth-child(odd) > td, .table-striped > tbody > tr:nth-child(odd) > th {
+        background-color: #222;
+    }
+    .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+        border-top: 1px solid #444;
+    }
+    caption{
+        color: $blue;
+        margin-bottom: 10px;
     }
 }
 

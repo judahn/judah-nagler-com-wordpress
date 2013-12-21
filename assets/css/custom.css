@@ -524,17 +524,24 @@ button {
   top: 0;
 }
 
-/* line 168, ../scss/_navbar.scss */
+@media only all and (max-width: 767px) {
+  /* line 164, ../scss/_navbar.scss */
+  .affix-top {
+    position: fixed;
+  }
+}
+
+/* line 173, ../scss/_navbar.scss */
 .footer-widgets .nav {
   margin-top: 0px;
 }
-/* line 172, ../scss/_navbar.scss */
+/* line 177, ../scss/_navbar.scss */
 .footer-widgets .widget {
   border-left: 1px dashed #222;
   padding: 23px;
   margin-top: 30px;
 }
-/* line 177, ../scss/_navbar.scss */
+/* line 182, ../scss/_navbar.scss */
 .footer-widgets .widget h2 {
   font-family: "Dosis", sans-serif !important;
   font-size: 100%;
@@ -543,24 +550,24 @@ button {
   letter-spacing: 3px;
 }
 @media only all and (max-width: 767px) {
-  /* line 172, ../scss/_navbar.scss */
+  /* line 177, ../scss/_navbar.scss */
   .footer-widgets .widget {
     padding: 23px 23px 0 0;
     margin-top: 20px;
     border-left: 0;
   }
 }
-/* line 190, ../scss/_navbar.scss */
+/* line 195, ../scss/_navbar.scss */
 .footer-widgets .widget:first-child {
   border-left: 0;
 }
 @media only all and (max-width: 767px) {
-  /* line 193, ../scss/_navbar.scss */
+  /* line 198, ../scss/_navbar.scss */
   .footer-widgets .widget:last-child {
     padding: 0 23px 0 0;
   }
 }
-/* line 198, ../scss/_navbar.scss */
+/* line 203, ../scss/_navbar.scss */
 .footer-widgets .menu-item {
   margin: 10px 0;
   text-transform: uppercase;
@@ -571,7 +578,7 @@ button {
       }
   } */
 }
-/* line 202, ../scss/_navbar.scss */
+/* line 207, ../scss/_navbar.scss */
 .footer-widgets .menu-item:before {
   margin-left: 10px;
   margin-right: 5px;
@@ -579,21 +586,39 @@ button {
   color: #d2322d;
 }
 
-/* line 218, ../scss/_navbar.scss */
+/* line 222, ../scss/_navbar.scss */
+#calendar_wrap {
+  padding: 0;
+}
+/* line 226, ../scss/_navbar.scss */
+#calendar_wrap .table-striped > tbody > tr:nth-child(odd) > td, #calendar_wrap .table-striped > tbody > tr:nth-child(odd) > th {
+  background-color: #222;
+}
+/* line 229, ../scss/_navbar.scss */
+#calendar_wrap .table > thead > tr > th, #calendar_wrap .table > tbody > tr > th, #calendar_wrap .table > tfoot > tr > th, #calendar_wrap .table > thead > tr > td, #calendar_wrap .table > tbody > tr > td, #calendar_wrap .table > tfoot > tr > td {
+  border-top: 1px solid #444;
+}
+/* line 232, ../scss/_navbar.scss */
+#calendar_wrap caption {
+  color: #0074a2;
+  margin-bottom: 10px;
+}
+
+/* line 239, ../scss/_navbar.scss */
 #footer-menu li {
   width: 100%;
 }
 
-/* line 222, ../scss/_navbar.scss */
+/* line 243, ../scss/_navbar.scss */
 #root-footer, #footer {
   height: auto;
 }
-/* line 224, ../scss/_navbar.scss */
+/* line 245, ../scss/_navbar.scss */
 #root-footer p, #footer p {
   color: #666;
 }
 
-/* line 228, ../scss/_navbar.scss */
+/* line 249, ../scss/_navbar.scss */
 #footer {
   background-color: #000;
 }
@@ -601,7 +626,7 @@ button {
 /* 
  *  Kebo Tweets
  */
-/* line 241, ../scss/_navbar.scss */
+/* line 262, ../scss/_navbar.scss */
 .kebo-tweets a.kaccount, .kebo-tweets a.kdate {
   font-size: 96% !important;
 }
@@ -609,21 +634,21 @@ button {
 /*  
  *  Mailchimp Email Signup 
  */
-/* line 252, ../scss/_navbar.scss */
+/* line 273, ../scss/_navbar.scss */
 #mc_signup {
   padding: 0 !important;
 }
-/* line 254, ../scss/_navbar.scss */
+/* line 275, ../scss/_navbar.scss */
 #mc_signup .mergeRow {
   display: none !important;
   padding: 0 !important;
 }
-/* line 258, ../scss/_navbar.scss */
+/* line 279, ../scss/_navbar.scss */
 #mc_signup form {
   padding: 0 !important;
 }
 
-/* line 262, ../scss/_navbar.scss */
+/* line 283, ../scss/_navbar.scss */
 #mc_signup_submit {
   margin-top: 0;
   width: 100% !important;
@@ -642,7 +667,7 @@ button {
   -o-transition: background-color, 0.25s;
   transition: background-color, 0.25s;
 }
-/* line 272, ../scss/_navbar.scss */
+/* line 293, ../scss/_navbar.scss */
 #mc_signup_submit:hover {
   background-color: #0074a2;
   -webkit-transition: background-color, 0.25s;
@@ -651,12 +676,12 @@ button {
   transition: background-color, 0.25s;
 }
 
-/* line 277, ../scss/_navbar.scss */
+/* line 298, ../scss/_navbar.scss */
 .mc_success_msg {
   color: #0074a2;
 }
 
-/* line 280, ../scss/_navbar.scss */
+/* line 301, ../scss/_navbar.scss */
 #mc_message {
   margin-bottom: 15px;
   margin-top: -2px;
@@ -664,12 +689,12 @@ button {
 
 @media only all and (max-width: 767px) {
   /* Logo */
-  /* line 289, ../scss/_navbar.scss */
+  /* line 310, ../scss/_navbar.scss */
   .navbar-brand {
     padding-left: 15px;
   }
 
-  /* line 292, ../scss/_navbar.scss */
+  /* line 313, ../scss/_navbar.scss */
   .navbar-collapse {
     background-color: #000;
   }
