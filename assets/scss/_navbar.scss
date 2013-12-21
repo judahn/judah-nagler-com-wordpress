@@ -164,8 +164,17 @@ button {
 
 // Footer menu
 
-.footer-widget .container{
-    background-color: #222;
+.footer-widgets {
+    .nav {
+        // background-color: #222;
+        margin-top: 0px;
+    }
+    .widget {
+        // background-color: #222;
+        border-left: 1px solid #222;
+        padding: 10px;
+        margin-top: 30px;
+    }
 }
 
 #footer-menu {

@@ -435,17 +435,15 @@ a:hover {
  */
 
 #root-footer, #footer {
-    height: 300px;
+    height: auto;
     p {
         color: #666;
     }
 }
 #footer {
     background-color: #000;
-    height: 300px;
-    z-index: -1;
 }
-@include sticky-footer(300px, "#root", "#root-footer", "#footer");
+// @include sticky-footer(300px, "#root", "#root-footer", "#footer");
 
 
 /*
