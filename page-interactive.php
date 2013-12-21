@@ -13,7 +13,7 @@
 
 <?php
 	$args = array(
-		'post_type' => 'design',
+		'post_type' => 'interactive',
 		'posts_per_page' => '-1',
 		'orderby' => 'menu_order',
 		'order' => 'ASC',
