@@ -1499,11 +1499,11 @@ a:hover {
 }
 
 /* line 433, ../scss/custom.scss */
-#mc_signup_form {
+#mc_signup {
   padding: 0 !important;
 }
 /* line 435, ../scss/custom.scss */
-#mc_signup_form .mergeRow {
+#mc_signup .mergeRow {
   display: none !important;
   padding: 0 !important;
 }
