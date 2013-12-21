@@ -190,6 +190,9 @@ button {
     .widget:first-child {
         border-left: 0;
     }
+    .widget:last-child {
+        padding-top: 0;
+    }
     .menu-item {
         margin: 10px 0;
         text-transform: uppercase;
