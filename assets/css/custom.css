@@ -584,7 +584,7 @@ button {
  *  Kebo Tweets
  */
 /* line 228, ../scss/_navbar.scss */
-.kebo-tweets .kaccount, .kebo-tweets .kdate {
+.kebo-tweets a.kaccount, .kebo-tweets a.kdate {
   font-size: 96% !important;
 }
 
