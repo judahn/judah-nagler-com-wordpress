@@ -1,0 +1,73 @@
+/* 
+ *  Thumbnails
+ */
+
+.row-thumbnails {
+    margin-left: -15px;
+    margin-right: -15px;
+
+    li {
+        @include max($pager + 39){
+            width: 100% !important;
+            clear: both;
+            min-height: 0;
+        }
+    }
+}
+
+.thumbnail {
+    @extend %transBg;
+    padding:        0;
+    margin-bottom:  1%;
+
+    @include transition(all, 0s);
+
+    h3 {
+        @include transition (background-color, 0.5s);
+        @include transition (padding,    0.5s);
+        font-family: "Dosis", sans-serif !important;
+        // color: $rust;
+        // @extend %boxShadowMd;
+        background-color: black;
+    }
+    img {
+        height: auto !important;
+        border: 3px solid black;
+
+        @include max_tablet {
+            width: 100% !important;
+        }
+    }
+
+    .caption {
+        text-align: center;
+        padding: 10px 0 0 0;
+    }
+
+    // Hover states
+
+    &:hover {
+        @include min_tablet {
+            img {
+                border: 3px solid darken($blue, 10%);
+                @include transition(border, 0.5s);
+            }
+            h3 {
+                background: darken($blue, 10%);
+                // color: lighten($rust, 5%);
+                // padding-top: 20px;
+                @include transition (background-color, 0.2s);
+                @include transition (padding, 0.2s);
+            }
+            i {
+                color: white;
+            }
+        }
+    }
+}
+.thumb-title {
+    min-height: 58px;
+    @include max($pager + 1){
+        min-height: 35px;
+    }
+}
