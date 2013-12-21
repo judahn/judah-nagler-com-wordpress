@@ -635,21 +635,23 @@ button {
 
 /* line 264, ../scss/_navbar.scss */
 .mc_success_msg {
-  color: #5cb85c;
+  color: #0074a2;
 }
-/* line 266, ../scss/_navbar.scss */
-.mc_success_msg:after {
-  content: " ";
+
+/* line 267, ../scss/_navbar.scss */
+#mc_message {
+  margin-bottom: 15px;
+  margin-top: -2px;
 }
 
 @media only all and (max-width: 767px) {
   /* Logo */
-  /* line 275, ../scss/_navbar.scss */
+  /* line 276, ../scss/_navbar.scss */
   .navbar-brand {
     padding-left: 15px;
   }
 
-  /* line 278, ../scss/_navbar.scss */
+  /* line 279, ../scss/_navbar.scss */
   .navbar-collapse {
     background-color: #000;
   }

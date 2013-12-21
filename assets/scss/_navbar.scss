@@ -262,10 +262,11 @@ button {
     }
 }
 .mc_success_msg {
-    color: $green;
-    &:after{
-        content: " ";
-    }
+    color: $blue;
+}
+#mc_message {
+    margin-bottom: 15px;
+    margin-top: -2px;
 }
 
 //  Responsive: Portrait mobile and below
