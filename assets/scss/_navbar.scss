@@ -191,7 +191,9 @@ button {
         border-left: 0;
     }
     .widget:last-child {
-        padding: 0 23px 0 0;
+        @include max_tablet {
+            padding: 0 23px 0 0;
+        }
     }
     .menu-item {
         margin: 10px 0;
