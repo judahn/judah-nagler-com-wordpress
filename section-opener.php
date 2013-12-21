@@ -1,3 +1,5 @@
+<?php include 'nav.php' ?>
+
 <div class="main-content">
 	<div class="container">
 		<div class="row">

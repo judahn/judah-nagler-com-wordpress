@@ -6,6 +6,12 @@
 
 <?php get_header(); ?>
 
+<article class="row above-header">
+	<div class="container">
+		<!-- <h1 class="pull-right"><?php the_title(); ?></h1> -->
+	</div>
+</article>
+
 <?php include 'section-opener.php' ?>
 
 

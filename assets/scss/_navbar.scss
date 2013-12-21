@@ -162,6 +162,18 @@ button {
     top: 0;
 }
 
+// Footer menu
+
+.footer-widget .container{
+    background-color: #222;
+}
+
+#footer-menu {
+    li {
+        width: 100%;
+    }
+}
+
 //  Responsive: Portrait mobile and below
 
 @include max_tablet{

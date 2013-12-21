@@ -524,14 +524,24 @@ button {
   top: 0;
 }
 
+/* line 167, ../scss/_navbar.scss */
+.footer-widget .container {
+  background-color: #222;
+}
+
+/* line 172, ../scss/_navbar.scss */
+#footer-menu li {
+  width: 100%;
+}
+
 @media only all and (max-width: 767px) {
   /* Logo */
-  /* line 169, ../scss/_navbar.scss */
+  /* line 181, ../scss/_navbar.scss */
   .navbar-brand {
     padding-left: 15px;
   }
 
-  /* line 172, ../scss/_navbar.scss */
+  /* line 184, ../scss/_navbar.scss */
   .navbar-collapse {
     background-color: #000;
   }
