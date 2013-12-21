@@ -166,7 +166,7 @@ a:hover {
     margin-right: -15px;
 
     li {
-        @include max($pager + 1){
+        @include max($pager + 50){
             width: 100% !important;
             clear: both;
             min-height: 0;

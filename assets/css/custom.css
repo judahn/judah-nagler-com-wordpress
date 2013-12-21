@@ -1159,7 +1159,7 @@ a:hover {
   margin-left: -15px;
   margin-right: -15px;
 }
-@media only all and (max-width: 320px) {
+@media only all and (max-width: 369px) {
   /* line 168, ../scss/custom.scss */
   .row-thumbnails li {
     width: 100% !important;
