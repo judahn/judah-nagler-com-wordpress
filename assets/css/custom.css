@@ -556,7 +556,7 @@ button {
 }
 /* line 193, ../scss/_navbar.scss */
 .footer-widgets .widget:last-child {
-  padding-top: 0;
+  padding: 0 23px 0 0;
 }
 /* line 196, ../scss/_navbar.scss */
 .footer-widgets .menu-item {
