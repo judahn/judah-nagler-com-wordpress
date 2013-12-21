@@ -633,14 +633,23 @@ button {
   transition: background-color, 0.25s;
 }
 
+/* line 264, ../scss/_navbar.scss */
+.mc_success_msg {
+  color: #5cb85c;
+}
+/* line 266, ../scss/_navbar.scss */
+.mc_success_msg:after {
+  content: " ";
+}
+
 @media only all and (max-width: 767px) {
   /* Logo */
-  /* line 269, ../scss/_navbar.scss */
+  /* line 275, ../scss/_navbar.scss */
   .navbar-brand {
     padding-left: 15px;
   }
 
-  /* line 272, ../scss/_navbar.scss */
+  /* line 278, ../scss/_navbar.scss */
   .navbar-collapse {
     background-color: #000;
   }

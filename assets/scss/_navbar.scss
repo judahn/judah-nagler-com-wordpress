@@ -261,6 +261,12 @@ button {
         @include transition(background-color, 0.25s);
     }
 }
+.mc_success_msg {
+    color: $green;
+    &:after{
+        content: " ";
+    }
+}
 
 //  Responsive: Portrait mobile and below
 
