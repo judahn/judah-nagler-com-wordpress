@@ -566,14 +566,69 @@ button {
   width: 100%;
 }
 
+/* line 209, ../scss/_navbar.scss */
+#root-footer, #footer {
+  height: auto;
+}
+/* line 211, ../scss/_navbar.scss */
+#root-footer p, #footer p {
+  color: #666;
+}
+
+/* line 215, ../scss/_navbar.scss */
+#footer {
+  background-color: #000;
+}
+
+/*  
+ *  Mailchimp Email Signup 
+ */
+/* line 227, ../scss/_navbar.scss */
+#mc_signup {
+  padding: 0 !important;
+}
+/* line 229, ../scss/_navbar.scss */
+#mc_signup .mergeRow {
+  display: none !important;
+  padding: 0 !important;
+}
+
+/* line 234, ../scss/_navbar.scss */
+#mc_signup_submit {
+  margin-top: 0;
+  width: 100% !important;
+  background: #d2322d;
+  padding: 10px;
+  margin-top: 0 !important;
+  border: 0;
+  color: white;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-transition: background-color, 0.25s;
+  -moz-transition: background-color, 0.25s;
+  -o-transition: background-color, 0.25s;
+  transition: background-color, 0.25s;
+}
+/* line 244, ../scss/_navbar.scss */
+#mc_signup_submit:hover {
+  background-color: #0074a2;
+  -webkit-transition: background-color, 0.25s;
+  -moz-transition: background-color, 0.25s;
+  -o-transition: background-color, 0.25s;
+  transition: background-color, 0.25s;
+}
+
 @media only all and (max-width: 767px) {
   /* Logo */
-  /* line 214, ../scss/_navbar.scss */
+  /* line 254, ../scss/_navbar.scss */
   .navbar-brand {
     padding-left: 15px;
   }
 
-  /* line 217, ../scss/_navbar.scss */
+  /* line 257, ../scss/_navbar.scss */
   .navbar-collapse {
     background-color: #000;
   }
@@ -1498,57 +1553,19 @@ a:hover {
   border: 1px solid black;
 }
 
-/* line 433, ../scss/custom.scss */
-#mc_signup {
-  padding: 0 !important;
-}
-/* line 435, ../scss/custom.scss */
-#mc_signup .mergeRow {
-  display: none !important;
-  padding: 0 !important;
-}
-
-/* line 440, ../scss/custom.scss */
-#mc_signup_submit {
-  margin-top: 0;
-  width: 100% !important;
-  background: #d2322d;
-  padding: 10px;
-  margin-top: 0 !important;
-  border: 0;
-  color: white;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
-  border-radius: 2px;
-  -webkit-transition: background-color, 0.25s;
-  -moz-transition: background-color, 0.25s;
-  -o-transition: background-color, 0.25s;
-  transition: background-color, 0.25s;
-}
-/* line 450, ../scss/custom.scss */
-#mc_signup_submit:hover {
-  background-color: #0074a2;
-  -webkit-transition: background-color, 0.25s;
-  -moz-transition: background-color, 0.25s;
-  -o-transition: background-color, 0.25s;
-  transition: background-color, 0.25s;
-}
-
 /* 
  *  Footer
  */
-/* line 460, ../scss/custom.scss */
+/* line 439, ../scss/custom.scss */
 #root-footer, #footer {
   height: auto;
 }
-/* line 462, ../scss/custom.scss */
+/* line 441, ../scss/custom.scss */
 #root-footer p, #footer p {
   color: #666;
 }
 
-/* line 466, ../scss/custom.scss */
+/* line 445, ../scss/custom.scss */
 #footer {
   background-color: #000;
 }
@@ -1556,7 +1573,7 @@ a:hover {
 /*
  *  Admin Menu 
  */
-/* line 476, ../scss/custom.scss */
+/* line 455, ../scss/custom.scss */
 #adminmenu #menu-posts-design .wp-menu-image:before {
   content: '\f85' !important;
 }
