@@ -592,8 +592,12 @@ button {
   display: none !important;
   padding: 0 !important;
 }
+/* line 233, ../scss/_navbar.scss */
+#mc_signup form {
+  padding: 0 !important;
+}
 
-/* line 234, ../scss/_navbar.scss */
+/* line 237, ../scss/_navbar.scss */
 #mc_signup_submit {
   margin-top: 0;
   width: 100% !important;
@@ -612,7 +616,7 @@ button {
   -o-transition: background-color, 0.25s;
   transition: background-color, 0.25s;
 }
-/* line 244, ../scss/_navbar.scss */
+/* line 247, ../scss/_navbar.scss */
 #mc_signup_submit:hover {
   background-color: #0074a2;
   -webkit-transition: background-color, 0.25s;
@@ -623,12 +627,12 @@ button {
 
 @media only all and (max-width: 767px) {
   /* Logo */
-  /* line 254, ../scss/_navbar.scss */
+  /* line 257, ../scss/_navbar.scss */
   .navbar-brand {
     padding-left: 15px;
   }
 
-  /* line 257, ../scss/_navbar.scss */
+  /* line 260, ../scss/_navbar.scss */
   .navbar-collapse {
     background-color: #000;
   }
