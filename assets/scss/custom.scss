@@ -183,6 +183,7 @@ a:hover {
     h3 {
         @include transition (background-color, 0.5s);
         @include transition (padding,    0.5s);
+        font-family: "Dosis", sans-serif !important;
         // color: $rust;
         // @extend %boxShadowMd;
         background-color: black;
