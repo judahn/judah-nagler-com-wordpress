@@ -181,6 +181,11 @@ button {
             margin-bottom: 20px;
             letter-spacing: 3px;
         }
+        @include max_tablet {
+            padding: 23px 23px 0 0;
+            margin-top: 20px;
+            border-left: 0;
+        }
     }
     .widget:first-child {
         border-left: 0;

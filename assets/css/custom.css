@@ -542,11 +542,19 @@ button {
   margin-bottom: 20px;
   letter-spacing: 3px;
 }
-/* line 185, ../scss/_navbar.scss */
+@media only all and (max-width: 767px) {
+  /* line 172, ../scss/_navbar.scss */
+  .footer-widgets .widget {
+    padding: 23px 23px 0 0;
+    margin-top: 20px;
+    border-left: 0;
+  }
+}
+/* line 190, ../scss/_navbar.scss */
 .footer-widgets .widget:first-child {
   border-left: 0;
 }
-/* line 188, ../scss/_navbar.scss */
+/* line 193, ../scss/_navbar.scss */
 .footer-widgets .menu-item {
   margin: 10px 0;
   text-transform: uppercase;
@@ -557,7 +565,7 @@ button {
       }
   } */
 }
-/* line 192, ../scss/_navbar.scss */
+/* line 197, ../scss/_navbar.scss */
 .footer-widgets .menu-item:before {
   margin-left: 10px;
   margin-right: 5px;
@@ -565,21 +573,21 @@ button {
   color: #d2322d;
 }
 
-/* line 208, ../scss/_navbar.scss */
+/* line 213, ../scss/_navbar.scss */
 #footer-menu li {
   width: 100%;
 }
 
-/* line 212, ../scss/_navbar.scss */
+/* line 217, ../scss/_navbar.scss */
 #root-footer, #footer {
   height: auto;
 }
-/* line 214, ../scss/_navbar.scss */
+/* line 219, ../scss/_navbar.scss */
 #root-footer p, #footer p {
   color: #666;
 }
 
-/* line 218, ../scss/_navbar.scss */
+/* line 223, ../scss/_navbar.scss */
 #footer {
   background-color: #000;
 }
@@ -587,7 +595,7 @@ button {
 /* 
  *  Kebo Tweets
  */
-/* line 231, ../scss/_navbar.scss */
+/* line 236, ../scss/_navbar.scss */
 .kebo-tweets a.kaccount, .kebo-tweets a.kdate {
   font-size: 96% !important;
 }
@@ -595,21 +603,21 @@ button {
 /*  
  *  Mailchimp Email Signup 
  */
-/* line 242, ../scss/_navbar.scss */
+/* line 247, ../scss/_navbar.scss */
 #mc_signup {
   padding: 0 !important;
 }
-/* line 244, ../scss/_navbar.scss */
+/* line 249, ../scss/_navbar.scss */
 #mc_signup .mergeRow {
   display: none !important;
   padding: 0 !important;
 }
-/* line 248, ../scss/_navbar.scss */
+/* line 253, ../scss/_navbar.scss */
 #mc_signup form {
   padding: 0 !important;
 }
 
-/* line 252, ../scss/_navbar.scss */
+/* line 257, ../scss/_navbar.scss */
 #mc_signup_submit {
   margin-top: 0;
   width: 100% !important;
@@ -628,7 +636,7 @@ button {
   -o-transition: background-color, 0.25s;
   transition: background-color, 0.25s;
 }
-/* line 262, ../scss/_navbar.scss */
+/* line 267, ../scss/_navbar.scss */
 #mc_signup_submit:hover {
   background-color: #0074a2;
   -webkit-transition: background-color, 0.25s;
@@ -637,12 +645,12 @@ button {
   transition: background-color, 0.25s;
 }
 
-/* line 267, ../scss/_navbar.scss */
+/* line 272, ../scss/_navbar.scss */
 .mc_success_msg {
   color: #0074a2;
 }
 
-/* line 270, ../scss/_navbar.scss */
+/* line 275, ../scss/_navbar.scss */
 #mc_message {
   margin-bottom: 15px;
   margin-top: -2px;
@@ -650,12 +658,12 @@ button {
 
 @media only all and (max-width: 767px) {
   /* Logo */
-  /* line 279, ../scss/_navbar.scss */
+  /* line 284, ../scss/_navbar.scss */
   .navbar-brand {
     padding-left: 15px;
   }
 
-  /* line 282, ../scss/_navbar.scss */
+  /* line 287, ../scss/_navbar.scss */
   .navbar-collapse {
     background-color: #000;
   }
