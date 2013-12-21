@@ -12,7 +12,7 @@
 
 get_header(); ?>
 
-<article class="row above-header">
+<article class="row above-header hidden-xs">
 	<div class="container">
 		<!-- <h1 class="pull-right"><?php the_title(); ?></h1> -->
 	</div>
