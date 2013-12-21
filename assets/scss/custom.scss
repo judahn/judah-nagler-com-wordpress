@@ -432,22 +432,6 @@ a:hover {
 
 
 
-/* 
- *  Footer
- */
-
-#root-footer, #footer {
-    height: auto;
-    p {
-        color: #666;
-    }
-}
-#footer {
-    background-color: #000;
-}
-// @include sticky-footer(300px, "#root", "#root-footer", "#footer");
-
-
 /*
  *  Admin Menu 
  */

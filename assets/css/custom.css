@@ -580,24 +580,32 @@ button {
   background-color: #000;
 }
 
+/* 
+ *  Kebo Tweets
+ */
+/* line 228, ../scss/_navbar.scss */
+.kebo-tweets .kaccount, .kebo-tweets .kdate {
+  font-size: 96% !important;
+}
+
 /*  
  *  Mailchimp Email Signup 
  */
-/* line 227, ../scss/_navbar.scss */
+/* line 239, ../scss/_navbar.scss */
 #mc_signup {
   padding: 0 !important;
 }
-/* line 229, ../scss/_navbar.scss */
+/* line 241, ../scss/_navbar.scss */
 #mc_signup .mergeRow {
   display: none !important;
   padding: 0 !important;
 }
-/* line 233, ../scss/_navbar.scss */
+/* line 245, ../scss/_navbar.scss */
 #mc_signup form {
   padding: 0 !important;
 }
 
-/* line 237, ../scss/_navbar.scss */
+/* line 249, ../scss/_navbar.scss */
 #mc_signup_submit {
   margin-top: 0;
   width: 100% !important;
@@ -616,7 +624,7 @@ button {
   -o-transition: background-color, 0.25s;
   transition: background-color, 0.25s;
 }
-/* line 247, ../scss/_navbar.scss */
+/* line 259, ../scss/_navbar.scss */
 #mc_signup_submit:hover {
   background-color: #0074a2;
   -webkit-transition: background-color, 0.25s;
@@ -627,12 +635,12 @@ button {
 
 @media only all and (max-width: 767px) {
   /* Logo */
-  /* line 257, ../scss/_navbar.scss */
+  /* line 269, ../scss/_navbar.scss */
   .navbar-brand {
     padding-left: 15px;
   }
 
-  /* line 260, ../scss/_navbar.scss */
+  /* line 272, ../scss/_navbar.scss */
   .navbar-collapse {
     background-color: #000;
   }
@@ -1557,27 +1565,10 @@ a:hover {
   border: 1px solid black;
 }
 
-/* 
- *  Footer
- */
-/* line 439, ../scss/custom.scss */
-#root-footer, #footer {
-  height: auto;
-}
-/* line 441, ../scss/custom.scss */
-#root-footer p, #footer p {
-  color: #666;
-}
-
-/* line 445, ../scss/custom.scss */
-#footer {
-  background-color: #000;
-}
-
 /*
  *  Admin Menu 
  */
-/* line 455, ../scss/custom.scss */
+/* line 439, ../scss/custom.scss */
 #adminmenu #menu-posts-design .wp-menu-image:before {
   content: '\f85' !important;
 }
