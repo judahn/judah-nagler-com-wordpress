@@ -1511,17 +1511,23 @@ a:hover {
 /* line 440, ../scss/custom.scss */
 #mc_signup_submit {
   margin-top: 0;
-  width: 100%;
+  width: 100% !important;
   background: #d2322d;
   padding: 10px;
+  margin-top: 0;
   border: 0;
   color: white;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
   -webkit-transition: background-color, 0.25s;
   -moz-transition: background-color, 0.25s;
   -o-transition: background-color, 0.25s;
   transition: background-color, 0.25s;
 }
-/* line 448, ../scss/custom.scss */
+/* line 450, ../scss/custom.scss */
 #mc_signup_submit:hover {
   background-color: #0074a2;
   -webkit-transition: background-color, 0.25s;
@@ -1533,16 +1539,16 @@ a:hover {
 /* 
  *  Footer
  */
-/* line 458, ../scss/custom.scss */
+/* line 460, ../scss/custom.scss */
 #root-footer, #footer {
   height: auto;
 }
-/* line 460, ../scss/custom.scss */
+/* line 462, ../scss/custom.scss */
 #root-footer p, #footer p {
   color: #666;
 }
 
-/* line 464, ../scss/custom.scss */
+/* line 466, ../scss/custom.scss */
 #footer {
   background-color: #000;
 }
@@ -1550,7 +1556,7 @@ a:hover {
 /*
  *  Admin Menu 
  */
-/* line 474, ../scss/custom.scss */
+/* line 476, ../scss/custom.scss */
 #adminmenu #menu-posts-design .wp-menu-image:before {
   content: '\f85' !important;
 }
