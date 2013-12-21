@@ -19,7 +19,7 @@ get_header(); ?>
 
 
 
-<div class="col-sm-8 col-content">
+<div class="row col-content">
 
 	<div class="page-header">
 		<h1>Blog</h1>
@@ -53,8 +53,6 @@ get_header(); ?>
 
 
 
-
-<?php get_sidebar(); ?>
 
 <?php include 'section-closer.php' ?>
 

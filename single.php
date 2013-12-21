@@ -20,8 +20,6 @@ get_header(); ?>
 
 
 
-<?php get_sidebar(); ?>
-
 <?php include 'section-closer.php' ?>
 
 <?php get_footer(); ?>
