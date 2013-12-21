@@ -437,8 +437,19 @@ a:hover {
         padding: 0 !important;
     }    
 }
-
-
+#mc_signup_submit {
+    margin-top: 0;
+    width: 100%;
+    background: $red;
+    padding: 10px;
+    border: 0;
+    color: white;
+    @include transition(background-color, 0.25s);
+    &:hover {
+        background-color: $blue;
+        @include transition(background-color, 0.25s);
+    }
+}
 
 /* 
  *  Footer

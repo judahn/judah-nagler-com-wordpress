@@ -1508,19 +1508,41 @@ a:hover {
   padding: 0 !important;
 }
 
+/* line 440, ../scss/custom.scss */
+#mc_signup_submit {
+  margin-top: 0;
+  width: 100%;
+  background: #d2322d;
+  padding: 10px;
+  border: 0;
+  color: white;
+  -webkit-transition: background-color, 0.25s;
+  -moz-transition: background-color, 0.25s;
+  -o-transition: background-color, 0.25s;
+  transition: background-color, 0.25s;
+}
+/* line 448, ../scss/custom.scss */
+#mc_signup_submit:hover {
+  background-color: #0074a2;
+  -webkit-transition: background-color, 0.25s;
+  -moz-transition: background-color, 0.25s;
+  -o-transition: background-color, 0.25s;
+  transition: background-color, 0.25s;
+}
+
 /* 
  *  Footer
  */
-/* line 447, ../scss/custom.scss */
+/* line 458, ../scss/custom.scss */
 #root-footer, #footer {
   height: auto;
 }
-/* line 449, ../scss/custom.scss */
+/* line 460, ../scss/custom.scss */
 #root-footer p, #footer p {
   color: #666;
 }
 
-/* line 453, ../scss/custom.scss */
+/* line 464, ../scss/custom.scss */
 #footer {
   background-color: #000;
 }
@@ -1528,7 +1550,7 @@ a:hover {
 /*
  *  Admin Menu 
  */
-/* line 463, ../scss/custom.scss */
+/* line 474, ../scss/custom.scss */
 #adminmenu #menu-posts-design .wp-menu-image:before {
   content: '\f85' !important;
 }
