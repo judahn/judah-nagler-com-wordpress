@@ -673,7 +673,7 @@ button {
 }
 /* line 296, ../scss/_navbar.scss */
 #mc_signup_submit:hover {
-  background-color: #0074a2;
+  background-color: #711b18;
   -webkit-transition: background-color, 0.25s;
   -moz-transition: background-color, 0.25s;
   -o-transition: background-color, 0.25s;
