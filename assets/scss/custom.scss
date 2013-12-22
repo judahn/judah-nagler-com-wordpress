@@ -210,11 +210,11 @@ a:hover {
     &:hover {
         @include min_tablet {
             img {
-                border: 3px solid darken($blue, 10%);
+                border: 3px solid $red;//darken($red, 10%);
                 @include transition(border, 0.5s);
             }
             h3 {
-                background: darken($blue, 10%);
+                background: $red;//darken($red, 10%);
                 // color: lighten($rust, 5%);
                 // padding-top: 20px;
                 @include transition (background-color, 0.2s);

@@ -991,7 +991,7 @@ body {
   padding: 0;
   overflow-x: hidden;
   background-color: #333;
-  background: url('/wp-content/themes/jn-wpbs/assets/img/bg/goth.jpg?1387464063') black fixed;
+  background: url('/wp-content/themes/jn-wpbs/assets/img/bg/goth.jpg?1387718055') black fixed;
 }
 
 /* line 23, ../scss/custom.scss */
@@ -1214,7 +1214,7 @@ a:hover {
 @media only all and (min-width: 768px) {
   /* line 212, ../scss/custom.scss */
   .thumbnail:hover img {
-    border: 3px solid #004f6f;
+    border: 3px solid #d2322d;
     -webkit-transition: border, 0.5s;
     -moz-transition: border, 0.5s;
     -o-transition: border, 0.5s;
@@ -1222,7 +1222,7 @@ a:hover {
   }
   /* line 216, ../scss/custom.scss */
   .thumbnail:hover h3 {
-    background: #004f6f;
+    background: #d2322d;
     -webkit-transition: background-color, 0.2s;
     -moz-transition: background-color, 0.2s;
     -o-transition: background-color, 0.2s;
