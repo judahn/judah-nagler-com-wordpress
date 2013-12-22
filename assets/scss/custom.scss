@@ -221,7 +221,7 @@ a:hover {
             h3 {
                 background: $red;//darken($red, 10%);
                 // color: lighten($rust, 5%);
-                // padding-top: 20px;
+                padding-top: 20px;
                 @include transition (background-color, 0.2s);
                 @include transition (padding, 0.2s);
             }

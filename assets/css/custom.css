@@ -1228,6 +1228,7 @@ a:hover {
   /* line 221, ../scss/custom.scss */
   .thumbnail:hover h3 {
     background: #d2322d;
+    padding-top: 20px;
     -webkit-transition: background-color, 0.2s;
     -moz-transition: background-color, 0.2s;
     -o-transition: background-color, 0.2s;
