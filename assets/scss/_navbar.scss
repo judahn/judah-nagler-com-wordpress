@@ -204,6 +204,7 @@ button {
     .widget:last-child {
         @include max_tablet {
             padding: 0;
+            margin-top: 0;
         }
     }
 
