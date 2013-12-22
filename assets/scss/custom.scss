@@ -18,7 +18,7 @@ body {
     padding: 0;
     overflow-x: hidden;
     background-color: #333;//darken($blue, 17%);
-    // @include background(image-url("bg/stripes-blue.png") #000 fixed);
+    @include background(image-url("bg/stripes.png") #000 fixed);
 }
 article {
     padding-left: 0 !important;
