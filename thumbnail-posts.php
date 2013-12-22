@@ -7,12 +7,14 @@
 		<li class="col-xs-6 col-sm-4 col-lg-3">
 			<a href="<?php the_permalink(); ?>" class="thumbnail">
 				<div class="thumb-content">
-					<?php if ( has_post_thumbnail() ) {
-						the_post_thumbnail(' img-responsive');
-					} else {?>
-						<img class="attachment- img-responsive wp-post-image" src="holder.js/300x200/industrial">
-					<?php } ?>
-					<div class="thumb-title"><h3><i class="fa fa-arrow-right"></i><?php the_title(); ?></h3></div>
+					<div class="image">
+						<?php if ( has_post_thumbnail() ) {
+							the_post_thumbnail(' img-responsive');
+						} else {?>
+							<img class="attachment- img-responsive wp-post-image" src="holder.js/300x200/industrial">
+						<?php } ?>
+						<div class="thumb-title"><h3><i class="fa fa-arrow-right"></i><?php the_title(); ?></h3></div>
+					</div>
 				</div>
 			</a>
 		</li>

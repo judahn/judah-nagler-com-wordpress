@@ -191,13 +191,14 @@ a:hover {
     img {
         height: auto !important;
         border: 3px solid black;
+        // @include opacity(0.5);
+        // @include transition(opacity, 1s);
         @include transition(border, 1s);
 
         @include max_tablet {
             width: 100% !important;
         }
     }
-
     .thumb-content {
         
     }
@@ -211,9 +212,11 @@ a:hover {
     &:hover {
         @include min_tablet {
             img {
-                border: 3px dotted $red;//darken($red, 10%);
+                border: 3px solid $red;//darken($red, 10%);
                 border-bottom: 3px solid $red;
                 @include transition(border, 0.5s);
+                // @include opacity(1);
+                // @include transition(opacity, 0.5s);
             }
             h3 {
                 background: $red;//darken($red, 10%);
