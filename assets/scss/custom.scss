@@ -3,19 +3,19 @@
  */
 
 @import "compass/css3";
-@import "compass/reset";
-@import "compass/layout";
+// @import "compass/reset";
+// @import "compass/layout";
 @import "vars";
 @import "reset";
 @import "responsive";
 @import "typography";
 @import "navbar";
 @import "sections";
-@import "pages";
 @import "social";
 
 
 body {
+    padding: 0;
     overflow-x: hidden;
     background-color: #333;//darken($blue, 17%);
     // @include background(image-url("bg/stripes-blue.png") #000 fixed);
@@ -107,7 +107,7 @@ a:hover {
         padding-top: 80px;  
     }
     @include max_tablet{
-        padding-top: 70px;
+        padding-top: 0px;
     }
 }
 .content{
@@ -260,6 +260,11 @@ a:hover {
 .col-content {
     padding-left:  0px;
     padding-right: 50px;
+    overflow: hidden;
+
+    ul {
+        list-style: disc !important;
+    }
 
     @include max_laptop {
         padding-right: 40px;

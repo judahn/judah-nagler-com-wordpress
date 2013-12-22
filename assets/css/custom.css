@@ -1,71 +1,6 @@
 /*
  *	CUSTOM SCSS
  */
-/* line 17, ../../../../../../../../../Users/judah/.rvm/gems/ruby-2.0.0-p247@global/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-
-/* line 22, ../../../../../../../../../Users/judah/.rvm/gems/ruby-2.0.0-p247@global/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-html {
-  line-height: 1;
-}
-
-/* line 24, ../../../../../../../../../Users/judah/.rvm/gems/ruby-2.0.0-p247@global/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-ol, ul {
-  list-style: none;
-}
-
-/* line 26, ../../../../../../../../../Users/judah/.rvm/gems/ruby-2.0.0-p247@global/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* line 28, ../../../../../../../../../Users/judah/.rvm/gems/ruby-2.0.0-p247@global/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-/* line 30, ../../../../../../../../../Users/judah/.rvm/gems/ruby-2.0.0-p247@global/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q, blockquote {
-  quotes: none;
-}
-/* line 103, ../../../../../../../../../Users/judah/.rvm/gems/ruby-2.0.0-p247@global/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-/* line 32, ../../../../../../../../../Users/judah/.rvm/gems/ruby-2.0.0-p247@global/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-a img {
-  border: none;
-}
-
-/* line 116, ../../../../../../../../../Users/judah/.rvm/gems/ruby-2.0.0-p247@global/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-  display: block;
-}
-
 /* Nav */
 /* Body */
 /* Spacers */
@@ -217,17 +152,18 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway Dots", sans-serif;
   text-transform: uppercase;
   color: white;
+  margin-top: 0;
 }
-/* line 37, ../scss/_typography.scss */
+/* line 38, ../scss/_typography.scss */
 h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
   color: #ccc;
 }
-/* line 40, ../scss/_typography.scss */
+/* line 41, ../scss/_typography.scss */
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   text-decoration: none;
 }
 
-/* line 44, ../scss/_typography.scss */
+/* line 45, ../scss/_typography.scss */
 h1 {
   font-size: 60px;
   margin-bottom: 50px;
@@ -235,33 +171,33 @@ h1 {
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.6);
 }
 @media only all and (max-width: 1199px) {
-  /* line 44, ../scss/_typography.scss */
+  /* line 45, ../scss/_typography.scss */
   h1 {
     font-size: 49px;
   }
 }
 @media only all and (max-width: 767px) {
-  /* line 44, ../scss/_typography.scss */
+  /* line 45, ../scss/_typography.scss */
   h1 {
     font-size: 42px;
   }
 }
-/* line 56, ../scss/_typography.scss */
+/* line 57, ../scss/_typography.scss */
 h1 a {
   color: #aaa;
 }
-/* line 58, ../scss/_typography.scss */
+/* line 59, ../scss/_typography.scss */
 h1 a:hover {
   color: white;
 }
 
-/* line 63, ../scss/_typography.scss */
+/* line 64, ../scss/_typography.scss */
 h2 {
   font-size: 230%;
   color: #0074a2;
 }
 
-/* line 68, ../scss/_typography.scss */
+/* line 69, ../scss/_typography.scss */
 h3 {
   margin: 0px 0 15px 0;
   padding: 5px 7px 5px;
@@ -279,21 +215,21 @@ h3 {
         @include transition (padding, 0.2s);
     } */
 }
-/* line 78, ../scss/_typography.scss */
+/* line 79, ../scss/_typography.scss */
 h3 i {
   margin-right: 5px;
   margin-top: 1px;
   color: #7e1e1b;
 }
 
-/* line 94, ../scss/_typography.scss */
+/* line 95, ../scss/_typography.scss */
 a {
   -webkit-transition: color, 0.25s;
   -moz-transition: color, 0.25s;
   -o-transition: color, 0.25s;
   transition: color, 0.25s;
 }
-/* line 96, ../scss/_typography.scss */
+/* line 97, ../scss/_typography.scss */
 a:hover {
   -webkit-transition: color, 0.25s;
   -moz-transition: color, 0.25s;
@@ -301,7 +237,7 @@ a:hover {
   transition: color, 0.25s;
 }
 
-/* line 100, ../scss/_typography.scss */
+/* line 101, ../scss/_typography.scss */
 p {
   color: #ccc;
   font-family: "Dosis", sans-serif;
@@ -386,7 +322,7 @@ p {
 @media only all and (max-width: 767px) {
   /* line 41, ../scss/_navbar.scss */
   .nav > li > a {
-    padding: 0 0 15px 51px;
+    padding: 0 0 15px 15px;
   }
 }
 /* line 53, ../scss/_navbar.scss */
@@ -399,7 +335,6 @@ p {
  */
 /* line 65, ../scss/_navbar.scss */
 .navbar {
-  margin-bottom: -150px;
   font-family: "Dosis", sans-serif;
   text-transform: uppercase;
 }
@@ -482,7 +417,7 @@ p {
 
 /* line 137, ../scss/_navbar.scss */
 button {
-  margin-right: 10px !important;
+  margin-right: 15px !important;
 }
 
 /* line 140, ../scss/_navbar.scss */
@@ -527,54 +462,67 @@ button {
 .affix {
   top: 0;
 }
-
 @media only all and (max-width: 767px) {
-  /* line 167, ../scss/_navbar.scss */
-  .affix-top {
-    position: fixed;
+  /* line 164, ../scss/_navbar.scss */
+  .affix {
+    position: static;
   }
 }
 
-/* line 176, ../scss/_navbar.scss */
+@media only all and (max-width: 767px) {
+  /* line 170, ../scss/_navbar.scss */
+  .affix-top {
+    position: static;
+  }
+}
+
+/* line 179, ../scss/_navbar.scss */
 .footer-widgets .nav {
   margin-top: 0px;
 }
-/* line 180, ../scss/_navbar.scss */
+/* line 183, ../scss/_navbar.scss */
 .footer-widgets .widget {
   border-left: 1px dashed #222;
-  padding: 23px;
+  padding: 0 23px;
   margin-top: 30px;
 }
-/* line 185, ../scss/_navbar.scss */
+/* line 188, ../scss/_navbar.scss */
 .footer-widgets .widget h2 {
   font-family: "Dosis", sans-serif !important;
-  font-size: 100%;
+  font-size: 110%;
   color: white;
   margin-bottom: 20px;
   letter-spacing: 3px;
 }
 @media only all and (max-width: 767px) {
-  /* line 180, ../scss/_navbar.scss */
+  /* line 183, ../scss/_navbar.scss */
   .footer-widgets .widget {
-    padding: 23px 0 0 0;
-    margin-top: 20px;
+    padding: 0;
+    margin-top: 30px;
     border-left: 0;
   }
 }
-/* line 198, ../scss/_navbar.scss */
+/* line 201, ../scss/_navbar.scss */
 .footer-widgets .widget:first-child {
   border-left: 0;
 }
 @media only all and (max-width: 767px) {
-  /* line 201, ../scss/_navbar.scss */
+  /* line 204, ../scss/_navbar.scss */
   .footer-widgets .widget:last-child {
     padding: 0;
   }
 }
-/* line 206, ../scss/_navbar.scss */
+/* line 210, ../scss/_navbar.scss */
+.footer-widgets ul {
+  padding: 0;
+  list-style: none;
+  list-style-type: none;
+}
+/* line 215, ../scss/_navbar.scss */
 .footer-widgets .menu-item {
-  margin: 10px 0;
+  margin: 3px 0;
   text-transform: uppercase;
+  font-size: 115%;
   /* a {
       color: #666;
       &:hover {
@@ -582,7 +530,7 @@ button {
       }
   } */
 }
-/* line 210, ../scss/_navbar.scss */
+/* line 220, ../scss/_navbar.scss */
 .footer-widgets .menu-item:before {
   margin-left: 10px;
   margin-right: 5px;
@@ -590,39 +538,39 @@ button {
   color: #d2322d;
 }
 
-/* line 225, ../scss/_navbar.scss */
+/* line 235, ../scss/_navbar.scss */
 #calendar_wrap {
   padding: 0;
 }
-/* line 229, ../scss/_navbar.scss */
+/* line 239, ../scss/_navbar.scss */
 #calendar_wrap .table-striped > tbody > tr:nth-child(odd) > td, #calendar_wrap .table-striped > tbody > tr:nth-child(odd) > th {
   background-color: #222;
 }
-/* line 232, ../scss/_navbar.scss */
+/* line 242, ../scss/_navbar.scss */
 #calendar_wrap .table > thead > tr > th, #calendar_wrap .table > tbody > tr > th, #calendar_wrap .table > tfoot > tr > th, #calendar_wrap .table > thead > tr > td, #calendar_wrap .table > tbody > tr > td, #calendar_wrap .table > tfoot > tr > td {
   border-top: 1px solid #444;
 }
-/* line 235, ../scss/_navbar.scss */
+/* line 245, ../scss/_navbar.scss */
 #calendar_wrap caption {
   color: #0074a2;
   margin-bottom: 10px;
 }
 
-/* line 242, ../scss/_navbar.scss */
+/* line 252, ../scss/_navbar.scss */
 #footer-menu li {
   width: 100%;
 }
 
-/* line 246, ../scss/_navbar.scss */
+/* line 256, ../scss/_navbar.scss */
 #root-footer, #footer {
   height: auto;
 }
-/* line 248, ../scss/_navbar.scss */
+/* line 258, ../scss/_navbar.scss */
 #root-footer p, #footer p {
   color: #666;
 }
 
-/* line 252, ../scss/_navbar.scss */
+/* line 262, ../scss/_navbar.scss */
 #footer {
   background-color: #000;
 }
@@ -630,7 +578,7 @@ button {
 /* 
  *  Kebo Tweets
  */
-/* line 265, ../scss/_navbar.scss */
+/* line 275, ../scss/_navbar.scss */
 .kebo-tweets a.kaccount, .kebo-tweets a.kdate {
   font-size: 96% !important;
 }
@@ -638,21 +586,21 @@ button {
 /*  
  *  Mailchimp Email Signup 
  */
-/* line 276, ../scss/_navbar.scss */
+/* line 286, ../scss/_navbar.scss */
 #mc_signup {
   padding: 0 !important;
 }
-/* line 278, ../scss/_navbar.scss */
+/* line 288, ../scss/_navbar.scss */
 #mc_signup .mergeRow {
   display: none !important;
   padding: 0 !important;
 }
-/* line 282, ../scss/_navbar.scss */
+/* line 292, ../scss/_navbar.scss */
 #mc_signup form {
   padding: 0 !important;
 }
 
-/* line 286, ../scss/_navbar.scss */
+/* line 296, ../scss/_navbar.scss */
 #mc_signup_submit {
   margin-top: 0;
   width: 100% !important;
@@ -671,7 +619,7 @@ button {
   -o-transition: background-color, 0.25s;
   transition: background-color, 0.25s;
 }
-/* line 296, ../scss/_navbar.scss */
+/* line 306, ../scss/_navbar.scss */
 #mc_signup_submit:hover {
   background-color: #711b18;
   -webkit-transition: background-color, 0.25s;
@@ -680,12 +628,12 @@ button {
   transition: background-color, 0.25s;
 }
 
-/* line 301, ../scss/_navbar.scss */
+/* line 311, ../scss/_navbar.scss */
 .mc_success_msg {
   color: #0074a2;
 }
 
-/* line 304, ../scss/_navbar.scss */
+/* line 314, ../scss/_navbar.scss */
 #mc_message {
   margin-bottom: 15px;
   margin-top: -2px;
@@ -693,12 +641,12 @@ button {
 
 @media only all and (max-width: 767px) {
   /* Logo */
-  /* line 313, ../scss/_navbar.scss */
+  /* line 323, ../scss/_navbar.scss */
   .navbar-brand {
     padding-left: 15px;
   }
 
-  /* line 316, ../scss/_navbar.scss */
+  /* line 326, ../scss/_navbar.scss */
   .navbar-collapse {
     background-color: #000;
   }
@@ -954,94 +902,6 @@ section .col-sm-5, section .col-md-6 {
     background-position: 0 0 !important;
   }
 }
-/*
- * 	Mixins
- */
-/* line 6, ../scss/_mixins.scss */
-.no-pad {
-  padding: 0;
-}
-
-/* line 9, ../scss/_mixins.scss */
-.no-pad-left {
-  padding-left: 0 !important;
-}
-
-/* line 12, ../scss/_mixins.scss */
-.no-pad-right {
-  padding-right: 0 !important;
-}
-
-/* line 15, ../scss/_mixins.scss */
-.no-border, .no-border tbody > tr > td {
-  border: 0;
-  border-top: 0;
-}
-
-/* line 19, ../scss/_mixins.scss */
-.v-pad {
-  padding: 15px 0;
-}
-
-/* line 22, ../scss/_mixins.scss */
-.pad-content {
-  padding: 10px 0;
-}
-
-/* line 25, ../scss/_mixins.scss */
-.pad-none {
-  padding: 0;
-}
-
-/* line 28, ../scss/_mixins.scss */
-.width-100 {
-  width: 100%;
-}
-
-/* line 31, ../scss/_mixins.scss */
-.media img {
-  width: 100%;
-  height: auto;
-}
-
-/* line 59, ../scss/_mixins.scss */
-#row-masthead {
-  background-color: black;
-  background-attachment: fixed;
-  background-size: cover;
-}
-
-/* line 74, ../scss/_mixins.scss */
-code, pre, .highlight {
-  background-color: #666;
-  border-color: #666;
-}
-
-/* line 78, ../scss/_mixins.scss */
-.thumbnail {
-  background-color: transparent;
-  border: 0;
-}
-
-/* line 82, ../scss/_mixins.scss */
-.design-slider, .mq-list li, .single-design .media {
-  -webkit-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
-  -moz-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
-  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
-}
-
-/*
- *  RESPONSIVE
- */
-/*
- *  MIXINS
- */
-/*
- *  SHORTCUTS
- */
-/*
- *  MIN / MAX
- */
 /* line 1, ../scss/_social.scss */
 #social-nav {
   position: relative;
@@ -1125,8 +985,9 @@ code, pre, .highlight {
   transition: filter, 0.25s;
 }
 
-/* line 18, ../scss/custom.scss */
+/* line 17, ../scss/custom.scss */
 body {
+  padding: 0;
   overflow-x: hidden;
   background-color: #333;
 }
@@ -1241,7 +1102,7 @@ a:hover {
 @media only all and (max-width: 767px) {
   /* line 100, ../scss/custom.scss */
   .main-content {
-    padding-top: 70px;
+    padding-top: 0px;
   }
 }
 
@@ -1414,6 +1275,11 @@ a:hover {
 .col-content {
   padding-left: 0px;
   padding-right: 50px;
+  overflow: hidden;
+}
+/* line 265, ../scss/custom.scss */
+.col-content ul {
+  list-style: disc !important;
 }
 @media only all and (max-width: 991px) {
   /* line 260, ../scss/custom.scss */
@@ -1428,7 +1294,7 @@ a:hover {
   }
 }
 
-/* line 272, ../scss/custom.scss */
+/* line 277, ../scss/custom.scss */
 .portfolio-desc {
   padding: 15px 0 45px 0;
 }
@@ -1436,16 +1302,16 @@ a:hover {
 /* 
  *  Soliloquy Slider 
  */
-/* line 281, ../scss/custom.scss */
+/* line 286, ../scss/custom.scss */
 .soliloquy-container img {
   width: 100%;
   height: auto;
 }
-/* line 285, ../scss/custom.scss */
+/* line 290, ../scss/custom.scss */
 .soliloquy-container .soliloquy-direction-nav {
   display: block !important;
 }
-/* line 288, ../scss/custom.scss */
+/* line 293, ../scss/custom.scss */
 .soliloquy-container .soliloquy-control-nav, .soliloquy-container .soliloquy-prev, .soliloquy-container .soliloquy-next {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
@@ -1454,7 +1320,7 @@ a:hover {
   -o-transition: opacity, 0.5s;
   transition: opacity, 0.5s;
 }
-/* line 293, ../scss/custom.scss */
+/* line 298, ../scss/custom.scss */
 .soliloquy-container:hover .soliloquy-control-nav, .soliloquy-container:hover .soliloquy-prev, .soliloquy-container:hover .soliloquy-next {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
@@ -1464,7 +1330,7 @@ a:hover {
   transition: opacity, 0.5s;
 }
 
-/* line 300, ../scss/custom.scss */
+/* line 305, ../scss/custom.scss */
 .design-slider {
   margin: 26px 0;
 }
@@ -1473,13 +1339,13 @@ a:hover {
  *  Twitter feed 
  */
 @media only all and (max-width: 991px) {
-  /* line 310, ../scss/custom.scss */
+  /* line 315, ../scss/custom.scss */
   .kmeta {
     font-size: 15px;
   }
 }
 
-/* line 315, ../scss/custom.scss */
+/* line 320, ../scss/custom.scss */
 .ktext {
   line-height: 19px !important;
   margin: 15px 0 !important;
@@ -1488,17 +1354,17 @@ a:hover {
 /* 
  *  Contact Form 
  */
-/* line 326, ../scss/custom.scss */
+/* line 331, ../scss/custom.scss */
 .cscfForm > p {
   margin-bottom: 20px;
 }
-/* line 329, ../scss/custom.scss */
+/* line 334, ../scss/custom.scss */
 .cscfForm label {
   margin-bottom: 10px;
   color: #2ea2cc;
 }
 
-/* line 335, ../scss/custom.scss */
+/* line 340, ../scss/custom.scss */
 #frmCSCF .btn {
   border: #0074a2;
   background-color: #0074a2;
@@ -1508,7 +1374,7 @@ a:hover {
   -o-transition: background-color, 0.25s;
   transition: background-color, 0.25s;
 }
-/* line 340, ../scss/custom.scss */
+/* line 345, ../scss/custom.scss */
 #frmCSCF .btn:hover {
   background-color: #2ea2cc;
   -webkit-transition: background-color, 0.25s;
@@ -1520,105 +1386,105 @@ a:hover {
 /* 
  *  Media Queries thumbs
  */
-/* line 351, ../scss/custom.scss */
+/* line 356, ../scss/custom.scss */
 .mq-list {
   padding-top: 30px;
 }
-/* line 353, ../scss/custom.scss */
+/* line 358, ../scss/custom.scss */
 .mq-list li {
   margin-right: 18px;
   padding: 0;
 }
 @media only all and (max-width: 1199px) {
-  /* line 353, ../scss/custom.scss */
+  /* line 358, ../scss/custom.scss */
   .mq-list li {
     margin-right: 15px;
   }
 }
 @media only all and (max-width: 991px) {
-  /* line 353, ../scss/custom.scss */
+  /* line 358, ../scss/custom.scss */
   .mq-list li {
     margin-right: 10px;
   }
 }
 @media only all and (max-width: 767px) {
-  /* line 353, ../scss/custom.scss */
+  /* line 358, ../scss/custom.scss */
   .mq-list li {
     margin-right: 0.9%;
   }
 }
-/* line 368, ../scss/custom.scss */
+/* line 373, ../scss/custom.scss */
 .mq-list .smartphone {
   width: 8.1%;
 }
 @media only all and (min-width: 480px) and (max-width: 767px) {
-  /* line 368, ../scss/custom.scss */
+  /* line 373, ../scss/custom.scss */
   .mq-list .smartphone {
     width: 8%;
   }
 }
 @media only all and (max-width: 767px) {
-  /* line 368, ../scss/custom.scss */
+  /* line 373, ../scss/custom.scss */
   .mq-list .smartphone {
     width: 8.1%;
   }
 }
-/* line 377, ../scss/custom.scss */
+/* line 382, ../scss/custom.scss */
 .mq-list .tablet {
   width: 19.5%;
 }
 @media only all and (max-width: 767px) {
-  /* line 377, ../scss/custom.scss */
+  /* line 382, ../scss/custom.scss */
   .mq-list .tablet {
     width: 19.4%;
   }
 }
-/* line 383, ../scss/custom.scss */
+/* line 388, ../scss/custom.scss */
 .mq-list .netbook {
   width: 25.9%;
 }
-/* line 386, ../scss/custom.scss */
+/* line 391, ../scss/custom.scss */
 .mq-list .desktop {
   margin-right: 0;
   width: 40.5%;
 }
 
-/* line 393, ../scss/custom.scss */
+/* line 398, ../scss/custom.scss */
 .entry-content p {
   margin-bottom: 15px;
 }
-/* line 396, ../scss/custom.scss */
+/* line 401, ../scss/custom.scss */
 .entry-content img {
   margin: 10px 0 30px;
 }
 
-/* line 403, ../scss/custom.scss */
+/* line 408, ../scss/custom.scss */
 .credits td {
   padding: 3px !important;
 }
 @media only all and (max-width: 1199px) {
-  /* line 409, ../scss/custom.scss */
+  /* line 414, ../scss/custom.scss */
   .credits td {
     padding: 1px !important;
   }
 }
 
-/* line 415, ../scss/custom.scss */
+/* line 420, ../scss/custom.scss */
 .media, .description {
   margin-bottom: 30px;
 }
 
-/* line 419, ../scss/custom.scss */
+/* line 424, ../scss/custom.scss */
 .media img {
   margin: 0;
 }
-/* line 423, ../scss/custom.scss */
+/* line 428, ../scss/custom.scss */
 .media object {
   margin-right: 10px !important;
   margin-bottom: 15px !important;
 }
 
-/* line 428, ../scss/custom.scss */
+/* line 433, ../scss/custom.scss */
 .single-design .media {
   border: 1px solid black;
 }
@@ -1626,7 +1492,7 @@ a:hover {
 /*
  *  Admin Menu 
  */
-/* line 439, ../scss/custom.scss */
+/* line 444, ../scss/custom.scss */
 #adminmenu #menu-posts-design .wp-menu-image:before {
   content: '\f85' !important;
 }
