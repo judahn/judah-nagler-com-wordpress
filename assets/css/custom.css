@@ -531,6 +531,14 @@ button {
   }
 }
 
+/* line 172, ../scss/_navbar.scss */
+.footer-widgets {
+  /* .widget:last-child {
+      @include max_tablet {
+          padding: 0 0 23px 0;
+      }
+  } */
+}
 /* line 173, ../scss/_navbar.scss */
 .footer-widgets .nav {
   margin-top: 0px;
@@ -560,12 +568,6 @@ button {
 /* line 195, ../scss/_navbar.scss */
 .footer-widgets .widget:first-child {
   border-left: 0;
-}
-@media only all and (max-width: 767px) {
-  /* line 198, ../scss/_navbar.scss */
-  .footer-widgets .widget:last-child {
-    padding: 0 23px 0 0;
-  }
 }
 /* line 203, ../scss/_navbar.scss */
 .footer-widgets .menu-item {

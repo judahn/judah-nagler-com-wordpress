@@ -195,11 +195,11 @@ button {
     .widget:first-child {
         border-left: 0;
     }
-    .widget:last-child {
+    /* .widget:last-child {
         @include max_tablet {
-            padding: 0 23px 0 0;
+            padding: 0 0 23px 0;
         }
-    }
+    } */
     .menu-item {
         margin: 10px 0;
         text-transform: uppercase;
