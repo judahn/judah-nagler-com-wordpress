@@ -181,8 +181,8 @@ a:hover {
     @include transition(all, 0s);
 
     h3 {
-        @include transition (background-color, 0.5s);
-        @include transition (padding,    0.5s);
+        @include transition (background-color,  1s);
+        @include transition (padding,           1s);
         font-family: "Dosis", sans-serif !important;
         // color: $rust;
         // @extend %boxShadowMd;
@@ -191,6 +191,7 @@ a:hover {
     img {
         height: auto !important;
         border: 3px solid black;
+        @include transition(border, 1s);
 
         @include max_tablet {
             width: 100% !important;
@@ -210,7 +211,7 @@ a:hover {
     &:hover {
         @include min_tablet {
             img {
-                border: 3px solid $red;//darken($red, 10%);
+                border: 3px dotted $red;//darken($red, 10%);
                 @include transition(border, 0.5s);
             }
             h3 {
