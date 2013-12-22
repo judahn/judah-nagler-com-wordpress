@@ -212,6 +212,7 @@ a:hover {
         @include min_tablet {
             img {
                 border: 3px dotted $red;//darken($red, 10%);
+                border-bottom: 3px solid $red;
                 @include transition(border, 0.5s);
             }
             h3 {
