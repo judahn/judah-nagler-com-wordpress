@@ -25,7 +25,7 @@ get_header(); ?>
 
 
 
-<div class="row col-content">
+<div class="row">
 
 	<div class="page-header">
 		<h1>Blog</h1>
