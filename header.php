@@ -8,6 +8,10 @@
  */
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
+<head profile="http://www.w3.org/2005/10/profile">
+<link rel="icon" 
+      type="image/png" 
+      href="<?php echo esc_url( home_url( '/' ) ); ?>/favicon.gif">
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">

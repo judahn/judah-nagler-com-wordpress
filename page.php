@@ -24,7 +24,7 @@ get_header(); ?>
 
 
 
-<div class="col-sm-6 no-pad">
+<div class="row">
 
 	<?php while ( have_posts() ) : the_post(); ?>
 
