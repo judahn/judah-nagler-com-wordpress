@@ -10,7 +10,7 @@ $tablet:                    768px;
 $laptop:                    992px;
 $desktop:                   1200px;
 $monitor:                   1600px;
-$gutter: 					30px;
+$gutter:                    30px;
 
 $small_tablet_portrait:     600px;
 $small_tablet_landscape:    800px;
@@ -83,8 +83,8 @@ $tablet_landscape:          $laptop;
 @mixin max_tablet {                 @include max($tablet) {@content;}}
 
 // Tablet Small
-@mixin min_tablet_sm {             	@include min($tablet_sm) {@content;}}
-@mixin max_tablet_sm {             	@include max($tablet_sm) {@content;}}
+@mixin min_tablet_sm {              @include min($tablet_sm) {@content;}}
+@mixin max_tablet_sm {              @include max($tablet_sm) {@content;}}
 
 // Laptop
 @mixin min_laptop {                 @include min($laptop) {@content;}}

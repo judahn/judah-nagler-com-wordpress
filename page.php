@@ -40,7 +40,9 @@ get_header(); ?>
 
 </div>
 
-
+<!-- <div class="col-sm-6">
+	<img src="<?php echo get_template_directory_uri() . '/assets/img/avatar-lg.jpg' ?>" alt="">
+</div> -->
 
 
 
