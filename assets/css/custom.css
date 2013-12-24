@@ -1483,16 +1483,20 @@ a:hover {
 }
 
 /* line 429, ../scss/custom.scss */
+.media p {
+  margin: 0;
+}
+/* line 432, ../scss/custom.scss */
 .media img {
   margin: 0;
 }
-/* line 433, ../scss/custom.scss */
+/* line 436, ../scss/custom.scss */
 .media object {
   margin-right: 10px !important;
   margin-bottom: 15px !important;
 }
 
-/* line 438, ../scss/custom.scss */
+/* line 441, ../scss/custom.scss */
 .single-design .media {
   border: 1px solid black;
 }
@@ -1500,7 +1504,7 @@ a:hover {
 /*
  *  Admin Menu 
  */
-/* line 449, ../scss/custom.scss */
+/* line 452, ../scss/custom.scss */
 #adminmenu #menu-posts-design .wp-menu-image:before {
   content: '\f85' !important;
 }

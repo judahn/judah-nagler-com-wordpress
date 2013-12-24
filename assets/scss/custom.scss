@@ -426,6 +426,9 @@ a:hover {
     margin-bottom: 30px;
 }
 .media {
+    p {
+        margin: 0;
+    }
     img {
         @extend %img-full;
         margin: 0;
