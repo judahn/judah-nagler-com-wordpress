@@ -250,6 +250,8 @@ a:hover {
 .above-header {
     height: 500px;
     background-color: black;
+    background-position: 0 50%;
+    // @include background(image-url("cherry-blossom.png"), #000);
 }
 
 #avatar {
@@ -443,6 +445,28 @@ a:hover {
     border: 1px solid black;
 }
 
+
+
+
+.hero-right {
+    margin-bottom: 40px;
+    @extend %boxShadow;
+}
+.col-page-left {
+    padding: 0 40px 0 0;
+}
+.above-header {
+    h1 {
+        margin-top: 50px;
+        font-size: 80px;
+        @include max_desktop{
+            font-size: 70px;
+        }
+        @include max_desktop{
+            font-size: 65px;
+        }
+    }
+}
 
 
 /*

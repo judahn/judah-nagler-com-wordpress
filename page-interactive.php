@@ -4,13 +4,9 @@
 
  ?>
 
-<?php get_header(); ?>
+<?php include 'above-header.php' ?>
 
-<article class="row above-header hidden-xs">
-	<div class="container">
-		<!-- <h1 class="pull-right"><?php the_title(); ?></h1> -->
-	</div>
-</article>
+<?php get_header(); ?>
 
 <?php include 'section-opener.php' ?>
 

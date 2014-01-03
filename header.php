@@ -26,5 +26,3 @@
 	<?php do_action( 'before' ); ?>
 
 <div class="root">
-
-	

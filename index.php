@@ -1,3 +1,5 @@
+<?php include 'above-header.php' ?>
+
 <?php
 /**
  * The main template file.
@@ -12,12 +14,6 @@
  */
 
 get_header(); ?>
-
-<article class="row above-header hidden-xs">
-	<div class="container">
-		<!-- <h1 class="pull-right"><?php the_title(); ?></h1> -->
-	</div>
-</article>
 
 <?php include 'section-opener.php' ?>
 

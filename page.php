@@ -12,11 +12,7 @@
 
 get_header(); ?>
 
-<article class="row above-header hidden-xs">
-	<div class="container">
-		<!-- <h1 class="pull-right"><?php the_title(); ?></h1> -->
-	</div>
-</article>
+<?php include 'above-header.php' ?>
 
 <?php include 'section-opener.php' ?>
 
@@ -24,7 +20,7 @@ get_header(); ?>
 
 
 
-<div class="row">
+<div class="col-page-left col-sm-6 no-pad">
 
 	<?php while ( have_posts() ) : the_post(); ?>
 
@@ -40,9 +36,9 @@ get_header(); ?>
 
 </div>
 
-<!-- <div class="col-sm-6">
-	<img src="<?php echo get_template_directory_uri() . '/assets/img/avatar-lg.jpg' ?>" alt="">
-</div> -->
+<div class="col-sm-6">
+	<img src="<?php echo get_template_directory_uri() . '/assets/img/sharkdurag.png' ?>" class="hero-right" alt="">
+</div>
 
 
 
