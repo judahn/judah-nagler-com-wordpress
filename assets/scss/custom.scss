@@ -181,7 +181,7 @@ $thumb_hover: $red;
     @extend %transBg;
     padding:        0;
     margin-bottom:  1%;
-
+    
     @include transition(all, 0s);
 
     h3 {
@@ -194,7 +194,7 @@ $thumb_hover: $red;
     }
     img {
         height: auto !important;
-        border: 3px solid #999;
+        border: 3px dotted #999;
         @include filter(grayscale(100%));
         @include opacity(0.3);
         @include transition(opacity, 1s);
@@ -204,8 +204,9 @@ $thumb_hover: $red;
             width: 100% !important;
         }
     }
-    .thumb-content {
-        
+
+    i {
+        color: $blue;
     }
     .caption {
         text-align: center;
