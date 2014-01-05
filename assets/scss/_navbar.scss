@@ -300,7 +300,7 @@ button {
     @include border-radius(2px);
     @include transition(background-color, 0.25s);
     &:hover {
-        background-color: darken($red, 23%);
+        background-color: $blue;
         @include transition(background-color, 0.25s);
     }
 }
