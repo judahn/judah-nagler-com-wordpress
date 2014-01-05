@@ -194,10 +194,10 @@ $thumb_hover: $red;
     }
     img {
         height: auto !important;
-        border: 3px solid $thumb_back;
+        border: 3px solid #666;
         @include filter(grayscale(100%));
-        // @include opacity(0.5);
-        // @include transition(opacity, 1s);
+        @include opacity(0.5);
+        @include transition(opacity, 1s);
         @include transition(border, 1s);
 
         @include max_tablet {
@@ -221,8 +221,8 @@ $thumb_hover: $red;
                 border-bottom: 3px solid $thumb_hover;
                 @include filter(grayscale(0%));
                 @include transition(border, 0.5s);
-                // @include opacity(1);
-                // @include transition(opacity, 0.5s);
+                @include opacity(1);
+                @include transition(opacity, 0.5s);
             }
             h3 {
                 background: $thumb_hover;//darken($red, 10%);
