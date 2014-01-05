@@ -1512,102 +1512,114 @@ a:hover {
   width: 40.5%;
 }
 
-/* line 427, ../scss/custom.scss */
+/* line 426, ../scss/custom.scss */
+.entry-content {
+  padding: 3px;
+}
+/* line 428, ../scss/custom.scss */
 .entry-content p {
   margin-bottom: 15px;
 }
-/* line 431, ../scss/custom.scss */
+@media only all and (max-width: 991px) {
+  /* line 428, ../scss/custom.scss */
+  .entry-content p {
+    font-size: 15px;
+    line-height: 21px;
+  }
+}
+/* line 436, ../scss/custom.scss */
 .entry-content img {
   margin: 10px 0 30px;
 }
 
-/* line 438, ../scss/custom.scss */
+/* line 443, ../scss/custom.scss */
 .credits td {
   padding: 3px !important;
 }
 @media only all and (max-width: 1199px) {
-  /* line 444, ../scss/custom.scss */
+  /* line 449, ../scss/custom.scss */
   .credits td {
     padding: 1px !important;
   }
 }
 
-/* line 450, ../scss/custom.scss */
+/* line 455, ../scss/custom.scss */
 .media, .description {
   margin-bottom: 30px;
 }
 
-/* line 454, ../scss/custom.scss */
+/* line 459, ../scss/custom.scss */
 .media p {
   margin: 0;
 }
-/* line 457, ../scss/custom.scss */
+/* line 462, ../scss/custom.scss */
 .media img {
   margin: 0;
 }
-/* line 461, ../scss/custom.scss */
+/* line 466, ../scss/custom.scss */
 .media object {
   margin-right: 10px !important;
   margin-bottom: 15px !important;
 }
 
-/* line 466, ../scss/custom.scss */
+/* line 471, ../scss/custom.scss */
 .single-design .media {
   border: 1px solid black;
 }
 
-/* line 474, ../scss/custom.scss */
+/* line 479, ../scss/custom.scss */
 .hero-right {
+  margin-top: 10px;
   margin-bottom: 40px;
 }
 @media only all and (max-width: 767px) {
-  /* line 474, ../scss/custom.scss */
+  /* line 479, ../scss/custom.scss */
   .hero-right {
     margin-bottom: 0;
   }
 }
 
-/* line 481, ../scss/custom.scss */
+/* line 487, ../scss/custom.scss */
 .col-page-left {
-  padding: 0 40px 0 0;
+  padding: 0 10px 0 0;
 }
 @media only all and (max-width: 767px) {
-  /* line 481, ../scss/custom.scss */
+  /* line 487, ../scss/custom.scss */
   .col-page-left {
     padding: 0;
   }
 }
 
-/* line 487, ../scss/custom.scss */
+/* line 493, ../scss/custom.scss */
 .above-header {
   overflow: visible;
   height: 500px;
 }
-/* line 491, ../scss/custom.scss */
+/* line 497, ../scss/custom.scss */
 .above-header h1 {
   margin-top: 50px;
   font-size: 80px;
   z-index: 999;
 }
 @media only all and (max-width: 1199px) {
-  /* line 491, ../scss/custom.scss */
+  /* line 497, ../scss/custom.scss */
   .above-header h1 {
     font-size: 70px;
   }
 }
 @media only all and (max-width: 1199px) {
-  /* line 491, ../scss/custom.scss */
+  /* line 497, ../scss/custom.scss */
   .above-header h1 {
     font-size: 65px;
   }
 }
 
-/* line 503, ../scss/custom.scss */
+/* line 509, ../scss/custom.scss */
 #above-header-container {
   height: 100%;
 }
 
-/* line 507, ../scss/custom.scss */
+/* line 513, ../scss/custom.scss */
 #cherry-blossoms {
   width: 100%;
   height: auto;
@@ -1615,12 +1627,12 @@ a:hover {
   z-index: 21;
 }
 
-/* line 514, ../scss/custom.scss */
+/* line 520, ../scss/custom.scss */
 .home #cherry-blossoms, .blog #cherry-blossoms, .page-id-21 #cherry-blossoms {
   z-index: -1;
 }
 
-/* line 518, ../scss/custom.scss */
+/* line 524, ../scss/custom.scss */
 #cb-a {
   background: url('/wp-content/themes/jn-wpbs/assets/img/cherry-blossom.png?1388933978');
   background-position: -360px 100px;
@@ -1629,19 +1641,19 @@ a:hover {
   width: 100%;
 }
 @media only all and (max-width: 1199px) {
-  /* line 518, ../scss/custom.scss */
+  /* line 524, ../scss/custom.scss */
   #cb-a {
     background-position: -550px 100px;
   }
 }
 @media only all and (max-width: 991px) {
-  /* line 518, ../scss/custom.scss */
+  /* line 524, ../scss/custom.scss */
   #cb-a {
     background-position: -730px 100px;
   }
 }
 @media only all and (max-width: 767px) {
-  /* line 518, ../scss/custom.scss */
+  /* line 524, ../scss/custom.scss */
   #cb-a {
     background-position: -900px -510px;
     z-index: -1;
@@ -1651,7 +1663,7 @@ a:hover {
 /*
  *  Admin Menu 
  */
-/* line 544, ../scss/custom.scss */
+/* line 550, ../scss/custom.scss */
 #adminmenu #menu-posts-design .wp-menu-image:before {
   content: '\f85' !important;
 }

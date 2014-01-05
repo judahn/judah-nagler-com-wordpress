@@ -424,9 +424,14 @@ $thumb_hover: $red;
 }
 
 .entry-content {
+    padding: 3px;
     p {
         margin-bottom: 15px;
         // @include single-text-shadow;
+        @include max_laptop {
+            font-size: 15px;
+            line-height: 21px;
+        }
     }
     img {
         margin: 10px 0 30px;
@@ -472,6 +477,7 @@ $thumb_hover: $red;
 
 
 .hero-right {
+    margin-top: 10px;
     margin-bottom: 40px;
     @extend %boxShadow;
     @include max_tablet {
@@ -479,7 +485,7 @@ $thumb_hover: $red;
     }
 }
 .col-page-left {
-    padding: 0 40px 0 0;
+    padding: 0 10px 0 0;
     @include max_tablet {
         padding: 0;
     }
