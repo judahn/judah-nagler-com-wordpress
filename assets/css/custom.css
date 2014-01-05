@@ -370,7 +370,7 @@ p {
 }
 /* line 82, ../scss/_navbar.scss */
 .navbar > .container {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.65);
 }
 
 /* line 86, ../scss/_navbar.scss */
@@ -1552,6 +1552,7 @@ a:hover {
 .above-header h1 {
   margin-top: 50px;
   font-size: 80px;
+  z-index: 999;
 }
 @media only all and (max-width: 1199px) {
   /* line 467, ../scss/custom.scss */
@@ -1566,50 +1567,56 @@ a:hover {
   }
 }
 
-/* line 478, ../scss/custom.scss */
+/* line 479, ../scss/custom.scss */
 #above-header-container {
   height: 100%;
 }
 
-/* line 482, ../scss/custom.scss */
+/* line 483, ../scss/custom.scss */
 #cherry-blossoms {
   width: 100%;
   height: auto;
   pointer-events: none;
 }
 @media only all and (max-width: 767px) {
-  /* line 482, ../scss/custom.scss */
+  /* line 483, ../scss/custom.scss */
   #cherry-blossoms {
     display: none;
   }
 }
 
-/* line 490, ../scss/custom.scss */
+/* line 491, ../scss/custom.scss */
 #cb-a {
-  background: url('/wp-content/themes/jn-wpbs/assets/img/cherry-blossom.png?1387977909');
+  background: url('/wp-content/themes/jn-wpbs/assets/img/cherry-blossom.png?1388933978');
   background-position: -360px 100px;
   background-repeat: no-repeat;
   height: 1100px;
   width: 100%;
   z-index: 21;
 }
-@media only all and (max-width: 991px) {
-  /* line 490, ../scss/custom.scss */
+@media only all and (max-width: 1199px) {
+  /* line 491, ../scss/custom.scss */
   #cb-a {
-    background-position: -360px 100px;
+    background-position: -550px 100px;
+  }
+}
+@media only all and (max-width: 991px) {
+  /* line 491, ../scss/custom.scss */
+  #cb-a {
+    background-position: -670px 100px;
   }
 }
 @media only all and (max-width: 767px) {
-  /* line 490, ../scss/custom.scss */
+  /* line 491, ../scss/custom.scss */
   #cb-a {
-    background-position: -400px 100px;
+    background-position: -500px 100px;
   }
 }
 
 /*
  *  Admin Menu 
  */
-/* line 512, ../scss/custom.scss */
+/* line 516, ../scss/custom.scss */
 #adminmenu #menu-posts-design .wp-menu-image:before {
   content: '\f85' !important;
 }

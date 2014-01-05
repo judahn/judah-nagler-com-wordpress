@@ -467,6 +467,7 @@ $thumb_hover: $red;
     h1 {
         margin-top: 50px;
         font-size: 80px;
+        z-index: 999;
         @include max_desktop{
             font-size: 70px;
         }
@@ -496,11 +497,14 @@ $thumb_hover: $red;
     width: 100%;
     z-index: 21;
 
+    @include max_desktop{
+        background-position: -550px 100px;
+    }
     @include max_laptop{
-        background-position: -360px 100px;
+        background-position: -670px 100px;
     }
     @include max_tablet{
-        background-position: -400px 100px;
+        background-position: -500px 100px;
     }
 }
 
