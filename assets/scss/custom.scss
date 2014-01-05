@@ -188,8 +188,6 @@ $thumb_hover: $red;
         @include transition (background-color,  1s);
         @include transition (padding,           1s);
         font-family: "Dosis", sans-serif !important;
-        // color: $rust;
-        // @extend %boxShadowMd;
         background-color: $thumb_back;
     }
     img {
@@ -201,6 +199,8 @@ $thumb_hover: $red;
         @include transition(border, 1s);
 
         @include max_tablet {
+            @include opacity(1);
+            border: 3px dotted $thumb_back;
             width: 100% !important;
         }
     }
@@ -221,9 +221,11 @@ $thumb_hover: $red;
                 border: 3px dotted $thumb_hover;
                 border-bottom: 3px dotted $thumb_hover;
                 @include filter(grayscale(0%));
-                @include transition(border, 0.5s);
+                // @include transition(border, 0.5s);
                 @include opacity(1);
                 @include transition(opacity, 0.5s);
+                // @include filter(blur(0));
+                // @include transition(blur, 0.2s);
             }
             h3 {
                 background: $thumb_hover;//darken($red, 10%);
@@ -479,16 +481,27 @@ $thumb_hover: $red;
 
 #cherry-blossoms{
     width: 100%;
-    height: 100%;
+    height: auto;
     pointer-events: none;
+    @include max_tablet {
+        display: none;
+    }
 }
 #cb-a{
-    @include background(image-url("cherry-blossom.png"));
-    background-position: -400px 100px;
+
+    @include background(image-url("cherry-blossom-left.png"));
+    background-position: -40px 100px;
     background-repeat: no-repeat;
     height: 999px;
     width: 100%;
     z-index: 21;
+
+    @include max_laptop{
+        background-position: -200px 100px;
+    }
+    @include max_tablet{
+        background-position: -400px 100px;
+    }
 }
 
 
