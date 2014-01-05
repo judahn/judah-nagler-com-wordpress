@@ -484,9 +484,6 @@ $thumb_hover: $red;
     width: 100%;
     height: auto;
     pointer-events: none;
-    @include max_tablet {
-        display: none;
-    }
 }
 #cb-a{
 
@@ -504,7 +501,9 @@ $thumb_hover: $red;
         background-position: -730px 100px;
     }
     @include max_tablet{
-        background-position: -500px 100px;
+        // width: 100%;
+        background-position: -900px -510px;
+        z-index: -1;
     }
 }
 

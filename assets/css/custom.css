@@ -132,6 +132,11 @@ code, pre, .highlight {
 }
 
 /* line 88, ../scss/_mixins.scss */
+#footer {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+/* line 91, ../scss/_mixins.scss */
 .design-slider, .mq-list li, .single-design .media, .hero-right {
   -webkit-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
   -moz-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
@@ -189,7 +194,7 @@ h1 {
 @media only all and (max-width: 767px) {
   /* line 45, ../scss/_typography.scss */
   h1 {
-    font-size: 42px;
+    font-size: 33px;
   }
 }
 /* line 57, ../scss/_typography.scss */
@@ -331,7 +336,7 @@ p {
 @media only all and (max-width: 767px) {
   /* line 41, ../scss/_navbar.scss */
   .nav > li > a {
-    padding: 0 0 15px 15px;
+    padding: 0 0 15px 52px;
   }
 }
 /* line 53, ../scss/_navbar.scss */
@@ -370,7 +375,7 @@ p {
 }
 /* line 82, ../scss/_navbar.scss */
 .navbar > .container {
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 /* line 86, ../scss/_navbar.scss */
@@ -400,34 +405,34 @@ p {
   border-top: 0;
 }
 
-/* line 110, ../scss/_navbar.scss */
+/* line 109, ../scss/_navbar.scss */
 #nav-row {
   height: 50px;
   z-index: 999;
   position: fixed;
 }
 
-/* line 121, ../scss/_navbar.scss */
+/* line 119, ../scss/_navbar.scss */
 #nav-below .btn {
   margin-top: 20px;
 }
-/* line 124, ../scss/_navbar.scss */
+/* line 122, ../scss/_navbar.scss */
 #nav-below .btn-primary {
   margin-top: 10px;
 }
 
-/* line 131, ../scss/_navbar.scss */
+/* line 129, ../scss/_navbar.scss */
 .nav-previous {
   float: left;
   margin-right: 10px;
 }
 
-/* line 138, ../scss/_navbar.scss */
+/* line 136, ../scss/_navbar.scss */
 button {
   margin-right: 15px !important;
 }
 
-/* line 141, ../scss/_navbar.scss */
+/* line 139, ../scss/_navbar.scss */
 .btn-primary {
   -webkit-transition: background-color, 0.5s;
   -moz-transition: background-color, 0.5s;
@@ -435,7 +440,7 @@ button {
   transition: background-color, 0.5s;
 }
 
-/* line 146, ../scss/_navbar.scss */
+/* line 142, ../scss/_navbar.scss */
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
   background-color: #a54c60;
   border-color: #a54c60;
@@ -445,7 +450,7 @@ button {
   transition: background-color, 0.5s;
 }
 
-/* line 152, ../scss/_navbar.scss */
+/* line 148, ../scss/_navbar.scss */
 .btn-danger {
   background-color: #b12e4f;
   border-color: #b12e4f;
@@ -455,7 +460,7 @@ button {
   transition: background-color, 0.5s;
 }
 
-/* line 157, ../scss/_navbar.scss */
+/* line 153, ../scss/_navbar.scss */
 .btn-danger:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
   background-color: #541625;
   border-color: #541625;
@@ -465,35 +470,35 @@ button {
   transition: background-color, 0.5s;
 }
 
-/* line 165, ../scss/_navbar.scss */
+/* line 161, ../scss/_navbar.scss */
 .affix {
   top: 0;
 }
 @media only all and (max-width: 767px) {
-  /* line 165, ../scss/_navbar.scss */
+  /* line 161, ../scss/_navbar.scss */
   .affix {
     position: static;
   }
 }
 
 @media only all and (max-width: 767px) {
-  /* line 171, ../scss/_navbar.scss */
+  /* line 167, ../scss/_navbar.scss */
   .affix-top {
     position: static;
   }
 }
 
-/* line 180, ../scss/_navbar.scss */
+/* line 176, ../scss/_navbar.scss */
 .footer-widgets .nav {
   margin-top: 0px;
 }
-/* line 184, ../scss/_navbar.scss */
+/* line 179, ../scss/_navbar.scss */
 .footer-widgets .widget {
   border-left: 1px dashed #222;
   padding: 0 23px;
   margin-top: 30px;
 }
-/* line 189, ../scss/_navbar.scss */
+/* line 183, ../scss/_navbar.scss */
 .footer-widgets .widget h2 {
   font-family: "Dosis", sans-serif !important;
   font-size: 110%;
@@ -502,31 +507,31 @@ button {
   letter-spacing: 3px;
 }
 @media only all and (max-width: 767px) {
-  /* line 184, ../scss/_navbar.scss */
+  /* line 179, ../scss/_navbar.scss */
   .footer-widgets .widget {
     padding: 0;
     margin-top: 30px;
     border-left: 0;
   }
 }
-/* line 202, ../scss/_navbar.scss */
+/* line 196, ../scss/_navbar.scss */
 .footer-widgets .widget:first-child {
   border-left: 0;
 }
 @media only all and (max-width: 767px) {
-  /* line 205, ../scss/_navbar.scss */
+  /* line 199, ../scss/_navbar.scss */
   .footer-widgets .widget:last-child {
     padding: 0;
     margin-top: 0;
   }
 }
-/* line 212, ../scss/_navbar.scss */
+/* line 206, ../scss/_navbar.scss */
 .footer-widgets ul {
   padding: 0;
   list-style: none;
   list-style-type: none;
 }
-/* line 217, ../scss/_navbar.scss */
+/* line 211, ../scss/_navbar.scss */
 .footer-widgets .menu-item {
   margin: 3px 0;
   text-transform: uppercase;
@@ -538,7 +543,7 @@ button {
       }
   } */
 }
-/* line 222, ../scss/_navbar.scss */
+/* line 216, ../scss/_navbar.scss */
 .footer-widgets .menu-item:before {
   margin-left: 10px;
   margin-right: 5px;
@@ -546,47 +551,42 @@ button {
   color: #b12e4f;
 }
 
-/* line 237, ../scss/_navbar.scss */
+/* line 231, ../scss/_navbar.scss */
 #calendar_wrap {
   padding: 0;
 }
-/* line 241, ../scss/_navbar.scss */
+/* line 235, ../scss/_navbar.scss */
 #calendar_wrap .table-striped > tbody > tr:nth-child(odd) > td, #calendar_wrap .table-striped > tbody > tr:nth-child(odd) > th {
   background-color: #222;
 }
-/* line 244, ../scss/_navbar.scss */
+/* line 238, ../scss/_navbar.scss */
 #calendar_wrap .table > thead > tr > th, #calendar_wrap .table > tbody > tr > th, #calendar_wrap .table > tfoot > tr > th, #calendar_wrap .table > thead > tr > td, #calendar_wrap .table > tbody > tr > td, #calendar_wrap .table > tfoot > tr > td {
   border-top: 1px solid #444;
 }
-/* line 247, ../scss/_navbar.scss */
+/* line 241, ../scss/_navbar.scss */
 #calendar_wrap caption {
   color: #bf7485;
   margin-bottom: 10px;
 }
 
-/* line 254, ../scss/_navbar.scss */
+/* line 248, ../scss/_navbar.scss */
 #footer-menu li {
   width: 100%;
 }
 
-/* line 258, ../scss/_navbar.scss */
+/* line 252, ../scss/_navbar.scss */
 #root-footer, #footer {
   height: auto;
 }
-/* line 260, ../scss/_navbar.scss */
+/* line 254, ../scss/_navbar.scss */
 #root-footer p, #footer p {
   color: #666;
-}
-
-/* line 264, ../scss/_navbar.scss */
-#footer {
-  background-color: #000;
 }
 
 /* 
  *  Kebo Tweets
  */
-/* line 277, ../scss/_navbar.scss */
+/* line 271, ../scss/_navbar.scss */
 .kebo-tweets a.kaccount, .kebo-tweets a.kdate {
   font-size: 96% !important;
 }
@@ -594,21 +594,21 @@ button {
 /*  
  *  Mailchimp Email Signup 
  */
-/* line 288, ../scss/_navbar.scss */
+/* line 282, ../scss/_navbar.scss */
 #mc_signup {
   padding: 0 !important;
 }
-/* line 290, ../scss/_navbar.scss */
+/* line 284, ../scss/_navbar.scss */
 #mc_signup .mergeRow {
   display: none !important;
   padding: 0 !important;
 }
-/* line 294, ../scss/_navbar.scss */
+/* line 288, ../scss/_navbar.scss */
 #mc_signup form {
   padding: 0 !important;
 }
 
-/* line 298, ../scss/_navbar.scss */
+/* line 292, ../scss/_navbar.scss */
 #mc_signup_submit {
   margin-top: 0;
   width: 100% !important;
@@ -627,7 +627,7 @@ button {
   -o-transition: background-color, 0.25s;
   transition: background-color, 0.25s;
 }
-/* line 308, ../scss/_navbar.scss */
+/* line 302, ../scss/_navbar.scss */
 #mc_signup_submit:hover {
   background-color: #541625;
   -webkit-transition: background-color, 0.25s;
@@ -636,12 +636,12 @@ button {
   transition: background-color, 0.25s;
 }
 
-/* line 313, ../scss/_navbar.scss */
+/* line 307, ../scss/_navbar.scss */
 .mc_success_msg {
   color: #bf7485;
 }
 
-/* line 316, ../scss/_navbar.scss */
+/* line 310, ../scss/_navbar.scss */
 #mc_message {
   margin-bottom: 15px;
   margin-top: -2px;
@@ -649,14 +649,9 @@ button {
 
 @media only all and (max-width: 767px) {
   /* Logo */
-  /* line 325, ../scss/_navbar.scss */
+  /* line 319, ../scss/_navbar.scss */
   .navbar-brand {
     padding-left: 15px;
-  }
-
-  /* line 328, ../scss/_navbar.scss */
-  .navbar-collapse {
-    background-color: #000;
   }
 }
 /*
@@ -739,6 +734,11 @@ code, pre, .highlight {
 }
 
 /* line 88, ../scss/_mixins.scss */
+#footer {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+/* line 91, ../scss/_mixins.scss */
 .design-slider, .mq-list li, .single-design .media, .hero-right {
   -webkit-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
   -moz-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
@@ -1578,14 +1578,8 @@ a:hover {
   height: auto;
   pointer-events: none;
 }
-@media only all and (max-width: 767px) {
-  /* line 483, ../scss/custom.scss */
-  #cherry-blossoms {
-    display: none;
-  }
-}
 
-/* line 491, ../scss/custom.scss */
+/* line 488, ../scss/custom.scss */
 #cb-a {
   background: url('/wp-content/themes/jn-wpbs/assets/img/cherry-blossom.png?1388933978');
   background-position: -360px 100px;
@@ -1595,28 +1589,29 @@ a:hover {
   z-index: 21;
 }
 @media only all and (max-width: 1199px) {
-  /* line 491, ../scss/custom.scss */
+  /* line 488, ../scss/custom.scss */
   #cb-a {
     background-position: -550px 100px;
   }
 }
 @media only all and (max-width: 991px) {
-  /* line 491, ../scss/custom.scss */
+  /* line 488, ../scss/custom.scss */
   #cb-a {
     background-position: -730px 100px;
   }
 }
 @media only all and (max-width: 767px) {
-  /* line 491, ../scss/custom.scss */
+  /* line 488, ../scss/custom.scss */
   #cb-a {
-    background-position: -500px 100px;
+    background-position: -900px -510px;
+    z-index: -1;
   }
 }
 
 /*
  *  Admin Menu 
  */
-/* line 516, ../scss/custom.scss */
+/* line 515, ../scss/custom.scss */
 #adminmenu #menu-posts-design .wp-menu-image:before {
   content: '\f85' !important;
 }
