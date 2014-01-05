@@ -173,6 +173,9 @@ a:hover {
         }
     }
 }
+
+$thumb_back: rgba(white, 0.1);
+
 .thumbnail {
     @extend %transBg;
     padding:        0;
@@ -186,11 +189,11 @@ a:hover {
         font-family: "Dosis", sans-serif !important;
         // color: $rust;
         // @extend %boxShadowMd;
-        background-color: black;
+        background-color: $thumb_back;
     }
     img {
         height: auto !important;
-        border: 3px solid black;
+        border: 3px solid $thumb_back;
         // @include opacity(0.5);
         // @include transition(opacity, 1s);
         @include transition(border, 1s);
