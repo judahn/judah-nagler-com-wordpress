@@ -2,9 +2,6 @@
 	<div id="cb-a" class="pos-rel" data-stellar-ratio="1.5"></div>
 </div>
 
-<div id="cherry-blossoms" class="pos-abs">
-</div>
-
 <article class="row above-header hidden-xs visible-sm visible-md visible-lg">
 	<div id="above-header-container" class="container">
 		<?php if ( get_the_ID() == 163): ?>
