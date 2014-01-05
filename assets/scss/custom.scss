@@ -175,6 +175,7 @@ a:hover {
 }
 
 $thumb_back: rgba(white, 0.1);
+$thumb_hover: rgba(white, 0.8);
 
 .thumbnail {
     @extend %transBg;
@@ -194,6 +195,7 @@ $thumb_back: rgba(white, 0.1);
     img {
         height: auto !important;
         border: 3px solid $thumb_back;
+        @include filter(grayscale(100%));
         // @include opacity(0.5);
         // @include transition(opacity, 1s);
         @include transition(border, 1s);
@@ -215,21 +217,23 @@ $thumb_back: rgba(white, 0.1);
     &:hover {
         @include min_tablet {
             img {
-                border: 3px solid $red;//darken($red, 10%);
-                border-bottom: 3px solid $red;
+                border: 3px solid $thumb_hover;//darken($red, 10%);
+                border-bottom: 3px solid #666;
+                @include filter(grayscale(0%));
                 @include transition(border, 0.5s);
                 // @include opacity(1);
                 // @include transition(opacity, 0.5s);
             }
             h3 {
-                background: $red;//darken($red, 10%);
+                background: #666;//darken($red, 10%);
+                color: $red;
                 // color: lighten($rust, 5%);
                 padding-top: 20px;
                 @include transition (background-color, 0.2s);
                 @include transition (padding, 0.2s);
             }
             i {
-                color: white;
+                color: black;
             }
         }
     }

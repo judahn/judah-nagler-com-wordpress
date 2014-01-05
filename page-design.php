@@ -4,6 +4,8 @@
 
  ?>
 
+<?php include 'above-header.php' ?>
+
 <?php get_header(); ?>
 
 <?php include 'section-opener.php' ?>
