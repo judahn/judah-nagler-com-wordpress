@@ -174,8 +174,8 @@ a:hover {
     }
 }
 
-$thumb_back: rgba(white, 0.1);
-$thumb_hover: rgba(white, 0.8);
+$thumb_back: rgba(white, 0.2);
+$thumb_hover: $red;
 
 .thumbnail {
     @extend %transBg;
@@ -218,15 +218,15 @@ $thumb_hover: rgba(white, 0.8);
         @include min_tablet {
             img {
                 border: 3px solid $thumb_hover;//darken($red, 10%);
-                border-bottom: 3px solid #666;
+                border-bottom: 3px solid $thumb_hover;
                 @include filter(grayscale(0%));
                 @include transition(border, 0.5s);
                 // @include opacity(1);
                 // @include transition(opacity, 0.5s);
             }
             h3 {
-                background: #666;//darken($red, 10%);
-                color: $red;
+                background: $thumb_hover;//darken($red, 10%);
+                color: white;
                 // color: lighten($rust, 5%);
                 padding-top: 20px;
                 @include transition (background-color, 0.2s);
