@@ -1642,6 +1642,7 @@ a:hover {
 /* line 529, ../scss/custom.scss */
 #cb-a {
   background: url('/wp-content/themes/jn-wpbs/assets/img/cherry-blossom.png?1388933978');
+  background-position: -330px 100px;
   background-repeat: no-repeat;
   height: 1100px;
   width: 100%;
