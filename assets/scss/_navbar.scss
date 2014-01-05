@@ -320,6 +320,6 @@ button {
         padding-left: 15px;
     }
     .navbar-collapse {
-        @extend %opaqueBg;
+        background-color: rgba(black, 0.75);
     }
 }

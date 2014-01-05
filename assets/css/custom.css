@@ -653,6 +653,11 @@ button {
   .navbar-brand {
     padding-left: 15px;
   }
+
+  /* line 322, ../scss/_navbar.scss */
+  .navbar-collapse {
+    background-color: rgba(0, 0, 0, 0.75);
+  }
 }
 /*
  * 	Mixins
