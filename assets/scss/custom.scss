@@ -200,6 +200,7 @@ $thumb_hover: $red;
 
         @include max_tablet {
             @include opacity(1);
+            // @include filter(grayscale(0));
             border: 3px dotted $thumb_back;
             width: 100% !important;
         }
@@ -330,8 +331,9 @@ $thumb_hover: $red;
     }
 }
 .ktext {
-    line-height: 19px !important;
+    line-height: 21px !important;
     margin: 15px 0 !important;
+    color: #999 !important;
 }
 
 
@@ -345,17 +347,17 @@ $thumb_hover: $red;
     }
     label {
         margin-bottom: 10px;
-        color: $cyan;
+        color: $red;
     }
 }
 #frmCSCF {
     .btn {
-        border: $blue;
-        background-color: $blue;
+        border: $red;
+        background-color: $red;
         color: white;
         @include transition(background-color, 0.25s);
         &:hover {
-            background-color: $cyan;
+            background-color: $blue;
             @include transition(background-color, 0.25s);
         }
     }
@@ -409,6 +411,7 @@ $thumb_hover: $red;
 .entry-content {
     p {
         margin-bottom: 15px;
+        @include single-text-shadow;
     }
     img {
         margin: 10px 0 30px;
@@ -484,6 +487,12 @@ $thumb_hover: $red;
     width: 100%;
     height: auto;
     pointer-events: none;
+    z-index: 21;
+}
+.home, .blog, .page-id-21 {
+    #cherry-blossoms{
+        z-index: -1;
+    }
 }
 #cb-a{
 
@@ -492,7 +501,6 @@ $thumb_hover: $red;
     background-repeat: no-repeat;
     height: 1100px;
     width: 100%;
-    z-index: 21;
 
     @include max_desktop{
         background-position: -550px 100px;
