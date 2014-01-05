@@ -146,17 +146,11 @@ function _tk_scripts() {
 
 
 	/*
-	 *	PLUGINS
+	 *	CUSTOM JS
 	 */
 
-	// load custom js
 	wp_enqueue_script('_tk-holder', get_template_directory_uri() . '/assets/js/holder.js', array('jquery') );
-
-	/*
-	 *	CUSTOM
-	 */
-
-	// load custom js
+	wp_enqueue_script('_tk-stellar', get_template_directory_uri() . '/assets/js/jquery.stellar.min.js', array('jquery') );
 	wp_enqueue_script('_tk-custom', get_template_directory_uri() . '/assets/js/custom.js', array('jquery') );
 
 

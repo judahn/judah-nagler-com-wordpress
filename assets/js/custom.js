@@ -37,4 +37,5 @@ $j(document).ready(function() {
 	$j(".image").load(function(){
 		$j(this).height("auto").css({"padding-bottom":"0 !important"});
 	});
+	$j.stellar();
 });

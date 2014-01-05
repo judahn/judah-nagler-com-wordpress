@@ -25,4 +25,8 @@
 <body <?php body_class(); ?>>
 	<?php do_action( 'before' ); ?>
 
+
 <div class="root">
+
+
+

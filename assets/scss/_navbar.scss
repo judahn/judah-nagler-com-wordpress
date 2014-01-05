@@ -19,7 +19,7 @@
     }
 }
 .navbar-inverse .navbar-brand {
-    color: $blue;
+    color: white;//$blue;
 }
 
 .site-navigation-inner {
@@ -81,6 +81,9 @@
             @include transition(all, 0);
         }
     }
+    > .container{
+        background-color: rgba(black, 0.72);
+    }
 }
 .navbar-nav {
     margin: 0 0 0 -15px;
@@ -97,18 +100,18 @@
     color: $red;
 }
 .navbar-inverse {
-    background-color: rgba(black, 1);
+    background-color: transparent;//rgba(black, 1);
     border: 0;
     @if $use_shadows { @include box-shadow(2px 2px 10px rgba(black, 0.5)); }
 }
 .navbar-collapse {
-    @include box-shadow(0);
+    // @include box-shadow(0);
     border-top: 0;
 }
 
 #nav-row{
     height: $nav_height;
-    background-color: #000;
+    // background-color: #000;
     z-index: 999;
     position: fixed;
 

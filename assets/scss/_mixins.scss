@@ -32,6 +32,12 @@
     width: 100%;
     height: auto;
 }
+.pos-abs{
+    position: absolute;
+}
+.pos-rel{
+    position: relative;
+}
 
 @mixin center-vertically($h1, $h2) {
     position: fixed;

@@ -17,8 +17,8 @@
 body {
     padding: 0;
     overflow-x: hidden;
-    background-color: #333;//darken($blue, 17%);
-    @include background(image-url("bg/goth.jpg") #000 fixed);
+    background-color: #000;//darken($blue, 17%);
+    // @include background(image-url("bg/goth.jpg") #000 fixed);
 }
 article {
     padding-left: 0 !important;
@@ -453,11 +453,6 @@ a:hover {
 .above-header {
     overflow: visible;
     height: 500px;
-    background-color: black;
-    @include background(image-url("cherry-blossom.png"), #000);
-    background-position: -400px 0;
-    background-repeat: no-repeat;
-
 
     h1 {
         margin-top: 50px;
@@ -472,6 +467,20 @@ a:hover {
 }
 #above-header-container {
     height: 100%;
+}
+
+#cherry-blossoms{
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+#cb-a{
+    @include background(image-url("cherry-blossom.png"));
+    background-position: -400px 100px;
+    background-repeat: no-repeat;
+    height: 999px;
+    width: 100%;
+    z-index: 21;
 }
 
 
