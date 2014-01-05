@@ -218,8 +218,8 @@ $thumb_hover: $red;
     &:hover {
         @include min_tablet {
             img {
-                border: 3px solid $thumb_hover;//darken($red, 10%);
-                border-bottom: 3px solid $thumb_hover;
+                border: 3px dotted $thumb_hover;
+                border-bottom: 3px dotted $thumb_hover;
                 @include filter(grayscale(0%));
                 @include transition(border, 0.5s);
                 @include opacity(1);
