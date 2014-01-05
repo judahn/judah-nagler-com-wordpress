@@ -1597,7 +1597,7 @@ a:hover {
 }
 /* line 497, ../scss/custom.scss */
 .above-header h1 {
-  margin-top: 50px;
+  margin-top: 30px;
   font-size: 80px;
   z-index: 999;
 }
@@ -1656,7 +1656,7 @@ a:hover {
 @media only all and (max-width: 991px) {
   /* line 529, ../scss/custom.scss */
   #cb-a {
-    background-position: -620px 100px;
+    background-position: -545px 100px;
   }
 }
 @media only all and (max-width: 767px) {

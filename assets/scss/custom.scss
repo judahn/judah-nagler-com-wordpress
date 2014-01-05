@@ -495,7 +495,7 @@ $thumb_hover: $red;
     height: 500px;
 
     h1 {
-        margin-top: 50px;
+        margin-top: 30px;
         font-size: 80px;
         z-index: 999;
         @include max_desktop{
@@ -538,7 +538,7 @@ $thumb_hover: $red;
         background-position: -330px 100px;
     }
     @include max_laptop{
-        background-position: -620px 100px;
+        background-position: -545px 100px;
     }
     @include max_tablet{
         // width: 100%;
