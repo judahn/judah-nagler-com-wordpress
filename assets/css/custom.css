@@ -1214,12 +1214,12 @@ a:hover {
 /* line 195, ../scss/custom.scss */
 .thumbnail img {
   height: auto !important;
-  border: 3px dotted #999;
+  border: 3px dotted #ccc;
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   filter: grayscale(100%);
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
-  opacity: 0.3;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+  opacity: 0.2;
   -webkit-transition: opacity, 1s;
   -moz-transition: opacity, 1s;
   -o-transition: opacity, 1s;

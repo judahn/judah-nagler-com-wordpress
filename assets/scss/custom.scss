@@ -194,9 +194,9 @@ $thumb_hover: $red;
     }
     img {
         height: auto !important;
-        border: 3px dotted #999;
+        border: 3px dotted #ccc;
         @include filter(grayscale(100%));
-        @include opacity(0.3);
+        @include opacity(0.2);
         @include transition(opacity, 1s);
         @include transition(border, 1s);
 
