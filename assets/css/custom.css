@@ -370,7 +370,7 @@ p {
 }
 /* line 82, ../scss/_navbar.scss */
 .navbar > .container {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 /* line 86, ../scss/_navbar.scss */
@@ -1586,17 +1586,17 @@ a:hover {
 
 /* line 490, ../scss/custom.scss */
 #cb-a {
-  background: url('/wp-content/themes/jn-wpbs/assets/img/cherry-blossom-left.png?1388930811');
-  background-position: -40px 100px;
+  background: url('/wp-content/themes/jn-wpbs/assets/img/cherry-blossom.png?1387977909');
+  background-position: -360px 100px;
   background-repeat: no-repeat;
-  height: 999px;
+  height: 1100px;
   width: 100%;
   z-index: 21;
 }
 @media only all and (max-width: 991px) {
   /* line 490, ../scss/custom.scss */
   #cb-a {
-    background-position: -200px 100px;
+    background-position: -360px 100px;
   }
 }
 @media only all and (max-width: 767px) {

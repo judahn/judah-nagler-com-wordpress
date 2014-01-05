@@ -489,15 +489,15 @@ $thumb_hover: $red;
 }
 #cb-a{
 
-    @include background(image-url("cherry-blossom-left.png"));
-    background-position: -40px 100px;
+    @include background(image-url("cherry-blossom.png"));
+    background-position: -360px 100px;
     background-repeat: no-repeat;
-    height: 999px;
+    height: 1100px;
     width: 100%;
     z-index: 21;
 
     @include max_laptop{
-        background-position: -200px 100px;
+        background-position: -360px 100px;
     }
     @include max_tablet{
         background-position: -400px 100px;
