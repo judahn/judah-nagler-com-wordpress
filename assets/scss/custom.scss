@@ -109,7 +109,22 @@ a:hover {
     @include max_tablet{
         padding-top: 0px;
     }
+    > .container {
+        padding-top: 15px;
+        @extend %opaqueBg;
+        @include max_tablet{
+            background-color: transparent;
+        }
+    }
 }
+    .main-content-inner {
+        .col-sm-6 {
+            @include max_tablet{
+                padding: 0;
+            }
+        }
+    }
+
 .content{
     margin-left: 15px;
     margin-right: 15px;
@@ -411,7 +426,7 @@ $thumb_hover: $red;
 .entry-content {
     p {
         margin-bottom: 15px;
-        @include single-text-shadow;
+        // @include single-text-shadow;
     }
     img {
         margin: 10px 0 30px;
@@ -459,9 +474,15 @@ $thumb_hover: $red;
 .hero-right {
     margin-bottom: 40px;
     @extend %boxShadow;
+    @include max_tablet {
+        margin-bottom: 0;
+    }
 }
 .col-page-left {
     padding: 0 40px 0 0;
+    @include max_tablet {
+        padding: 0;
+    }
 }
 .above-header {
     overflow: visible;
