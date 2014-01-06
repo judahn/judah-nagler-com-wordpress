@@ -1654,8 +1654,6 @@ a:hover {
   background-repeat: no-repeat;
   height: 1100px;
   width: 100%;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
-  opacity: 0.7;
 }
 @media only all and (max-width: 1199px) {
   /* line 531, ../scss/custom.scss */
@@ -1672,32 +1670,34 @@ a:hover {
 @media only all and (max-width: 767px) {
   /* line 531, ../scss/custom.scss */
   #cb-a {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+    opacity: 0.7;
     background-position: -966px -90px;
   }
 }
 
 @media only all and (max-width: 767px) {
-  /* line 552, ../scss/custom.scss */
+  /* line 551, ../scss/custom.scss */
   .home #cb-a {
     background-position: -1104px -204px;
   }
 }
 
 @media only all and (max-width: 767px) {
-  /* line 557, ../scss/custom.scss */
+  /* line 556, ../scss/custom.scss */
   .home .entry-content {
     padding: 0;
   }
 }
 @media only all and (max-width: 479px) {
-  /* line 557, ../scss/custom.scss */
+  /* line 556, ../scss/custom.scss */
   .home .entry-content {
     margin-top: -15px;
   }
 }
 
 @media only all and (max-width: 767px) {
-  /* line 565, ../scss/custom.scss */
+  /* line 564, ../scss/custom.scss */
   .blog #cb-a {
     background-position: -852px -350px;
   }
@@ -1706,7 +1706,7 @@ a:hover {
 /*
  *  Admin Menu 
  */
-/* line 574, ../scss/custom.scss */
+/* line 573, ../scss/custom.scss */
 #adminmenu #menu-posts-design .wp-menu-image:before {
   content: '\f85' !important;
 }

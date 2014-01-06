@@ -536,8 +536,6 @@ $thumb_hover: $red;
     height: 1100px;
     width: 100%;
 
-    @include opacity(0.7);
-
     @include max_desktop{
         background-position: -370px 100px;
     }
@@ -545,6 +543,7 @@ $thumb_hover: $red;
         background-position: -545px 100px;
     }
     @include max_tablet{
+        @include opacity(0.7);
         // width: 100%;
         background-position: -966px -90px;//-900px -347px;
     }
