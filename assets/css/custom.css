@@ -550,7 +550,7 @@ button {
   color: #bf7485;
 }
 /* line 225, ../scss/_navbar.scss */
-.footer-widgets .menu-item a:hover {
+.footer-widgets .menu-item a:hover, .footer-widgets .menu-item a:focus {
   color: #b12e4f;
 }
 

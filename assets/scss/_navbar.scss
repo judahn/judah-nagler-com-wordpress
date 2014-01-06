@@ -222,7 +222,7 @@ button {
         }
         a {
             color: $blue;
-            &:hover {
+            &:hover, &:focus {
                 color: $red;
             }
         }
