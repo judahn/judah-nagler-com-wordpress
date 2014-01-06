@@ -17,8 +17,7 @@
 body {
     padding: 0;
     overflow-x: hidden;
-    background-color: #000;//darken($blue, 17%);
-    // @include background(image-url("bg/goth.jpg") #000 fixed);
+    background-color: #000;
 }
 article {
     padding-left: 0 !important;
@@ -207,9 +206,9 @@ $thumb_hover: $red;
     }
     img {
         height: auto !important;
-        border: 3px dotted #ccc;
+        border: 3px dotted #aaa;
         @include filter(grayscale(100%));
-        @include opacity(0.25);
+        @include opacity(0.3);
         @include transition(opacity, 1s);
         @include transition(border, 1s);
 
