@@ -77,7 +77,7 @@
             letter-spacing: 2px;
         }
         @include max_tablet {
-            @include transition(all, 0);
+            // @include transition(all, 0);
         }
     }
     > .container{

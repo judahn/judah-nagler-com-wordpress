@@ -97,6 +97,9 @@ a{
     &:hover{
         @include transition(color, 0.25s);
     }
+    @include max_tablet{
+        @include transition(0);
+    }
 }
 p {
     // padding:        15px 0;

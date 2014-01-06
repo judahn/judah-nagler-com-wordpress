@@ -250,8 +250,17 @@ a:hover {
   -o-transition: color, 0.25s;
   transition: color, 0.25s;
 }
+@media only all and (max-width: 767px) {
+  /* line 95, ../scss/_typography.scss */
+  a {
+    -webkit-transition: 0;
+    -moz-transition: 0;
+    -o-transition: 0;
+    transition: 0;
+  }
+}
 
-/* line 101, ../scss/_typography.scss */
+/* line 104, ../scss/_typography.scss */
 p {
   color: #ccc;
   font-family: "Dosis", sans-serif;
@@ -363,15 +372,6 @@ p {
   .navbar a {
     font-size: 13px;
     letter-spacing: 2px;
-  }
-}
-@media only all and (max-width: 767px) {
-  /* line 71, ../scss/_navbar.scss */
-  .navbar a {
-    -webkit-transition: all, 0;
-    -moz-transition: all, 0;
-    -o-transition: all, 0;
-    transition: all, 0;
   }
 }
 
