@@ -537,12 +537,6 @@ button {
   margin: 3px 0;
   text-transform: uppercase;
   font-size: 115%;
-  /* a {
-      color: #666;
-      &:hover {
-          color: $blue;
-      }
-  } */
 }
 /* line 217, ../scss/_navbar.scss */
 .footer-widgets .menu-item:before {
@@ -550,6 +544,14 @@ button {
   margin-right: 5px;
   content: "\00bb ";
   color: #b12e4f;
+}
+/* line 223, ../scss/_navbar.scss */
+.footer-widgets .menu-item a {
+  color: #b12e4f;
+}
+/* line 225, ../scss/_navbar.scss */
+.footer-widgets .menu-item a:hover {
+  color: #bf7485;
 }
 
 /* line 232, ../scss/_navbar.scss */

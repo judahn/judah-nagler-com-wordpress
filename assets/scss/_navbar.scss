@@ -220,12 +220,12 @@ button {
             content: "\00bb ";
             color: $red;
         }
-        /* a {
-            color: #666;
+        a {
+            color: $red;
             &:hover {
                 color: $blue;
             }
-        } */
+        }
     }
 }
 
