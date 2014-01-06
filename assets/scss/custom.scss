@@ -536,7 +536,7 @@ $thumb_hover: $red;
     height: 1100px;
     width: 100%;
 
-    // @include opacity(0.83);
+    @include opacity(0.7);
 
     @include max_desktop{
         background-position: -370px 100px;
