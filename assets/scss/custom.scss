@@ -529,10 +529,12 @@ $thumb_hover: $red;
 #cb-a{
 
     @include background(image-url("cherry-blossom.png"));
-    background-position: -330px 100px;
+    background-position: -322px 100px;
     background-repeat: no-repeat;
     height: 1100px;
     width: 100%;
+
+    // @include opacity(0.83);
 
     @include max_desktop{
         background-position: -370px 100px;

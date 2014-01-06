@@ -132,7 +132,7 @@ code, pre, .highlight {
 }
 
 /* line 88, ../scss/_mixins.scss */
-#footer, .main-content > .container {
+.navbar > .container, #footer, .main-content > .container {
   background-color: rgba(0, 0, 0, 0.75);
 }
 
@@ -373,10 +373,6 @@ p {
     -o-transition: all, 0;
     transition: all, 0;
   }
-}
-/* line 83, ../scss/_navbar.scss */
-.navbar > .container {
-  background-color: rgba(0, 0, 0, 0.75);
 }
 
 /* line 87, ../scss/_navbar.scss */
@@ -749,7 +745,7 @@ code, pre, .highlight {
 }
 
 /* line 88, ../scss/_mixins.scss */
-#footer, .main-content > .container {
+.navbar > .container, #footer, .main-content > .container {
   background-color: rgba(0, 0, 0, 0.75);
 }
 
@@ -1657,7 +1653,7 @@ a:hover {
 /* line 529, ../scss/custom.scss */
 #cb-a {
   background: url('/wp-content/themes/jn-wpbs/assets/img/cherry-blossom.png?1388933978');
-  background-position: -330px 100px;
+  background-position: -322px 100px;
   background-repeat: no-repeat;
   height: 1100px;
   width: 100%;
@@ -1684,7 +1680,7 @@ a:hover {
 /*
  *  Admin Menu 
  */
-/* line 554, ../scss/custom.scss */
+/* line 556, ../scss/custom.scss */
 #adminmenu #menu-posts-design .wp-menu-image:before {
   content: '\f85' !important;
 }

@@ -81,7 +81,7 @@
         }
     }
     > .container{
-        background-color: rgba(black, 0.75);
+        @extend %opaqueBg;
     }
 }
 .navbar-nav {
