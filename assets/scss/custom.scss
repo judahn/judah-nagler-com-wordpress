@@ -524,7 +524,7 @@ $thumb_hover: $red;
 #cherry-blossoms{
     @include max_tablet{
         z-index: -1;
-        @include opacity(0.6);
+        @include opacity(0.65);
     }
 }
 #cb-a{
@@ -543,7 +543,7 @@ $thumb_hover: $red;
     }
     @include max_tablet{
         // width: 100%;
-        background-position: -900px -340px;
+        background-position: -930px 20px;
     }
 }
 
