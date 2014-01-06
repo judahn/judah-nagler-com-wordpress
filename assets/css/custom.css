@@ -194,7 +194,7 @@ h1 {
 @media only all and (max-width: 767px) {
   /* line 45, ../scss/_typography.scss */
   h1 {
-    font-size: 42px;
+    font-size: 44px;
   }
 }
 /* line 57, ../scss/_typography.scss */
@@ -1643,8 +1643,8 @@ a:hover {
   /* line 524, ../scss/custom.scss */
   #cherry-blossoms {
     z-index: -1;
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
-    opacity: 0.3;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+    opacity: 0.4;
   }
 }
 
