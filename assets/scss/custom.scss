@@ -209,7 +209,7 @@ $thumb_hover: $red;
         height: auto !important;
         border: 3px dotted #ccc;
         @include filter(grayscale(100%));
-        @include opacity(0.2);
+        @include opacity(0.25);
         @include transition(opacity, 1s);
         @include transition(border, 1s);
 
