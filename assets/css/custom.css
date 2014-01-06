@@ -1646,8 +1646,8 @@ a:hover {
   /* line 523, ../scss/custom.scss */
   #cherry-blossoms {
     z-index: -1;
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
-    opacity: 0.3;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=33);
+    opacity: 0.33;
   }
 }
 
