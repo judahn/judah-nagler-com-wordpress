@@ -1281,7 +1281,7 @@ a:hover {
 }
 @media only all and (min-width: 768px) {
   /* line 235, ../scss/custom.scss */
-  .thumbnail:hover img {
+  .thumbnail:hover img, .thumbnail:focus img {
     border: 3px dotted #b12e4f;
     border-bottom: 3px dotted #b12e4f;
     -webkit-filter: grayscale(0%);
@@ -1295,7 +1295,7 @@ a:hover {
     transition: opacity, 0.5s;
   }
   /* line 245, ../scss/custom.scss */
-  .thumbnail:hover h3 {
+  .thumbnail:hover h3, .thumbnail:focus h3 {
     background: #b12e4f;
     color: white;
     padding-top: 20px;
@@ -1309,7 +1309,7 @@ a:hover {
     transition: padding, 0.2s;
   }
   /* line 253, ../scss/custom.scss */
-  .thumbnail:hover i {
+  .thumbnail:hover i, .thumbnail:focus i {
     color: black;
   }
 }

@@ -230,7 +230,7 @@ $thumb_hover: $red;
 
     // Hover states
 
-    &:hover {
+    &:hover, &:focus {
         @include min_tablet {
             img {
                 border: 3px dotted $thumb_hover;
