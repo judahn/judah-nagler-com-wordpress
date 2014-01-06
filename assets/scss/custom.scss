@@ -214,7 +214,7 @@ $thumb_hover: $red;
 
         @include max_tablet {
             @include opacity(1);
-            // @include filter(grayscale(0));
+            @include filter(grayscale(0));
             border: 3px dotted $thumb_back;
             width: 100% !important;
         }

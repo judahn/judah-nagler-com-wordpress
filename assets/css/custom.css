@@ -1266,6 +1266,9 @@ a:hover {
   .thumbnail img {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1;
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    filter: grayscale(0);
     border: 3px dotted rgba(255, 255, 255, 0.2);
     width: 100% !important;
   }
