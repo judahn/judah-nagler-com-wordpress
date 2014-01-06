@@ -1646,8 +1646,8 @@ a:hover {
   /* line 524, ../scss/custom.scss */
   #cherry-blossoms {
     z-index: -1;
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
-    opacity: 0.65;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+    opacity: 0.6;
   }
 }
 
@@ -1674,7 +1674,7 @@ a:hover {
 @media only all and (max-width: 767px) {
   /* line 530, ../scss/custom.scss */
   #cb-a {
-    background-position: -930px 20px;
+    background-position: -900px -340px;
   }
 }
 
