@@ -523,7 +523,7 @@ $thumb_hover: $red;
 #cherry-blossoms{
     @include max_tablet{
         z-index: -1;
-        @include opacity(0.33);
+        @include opacity(0.5);
     }
 }
 #cb-a{
