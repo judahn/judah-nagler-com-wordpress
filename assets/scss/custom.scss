@@ -190,7 +190,7 @@ a:hover {
     }
 }
 
-$thumb_back: rgba(white, 0.2);
+$thumb_back: rgba(#333, 0.9);
 $thumb_hover: $red;
 
 .thumbnail {
@@ -546,14 +546,21 @@ $thumb_hover: $red;
     }
     @include max_tablet{
         // width: 100%;
-        background-position: -974px -90px;//-900px -347px;
+        background-position: -966px -90px;//-900px -347px;
     }
 }
 .home #cb-a {
     @include max_tablet{
-        background-position: -975px -78px;//-1000px -166px;
+        background-position: -1104px -204px;//-1000px -166px;
     }
-
+}
+.home .entry-content {
+    @include max_tablet{
+        padding: 0;
+    }
+    @include max_phone{
+        margin-top: -15px;        
+    }
 }
 .blog #cb-a {
     @include max_tablet{
