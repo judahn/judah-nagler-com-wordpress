@@ -78,6 +78,15 @@ $j(document).ready(function() {
 
 
 
+	// auto scroll
+
+	/*var i = -1;
+	window.setInterval(function(){
+		i++;
+		$j(window).scrollTop(i);
+	}, 1);*/
+	
+
 	// intro animation
 
 	function introAnimation() {

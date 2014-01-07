@@ -108,6 +108,7 @@
 }
 .navbar-collapse {
     border-top: 0;
+    box-shadow: none !important;
 }
 
 #nav-row{
@@ -169,8 +170,9 @@ button {
     }
 }
 .affix-top {
-    @include max_tablet {
-        position: static;
+    @include max_tablet{
+        position: absolute;
+        top: 0;
     }
 }
 
