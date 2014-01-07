@@ -50,10 +50,12 @@ $j(document).ready(function() {
         var minOp       = 0;
         var maxOp       = 1;
 
-        var tgtOp = (scroll / offsetTop);
-        var navOp = tgtOp * 4;
+        var tgtOp		= (scroll / offsetTop);
+        var navOp		= tgtOp * 4;
 
-        if ($j(window).width() >= 768){
+        var isSingle	= $j("body").hasClass("single");
+
+        if ($j(window).width() >= 768 && !isSingle){
         	if (tgtOp >= maxOp){
 	            tgtOp  = maxOp;
 	        }
@@ -75,7 +77,7 @@ $j(document).ready(function() {
 
 	$j(window).bind("scroll", onWindowScroll);
 	$j(window).bind("resize", onWindowScroll);
-
+	onWindowScroll();
 
 
 	// auto scroll
