@@ -1,7 +1,6 @@
 @import "responsive";
 
 
-
 /* Logo */
 
 .navbar-brand {
@@ -11,6 +10,7 @@
     }
     @include max_tablet {
         padding-top: 12px;
+        padding-left: 15px;
         line-height: 25px;
 
         #avatar {
@@ -64,7 +64,6 @@
  */
 
 .navbar {
-    // margin-bottom: -150px;
     font-family: "Dosis", sans-serif;
     text-transform: uppercase;
 
@@ -78,9 +77,6 @@
         @include laptop {
             font-size: 14px;
             letter-spacing: 2px;
-        }
-        @include max_tablet {
-            // @include transition(all, 0);
         }
     }
     > .container{
@@ -102,7 +98,7 @@
     color: $blue;
 }
 .navbar-inverse {
-    background-color: transparent;//rgba(black, 1);
+    background-color: transparent;
     border: 0;
     @if $use_shadows { @include box-shadow(2px 2px 10px rgba(black, 0.5)); }
 }
@@ -236,7 +232,6 @@ button {
 
 #calendar_wrap {
     padding: 0;
-    // color: #999;
 
     .table-striped > tbody > tr:nth-child(odd) > td, .table-striped > tbody > tr:nth-child(odd) > th {
         background-color: #222;
@@ -316,19 +311,4 @@ button {
 #mc_message {
     margin-bottom: 15px;
     margin-top: -2px;
-}
-
-//  Responsive: Portrait mobile and below
-
-@include max_tablet{
-    /* Logo */
-    .navbar-brand {
-        padding-left: 15px;
-    }
-    .navbar-collapse {
-        /* background-color: rgba(black, 0.75);
-        @include max_tablet{
-            background-color: rgba(0, 0, 0, 0.15);
-        } */
-    }
 }

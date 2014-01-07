@@ -72,8 +72,6 @@ $j(document).ready(function() {
         $j(".main-content").css({"opacity":tgtOp});
         // $j(".navbar").css({"opacity":navOp});
     }
-    $j(".main-content").css({"opacity":0});
-    // $j(".navbar").css({"opacity":0});
 
 	$j(window).bind("scroll", onWindowScroll);
 	$j(window).bind("resize", onWindowScroll);
