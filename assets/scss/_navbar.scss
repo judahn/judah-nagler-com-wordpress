@@ -69,11 +69,14 @@
     text-transform: uppercase;
 
     a{
-        font-size: 16px;
+        font-size: 18px;
         letter-spacing: 3px;
 
+        @include desktop {
+            font-size: 16px;
+        }
         @include laptop {
-            font-size: 13px;
+            font-size: 14px;
             letter-spacing: 2px;
         }
         @include max_tablet {

@@ -38,4 +38,50 @@ $j(document).ready(function() {
 		$j(this).height("auto").css({"padding-bottom":"0 !important"});
 	});
 	$j.stellar();
+
+
+
+	// scroll opacity
+
+	function onWindowScroll() {
+
+        var scroll      = $j(window).scrollTop();
+        var offsetTop   = 350;
+        var minOp       = 0;
+        var maxOp       = 1;
+
+        var tgtOp = (scroll / offsetTop);
+        var navOp = tgtOp * 4;
+
+        if ($j(window).width() >= 768){
+        	if (tgtOp >= maxOp){
+	            tgtOp  = maxOp;
+	        }
+	        if (tgtOp <= minOp){
+	            tgtOp  = minOp;
+	        }
+	        if (navOp <= 0){
+	            navOp  = 0;
+	        }	
+        } else {
+        	tgtOp = navOp = 1;
+        }
+        
+        $j(".main-content").css({"opacity":tgtOp});
+        // $j(".navbar").css({"opacity":navOp});
+    }
+    $j(".main-content").css({"opacity":0});
+    // $j(".navbar").css({"opacity":0});
+
+	$j(window).bind("scroll", onWindowScroll);
+	$j(window).bind("resize", onWindowScroll);
+
+
+
+	// intro animation
+
+	function introAnimation() {
+		// fade in elements
+	}
 });
+

@@ -116,14 +116,15 @@ a:hover {
         }
     }
 }
-    .main-content-inner {
-        padding-bottom: 0;
-        .col-sm-6 {
-            @include max_tablet{
-                padding: 0;
-            }
+
+.main-content-inner {
+    padding-bottom: 0;
+    .col-sm-6 {
+        @include max_tablet{
+            padding: 0;
         }
     }
+}
 
 .content{
     margin-left: 15px;
@@ -480,6 +481,8 @@ $thumb_hover: $red;
 .hero-right {
     margin-top: 21px;
     margin-bottom: 40px;
+    border: 3px dotted black;
+
     @extend %boxShadow;
     @include max_tablet {
         margin-bottom: 0;
@@ -517,10 +520,13 @@ $thumb_hover: $red;
     pointer-events: none;
     z-index: 21;
 }
-.home, .blog, .page-id-21 {
+.page-id-21 {
     #cherry-blossoms{
         z-index: -1;
     }
+}
+.home #cherry-blossoms {
+    // z-index: 999;
 }
 #cherry-blossoms{
     @include max_tablet{
@@ -531,16 +537,16 @@ $thumb_hover: $red;
 #cb-a{
 
     @include background(image-url("cherry-blossom.png"));
-    background-position: -322px 100px;
+    background-position: -162px 50px;
     background-repeat: no-repeat;
     height: 1100px;
     width: 100%;
 
     @include max_desktop{
-        background-position: -370px 100px;
+        background-position: -370px 50px;
     }
     @include max_laptop{
-        background-position: -545px 100px;
+        background-position: -490px 50px;
     }
     @include max_tablet{
         @include opacity(0.7);
@@ -549,8 +555,16 @@ $thumb_hover: $red;
     }
 }
 .home #cb-a {
+    background-position: 270% 20px;
+
+    @include max_desktop {
+        background-position: 180% 20px;
+    }
+    @include max_laptop {
+        background-position: 140% 20px;
+    }
     @include max_tablet{
-        background-position: -1104px -204px;//-1000px -166px;
+        background-position: -1024px -204px;//-1000px -166px;
     }
 }
 .home .entry-content {
@@ -562,6 +576,7 @@ $thumb_hover: $red;
     }
 }
 .blog #cb-a {
+    background-position: 70% -84px;
     @include max_tablet{
         background-position: -852px -350px;
     }
