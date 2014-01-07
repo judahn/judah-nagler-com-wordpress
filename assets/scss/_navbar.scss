@@ -20,7 +20,7 @@
     }
 }
 .navbar-inverse .navbar-brand {
-    color: white;//$blue;
+    color: white;
 }
 
 .site-navigation-inner {
@@ -95,7 +95,7 @@
 .navbar-inverse .navbar-nav > .active > a:hover, 
 .navbar-inverse .navbar-nav > .active > a:focus {
     background-color: transparent;
-    color: $blue;
+    color: lighten($red, 11%);
 }
 .navbar-inverse {
     background-color: transparent;

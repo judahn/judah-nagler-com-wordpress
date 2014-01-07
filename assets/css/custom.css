@@ -133,7 +133,7 @@ code, pre, .highlight {
 
 /* line 88, ../scss/_mixins.scss */
 .navbar > .container, #footer, .main-content > .container {
-  background-color: rgba(0, 0, 0, 0.71);
+  background-color: rgba(0, 0, 0, 0.69);
 }
 
 /* line 91, ../scss/_mixins.scss */
@@ -396,7 +396,7 @@ p {
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
   background-color: transparent;
-  color: #bf7485;
+  color: #cf486a;
 }
 
 /* line 100, ../scss/_navbar.scss */
@@ -737,7 +737,7 @@ code, pre, .highlight {
 
 /* line 88, ../scss/_mixins.scss */
 .navbar > .container, #footer, .main-content > .container {
-  background-color: rgba(0, 0, 0, 0.71);
+  background-color: rgba(0, 0, 0, 0.69);
 }
 
 /* line 91, ../scss/_mixins.scss */
