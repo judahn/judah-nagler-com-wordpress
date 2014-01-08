@@ -138,11 +138,14 @@ button {
     margin-right: 15px !important;
 }
 .btn-primary {
+    background-color:   $blue;
+    border-color:       $blue;
     @include transition(background-color, 0.5s);
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
-    background-color:   darken($blue, 13%);
-    border-color:       darken($blue, 13%);
+    background-color:   lighten($blue, 13%);
+    border-color:       lighten($blue, 13%);
+    color: black;
     
     @include transition(background-color, 0.5s);
 }
@@ -152,8 +155,8 @@ button {
     @include transition(background-color, 0.5s);
 }
 .btn-danger:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
-    background-color:   darken($red, 23%);
-    border-color:       darken($red, 23%);
+    background-color:   lighten($red, 13%);
+    border-color:       lighten($red, 13%);
     @include transition(background-color, 0.5s);
 }
 
@@ -220,12 +223,6 @@ button {
             margin-right: 5px;
             content: "\00bb ";
             color: $red;
-        }
-        a {
-            color: $blue;
-            &:hover, &:focus {
-                color: $red;
-            }
         }
     }
 }
