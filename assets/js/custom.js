@@ -55,6 +55,8 @@ $j(document).ready(function() {
 
         var isSingle	= $j("body").hasClass("single");
 
+        // fade in main content
+
         if ($j(window).width() >= 768 && !isSingle){
         	if (tgtOp >= maxOp){
 	            tgtOp  = maxOp;
@@ -68,9 +70,11 @@ $j(document).ready(function() {
         } else {
         	tgtOp = navOp = 1;
         }
+
+        var hdrOp = ((offsetTop * 0.618) - scroll) / 100;
         
         $j(".main-content").css({"opacity":tgtOp});
-        // $j(".navbar").css({"opacity":navOp});
+        $j(".above-header h1").css({"opacity":(hdrOp)});
     }
 
 	$j(window).bind("scroll", onWindowScroll);
