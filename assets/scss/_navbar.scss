@@ -81,6 +81,7 @@
     }
     > .container{
         @extend %opaqueBg;
+        @include border-radius(10px);
     }
 }
 .navbar-nav {
@@ -123,6 +124,9 @@
     .btn-primary {
         margin-top: 10px;
     }
+    span {
+        line-height: 17px;
+    }
 }
 
 //  Nav Prev / Next
@@ -154,9 +158,20 @@ button {
     border-color:       $red;
     @include transition(background-color, 0.5s);
 }
-.btn-danger:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
+.btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active {
     background-color:   lighten($red, 13%);
     border-color:       lighten($red, 13%);
+    @include transition(background-color, 0.5s);
+}
+
+.btn-info {
+    background-color:   $info;
+    border-color:       $info;
+    @include transition(background-color, 0.5s);
+}
+.btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active {
+    background-color:   lighten($info, 13%);
+    border-color:       lighten($info, 13%);
     @include transition(background-color, 0.5s);
 }
 
@@ -298,7 +313,7 @@ button {
     @include border-radius(2px);
     @include transition(background-color, 0.25s);
     &:hover {
-        background-color: $blue;
+        background-color: lighten($red, 13%);
         @include transition(background-color, 0.25s);
     }
 }

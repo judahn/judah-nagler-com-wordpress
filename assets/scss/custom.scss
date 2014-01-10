@@ -73,8 +73,15 @@ a:hover {
     color: black;
     font-size: 100%;
 }
-
-
+.fa-desktop {
+    line-height: 21px;
+}
+.fa-globe {
+    line-height: 19px;
+}
+.fa-responsive {
+    margin-right: 5px;
+}
 /* Divs */
 
 .row {
@@ -201,7 +208,7 @@ $thumb_hover: $red;
     padding:        0;
     margin-bottom:  1%;
     
-    @include transition(all, 0s);
+    // @include transition(all, 0s);
 
     h3 {
         @include transition (background-color,  1s);
@@ -387,7 +394,7 @@ $thumb_hover: $red;
  */
 
 .mq-list {
-    padding-top: 30px;
+    padding-bottom: 20px;
     li {
         margin-right: 18px;
         padding: 0;
@@ -478,12 +485,11 @@ $thumb_hover: $red;
 }
 
 
-
-
 .hero-right {
     margin-top: 21px;
     margin-bottom: 40px;
     // border: 3px dotted #666;
+    @include border-radius(10px);
     
 
     @extend %boxShadow;
@@ -528,7 +534,7 @@ $thumb_hover: $red;
 }
 .page-id-21 {
     #cherry-blossoms{
-        z-index: -1;
+        z-index: 999;
     }
 }
 .home #cherry-blossoms {
