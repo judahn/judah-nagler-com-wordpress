@@ -50,10 +50,14 @@ $j(document).ready(function() {
         var minOp       = 0;
         var maxOp       = 1;
 
-        var tgtOp		= (scroll / offsetTop);
-        var navOp		= tgtOp * 4;
+        
+        var tgtOp		= (scroll / offsetTop);	
+        var navOp		= tgtOp * 4;		
+        var hdrOp 		= ((offsetTop * 0.618) - scroll) / 100;
 
+        // if is single page layout
         var isSingle	= $j("body").hasClass("single");
+
 
         // fade in main content
 
@@ -68,11 +72,10 @@ $j(document).ready(function() {
 	            navOp  = 0;
 	        }	
         } else {
-        	tgtOp = navOp = 1;
+        	tgtOp = navOp = hdrOp = 1;
         }
 
-        var hdrOp = ((offsetTop * 0.618) - scroll) / 100;
-        
+
         $j(".main-content").css({"opacity":tgtOp});
         $j(".above-header h1").css({"opacity":(hdrOp)});
     }

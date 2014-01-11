@@ -7,7 +7,7 @@
 		<?php if ( get_the_ID() == 163): ?>
 		<h1 class="pos-abs" data-stellar-ratio="0.42">Blog</h1>
 		<?php else: ?>
-		<h1 class="pos-abs"data-stellar-ratio="0.42"><?php the_title(); ?></h1>
+		<h1 class="pos-abs hidden-xs"data-stellar-ratio="0.42"><?php the_title(); ?></h1>
 		<?php endif; ?>
 	</div>
 </article>

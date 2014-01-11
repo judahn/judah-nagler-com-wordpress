@@ -82,6 +82,9 @@
     > .container{
         @extend %opaqueBg;
         @include border-radius(10px);
+        @include max_tablet {
+            border-radius: 0;
+        }
     }
 }
 .navbar-nav {
