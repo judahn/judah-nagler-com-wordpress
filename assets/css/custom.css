@@ -1280,12 +1280,12 @@ a:hover {
   -o-transition: padding, 1s;
   transition: padding, 1s;
   font-family: "Dosis", sans-serif !important;
-  background-color: rgba(51, 51, 51, 0.9);
+  background-color: #b12e4f;
 }
 /* line 224, ../scss/custom.scss */
 .thumbnail img {
   height: auto !important;
-  border: 3px dotted #aaa;
+  border: 3px dotted #b12e4f;
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   filter: grayscale(100%);
@@ -1308,7 +1308,7 @@ a:hover {
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     filter: grayscale(100%);
-    border: 3px dotted rgba(51, 51, 51, 0.9);
+    border: 3px dotted #b12e4f;
     width: 100% !important;
   }
 }

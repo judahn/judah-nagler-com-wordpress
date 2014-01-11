@@ -219,11 +219,11 @@ $thumb_hover: $red;
         @include transition (background-color,  1s);
         @include transition (padding,           1s);
         font-family: "Dosis", sans-serif !important;
-        background-color: $thumb_back;
+        background-color: $red;
     }
     img {
         height: auto !important;
-        border: 3px dotted #aaa;
+        border: 3px dotted $red;
         @include filter(grayscale(100%));
         @include opacity(0.3);
         @include transition(opacity, 1s);
@@ -232,7 +232,7 @@ $thumb_hover: $red;
         @include max_tablet {
             @include opacity(1);
             @include filter(grayscale(100%));
-            border: 3px dotted $thumb_back;
+            border: 3px dotted $red;
             width: 100% !important;
         }
     }
