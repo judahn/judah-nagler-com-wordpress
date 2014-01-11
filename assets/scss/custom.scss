@@ -590,10 +590,13 @@ $thumb_hover: $red;
     }
     @include max_tablet{
         height: 370px;
-        width: 620px;
+        width: 590px;
+        background-position: -125px -160px;
         background-size: contain;
-        background-position: 0px -90px;
-
+    }
+    @include max_phone {
+        width: 430px;
+        background-position: -95px -100px;
     }
 }
 .home #cb-a {
@@ -628,7 +631,14 @@ $thumb_hover: $red;
     background-position: 70% -84px;
 
     @include max_tablet{
-        background-position: -852px -350px;
+        height: 370px;
+        width: 590px;
+        background-position: -125px -160px;
+        background-size: contain;
+    }
+    @include max_phone {
+        width: 430px;
+        background-position: -95px -100px;
     }
 }
 /*

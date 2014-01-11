@@ -1761,30 +1761,37 @@ a:hover {
   /* line 578, ../scss/custom.scss */
   #cb-a {
     height: 370px;
-    width: 620px;
+    width: 590px;
+    background-position: -125px -160px;
     background-size: contain;
-    background-position: 0px -90px;
+  }
+}
+@media only all and (max-width: 479px) {
+  /* line 578, ../scss/custom.scss */
+  #cb-a {
+    width: 430px;
+    background-position: -95px -100px;
   }
 }
 
-/* line 599, ../scss/custom.scss */
+/* line 602, ../scss/custom.scss */
 .home #cb-a {
   background-position: -550px 13px;
 }
 @media only all and (max-width: 1199px) {
-  /* line 599, ../scss/custom.scss */
+  /* line 602, ../scss/custom.scss */
   .home #cb-a {
     background-position: -650px 20px;
   }
 }
 @media only all and (max-width: 991px) {
-  /* line 599, ../scss/custom.scss */
+  /* line 602, ../scss/custom.scss */
   .home #cb-a {
     background-position: -750px 20px;
   }
 }
 @media only all and (max-width: 767px) {
-  /* line 599, ../scss/custom.scss */
+  /* line 602, ../scss/custom.scss */
   .home #cb-a {
     height: 370px;
     width: 590px;
@@ -1793,7 +1800,7 @@ a:hover {
   }
 }
 @media only all and (max-width: 479px) {
-  /* line 599, ../scss/custom.scss */
+  /* line 602, ../scss/custom.scss */
   .home #cb-a {
     width: 430px;
     background-position: -95px -100px;
@@ -1801,33 +1808,43 @@ a:hover {
 }
 
 @media only all and (max-width: 767px) {
-  /* line 619, ../scss/custom.scss */
+  /* line 622, ../scss/custom.scss */
   .home .entry-content {
     padding: 0;
   }
 }
 @media only all and (max-width: 479px) {
-  /* line 619, ../scss/custom.scss */
+  /* line 622, ../scss/custom.scss */
   .home .entry-content {
     margin-top: -15px;
   }
 }
 
-/* line 627, ../scss/custom.scss */
+/* line 630, ../scss/custom.scss */
 .blog #cb-a {
   background-position: 70% -84px;
 }
 @media only all and (max-width: 767px) {
-  /* line 627, ../scss/custom.scss */
+  /* line 630, ../scss/custom.scss */
   .blog #cb-a {
-    background-position: -852px -350px;
+    height: 370px;
+    width: 590px;
+    background-position: -125px -160px;
+    background-size: contain;
+  }
+}
+@media only all and (max-width: 479px) {
+  /* line 630, ../scss/custom.scss */
+  .blog #cb-a {
+    width: 430px;
+    background-position: -95px -100px;
   }
 }
 
 /*
  *  Admin Menu 
  */
-/* line 638, ../scss/custom.scss */
+/* line 648, ../scss/custom.scss */
 #adminmenu #menu-posts-design .wp-menu-image:before {
   content: '\f85' !important;
 }

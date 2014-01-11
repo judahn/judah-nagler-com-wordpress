@@ -1,0 +1,84 @@
+#cherry-blossoms{
+    width: 100%;
+    height: auto;
+    pointer-events: none;
+    z-index: 21;
+}
+.page-id-21 {
+    #cherry-blossoms{
+        z-index: 999;
+    }
+}
+#cherry-blossoms{
+    overflow: hidden;
+    @include max_tablet{
+        z-index: -1;
+        // @include opacity(0.5);
+    }
+}
+#cb-a{
+    @include background(image-url("cherry-blossom-shadow.png"));
+    background-position: -162px 50px;
+    background-repeat: no-repeat;
+    height: 1100px;
+    width: 100%;
+
+    @include max_desktop{
+        background-position: -370px 50px;
+    }
+    @include max_laptop{
+        background-position: -490px 50px;
+    }
+    @include max_tablet{
+        height: 370px;
+        width: 590px;
+        background-position: -125px -160px;
+        background-size: contain;
+    }
+    @include max_phone {
+        width: 430px;
+        background-position: -95px -100px;
+    }
+}
+.home #cb-a {
+    background-position: -550px 13px;
+
+    @include max_desktop {
+        background-position: -650px 20px;
+    }
+    @include max_laptop {
+        background-position: -750px 20px;
+    }
+    @include max_tablet{
+        height: 370px;
+        width: 590px;
+        background-position: -125px -160px;
+        background-size: contain;
+    }
+    @include max_phone {
+        width: 430px;
+        background-position: -95px -100px;
+    }
+}
+.home .entry-content {
+    @include max_tablet{
+        padding: 0;
+    }
+    @include max_phone{
+        margin-top: -15px;        
+    }
+}
+.blog #cb-a {
+    background-position: 70% -84px;
+
+    @include max_tablet{
+        height: 370px;
+        width: 590px;
+        background-position: -125px -160px;
+        background-size: contain;
+    }
+    @include max_phone {
+        width: 430px;
+        background-position: -95px -100px;
+    }
+}
