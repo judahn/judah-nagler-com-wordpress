@@ -83,7 +83,6 @@ $j(document).ready(function() {
 
         if (currView != lastView) {
         	$j.stellar();
-        	console.log("change");
         }
         lastView = currView;
     }

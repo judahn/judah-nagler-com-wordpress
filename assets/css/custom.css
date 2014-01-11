@@ -196,7 +196,7 @@ h1 {
   /* line 45, ../scss/_typography.scss */
   h1 {
     font-size: 47px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 }
 /* line 58, ../scss/_typography.scss */
@@ -1648,24 +1648,24 @@ a:hover {
   }
 }
 
-/* line 508, ../scss/custom.scss */
+/* line 511, ../scss/custom.scss */
 .above-header {
   overflow: visible;
   height: 500px;
 }
 @media only all and (max-width: 767px) {
-  /* line 508, ../scss/custom.scss */
+  /* line 511, ../scss/custom.scss */
   .above-header {
     height: 150px;
   }
 }
 @media only all and (max-width: 479px) {
-  /* line 508, ../scss/custom.scss */
+  /* line 511, ../scss/custom.scss */
   .above-header {
     height: 134px;
   }
 }
-/* line 519, ../scss/custom.scss */
+/* line 522, ../scss/custom.scss */
 .above-header h1 {
   margin-top: 30px;
   font-size: 75px;
@@ -1675,20 +1675,20 @@ a:hover {
   padding: 15px;
 }
 @media only all and (max-width: 1199px) {
-  /* line 519, ../scss/custom.scss */
+  /* line 522, ../scss/custom.scss */
   .above-header h1 {
     font-size: 65px;
   }
 }
 @media only all and (max-width: 767px) {
-  /* line 519, ../scss/custom.scss */
+  /* line 522, ../scss/custom.scss */
   .above-header h1 {
     font-size: 49px;
     top: 155px !important;
   }
 }
 @media only all and (max-width: 479px) {
-  /* line 519, ../scss/custom.scss */
+  /* line 522, ../scss/custom.scss */
   .above-header h1 {
     font-size: 32px;
     margin-left: 0;
@@ -1699,37 +1699,44 @@ a:hover {
   }
 }
 
-/* line 545, ../scss/custom.scss */
+/* line 548, ../scss/custom.scss */
 #above-header-container {
   height: 100%;
   position: relative;
 }
 
-/* line 550, ../scss/custom.scss */
+/* line 556, ../scss/custom.scss */
 #cherry-blossoms {
   width: 100%;
   height: auto;
+  overflow-x: hidden;
   pointer-events: none;
   z-index: 21;
 }
 
-/* line 557, ../scss/custom.scss */
+/* line 564, ../scss/custom.scss */
 .page-id-21 #cherry-blossoms {
   z-index: 999;
 }
 
-/* line 564, ../scss/custom.scss */
-#cherry-blossoms {
-  overflow-x: hidden;
-}
 @media only all and (max-width: 767px) {
-  /* line 564, ../scss/custom.scss */
-  #cherry-blossoms {
-    z-index: -1;
+  /* line 569, ../scss/custom.scss */
+  #cb-a, .home #cb-a, .blog #cb-a {
+    height: 500px;
+    width: 820px !important;
+    background-position: -337px -67px !important;
+    background-size: contain !important;
+  }
+}
+@media only all and (max-width: 479px) {
+  /* line 569, ../scss/custom.scss */
+  #cb-a, .home #cb-a, .blog #cb-a {
+    width: 490px !important;
+    background-position: -111px -60px !important;
   }
 }
 
-/* line 572, ../scss/custom.scss */
+/* line 582, ../scss/custom.scss */
 #cb-a {
   background: url('/wp-content/themes/jn-wpbs/assets/img/cherry-blossom-shadow.png?1389436022');
   background-position: -162px 50px;
@@ -1738,110 +1745,60 @@ a:hover {
   width: 100%;
 }
 @media only all and (max-width: 1199px) {
-  /* line 572, ../scss/custom.scss */
+  /* line 582, ../scss/custom.scss */
   #cb-a {
     background-position: -370px 50px;
   }
 }
 @media only all and (max-width: 991px) {
-  /* line 572, ../scss/custom.scss */
+  /* line 582, ../scss/custom.scss */
   #cb-a {
     background-position: -490px 50px;
   }
 }
-@media only all and (max-width: 767px) {
-  /* line 572, ../scss/custom.scss */
-  #cb-a {
-    height: 370px;
-    width: 590px;
-    background-position: -125px -160px;
-    background-size: contain;
-  }
-}
-@media only all and (max-width: 479px) {
-  /* line 572, ../scss/custom.scss */
-  #cb-a {
-    width: 510px;
-    background-position: -187px -120px;
-  }
-}
 
-/* line 597, ../scss/custom.scss */
+/* line 601, ../scss/custom.scss */
 .home #cb-a {
   background-position: -550px 13px;
 }
 @media only all and (max-width: 1199px) {
-  /* line 597, ../scss/custom.scss */
+  /* line 601, ../scss/custom.scss */
   .home #cb-a {
     background-position: -650px 20px;
   }
 }
 @media only all and (max-width: 991px) {
-  /* line 597, ../scss/custom.scss */
+  /* line 601, ../scss/custom.scss */
   .home #cb-a {
     background-position: -750px 20px;
   }
 }
 @media only all and (max-width: 767px) {
-  /* line 597, ../scss/custom.scss */
-  .home #cb-a {
-    height: 370px;
-    width: 590px;
-    background-position: -125px -160px;
-    background-size: contain;
-  }
-}
-@media only all and (max-width: 479px) {
-  /* line 597, ../scss/custom.scss */
-  .home #cb-a {
-    width: 510px;
-    background-position: -187px -120px;
-  }
-}
-
-@media only all and (max-width: 767px) {
-  /* line 617, ../scss/custom.scss */
+  /* line 612, ../scss/custom.scss */
   .home .entry-content {
     padding: 0;
   }
 }
 @media only all and (max-width: 479px) {
-  /* line 617, ../scss/custom.scss */
+  /* line 612, ../scss/custom.scss */
   .home .entry-content {
     margin-top: -15px;
   }
 }
-
-/* line 627, ../scss/custom.scss */
+/* line 620, ../scss/custom.scss */
 .home .main-content-inner span {
   color: #bf7485;
 }
 
-/* line 632, ../scss/custom.scss */
+/* line 627, ../scss/custom.scss */
 .blog #cb-a {
   background-position: 70% -84px;
-}
-@media only all and (max-width: 767px) {
-  /* line 632, ../scss/custom.scss */
-  .blog #cb-a {
-    height: 370px;
-    width: 590px;
-    background-position: -125px -160px;
-    background-size: contain;
-  }
-}
-@media only all and (max-width: 479px) {
-  /* line 632, ../scss/custom.scss */
-  .blog #cb-a {
-    width: 510px;
-    background-position: -187px -120px;
-  }
 }
 
 /*
  *  Admin Menu 
  */
-/* line 650, ../scss/custom.scss */
+/* line 637, ../scss/custom.scss */
 #adminmenu #menu-posts-design .wp-menu-image:before {
   content: '\f85' !important;
 }
