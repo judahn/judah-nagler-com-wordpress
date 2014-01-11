@@ -1656,7 +1656,7 @@ a:hover {
 @media only all and (max-width: 767px) {
   /* line 511, ../scss/custom.scss */
   .above-header {
-    height: 150px;
+    height: 190px;
   }
 }
 @media only all and (max-width: 479px) {
@@ -1722,16 +1722,16 @@ a:hover {
 @media only all and (max-width: 767px) {
   /* line 569, ../scss/custom.scss */
   #cb-a, .home #cb-a, .blog #cb-a {
-    height: 500px;
-    width: 820px !important;
-    background-position: -379px -229px !important;
+    height: 1100px;
+    width: 930px !important;
+    background-position: -379px -236px !important;
     background-size: contain !important;
   }
 }
 @media only all and (max-width: 479px) {
   /* line 569, ../scss/custom.scss */
   #cb-a, .home #cb-a, .blog #cb-a {
-    width: 490px !important;
+    width: 560px !important;
     background-position: -176px -110px !important;
   }
 }
@@ -1773,24 +1773,37 @@ a:hover {
     background-position: -750px 20px;
   }
 }
+@media only all and (max-width: 479px) {
+  /* line 601, ../scss/custom.scss */
+  .home #cb-a {
+    width: 740px !important;
+    background-position: -276px -90px !important;
+  }
+}
 @media only all and (max-width: 767px) {
-  /* line 612, ../scss/custom.scss */
+  /* line 617, ../scss/custom.scss */
   .home .entry-content {
     padding: 0;
   }
 }
 @media only all and (max-width: 479px) {
-  /* line 612, ../scss/custom.scss */
+  /* line 617, ../scss/custom.scss */
   .home .entry-content {
     margin-top: -15px;
   }
 }
-/* line 620, ../scss/custom.scss */
+/* line 625, ../scss/custom.scss */
 .home .main-content-inner span {
   color: #bf7485;
 }
+@media only all and (max-width: 479px) {
+  /* line 628, ../scss/custom.scss */
+  .home .above-header {
+    height: 285px;
+  }
+}
 
-/* line 627, ../scss/custom.scss */
+/* line 637, ../scss/custom.scss */
 .blog #cb-a {
   background-position: 70% -84px;
 }
@@ -1798,7 +1811,7 @@ a:hover {
 /*
  *  Admin Menu 
  */
-/* line 637, ../scss/custom.scss */
+/* line 647, ../scss/custom.scss */
 #adminmenu #menu-posts-design .wp-menu-image:before {
   content: '\f85' !important;
 }

@@ -513,7 +513,7 @@ $thumb_hover: $red;
     height: 500px;
 
     @include max_tablet{
-        height: 150px;
+        height: 190px;
     }
     @include max_phone {
         height: 134px;
@@ -568,13 +568,13 @@ $thumb_hover: $red;
 
 %mobile-blossoms {
     @include max_tablet{
-        height: 500px;
-        width: 820px !important;
-        background-position: -379px -229px !important;
+        height: 1100px;
+        width: 930px !important;
+        background-position: -379px -236px !important;
         background-size: contain !important;
     }
     @include max_phone {
-        width: 490px !important;
+        width: 560px !important;
         background-position: -176px -110px !important;//-111px -60px !important;
     }
 }
@@ -608,6 +608,11 @@ $thumb_hover: $red;
             background-position: -750px 20px;
         }
         @extend %mobile-blossoms;
+
+        @include max_phone {
+            width: 740px !important;
+            background-position: -276px -90px !important;
+        }
     }
     .entry-content {
         @include max_tablet{
@@ -619,6 +624,11 @@ $thumb_hover: $red;
     }
     .main-content-inner span{
         color: $blue;
+    }
+    .above-header {
+        @include max_phone {
+            height: 285px;
+        }
     }
 }
 
