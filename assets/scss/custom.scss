@@ -570,7 +570,7 @@ $thumb_hover: $red;
     @include max_tablet{
         height: 500px;
         width: 820px !important;
-        background-position: -337px -67px !important;
+        background-position: -319px -69px !important !important;
         background-size: contain !important;
     }
     @include max_phone {
