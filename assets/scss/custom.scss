@@ -219,11 +219,14 @@ $thumb_hover: $red;
         @include transition (background-color,  1s);
         @include transition (padding,           1s);
         font-family: "Dosis", sans-serif !important;
-        background-color: $red;
+        background-color: $thumb_back;
+        @include max_tablet {
+            background-color: $red;
+        }
     }
     img {
         height: auto !important;
-        border: 3px dotted $red;
+        border: 3px dotted #aaa;
         @include filter(grayscale(100%));
         @include opacity(0.3);
         @include transition(opacity, 1s);
@@ -239,7 +242,7 @@ $thumb_hover: $red;
 
     i {
         color: $blue;
-        @include max_tablet{
+        @include max_tablet {
             color: black;
         }
     }
@@ -519,7 +522,7 @@ $thumb_hover: $red;
         height: 190px;
     }
     @include max_phone {
-        height: 134px;
+        height: 175px;
     }
 
     h1 {
