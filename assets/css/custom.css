@@ -1820,12 +1820,17 @@ a:hover {
   }
 }
 
-/* line 630, ../scss/custom.scss */
+/* line 632, ../scss/custom.scss */
+.home .main-content-inner span {
+  color: #bf7485;
+}
+
+/* line 637, ../scss/custom.scss */
 .blog #cb-a {
   background-position: 70% -84px;
 }
 @media only all and (max-width: 767px) {
-  /* line 630, ../scss/custom.scss */
+  /* line 637, ../scss/custom.scss */
   .blog #cb-a {
     height: 370px;
     width: 590px;
@@ -1834,7 +1839,7 @@ a:hover {
   }
 }
 @media only all and (max-width: 479px) {
-  /* line 630, ../scss/custom.scss */
+  /* line 637, ../scss/custom.scss */
   .blog #cb-a {
     width: 430px;
     background-position: -95px -100px;
@@ -1844,7 +1849,7 @@ a:hover {
 /*
  *  Admin Menu 
  */
-/* line 648, ../scss/custom.scss */
+/* line 655, ../scss/custom.scss */
 #adminmenu #menu-posts-design .wp-menu-image:before {
   content: '\f85' !important;
 }

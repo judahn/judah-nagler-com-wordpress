@@ -627,6 +627,13 @@ $thumb_hover: $red;
         margin-top: -15px;        
     }
 }
+.home {
+    .main-content-inner{
+        span {
+            color: $blue;
+        }
+    }
+}
 .blog #cb-a {
     background-position: 70% -84px;
 
