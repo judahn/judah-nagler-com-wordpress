@@ -43,7 +43,6 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 h1 {
-    // @extend %redtape;
     font-size:      60px;
     margin-bottom:  50px;
     margin-left:    -4px;
@@ -54,6 +53,7 @@ h1 {
     }
     @include max_tablet {
         font-size: 47px;
+        margin-bottom:  30px;
     }
     a{
         color: white;
@@ -63,35 +63,21 @@ h1 {
     }
 }
 h2 {
-    // @extend %redtape;
     font-size: 230%;
     color: $blue;
 }
 h3 {
-    // @extend %redtape;
-    // color: $cyan;
     margin: 0px 0 15px 0;
     padding: 5px 7px 5px;
     font-size: 95%;
     line-height: 130%;
     letter-spacing: 1px;
-    // @include single-text-shadow;
 
     i {
         margin-right: 5px;
         margin-top: 1px;
         color: darken($red, 20%);
     }
-
-    /* @include transition (background, 0.75s);
-    @include transition (padding, 0.75s);
-
-    &:hover {
-        background-color: $blue;
-        padding-top: 20px;
-        @include transition (background, 0.2s);
-        @include transition (padding, 0.2s);
-    } */
 }
 a{
     @include transition(color, 0.25s);
@@ -103,7 +89,6 @@ a{
     }
 }
 p {
-    // padding:        15px 0;
     color:          #ccc;
     font-family:    "Dosis", sans-serif;
     font-size:      16px;

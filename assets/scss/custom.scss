@@ -17,10 +17,6 @@ html, body {
 body {
     padding: 0;
     background-color: #000;
-
-    @include max_tablet{
-        // padding-top: 30px;
-    }
 }
 article {
     padding-left: 0 !important;
@@ -497,11 +493,8 @@ $thumb_hover: $red;
 .hero-right {
     margin-top: 21px;
     margin-bottom: 40px;
-    // border: 3px dotted #666;
-    @include border-radius(10px);
-    
-
     @extend %boxShadow;
+    @include border-radius(10px);
     @include max_tablet {
         margin-bottom: 0;
     }
@@ -520,7 +513,7 @@ $thumb_hover: $red;
         height: 150px;
     }
     @include max_phone {
-        height: 130px;
+        height: 134px;
     }
 
     h1 {
@@ -575,12 +568,14 @@ $thumb_hover: $red;
         // @include opacity(0.5);
     }
 }
+
 #cb-a{
     @include background(image-url("cherry-blossom-shadow.png"));
     background-position: -162px 50px;
     background-repeat: no-repeat;
     height: 1100px;
     width: 100%;
+    // display: block !important;
 
     @include max_desktop{
         background-position: -370px 50px;
@@ -595,8 +590,8 @@ $thumb_hover: $red;
         background-size: contain;
     }
     @include max_phone {
-        width: 430px;
-        background-position: -95px -100px;
+        width: 510px;
+        background-position: -187px -120px;
     }
 }
 .home #cb-a {
@@ -615,8 +610,8 @@ $thumb_hover: $red;
         background-size: contain;
     }
     @include max_phone {
-        width: 430px;
-        background-position: -95px -100px;
+        width: 510px;
+        background-position: -187px -120px;
     }
 }
 .home .entry-content {
@@ -644,8 +639,8 @@ $thumb_hover: $red;
         background-size: contain;
     }
     @include max_phone {
-        width: 430px;
-        background-position: -95px -100px;
+        width: 510px;
+        background-position: -187px -120px;
     }
 }
 /*

@@ -37,26 +37,27 @@ $j(document).ready(function() {
 	$j(".image").load(function(){
 		$j(this).height("auto").css({"padding-bottom":"0 !important"});
 	});
+	
+	// init stellar
+
 	$j.stellar();
-
-
 
 	// scroll opacity
 
-	function onWindowScroll() {
+	var currView = 0;
+    var lastView = 0;
 
+	function onWindowScroll() {
         var scroll      = $j(window).scrollTop();
         var offsetTop   = 350;
         var minOp       = 0;
         var maxOp       = 1;
-
-        
         var tgtOp		= (scroll / offsetTop);	
         var navOp		= tgtOp * 4;		
         var hdrOp 		= ((offsetTop * 0.618) - scroll) / 100;
 
-        // if is single page layout
         var isSingle	= $j("body").hasClass("single");
+
 
 
         // fade in main content
@@ -71,13 +72,20 @@ $j(document).ready(function() {
 	        if (navOp <= 0){
 	            navOp  = 0;
 	        }	
+	        currView = 1;
         } else {
         	tgtOp = navOp = hdrOp = 1;
+        	currView = 0;
         }
-
 
         $j(".main-content").css({"opacity":tgtOp});
         $j(".above-header h1").css({"opacity":(hdrOp)});
+
+        if (currView != lastView) {
+        	$j.stellar();
+        	console.log("change");
+        }
+        lastView = currView;
     }
 
 	$j(window).bind("scroll", onWindowScroll);
