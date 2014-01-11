@@ -239,6 +239,9 @@ $thumb_hover: $red;
 
     i {
         color: $blue;
+        @include max_tablet{
+            color: black;
+        }
     }
     .caption {
         text-align: center;
