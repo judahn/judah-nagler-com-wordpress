@@ -69,17 +69,14 @@ $thumb_hover: $red;
             img {
                 border: 3px dotted $thumb_hover;
                 border-bottom: 3px dotted $thumb_hover;
+                
                 @include filter(grayscale(0%));
-                // @include transition(border, 0.5s);
                 @include opacity(1);
                 @include transition(opacity, 0.5s);
-                // @include filter(blur(0));
-                // @include transition(blur, 0.2s);
             }
             h3 {
-                background: $thumb_hover;//darken($red, 10%);
+                background: $thumb_hover;
                 color: white;
-                // color: lighten($rust, 5%);
                 padding-top: 20px;
                 @include transition (background-color, 0.2s);
                 @include transition (padding, 0.2s);
