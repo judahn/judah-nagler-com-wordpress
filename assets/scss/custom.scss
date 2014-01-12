@@ -141,7 +141,7 @@ a:hover {
         padding: 0;
         @include max_tablet{
             background-color: transparent;
-            padding: 15px;
+            padding: 0 15px;
         }
     }
 }

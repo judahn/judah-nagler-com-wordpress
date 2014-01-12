@@ -196,7 +196,7 @@ h1 {
   /* line 45, ../scss/_typography.scss */
   h1 {
     font-size: 47px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 }
 /* line 58, ../scss/_typography.scss */
@@ -1353,7 +1353,7 @@ a:hover {
   /* line 140, ../scss/custom.scss */
   .main-content > .container {
     background-color: transparent;
-    padding: 15px;
+    padding: 0 15px;
   }
 }
 
