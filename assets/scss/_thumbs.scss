@@ -96,7 +96,7 @@ $thumb_hover: $red;
     @include max_tablet{
         min-height: 35px;
     }
-    @include max($pager + 1){
+    @include max($pager + 10){
         min-height: 45px;
     }
 }
