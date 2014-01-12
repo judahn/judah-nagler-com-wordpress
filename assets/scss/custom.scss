@@ -94,9 +94,17 @@ a:hover {
     border: 0;
     margin: 20px 0 0;
     padding-bottom: 0;
+    @include max_tablet {
+        margin: 30px 0 0;
+    }
     h1{
         @include tablet {
             text-align: right;
+        }
+    }
+    .page-title{
+        @include max_tablet{
+            margin-bottom: 30px;
         }
     }
 }
@@ -565,6 +573,9 @@ $thumb_hover: $red;
     overflow-x: hidden;
     pointer-events: none;
     z-index: 21;
+    @include max_tablet{
+        position: fixed;
+    }
 }
 .page-id-21 {
     #cherry-blossoms{
@@ -576,7 +587,7 @@ $thumb_hover: $red;
     @include max_tablet{
         height: 1100px;
         width: 930px !important;
-        background-position: -379px -236px !important;
+        background-position: -379px -247px !important;
         background-size: contain !important;
     }
     @include max_phone {

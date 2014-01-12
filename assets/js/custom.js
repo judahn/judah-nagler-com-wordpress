@@ -71,9 +71,9 @@ $j(document).ready(function() {
 	        	$j.stellar();
 	        }
 	        currView = 1;
-	        if (currView != lastView) {
+	        /*if (currView != lastView) {
 	        	$j.stellar();
-	        }
+	        }*/
         } else {
         	tgtOp = navOp = hdrOp = 1;
         	currView = 0;
@@ -82,9 +82,10 @@ $j(document).ready(function() {
         $j(".main-content").css({"opacity":tgtOp});
         $j(".above-header h1").css({"opacity":(hdrOp)});
 
-        
         lastView = currView;
     }
+
+    $j.stellar();
 
 	$j(window).bind("scroll", onWindowScroll);
 	$j(window).bind("resize", onWindowScroll);

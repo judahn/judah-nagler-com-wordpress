@@ -182,14 +182,18 @@ button {
 
 .affix {
     top: 0;
-    @include max_tablet {
-        position: static;
-    }
 }
 .affix-top {
     @include max_tablet{
-        position: absolute;
+        position: fixed;
         top: 0;
+    }
+}
+.single {
+    .affix, .affix-top {
+        @include max_tablet {
+            position: static;
+        }
     }
 }
 
