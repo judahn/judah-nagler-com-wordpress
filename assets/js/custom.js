@@ -38,14 +38,10 @@ $j(document).ready(function() {
 		$j(this).height("auto").css({"padding-bottom":"0 !important"});
 	});
 	
-	// init stellar
-
-	$j.stellar();
-
 	// scroll opacity
 
 	var currView = 0;
-    var lastView = 0;
+    var lastView = -1;
 
 	function onWindowScroll() {
         var scroll      = $j(window).scrollTop();
@@ -57,7 +53,6 @@ $j(document).ready(function() {
         var hdrOp 		= ((offsetTop * 0.618) - scroll) / 100;
 
         var isSingle	= $j("body").hasClass("single");
-
 
 
         // fade in main content
@@ -72,7 +67,13 @@ $j(document).ready(function() {
 	        if (navOp <= 0){
 	            navOp  = 0;
 	        }	
+	        if (currView != lastView) {
+	        	$j.stellar();
+	        }
 	        currView = 1;
+	        if (currView != lastView) {
+	        	$j.stellar();
+	        }
         } else {
         	tgtOp = navOp = hdrOp = 1;
         	currView = 0;
@@ -81,9 +82,7 @@ $j(document).ready(function() {
         $j(".main-content").css({"opacity":tgtOp});
         $j(".above-header h1").css({"opacity":(hdrOp)});
 
-        if (currView != lastView) {
-        	$j.stellar();
-        }
+        
         lastView = currView;
     }
 
