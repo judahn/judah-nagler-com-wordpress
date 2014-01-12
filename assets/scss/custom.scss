@@ -96,18 +96,27 @@ a:hover {
     margin: 20px 0 0;
     padding-bottom: 0;
     @include max_tablet {
-        margin: 30px 0 0 15px;
+        margin: 30px 0 0;
     }
     h1{
         @include tablet {
             text-align: right;
-            margin: 30px 15px 0;
+            margin: 30px 0 0 15px;
         }
     }
     .page-title{
         @include max_tablet{
             margin-bottom: 30px;
         }
+    }
+}
+.hentry {
+    margin: 10px;
+}
+.home, .blog, .page-id-21{
+
+    .hentry {
+        margin: 0;
     }
 }
 .post {
@@ -145,8 +154,10 @@ a:hover {
         }
     }
 }
-.home .main-content-inner{
-    margin: 10px; 
+.home, .blog, .page-id-21 {
+    .main-content-inner{
+        margin: 10px; 
+    }
 }
 .content{
     margin-left: 15px;
