@@ -1089,7 +1089,7 @@ section .col-sm-5, section .col-md-6 {
 @media only all and (max-width: 320px) {
   /* line 94, ../scss/_thumbs.scss */
   .thumb-title {
-    min-height: 42px;
+    min-height: 45px;
   }
 }
 
