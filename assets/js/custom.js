@@ -13,7 +13,6 @@ $j(document).ready(function() {
 	var nav_interactive = $j("#menu-item-160");
 	var nav_design      = $j("#menu-item-135");
 	var nav_contact  	= $j("#menu-item-145");
-
 	
 	if (pathname.indexOf("about") >= 0) {
 		nav_about.addClass("active");
@@ -40,11 +39,16 @@ $j(document).ready(function() {
 	
 	// scroll opacity
 
-	var currView = 0;
-    var lastView = -1;
+    var currView    = 0;
+    var lastView    = -1;
+
+    var winW 		= $j(window).width();
+    var tablet      = 768;
+    var phone       = 480;
 
 	function onWindowScroll() {
         var scroll      = $j(window).scrollTop();
+        var isSingle	= $j("body").hasClass("single");
         var offsetTop   = 350;
         var minOp       = 0;
         var maxOp       = 1;
@@ -52,12 +56,12 @@ $j(document).ready(function() {
         var navOp		= tgtOp * 4;		
         var hdrOp 		= ((offsetTop * 0.618) - scroll) / 100;
 
-        var isSingle	= $j("body").hasClass("single");
-
+        // Get window width
+        winW = $j(window).width();
 
         // fade in main content
 
-        if ($j(window).width() >= 768 && !isSingle){
+        if (!isSingle && winW >= tablet){
         	if (tgtOp >= maxOp){
 	            tgtOp  = maxOp;
 	        }
@@ -71,25 +75,41 @@ $j(document).ready(function() {
 	        	$j.stellar();
 	        }
 	        currView = 1;
-	        /*if (currView != lastView) {
-	        	$j.stellar();
-	        }*/
         } else {
-        	tgtOp = navOp = hdrOp = 1;
         	currView = 0;
+        	tgtOp = navOp = hdrOp = 1;
         }
 
         $j(".main-content").css({"opacity":tgtOp});
         $j(".above-header h1").css({"opacity":(hdrOp)});
 
         lastView = currView;
+
+
+        // set min top position for cherry blossoms on mobile scroll 
+
+        /*var cba     = $j("#cb-a");
+        var cbaMin  = -86;
+        var cbaTop 	= parseInt(cba.position().top);
+
+        console.log("cbaTop: "+cbaTop, "cbaMin: "+cbaMin, cbaTop <= cbaMin);
+
+        if (isSingle && winW <= tablet){
+        	
+        	if (cbaTop <= cbaMin){
+        		cba.css({ "top" : cbaMin + " !important" });
+        	}
+        }*/
     }
 
-    $j.stellar();
-
+	onWindowScroll();
+	
 	$j(window).bind("scroll", onWindowScroll);
 	$j(window).bind("resize", onWindowScroll);
-	onWindowScroll();
+
+	$j.stellar({
+		hideDistantElements: false
+	});
 
 
 	// auto scroll
@@ -107,4 +127,3 @@ $j(document).ready(function() {
 		// fade in elements
 	}
 });
-
