@@ -133,7 +133,7 @@ code, pre, .highlight {
 
 /* line 88, ../scss/_mixins.scss */
 .navbar > .container, #footer {
-  background-color: rgba(0, 0, 0, 0.69);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* line 91, ../scss/_mixins.scss */
@@ -763,7 +763,7 @@ code, pre, .highlight {
 
 /* line 88, ../scss/_mixins.scss */
 .navbar > .container, #footer {
-  background-color: rgba(0, 0, 0, 0.69);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* line 91, ../scss/_mixins.scss */
