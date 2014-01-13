@@ -2,12 +2,9 @@
 
 // Template Name: Portfolio Page
 
- ?>
+get_header(); ?>
 
 <?php include 'above-header.php' ?>
-
-<?php get_header(); ?>
-
 <?php include 'section-opener.php' ?>
 
 	<?php
@@ -22,9 +19,7 @@
 	?>
 
 	<?php get_template_part( 'content', 'page' ); ?>
-
 	<?php include 'thumbnail-posts.php' ?>
 
 <?php include 'section-closer.php' ?>
-
 <?php get_footer(); ?>

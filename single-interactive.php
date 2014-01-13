@@ -13,8 +13,6 @@ get_header(); ?>
   $the_query = new WP_Query( $args );
 ?>
 
-<!-- Begin Loop -->
-
 <?php while ( have_posts() ) : the_post(); ?>
 	<?php get_template_part( 'content', 'interactive' ); ?>
 	<?php _tk_content_nav( 'nav-below' ); ?>
@@ -22,11 +20,5 @@ get_header(); ?>
 	
 <?php endwhile; ?>
 
-
-
-<!-- End Loop -->
-
 <?php include 'section-closer.php' ?>
-
-<!-- Edit link -->
 <?php get_footer(); ?>

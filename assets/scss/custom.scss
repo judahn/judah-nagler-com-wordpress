@@ -11,6 +11,8 @@
 @import "sections";
 @import "thumbs";
 @import "social";
+@import "header-parallax";
+@import "page-specific";
 
 html, body {
     overflow-x: hidden;
@@ -40,11 +42,6 @@ table {
     border-spacing: 0 !important;
     border-color: transparent !important;
 }
-
-:focus, a:focus {
-    outline: -webkit-focus-ring-color auto 0;
-}
-
 a{
     color: $blue;
     &:hover {
@@ -54,23 +51,10 @@ a{
 a:hover {
     text-decoration: none !important;
 }
+:focus, a:focus {
+    outline: -webkit-focus-ring-color auto 0;
+}
 
-.btn {
-    // margin: 30px 0;
-    a {
-        text-transform: uppercase;
-        color: white;
-        &:hover {
-            color: white;
-            text-decoration: none;
-        }
-    }
-}
-.btn-block{
-    margin-bottom: 20px;
-    color: black;
-    font-size: 100%;
-}
 .fa-desktop {
     line-height: 21px;
 }
@@ -80,17 +64,18 @@ a:hover {
 .fa-responsive {
     margin-right: 5px;
 }
-/* Divs */
 
 .row {
     margin-left:    0;
     margin-right:   0;
 }
+
 .container {
     @include max_tablet {
         padding: 0 25px 5px;
     }
 }
+
 .page-header {
     border: 0;
     margin: 20px 0 0;
@@ -110,27 +95,27 @@ a:hover {
         }
     }
 }
+
 .single .page-header h1 {
     @include max_tablet {
         text-align: left;
         margin: 10px 0 20px;
     }
 }
+
 .hentry {
     margin: 10px;
 }
-.home, .blog, .page-id-21{
-    .hentry {
-        margin: 0;
-    }
-}
+
 .post {
     margin: 0 0 40px 0;
 }
+
 .entry-meta {
     margin-bottom: 20px;
     line-height: 150%;
 }
+
 .main-content{
     padding-top: 100px;
 
@@ -227,16 +212,19 @@ a:hover {
  */
 
 .sidebar {
-    // @if $use_shadows { @extend %boxShadow; }
-    padding: 20px;
+    padding: 10px 30px;
     margin-top: 20px;
     background-color: black;
+
+    @include max_laptop {
+        padding: 0;
+    }
 
     h3 {
         padding: 0 0 10px;
         margin: 0 !important;
     }
-    .nav>li>a {
+    .nav > li > a {
         padding: 10px 0;
     }
 }
@@ -251,78 +239,6 @@ a:hover {
     top: 10%;
 }
 
-
-/* 
- *  Soliloquy Slider 
- */
-
-.soliloquy-container {
-    img{
-        width: 100%;
-        height: auto;
-    }
-    .soliloquy-direction-nav {
-        display: block !important;
-    }
-    .soliloquy-control-nav, .soliloquy-prev, .soliloquy-next {
-        @include opacity(0);
-        @include transition(opacity, 0.5s);
-    }    
-    &:hover {
-        .soliloquy-control-nav, .soliloquy-prev, .soliloquy-next {
-            @include opacity(1);
-            @include transition(opacity, 0.5s);
-        }   
-    }
-}
-
-.design-slider {
-    margin: 26px 0;
-    @extend %boxShadow;
-}
-
-
-/* 
- *  Twitter feed 
- */
-
-.kmeta {
-    @include max_laptop {
-        font-size: 15px;
-    }
-}
-.ktext {
-    line-height: 21px !important;
-    margin: 15px 0 !important;
-    color: #999 !important;
-}
-
-
-/* 
- *  Contact Form 
- */
-
-.cscfForm {
-    > p {
-        margin-bottom: 20px;
-    }
-    label {
-        margin-bottom: 10px;
-        color: $blue;
-    }
-}
-#frmCSCF {
-    .btn {
-        border: $red;
-        background-color: $red;
-        color: white;
-        @include transition(background-color, 0.25s);
-        &:hover {
-            background-color: $blue;
-            @include transition(background-color, 0.25s);
-        }
-    }
-}
 
 /* 
  *  Media Queries thumbs
@@ -436,99 +352,7 @@ a:hover {
     }
 }
 
-// Above Header
 
-.above-header {
-    overflow: visible;
-    height: 500px;
-
-    @include max_tablet{
-        height: 190px;
-    }
-    @include max_phone {
-        height: 180px;
-    }
-
-    h1 {
-        margin-top: 30px;
-        padding: 15px;
-
-        position: absolute;
-        top: 0 !important;
-        left: auto !important;
-        right: 0;
-
-        font-size: 75px;
-
-        @include max_desktop{
-            font-size: 65px;
-        }
-        @include max_tablet {
-            font-size: 49px;
-            top: 155px !important;
-        }
-        @include max_phone {
-            font-size: 32px;
-            margin-left: 0;
-            padding: 0; 
-            right: auto;
-            left: 0;
-            top: 170px !important;
-        }
-    }
-}
-#above-header-container {
-    height: 100%;
-    position: relative;
-}
-
-
-// Cherry Blossoms
-
-#cherry-blossoms{
-    width: 100%;
-    height: auto;
-    overflow-x: hidden;
-    pointer-events: none;
-    z-index: 21;
-    @include max_tablet{
-        position: fixed;
-    }
-}
-.page-id-21 {
-    #cherry-blossoms{
-        z-index: 999;
-    }
-}
-
-%mobile-blossoms {
-    @include max_tablet{
-        height: 1100px;
-        width: 930px !important;
-        background-position: -379px -247px !important;
-        background-size: contain !important;
-    }
-    @include max_phone {
-        width: 560px !important;
-        background-position: -189px -110px !important;
-    }
-}
-
-#cb-a{
-    @include background( image-url( "cherry-blossom-shadow.png" ));
-    background-position: -162px 50px;
-    background-repeat: no-repeat;
-    height: 1100px;
-    width: 100%;
-
-    @include max_desktop{
-        background-position: -370px 50px;
-    }
-    @include max_laptop{
-        background-position: -490px 50px;
-    }
-    @extend %mobile-blossoms;
-}
 
 // Home
 

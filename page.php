@@ -13,11 +13,7 @@
 get_header(); ?>
 
 <?php include 'above-header.php' ?>
-
 <?php include 'section-opener.php' ?>
-
-
-
 
 
 <div class="col-page-left col-sm-6 no-pad">
@@ -41,7 +37,5 @@ get_header(); ?>
 </div>
 
 
-
 <?php include 'section-closer.php' ?>
-
 <?php get_footer(); ?>

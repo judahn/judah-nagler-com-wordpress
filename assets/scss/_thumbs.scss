@@ -1,6 +1,11 @@
+@import "vars";
+
 /* 
  *  Thumbnails
  */
+
+$thumb_back:    rgba(#333, 0.9);
+$thumb_hover:   $red;
 
 .row-thumbnails {
     margin-left: -15px;
@@ -8,7 +13,7 @@
     margin-bottom: 0;
 
     li {
-        @include max($pager + 50){
+        @include max($max_thumb){
             width: 100% !important;
             clear: both;
             min-height: 0;
@@ -20,15 +25,10 @@
     }
 }
 
-$thumb_back: rgba(#333, 0.9);
-$thumb_hover: $red;
-
 .thumbnail {
     @extend %transBg;
     padding:        0;
     margin-bottom:  1%;
-    
-    // @include transition(all, 0s);
 
     h3 {
         @include transition (background-color,  1s);
@@ -42,8 +42,9 @@ $thumb_hover: $red;
     img {
         height: auto !important;
         border: 3px dotted #aaa;
-        @include filter(grayscale(100%));
+
         @include opacity(0.3);
+        @include filter(grayscale(100%));
         @include transition(opacity, 1s);
         @include transition(border, 1s);
 
@@ -91,12 +92,14 @@ $thumb_hover: $red;
         }
     }
 }
+
 .thumb-title {
     min-height: 58px;
+
     @include max_tablet{
         min-height: 35px;
     }
-    @include max($pager + 10){
+    @include max($max_thumb){
         min-height: 45px;
     }
 }

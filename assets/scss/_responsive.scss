@@ -48,7 +48,6 @@ $tablet_landscape:          $laptop;
  *  SHORTCUTS
  */
 
-
 @mixin pager {                      @include max(        $mobile_portrait)                                   {@content;}}    // > 320
 @mixin phone {                      @include between(    $mobile_portrait,       $mobile_landscape)          {@content;}}    // > 480
 @mixin tablet {                     @include between(    $mobile_landscape,      $tablet_portrait)           {@content;}}    // 480 -> 768
@@ -68,7 +67,6 @@ $tablet_landscape:          $laptop;
 /*
  *  MIN / MAX
  */
-
 
 // Pager
 @mixin min_pager {                  @include min($pager) {@content;}}

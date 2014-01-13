@@ -1,0 +1,139 @@
+/* 
+ *  Soliloquy Slider 
+ */
+
+.soliloquy-container {
+    img{
+        width: 100%;
+        height: auto;
+    }
+    .soliloquy-direction-nav {
+        display: block !important;
+    }
+    .soliloquy-control-nav, .soliloquy-prev, .soliloquy-next {
+        @include opacity(0);
+        @include transition(opacity, 0.5s);
+    }    
+    &:hover {
+        .soliloquy-control-nav, .soliloquy-prev, .soliloquy-next {
+            @include opacity(1);
+            @include transition(opacity, 0.5s);
+        }   
+    }
+}
+
+.design-slider {
+    margin: 26px 0;
+    @extend %boxShadow;
+}
+
+
+/* 
+ *  Twitter feed 
+ */
+
+.kmeta {
+    @include max_laptop {
+        font-size: 15px;
+    }
+}
+.ktext {
+    line-height: 21px !important;
+    margin: 15px 0 !important;
+    color: #999 !important;
+}
+
+
+/* 
+ *  Contact Form 
+ */
+
+.cscfForm {
+    > p {
+        margin-bottom: 20px;
+    }
+    label {
+        margin-bottom: 10px;
+        color: $blue;
+    }
+}
+#frmCSCF {
+    .btn {
+        border: $red;
+        background-color: $red;
+        color: white;
+        @include transition(background-color, 0.25s);
+        &:hover {
+            background-color: $blue;
+            @include transition(background-color, 0.25s);
+        }
+    }
+}
+
+/* 
+ *  Calendar
+ */
+
+#calendar_wrap {
+    padding: 0;
+
+    .table-striped > tbody > tr:nth-child(odd) > td, .table-striped > tbody > tr:nth-child(odd) > th {
+        background-color: #222;
+    }
+    .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+        border-top: 1px solid #444;
+    }
+    caption{
+        color: $blue;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* 
+ *  Kebo Tweets
+ */
+
+ .kebo-tweets {
+    a.kaccount, a.kdate {
+        font-size: 96% !important;
+    }
+ }
+
+
+/*  
+ *  Mailchimp Email Signup 
+ */
+
+#mc_signup {
+    padding: 0 !important;
+    .mergeRow {
+        display: none !important;
+        padding: 0 !important;
+    }    
+    form {
+        padding: 0 !important;
+    }
+}
+#mc_signup_submit {
+    margin-top: 0;
+    width: 100% !important;
+    background: $red;
+    padding: 10px;
+    margin-top: 0 !important;
+    border: 0;
+    color: white;
+    @include border-radius(2px);
+    @include transition(background-color, 0.25s);
+    &:hover {
+        background-color: lighten($red, 13%);
+        @include transition(background-color, 0.25s);
+    }
+}
+.mc_success_msg {
+    color: $blue;
+}
+#mc_message {
+    margin-bottom: 15px;
+    margin-top: -2px;
+}

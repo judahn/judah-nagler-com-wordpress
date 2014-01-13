@@ -19,7 +19,10 @@
 	<script type="text/javascript"> </script>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-	<!-- <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> -->
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+	<script src="lib/js/shivs/html5shiv.js"></script>
+	<![endif]-->
 	<?php wp_head(); ?>
 </head>
 
