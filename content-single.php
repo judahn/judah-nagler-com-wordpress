@@ -18,7 +18,7 @@
 
 		<div class="entry-content">
 			<?php the_content(); ?>
-			<br>
+			<br> 
 			<a href="<?php echo esc_url( home_url( '/blog' ) ); ?>"><button class="btn btn-danger"><i class="fa fa-arrow-left"></i>Back to Blog</button></a>
 		</div><!-- .entry-content -->
 	</article><!-- #post-## -->
