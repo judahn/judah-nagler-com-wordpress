@@ -121,6 +121,10 @@ a:hover {
             padding: 0 15px;
         }
     }
+
+    table, tbody, td, tr {
+        border: 0 !important;
+    }
 }
 
 .main-content-inner {
