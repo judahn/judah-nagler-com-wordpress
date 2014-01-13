@@ -1186,7 +1186,7 @@ section .col-sm-5, section .col-md-6 {
 /* line 28, ../scss/_cherry-blossoms.scss */
 #cb-a {
   background: url('/wp-content/themes/jn-wpbs/assets/img/cherry-blossom-shadow.png?1389436022');
-  background-position: -162px 50px;
+  background-position: -135px -97px;
   background-repeat: no-repeat;
   height: 1100px;
   width: 100%;
@@ -1194,13 +1194,13 @@ section .col-sm-5, section .col-md-6 {
 @media only all and (max-width: 1199px) {
   /* line 28, ../scss/_cherry-blossoms.scss */
   #cb-a {
-    background-position: -370px 50px;
+    background-position: -370px -97px;
   }
 }
 @media only all and (max-width: 991px) {
   /* line 28, ../scss/_cherry-blossoms.scss */
   #cb-a {
-    background-position: -490px 50px;
+    background-position: -490px -97px;
   }
 }
 

@@ -27,16 +27,16 @@
 
 #cb-a{
     @include background( image-url( "cherry-blossom-shadow.png" ));
-    background-position: -162px 50px;
+    background-position: -135px -97px;
     background-repeat: no-repeat;
     height: 1100px;
     width: 100%;
 
     @include max_desktop{
-        background-position: -370px 50px;
+        background-position: -370px -97px;
     }
     @include max_laptop{
-        background-position: -490px 50px;
+        background-position: -490px -97px;
     }
     @extend %mobile-blossoms;
 }
