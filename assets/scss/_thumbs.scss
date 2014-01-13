@@ -94,8 +94,8 @@ $thumb_hover:   $red;
 }
 
 .thumb-title {
-    min-height: 58px;
-
+    min-height: 42px;
+    
     @include max_tablet{
         min-height: 35px;
     }
