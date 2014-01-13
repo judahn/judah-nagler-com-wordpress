@@ -1,9 +1,4 @@
-<?php
-
-// Template Name: Portfolio Page
-
-get_header(); ?>
-
+<?php get_header(); ?>
 <?php include 'above-header.php' ?>
 <?php include 'section-opener.php' ?>
 
@@ -17,8 +12,6 @@ get_header(); ?>
 		$the_query = new WP_Query( $args );
 	    $the_query->get_posts();
 	?>
-
-	<?php get_template_part( 'content', 'page' ); ?>
 	<?php include 'thumbnail-posts.php' ?>
 
 <?php include 'section-closer.php' ?>

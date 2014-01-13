@@ -33,11 +33,11 @@
       <?php include 'credits.php' ?>
 
       <?php if( get_field('view_templates_url') ): ?> 
-        <button class="btn btn-info btn-large pull-left"><a href="<?php the_field( 'view_templates_url' ); ?>" target="_blank"><i class="fa fa-responsive fa-desktop"></i> View templates</a></button>
+        <a href="<?php the_field( 'view_templates_url' ); ?>" target="_blank"><button class="btn btn-info btn-large pull-left"><i class="fa fa-responsive fa-desktop"></i> View templates</button></a>
       <?php endif; ?>
       
       <?php if( get_field('visit_website_url') ): ?> 
-        <button class="btn btn-info btn-large pull-left"><a href="<?php the_field( 'visit_website_url' ); ?>" target="_blank"><i class="fa fa-responsive fa-globe"></i> Visit site</a></button>
+        <a href="<?php the_field( 'visit_website_url' ); ?>" target="_blank"><button class="btn btn-info btn-large pull-left"><i class="fa fa-responsive fa-globe"></i> Visit site</button></a>
       <?php endif; ?>
     </div>
 

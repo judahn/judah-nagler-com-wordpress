@@ -170,6 +170,12 @@ button {
     background-color:   $red;
     border-color:       $red;
     @include transition(background-color, 0.5s);
+
+    .fa-arrow-left {
+        line-height: 19px;
+        margin-right: 5px;
+        margin-left: -5px;
+    }
 }
 .btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active {
     background-color:   lighten($red, 13%);
