@@ -34,6 +34,11 @@
 			<?php the_field( 'description' ); ?>
 		<!-- End -->
 		<?php endif; ?>
+      
+  		<?php if( get_field('visit_website_url') ): ?> 
+  			<br>
+  			<a href="<?php the_field( 'visit_website_url' ); ?>" target="_blank"><button class="btn btn-info btn-large pull-left"><i class="fa fa-responsive fa-globe"></i> Visit site</button></a>
+  		<?php endif; ?>
 	</div>
 
 </article><!-- #post-## -->

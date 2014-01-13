@@ -963,7 +963,7 @@ section .col-sm-5, section .col-md-6 {
   -o-transition: padding, 1s;
   transition: padding, 1s;
   font-family: "Dosis", sans-serif !important;
-  background-color: rgba(51, 51, 51, 0.9);
+  background-color: #393939;
 }
 @media only all and (max-width: 767px) {
   /* line 33, ../scss/_thumbs.scss */
@@ -975,8 +975,8 @@ section .col-sm-5, section .col-md-6 {
 .thumbnail img {
   height: auto !important;
   border: 3px dotted #aaa;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
-  opacity: 0.3;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=35);
+  opacity: 0.35;
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   filter: grayscale(100%);

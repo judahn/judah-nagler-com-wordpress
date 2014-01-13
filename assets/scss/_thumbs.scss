@@ -4,7 +4,7 @@
  *  Thumbnails
  */
 
-$thumb_back:    rgba(#333, 0.9);
+$thumb_back:    #393939;//rgba(#333, 0.9);
 $thumb_hover:   $red;
 
 .row-thumbnails {
@@ -43,7 +43,7 @@ $thumb_hover:   $red;
         height: auto !important;
         border: 3px dotted #aaa;
 
-        @include opacity(0.3);
+        @include opacity(0.35);
         @include filter(grayscale(100%));
         @include transition(opacity, 1s);
         @include transition(border, 1s);
