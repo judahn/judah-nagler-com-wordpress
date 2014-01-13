@@ -1,6 +1,181 @@
 
+/* 
+ * 	Home
+ */
+
+.home {
+    #cb-a {
+        background-position: -550px 13px;
+
+        @include max_desktop {
+            background-position: -650px 20px;
+        }
+        @include max_laptop {
+            background-position: -750px 20px;
+        }
+        @extend %mobile-blossoms;
+
+        @include max_phone {
+            width: 740px !important;
+            background-position: -276px -90px !important;
+        }
+    }
+    .entry-content {
+        @include max_tablet{
+            padding: 0;
+        }
+        @include max_phone{
+            margin-top: -15px;        
+        }
+    }
+    .main-content-inner span{
+        color: $blue;
+    }
+    .above-header {
+        @include max_phone {
+            height: 304px;
+        }
+    }
+}
+
+
+
+/* 
+ * 	Blog 
+ */
+
+.blog #cb-a {
+    background-position: 70% -84px;
+
+    @extend %mobile-blossoms;
+}
+
+
+
+/* 
+ * 	Responsive 
+ */
+
+//  Responsive 4-Up Thumbs, 4 Views
+
+.mq-list {
+    padding-bottom: 20px;
+    li {
+        margin-right: 18px;
+        padding: 0;
+        @extend %boxShadow;
+
+        @include max_desktop {
+            margin-right: 15px;
+        }
+        @include max_laptop {
+            margin-right: 10px;
+        }
+        @include max_tablet {
+            margin-right: 0.9%;
+        }
+    }
+    .smartphone {
+        width: 8.1%;
+        @include tablet {
+            width: 8%;
+        }
+        @include max_tablet{
+            width: 8.1%;
+        }
+    }
+    .tablet {
+        width: 19.5%;
+        @include max_tablet{
+            width: 19.4%;
+        }
+    }
+    .netbook {
+        width: 25.9%;
+    }
+    .desktop {
+        margin-right: 0;
+        width: 40.5%;
+    }
+}
+
+
+
+/* 
+ * 	All Pages
+ */
+
 .home, .blog, .page-id-21{
     .hentry {
         margin: 0;
+    }
+}
+.entry-content {
+    padding: 15px 3px;
+    p {
+        margin-bottom: 15px;
+        @include single-text-shadow;
+        @include max_laptop {
+            font-size: 15px;
+            line-height: 21px;
+        }
+    }
+    img {
+        margin: 10px 0 30px;
+    }
+}
+.credits {
+    td {
+        padding: 3px !important;
+    }
+    @include max_desktop{
+        td {
+            padding: 1px !important;
+        }
+    }
+}
+.media, .description{
+    margin-bottom: 30px;
+}
+.media {
+    p {
+        margin: 0;
+    }
+    img {
+        @extend %img-full;
+        margin: 0;
+    }
+    object {
+        margin-right:  10px !important;
+        margin-bottom: 15px !important;
+    }
+}
+.single-design .media {
+    @extend %boxShadow;
+    border: 1px solid black;
+}
+.hero-right {
+    margin-top: 21px;
+    margin-bottom: 40px;
+    @extend %boxShadow;
+    @include border-radius(10px);
+
+    @include max_tablet {
+        margin-bottom: 0;
+    }
+}
+.col-page-left {
+    padding: 0 10px 0 0;
+    @include max_tablet {
+        padding: 0;
+    }
+}
+
+
+// Contact Page
+
+.page-id-21 {
+    #cherry-blossoms{
+        z-index: 999;
     }
 }

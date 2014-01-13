@@ -8,10 +8,11 @@
 @import "responsive";
 @import "typography";
 @import "navbar";
+@import "footer";
 @import "sections";
 @import "thumbs";
 @import "social";
-@import "header-parallax";
+@import "cherry-blossoms";
 @import "page-specific";
 @import "wp-plugins";
 
@@ -56,27 +57,15 @@ a:hover {
     outline: -webkit-focus-ring-color auto 0;
 }
 
-.fa-desktop {
-    line-height: 21px;
-}
-.fa-globe {
-    line-height: 19px;
-}
-.fa-responsive {
-    margin-right: 5px;
-}
-
 .row {
     margin-left:    0;
     margin-right:   0;
 }
-
 .container {
     @include max_tablet {
         padding: 0 25px 5px;
     }
 }
-
 .page-header {
     border: 0;
     margin: 20px 0 0;
@@ -96,39 +85,35 @@ a:hover {
         }
     }
 }
-
 .single .page-header h1 {
     @include max_tablet {
         text-align: left;
         margin: 10px 0 20px;
     }
 }
-
 .hentry {
     margin: 10px;
 }
-
 .post {
     margin: 0 0 40px 0;
 }
-
 .entry-meta {
     margin-bottom: 20px;
     line-height: 150%;
 }
-
 .main-content{
-    padding-top: 100px;
+    padding-top: 85px;
 
-    @include max_desktop {
-        padding-top: 90px;  
+    /* @include max_desktop {
+        padding-top: 85px;  
     }
     @include max_laptop {
-        padding-top: 80px;  
-    }
+        padding-top: 85px;  
+    } */
     @include max_tablet{
         padding-top: 0px;
     }
+
     > .container {
         padding: 0;
         @include max_tablet{
@@ -208,9 +193,20 @@ a:hover {
 }
 
 
-/* 
- *  Sidebar
- */
+//  Font Awesome Icons
+
+.fa-desktop {
+    line-height: 21px;
+}
+.fa-globe {
+    line-height: 19px;
+}
+.fa-responsive {
+    margin-right: 5px;
+}
+
+
+//  Sidebar
 
 .sidebar {
     padding: 10px 30px;
@@ -231,174 +227,14 @@ a:hover {
 }
 
 
-
-/* 
- *  Modal
- */
+//  Modal
 
 .modal {
     top: 10%;
 }
 
 
-/* 
- *  Media Queries thumbs
- */
 
-.mq-list {
-    padding-bottom: 20px;
-    li {
-        margin-right: 18px;
-        padding: 0;
-        @extend %boxShadow;
-
-        @include max_desktop {
-            margin-right: 15px;
-        }
-        @include max_laptop {
-            margin-right: 10px;
-        }
-        @include max_tablet {
-            margin-right: 0.9%;
-        }
-    }
-    .smartphone {
-        width: 8.1%;
-        @include tablet {
-            width: 8%;
-        }
-        @include max_tablet{
-            width: 8.1%;
-        }
-    }
-    .tablet {
-        width: 19.5%;
-        @include max_tablet{
-            width: 19.4%;
-        }
-    }
-    .netbook {
-        width: 25.9%;
-    }
-    .desktop {
-        margin-right: 0;
-        width: 40.5%;
-    }
-}
-
-.entry-content {
-    padding: 15px 3px;
-    p {
-        margin-bottom: 15px;
-        @include single-text-shadow;
-        @include max_laptop {
-            font-size: 15px;
-            line-height: 21px;
-        }
-    }
-    img {
-        margin: 10px 0 30px;
-    }
-}
-
-.credits {
-    // margin-top: 22px;
-    td {
-        padding: 3px !important;
-    }
-    @include max_desktop{
-        // margin-top: 22px;
-
-        td {
-            padding: 1px !important;
-        }
-    }
-}
-
-.media, .description{
-    margin-bottom: 30px;
-}
-.media {
-    p {
-        margin: 0;
-    }
-    img {
-        @extend %img-full;
-        margin: 0;
-    }
-    object {
-        margin-right:  10px !important;
-        margin-bottom: 15px !important;
-    }
-}
-.single-design .media {
-    @extend %boxShadow;
-    border: 1px solid black;
-}
-
-
-.hero-right {
-    margin-top: 21px;
-    margin-bottom: 40px;
-    @extend %boxShadow;
-    @include border-radius(10px);
-    @include max_tablet {
-        margin-bottom: 0;
-    }
-}
-.col-page-left {
-    padding: 0 10px 0 0;
-    @include max_tablet {
-        padding: 0;
-    }
-}
-
-
-
-// Home
-
-.home {
-    #cb-a {
-        background-position: -550px 13px;
-
-        @include max_desktop {
-            background-position: -650px 20px;
-        }
-        @include max_laptop {
-            background-position: -750px 20px;
-        }
-        @extend %mobile-blossoms;
-
-        @include max_phone {
-            width: 740px !important;
-            background-position: -276px -90px !important;
-        }
-    }
-    .entry-content {
-        @include max_tablet{
-            padding: 0;
-        }
-        @include max_phone{
-            margin-top: -15px;        
-        }
-    }
-    .main-content-inner span{
-        color: $blue;
-    }
-    .above-header {
-        @include max_phone {
-            height: 304px;
-        }
-    }
-}
-
-// Blog
-
-.blog #cb-a {
-    background-position: 70% -84px;
-
-    @extend %mobile-blossoms;
-}
 
 /*
  *  Admin Menu 
