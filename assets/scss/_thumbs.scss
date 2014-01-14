@@ -71,7 +71,7 @@ $thumb_hover:   $red;
     // Hover states
 
     &:hover, &:focus {
-        @include min_tablet {
+        // @include min_tablet {
             img {
                 border: 3px dotted $thumb_hover;
                 border-bottom: 3px dotted $thumb_hover;
@@ -91,7 +91,7 @@ $thumb_hover:   $red;
                 color: black;
                 @include transition (color, 0.2s);
             }
-        }
+        // }
     }
 }
 
