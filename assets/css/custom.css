@@ -993,8 +993,8 @@ section .col-sm-5, section .col-md-6 {
 @media only all and (max-width: 767px) {
   /* line 42, ../scss/_thumbs.scss */
   .thumbnail img {
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=45);
-    opacity: 0.45;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+    opacity: 0.8;
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     filter: grayscale(100%);
