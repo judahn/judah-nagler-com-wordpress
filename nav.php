@@ -59,13 +59,13 @@
 									<img src="<?php echo get_template_directory_uri() . '/assets/img/social/icon-pinterest.png' ?>" alt="">
 								</a>
 							</li> -->
-							<!-- <li>
-								<a href="http://www.facebook.com/judah.nagler" target="_blank">
+							<li>
+								<a href="http://www.facebook.com/judahnagler.web" target="_blank">
 									<img src="<?php echo get_template_directory_uri() . '/assets/img/social/icon-facebook.png' ?>" alt="">
 								</a>
 							</li>
 							
-							<li>
+							<!--<li>
 								<a href="http://www.instagram.com/menelec" target="_blank">
 									<img src="<?php echo get_template_directory_uri() . '/assets/img/social/icon-instagram.png' ?>" alt="">
 								</a>

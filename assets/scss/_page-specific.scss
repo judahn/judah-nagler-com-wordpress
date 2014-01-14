@@ -37,7 +37,22 @@
         }
     }
 }
+.col-page-left {
+    padding: 0 10px 0 0;
+    @include max_tablet {
+        padding: 0;
+    }
+}
+.hero-right {
+    margin-top:     8px;
+    margin-bottom:  40px;
+    @extend %boxShadow;
+    @include border-radius(10px);
 
+    @include max_tablet {
+        margin-bottom: 0;
+    }
+}
 
 
 /* 
@@ -63,7 +78,7 @@
     li {
         margin-right: 18px;
         padding: 0;
-        @extend %boxShadow;
+        // @extend %boxShadow;
 
         @include max_desktop {
             margin-right: 15px;
@@ -153,22 +168,6 @@
 .single-design .media {
     @extend %boxShadow;
     border: 1px solid black;
-}
-.hero-right {
-    margin-top: 21px;
-    margin-bottom: 40px;
-    @extend %boxShadow;
-    @include border-radius(10px);
-
-    @include max_tablet {
-        margin-bottom: 0;
-    }
-}
-.col-page-left {
-    padding: 0 10px 0 0;
-    @include max_tablet {
-        padding: 0;
-    }
 }
 
 

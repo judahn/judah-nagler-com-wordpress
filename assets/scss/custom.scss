@@ -102,14 +102,9 @@ a:hover {
     line-height: 150%;
 }
 .main-content{
-    padding-top: 85px;
+    padding-top: 70px;
+    padding-bottom: 20px;
 
-    /* @include max_desktop {
-        padding-top: 85px;  
-    }
-    @include max_laptop {
-        padding-top: 85px;  
-    } */
     @include max_tablet{
         padding-top: 0px;
     }
@@ -129,6 +124,7 @@ a:hover {
 
 .main-content-inner {
     padding-bottom: 0;
+
     .col-sm-6 {
         @include max_tablet{
             padding: 0;
