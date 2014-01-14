@@ -49,9 +49,9 @@ $thumb_hover:   $red;
         @include transition(border, 1s);
 
         @include max_tablet {
-            @include opacity(0.7);
+            @include opacity(0.45);
             @include filter(grayscale(100%));
-            border: 3px dotted $red;
+            border: 3px dotted #666;
             width: 100% !important;
         }
     }
