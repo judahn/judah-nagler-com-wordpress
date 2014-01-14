@@ -1004,6 +1004,10 @@ section .col-sm-5, section .col-md-6 {
 /* line 59, ../scss/_thumbs.scss */
 .thumbnail i {
   color: #bf7485;
+  -webkit-transition: color, 0.5s;
+  -moz-transition: color, 0.5s;
+  -o-transition: color, 0.5s;
+  transition: color, 0.5s;
 }
 @media only all and (max-width: 767px) {
   /* line 59, ../scss/_thumbs.scss */
@@ -1011,13 +1015,13 @@ section .col-sm-5, section .col-md-6 {
     color: black;
   }
 }
-/* line 65, ../scss/_thumbs.scss */
+/* line 66, ../scss/_thumbs.scss */
 .thumbnail .caption {
   text-align: center;
   padding: 10px 0 0 0;
 }
 @media only all and (min-width: 768px) {
-  /* line 74, ../scss/_thumbs.scss */
+  /* line 75, ../scss/_thumbs.scss */
   .thumbnail:hover img, .thumbnail:focus img {
     border: 3px dotted #b12e4f;
     border-bottom: 3px dotted #b12e4f;
@@ -1031,7 +1035,7 @@ section .col-sm-5, section .col-md-6 {
     -o-transition: opacity, 0.5s;
     transition: opacity, 0.5s;
   }
-  /* line 82, ../scss/_thumbs.scss */
+  /* line 83, ../scss/_thumbs.scss */
   .thumbnail:hover h3, .thumbnail:focus h3 {
     background: #b12e4f;
     color: white;
@@ -1045,24 +1049,28 @@ section .col-sm-5, section .col-md-6 {
     -o-transition: padding, 0.2s;
     transition: padding, 0.2s;
   }
-  /* line 89, ../scss/_thumbs.scss */
+  /* line 90, ../scss/_thumbs.scss */
   .thumbnail:hover i, .thumbnail:focus i {
     color: black;
+    -webkit-transition: color, 0.2s;
+    -moz-transition: color, 0.2s;
+    -o-transition: color, 0.2s;
+    transition: color, 0.2s;
   }
 }
 
-/* line 96, ../scss/_thumbs.scss */
+/* line 98, ../scss/_thumbs.scss */
 .thumb-title {
   min-height: 42px;
 }
 @media only all and (max-width: 767px) {
-  /* line 96, ../scss/_thumbs.scss */
+  /* line 98, ../scss/_thumbs.scss */
   .thumb-title {
     min-height: 35px;
   }
 }
 @media only all and (max-width: 419px) {
-  /* line 96, ../scss/_thumbs.scss */
+  /* line 98, ../scss/_thumbs.scss */
   .thumb-title {
     min-height: 45px;
   }

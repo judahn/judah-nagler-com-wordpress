@@ -58,6 +58,7 @@ $thumb_hover:   $red;
 
     i {
         color: $blue;
+        @include transition (color, 0.5s);
         @include max_tablet {
             color: black;
         }
@@ -88,6 +89,7 @@ $thumb_hover:   $red;
             }
             i {
                 color: black;
+                @include transition (color, 0.2s);
             }
         }
     }
@@ -95,7 +97,7 @@ $thumb_hover:   $red;
 
 .thumb-title {
     min-height: 42px;
-    
+
     @include max_tablet{
         min-height: 35px;
     }
