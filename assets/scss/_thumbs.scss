@@ -71,37 +71,35 @@ $thumb_hover:   $red;
     // Hover states
 
     &:hover, &:focus {
-        // @include min_tablet {
-            img {
-                border: 3px dotted $thumb_hover;
-                border-bottom: 3px dotted $thumb_hover;
+        img {
+            border: 3px dotted $thumb_hover;
+            border-bottom: 3px dotted $thumb_hover;
 
-                @include filter(grayscale(0%));
-                @include opacity(1);
-                @include transition(opacity, 0.5s);
-            }
-            h3 {
-                background: $thumb_hover;
-                color: white;
-                padding-top: 20px;
-                @include transition (background-color, 0.2s);
-                @include transition (padding, 0.2s);
-            }
-            i {
-                color: black;
-                @include transition (color, 0.2s);
-            }
-        // }
+            @include filter(grayscale(0%));
+            @include opacity(1);
+            @include transition(opacity, 0.5s);
+        }
+        h3 {
+            background: $thumb_hover;
+            color: white;
+            padding-top: 20px;
+            @include transition (background-color, 0.2s);
+            @include transition (padding, 0.2s);
+        }
+        i {
+            color: black;
+            @include transition (color, 0.2s);
+        }
     }
 }
 
 .thumb-title {
     min-height: 47px;
 
-    @include max_tablet{
+    /* @include max_tablet{
         min-height: 35px;
     }
     @include max($max_thumb){
         min-height: 45px;
-    }
+    } */
 }

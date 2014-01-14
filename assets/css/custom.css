@@ -1021,7 +1021,7 @@ section .col-sm-5, section .col-md-6 {
   text-align: center;
   padding: 10px 0 0 0;
 }
-/* line 75, ../scss/_thumbs.scss */
+/* line 74, ../scss/_thumbs.scss */
 .thumbnail:hover img, .thumbnail:focus img {
   border: 3px dotted #b12e4f;
   border-bottom: 3px dotted #b12e4f;
@@ -1035,7 +1035,7 @@ section .col-sm-5, section .col-md-6 {
   -o-transition: opacity, 0.5s;
   transition: opacity, 0.5s;
 }
-/* line 83, ../scss/_thumbs.scss */
+/* line 82, ../scss/_thumbs.scss */
 .thumbnail:hover h3, .thumbnail:focus h3 {
   background: #b12e4f;
   color: white;
@@ -1049,7 +1049,7 @@ section .col-sm-5, section .col-md-6 {
   -o-transition: padding, 0.2s;
   transition: padding, 0.2s;
 }
-/* line 90, ../scss/_thumbs.scss */
+/* line 89, ../scss/_thumbs.scss */
 .thumbnail:hover i, .thumbnail:focus i {
   color: black;
   -webkit-transition: color, 0.2s;
@@ -1058,21 +1058,15 @@ section .col-sm-5, section .col-md-6 {
   transition: color, 0.2s;
 }
 
-/* line 98, ../scss/_thumbs.scss */
+/* line 96, ../scss/_thumbs.scss */
 .thumb-title {
   min-height: 47px;
-}
-@media only all and (max-width: 767px) {
-  /* line 98, ../scss/_thumbs.scss */
-  .thumb-title {
-    min-height: 35px;
+  /* @include max_tablet{
+      min-height: 35px;
   }
-}
-@media only all and (max-width: 419px) {
-  /* line 98, ../scss/_thumbs.scss */
-  .thumb-title {
-    min-height: 45px;
-  }
+  @include max($max_thumb){
+      min-height: 45px;
+  } */
 }
 
 /* line 1, ../scss/_social.scss */
