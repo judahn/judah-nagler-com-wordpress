@@ -105,8 +105,12 @@ a:hover {
     padding-top: 70px;
     padding-bottom: 20px;
 
+    @include max_laptop {
+        padding-bottom: 10px;
+    }
     @include max_tablet{
         padding-top: 0px;
+        padding-bottom: 0px;
     }
 
     > .container {
