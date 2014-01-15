@@ -1,0 +1,4 @@
+jQuery(function() {
+	jQuery('body').append('<div style="text-align:center;font-family:sans-serif;font-size:12px;position:absolute;top:110px;left:50%;margin:0; margin-left:-240px;padding:5px 10px;border-radius:2px;width:500px;background:rgba(0,0,0,0.7);color:#FFF"><p style="margin:5px 0;padding:0;">Please stop hotlinking <a style="color:#CCC" target="_new" href="https://github.com/gdsmith/jquery.easing">my easing script</a> &mdash; use a real <a style="color:#CCC" target="_new" href="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js">CDN</a> instead. Many thanks <span id="gsgd_hotlink" alt="close" title="close" style="cursor:pointer;font-size:18px;position:absolute;top:5px;right:5px;background:#C00;width:18px;height:18px;line-height:16px;border-radius:9px;">&#215;</span></p></div>');
+	jQuery('#gsgd_hotlink').click(function(){jQuery(this).parents('div').fadeOut('slow', function() {jQuery(this).remove()});});
+});

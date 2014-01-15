@@ -151,7 +151,7 @@ $j(document).ready(function() {
         var max             = thumbGroups.length - 1;
 
 		var _timer;
-        var _time           = 6000;
+        var _time           = 3000;
         var _delayOffset    = 150;
 
 		// Slideshow Timer
@@ -173,14 +173,17 @@ $j(document).ready(function() {
 			// Fade in list elements (thumbs)
 			for (var i = 0; i < thms.length; i++) {
 
+				var _animTime = 500;
+				var _animType = "easeInOutQuad";
+
 				// Set delay time
 				var _delay = (i * 100);
 
 				// Fade in thumb with delay
 				var thm = $j($j(thms)[i]);
-					thm.css({"opacity":0}).delay(i * _delayOffset).animate({ "opacity" : 1 }, 1000);
+					thm.animate({"opacity":0, "margin-left":"-20px"}, _animTime, _animType).delay(i * _delayOffset).animate({ "opacity" : 1, "margin-left":"0px"}, _animTime, _animType);
 			}
-			$j(prvGrp).css({"z-index":-1}).animate({"opacity":0}, 200);
+			$j(prvGrp).css({"z-index":-1}).animate({"opacity":0}, 900);
 			$j(curGrp).css({"opacity":1, "z-index":1});
 		}
 
