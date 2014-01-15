@@ -141,24 +141,36 @@ $j(document).ready(function() {
 
 	function responsiveSlideshow(){
 
-		// If current page is not 'single-responsive', do not continue
+		// If current page is not 'single-responsive', go no further
 
 		if (!$j("body").hasClass("single-responsive")) return;
 
 		// Vars
 
         var current         = -1;
-        var thumbGroups     = ["#mq-thumbs-a", "#mq-thumbs-b", "#mq-thumbs-c"];
+        var thumbGroups     = [];
         var min             = 0;
-        var max             = thumbGroups.length - 1;
+        var max             = 0;
 
 		var _timer;
-        var _time           = 5000;
+        var _time           = 2000;
         var _delayOffset    = 150;
 
         // Init: Fade out all thumb groups and move to back
 
 		function init() {
+
+			// If thumb group exists, add it to array
+			if ($j("#mq-thumbs-a").length) thumbGroups.push("#mq-thumbs-a");
+			if ($j("#mq-thumbs-b").length) thumbGroups.push("#mq-thumbs-b");
+			if ($j("#mq-thumbs-c").length) thumbGroups.push("#mq-thumbs-c");
+
+			// Set max number of thumb groups
+			max = thumbGroups.length - 1;
+
+			// If only one thumb group, go no further
+			if (max <= 0) return;
+
 			for (var i = 0; i < thumbGroups.length; i++) {
 				$j(thumbGroups[i]).css({"opacity":0, "z-index":-1});
 			}
@@ -185,14 +197,12 @@ $j(document).ready(function() {
 
 		function showNext(){
 
-			var firstTime = false;
-			if (current === -1) firstTime = true;
-
-			// Set current var, reset if higher than array's length
+			// Set current var, reset if beyond scope of array
 				current++;
-			if (current == thumbGroups.length) 
+			if (current >= thumbGroups.length) 
 				current = 0;
 
+			// Set vars for current and previous groups
 			var curGrp = thumbGroups[current];
 			var prvGrp = thumbGroups[prev()];
 
