@@ -14,7 +14,10 @@ $j(document).ready(function() {
 
 
 
-
+	/*
+	 *	Navigation
+	 */
+	
 	// Set active nav item for single posts based on URL
 
 	var pathname        = window.location.pathname;
@@ -46,13 +49,15 @@ $j(document).ready(function() {
 
 
 
+	/*
+	 *	Image Padding
+	 */
 
 	// Set image container height and bottom padding on load
 
 	$j(".image").load(function(){
 		$j(this).height("auto").css({"padding-bottom":"0 !important"});
 	});
-
 
 
 	
@@ -129,56 +134,81 @@ $j(document).ready(function() {
 
 
 	
-
 	/*
-	 * 	Responsive: Slideshow
+	 * 	Responsive Slideshow
 	 */ 
 
-	var currThumbGroup = -1;
-	var thumbGroups = ["#mq-thumbs-a", "#mq-thumbs-b", "#mq-thumbs-c"];
-
-	// Fade out all thumb groups
-
-	function resetThumbGroup(thmGrp){
-		for (var i = 0; i < $j(thmGrp).length; i++) {
-			var thm = $j($j(thmGrp)[i]);
-				thm.css({ "opacity" : 0 });
-		}
-	}
-
-	// Animate in next thumb group
-
-	function showNextThumbGroup(){
-
-		currThumbGroup++;
-
-		var thmGrp = thumbGroups[currThumbGroup];
-		 $j(thmGrp).css({"opacity":1});
-		
-		var thms = $j(thmGrp +" li");
-		for (var i = 0; i < thms.length; i++) {
-			var thm = $j($j(thms)[i]);
-				thm.css({"opacity":0});
-				thm.delay( 1000 + (i * 100) ).animate({ "opacity" : 1 }, 500);
-		}
-	}
-
-	// Run Slideshow
-
 	function responsiveSlideshow(){
-		resetThumbGroup("#mq-thumbs-a");
-		resetThumbGroup("#mq-thumbs-b");
-		resetThumbGroup("#mq-thumbs-c");
 
-		showNextThumbGroup();
+		// If not single-responsive page, do not continue
+		if (!$j("body").hasClass("single-responsive")) return;
+
+		// Vars
+
+        var current         = 0;
+        var thumbGroups     = ["#mq-thumbs-a", "#mq-thumbs-b", "#mq-thumbs-c"];
+
+		var _timer;
+		var _time = 3000;
+
+		// Fade out all thumb groups
+
+		function resetZIndex(){
+			console.log("reset");
+			for (var i = 0; i < $j(thumbGroups).length; i++) {
+				var thmGrp = $j($j(thumbGroups)[i]);
+					thmGrp.css({"z-index":current-1});
+			}
+		}
+
+		// Slideshow Timer
+
+		function startTimer() {
+			_timer = setTimeout( function(){
+				showNext();
+				startTimer();
+			}, _time);
+		}
+
+		function stopTimer() {
+			clearTimeout(_timer);
+		}
+
+		// Animate in next thumb group
+
+		function showNext(){
+
+			var thmGrp = thumbGroups[current];
+
+			// Set current var, reset if higher than array's length
+				current++;
+			if (current >= thumbGroups.length) 
+				current = 0;
+
+			// Make current group top z-index
+			resetZIndex();
+
+			   thmGrp = thumbGroups[current];
+			$j(thmGrp).css({"z-index":current});
+
+			// Target list elements in thumb group
+			var thms = $j(thmGrp +" li");
+
+			// Fade in list elements (thumbs)
+			for (var i = 0; i < thms.length; i++) {
+
+				// Set delay time
+				var _delay = (i * 100);
+
+				// Fade in thumb with delay
+				var thm = $j($j(thms)[i]);
+					thm.css({"opacity":0});
+					thm.delay(_delay).animate({ "opacity" : 1 }, 500);
+			}
+		}
+		startTimer();
 	}
-
-	// If single-repsonsive page, run slideshow
-
-	if ($j("body").hasClass("single-responsive")){
-		responsiveSlideshow();
-	}
-
+	responsiveSlideshow();
 
 
 
@@ -191,8 +221,6 @@ $j(document).ready(function() {
 
 
 
-
-
 	/*
 	 * 	Stellar.js
 	 */ 
@@ -200,8 +228,6 @@ $j(document).ready(function() {
 	$j.stellar({
 		hideDistantElements: false
 	});
-
-
 
 
 
