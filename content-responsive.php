@@ -6,18 +6,67 @@
 
 <article class="row">
 
+  <!-- Entry Header -->
+  <header class="page-header no-pad-left">
+    <h1 class="entry-title"><?php the_title(); ?></h1>
+  </header>
 
-    <!-- Entry Header -->
-    <header class="page-header no-pad-left">
-      <h1 class="entry-title"><?php the_title(); ?></h1>
-    </header><!-- .entry-header -->
+  <div class="mq-thumbs-container">
 
-  <ul class="list-inline mq-list">
-    <li class="smartphone"><img src="<?php the_field( 'smartphone_thumb'); ?>" alt="" /></li>
-    <li class="tablet"><img src="<?php the_field( 'tablet_thumb'); ?>" alt="" /></li>
-    <li class="netbook"><img src="<?php the_field( 'netbook_thumb'); ?>" alt="" /></li>
-    <li class="desktop"><img src="<?php the_field( 'desktop_thumb'); ?>" alt="" /></li>
-  </ul>
+    <?php if( 
+      get_field('smartphone_thumb_a') &&
+      get_field(    'tablet_thumb_a') &&
+      get_field(   'netbook_thumb_a') &&
+      get_field(   'desktop_thumb_a') 
+    ): ?> 
+
+    <!-- Thumbs A -->
+
+    <ul id="mq-thumbs-a" class="list-inline mq-list">
+      <li class="smartphone"> <img src="<?php the_field( 'smartphone_thumb_a'); ?>" alt="" /></li>
+      <li class="tablet">     <img src="<?php the_field(     'tablet_thumb_a'); ?>" alt="" /></li>
+      <li class="netbook">    <img src="<?php the_field(    'netbook_thumb_a'); ?>" alt="" /></li>
+      <li class="desktop">    <img src="<?php the_field(    'desktop_thumb_a'); ?>" alt="" /></li>
+    </ul>
+    <?php endif; ?>
+
+
+    <?php if( 
+      get_field('smartphone_thumb_b') &&
+      get_field(    'tablet_thumb_b') &&
+      get_field(   'netbook_thumb_b') &&
+      get_field(   'desktop_thumb_b') 
+    ): ?> 
+
+    <!-- Thumbs B -->
+
+    <ul id="mq-thumbs-b" class="list-inline mq-list">
+      <li class="smartphone"> <img src="<?php the_field( 'smartphone_thumb_b'); ?>" alt="" /></li>
+      <li class="tablet">     <img src="<?php the_field(     'tablet_thumb_b'); ?>" alt="" /></li>
+      <li class="netbook">    <img src="<?php the_field(    'netbook_thumb_b'); ?>" alt="" /></li>
+      <li class="desktop">    <img src="<?php the_field(    'desktop_thumb_b'); ?>" alt="" /></li>
+    </ul>
+    <?php endif; ?>
+
+
+    <?php if( 
+      get_field('smartphone_thumb_c') &&
+      get_field(    'tablet_thumb_c') &&
+      get_field(   'netbook_thumb_c') &&
+      get_field(   'desktop_thumb_c') 
+    ): ?> 
+
+    <!-- Thumbs C -->
+
+    <ul id="mq-thumbs-c" class="list-inline mq-list">
+      <li class="smartphone"> <img src="<?php the_field( 'smartphone_thumb_c'); ?>" alt="" /></li>
+      <li class="tablet">     <img src="<?php the_field(     'tablet_thumb_c'); ?>" alt="" /></li>
+      <li class="netbook">    <img src="<?php the_field(    'netbook_thumb_c'); ?>" alt="" /></li>
+      <li class="desktop">    <img src="<?php the_field(    'desktop_thumb_c'); ?>" alt="" /></li>
+    </ul>
+    <?php endif; ?>
+
+  </div>
 </article>
 
 <article id="post-<?php the_ID(); ?>" class="row" >

@@ -36,6 +36,9 @@
             height: 304px;
         }
     }
+    .navbar-brand {
+
+    }
 }
 .col-page-left {
     padding: 0 10px 0 0;
@@ -73,8 +76,19 @@
 
 //  Responsive 4-Up Thumbs, 4 Views
 
+.mq-thumbs-container {
+    position: relative;
+}
+
+#mq-thumbs-b, #mq-thumbs-c {
+    position: absolute;
+    top: 0;
+}
+
 .mq-list {
     padding-bottom: 20px;
+    // position: absolute;
+    top: 0;
     li {
         margin-right: 18px;
         padding: 0;

@@ -1,5 +1,5 @@
 /*
- *  CUSTOM.JS by Judah Nagler, 2014
+ *  CUSTOM.JS - Authored by Judah Nagler, 2014
  */
 
 
@@ -11,6 +11,8 @@ $j = jQuery.noConflict();
 // On document ready:
 
 $j(document).ready(function() {
+
+
 
 
 	// Set active nav item for single posts based on URL
@@ -43,14 +45,20 @@ $j(document).ready(function() {
 	}
 
 
+
+
 	// Set image container height and bottom padding on load
 
 	$j(".image").load(function(){
 		$j(this).height("auto").css({"padding-bottom":"0 !important"});
 	});
 
+
+
 	
-	// Set UI elements opacity based on scroll position
+	/* 
+	 * 	Scroll Functions
+	 */
 
 	var winW 		= $j(window).width();
 	var tablet      = 768;
@@ -58,8 +66,7 @@ $j(document).ready(function() {
 	var currView    = 0;
 	var lastView    = -1;
 
-
-	// On window scroll
+	// On window scroll, update certain properties for UI elements
 
 	function onWindowScroll() {
 		var scroll      = $j(window).scrollTop();
@@ -75,7 +82,7 @@ $j(document).ready(function() {
 
 		winW = $j(window).width();
 
-		// fade in main content
+		// Fade in main content & fade out top header
 
 		if (!isSingle && winW >= tablet){
 			if (tgtOp >= maxOp){
@@ -121,47 +128,74 @@ $j(document).ready(function() {
 	onWindowScroll();
 
 
-	// Responsive: Load images from directory
+	
 
-	function loadImagesFromDir(){
+	/*
+	 * 	Responsive: Slideshow
+	 */ 
 
-		var dir = "Src/themes/base/images";
-		var fileextension = ".jpg";
-		
-		$.ajax({
+	var currThumbGroup = -1;
+	var thumbGroups = ["#mq-thumbs-a", "#mq-thumbs-b", "#mq-thumbs-c"];
 
-			// This will retrieve the contents of the folder if the folder is configured as 'browsable'
-		
-			url: dir,
-			success: function (data) {
-	
-				// List all png file names in the page
-				$(data).find("a:contains(" + fileextension + ")").each(function () {
-	
-					var filename = this.href.replace(window.location.host, "").replace("http:///","");              
-	
-					$("body").append($("<img src=" + Dir + filename + "></img>"));
-	
-				});
-			}
-		});
+	// Fade out all thumb groups
+
+	function resetThumbGroup(thmGrp){
+		for (var i = 0; i < $j(thmGrp).length; i++) {
+			var thm = $j($j(thmGrp)[i]);
+				thm.css({ "opacity" : 0 });
+		}
 	}
 
-	
+	// Animate in next thumb group
 
-	// Responsive: Slideshow
+	function showNextThumbGroup(){
+
+		currThumbGroup++;
+
+		var thmGrp = thumbGroups[currThumbGroup];
+		 $j(thmGrp).css({"opacity":1});
+		
+		var thms = $j(thmGrp +" li");
+		for (var i = 0; i < thms.length; i++) {
+			var thm = $j($j(thms)[i]);
+				thm.css({"opacity":0});
+				thm.delay( 1000 + (i * 100) ).animate({ "opacity" : 1 }, 500);
+		}
+	}
+
+	// Run Slideshow
 
 	function responsiveSlideshow(){
+		resetThumbGroup("#mq-thumbs-a");
+		resetThumbGroup("#mq-thumbs-b");
+		resetThumbGroup("#mq-thumbs-c");
 
+		showNextThumbGroup();
 	}
 
-	// Bind window scroll function to 'scroll' and 'resize'
+	// If single-repsonsive page, run slideshow
+
+	if ($j("body").hasClass("single-responsive")){
+		responsiveSlideshow();
+	}
+
+
+
+
+	/*
+	 * 	Bind window scroll function to 'scroll' and 'resize'
+	 */
 	
 	$j(window).bind("scroll", onWindowScroll);
 	$j(window).bind("resize", onWindowScroll);
 
 
-	// Stellar.js
+
+
+
+	/*
+	 * 	Stellar.js
+	 */ 
 
 	$j.stellar({
 		hideDistantElements: false
@@ -170,7 +204,10 @@ $j(document).ready(function() {
 
 
 
-	// auto scroll
+
+	/*
+	 * 	Auto Scroll
+	 */
 
 	/*var i = -1;
 	window.setInterval(function(){

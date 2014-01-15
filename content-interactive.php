@@ -34,7 +34,6 @@
 	</div>
 
 	<button class="btn btn-primary visible-xs visible-sm btn-block">Flash examples only visible on desktop site.</button>
-	
 
 	<?php if( get_field('visit_website_url') ): ?> 
   		<a href="<?php the_field( 'visit_website_url' ); ?>" target="_blank"><button class="btn btn-info btn-large pull-left"><i class="fa fa-responsive fa-globe"></i> Visit site</button></a>
