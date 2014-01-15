@@ -146,15 +146,21 @@ $j(document).ready(function() {
 		// Vars
 
         var current         = -1;
-        var thumbGroups     = [];
+        var thumbGroups     = ["#mq-thumbs-a", "#mq-thumbs-b", "#mq-thumbs-c"];
         var min             = 0;
         var max             = thumbGroups.length - 1;
 
 		var _timer;
         var _time           = 6000;
-        var _delayOffset    = 110;
+        var _delayOffset    = 150;
 
 		// Slideshow Timer
+
+		function startTimer() {
+			_timer = setTimeout( function(){
+				prepNext();
+			}, _time);
+		}
 
 		function showNext(){
 
@@ -172,9 +178,9 @@ $j(document).ready(function() {
 
 				// Fade in thumb with delay
 				var thm = $j($j(thms)[i]);
-					thm.css({"opacity":0}).delay(i * _delayOffset).animate({ "opacity" : 1 }, 1100);
+					thm.css({"opacity":0}).delay(i * _delayOffset).animate({ "opacity" : 1 }, 1000);
 			}
-			$j(prvGrp).css({"z-index":-1}).animate({"opacity":0}, 350);
+			$j(prvGrp).css({"z-index":-1}).animate({"opacity":0}, 200);
 			$j(curGrp).css({"opacity":1, "z-index":1});
 		}
 
@@ -189,31 +195,13 @@ $j(document).ready(function() {
 			startTimer();
 		}
 
-		function startTimer() {
-			_timer = setTimeout( function(){
-				prepNext();
-			}, _time);
-		}
-
 		function prev(){
 			var prev = current - 1;
 			if (prev < min) prev = max;
 			return prev;
 		}
-		function next(){
-			var next = current + 1;
-			if (next > max) prev = min;
-			return next;
-		}
 
 		function init() {
-			if ($j("#mq-thumbs-a").length) thumbGroups.push("#mq-thumbs-a");
-			if ($j("#mq-thumbs-b").length) thumbGroups.push("#mq-thumbs-b");
-			if ($j("#mq-thumbs-c").length) thumbGroups.push("#mq-thumbs-c");
-
-			var numberOfThumbGroups = thumbGroups.length;
-			if (numberOfThumbGroups <= 1) return;
-
 			for (var i = 0; i < thumbGroups.length; i++) {
 				$j(thumbGroups[i]).css({"opacity":0, "z-index":-1});
 			}
