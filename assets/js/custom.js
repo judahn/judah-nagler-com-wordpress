@@ -145,54 +145,24 @@ $j(document).ready(function() {
 
 		// Vars
 
-        var current         = 0;
-        var thumbGroups     = ["#mq-thumbs-a", "#mq-thumbs-b", "#mq-thumbs-c"];
+        var current         = -1;
+        var thumbGroups     = [];
+        var min             = 0;
+        var max             = thumbGroups.length - 1;
 
 		var _timer;
-		var _time = 3000;
-
-		// Fade out all thumb groups
-
-		function resetZIndex(){
-			console.log("reset");
-			for (var i = 0; i < $j(thumbGroups).length; i++) {
-				var thmGrp = $j($j(thumbGroups)[i]);
-					thmGrp.css({"z-index":current-1});
-			}
-		}
+        var _time           = 6000;
+        var _delayOffset    = 110;
 
 		// Slideshow Timer
 
-		function startTimer() {
-			_timer = setTimeout( function(){
-				showNext();
-				startTimer();
-			}, _time);
-		}
-
-		function stopTimer() {
-			clearTimeout(_timer);
-		}
-
-		// Animate in next thumb group
-
 		function showNext(){
 
-			var thmGrp = thumbGroups[current];
-
-			// Set current var, reset if higher than array's length
-				current++;
-			if (current >= thumbGroups.length) 
-				current = 0;
-
-			// Make current group top z-index
-			resetZIndex();
-
-			   thmGrp = thumbGroups[current];
-			$j(thmGrp).css({"z-index":current});
+			var curGrp = thumbGroups[current];
+			var prvGrp = thumbGroups[prev()];
 
 			// Target list elements in thumb group
-			var thms = $j(thmGrp +" li");
+			var thms = $j(curGrp +" li");
 
 			// Fade in list elements (thumbs)
 			for (var i = 0; i < thms.length; i++) {
@@ -202,11 +172,54 @@ $j(document).ready(function() {
 
 				// Fade in thumb with delay
 				var thm = $j($j(thms)[i]);
-					thm.css({"opacity":0});
-					thm.delay(_delay).animate({ "opacity" : 1 }, 500);
+					thm.css({"opacity":0}).delay(i * _delayOffset).animate({ "opacity" : 1 }, 1100);
 			}
+			$j(prvGrp).css({"z-index":-1}).animate({"opacity":0}, 350);
+			$j(curGrp).css({"opacity":1, "z-index":1});
 		}
-		startTimer();
+
+		function prepNext() {
+
+			// Set current var, reset if higher than array's length
+				current++;
+			if (current == thumbGroups.length) 
+				current = 0;
+
+			showNext();
+			startTimer();
+		}
+
+		function startTimer() {
+			_timer = setTimeout( function(){
+				prepNext();
+			}, _time);
+		}
+
+		function prev(){
+			var prev = current - 1;
+			if (prev < min) prev = max;
+			return prev;
+		}
+		function next(){
+			var next = current + 1;
+			if (next > max) prev = min;
+			return next;
+		}
+
+		function init() {
+			if ($j("#mq-thumbs-a").length) thumbGroups.push("#mq-thumbs-a");
+			if ($j("#mq-thumbs-b").length) thumbGroups.push("#mq-thumbs-b");
+			if ($j("#mq-thumbs-c").length) thumbGroups.push("#mq-thumbs-c");
+
+			var numberOfThumbGroups = thumbGroups.length;
+			if (numberOfThumbGroups <= 1) return;
+
+			for (var i = 0; i < thumbGroups.length; i++) {
+				$j(thumbGroups[i]).css({"opacity":0, "z-index":-1});
+			}
+			prepNext();
+		}
+		init();
 	}
 	responsiveSlideshow();
 
