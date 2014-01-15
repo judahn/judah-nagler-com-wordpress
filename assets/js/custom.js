@@ -151,18 +151,41 @@ $j(document).ready(function() {
         var max             = thumbGroups.length - 1;
 
 		var _timer;
-        var _time           = 3000;
+        var _time           = 5000;
         var _delayOffset    = 150;
+
+		function init() {
+			for (var i = 0; i < thumbGroups.length; i++) {
+				$j(thumbGroups[i]).css({"opacity":0, "z-index":-1});
+			}
+			showNext();
+		}
+
+		init();
+
+		function prev(){
+			var prev = current - 1;
+			if (prev < min) prev = max;
+			return prev;
+		}
 
 		// Slideshow Timer
 
 		function startTimer() {
 			_timer = setTimeout( function(){
-				prepNext();
+				showNext();
 			}, _time);
 		}
 
 		function showNext(){
+
+			var firstTime = false;
+			if (current === -1) firstTime = true;
+
+			// Set current var, reset if higher than array's length
+				current++;
+			if (current == thumbGroups.length) 
+				current = 0;
 
 			var curGrp = thumbGroups[current];
 			var prvGrp = thumbGroups[prev()];
@@ -179,38 +202,18 @@ $j(document).ready(function() {
 				// Set delay time
 				var _delay = (i * 100);
 
-				// Fade in thumb with delay
+				// Set target thumb
 				var thm = $j($j(thms)[i]);
-					thm.animate({"opacity":0, "margin-left":"-20px"}, _animTime, _animType).delay(i * _delayOffset).animate({ "opacity" : 1, "margin-left":"0px"}, _animTime, _animType);
-			}
-			$j(prvGrp).css({"z-index":-1}).animate({"opacity":0}, 900);
+
+				// Fade in thumb with delay
+				thm.css({"opacity":0}).delay(i * _delayOffset).animate({ "opacity" : 1}, _animTime, _animType);
+			}	
+				
+			if (prvGrp) $j(prvGrp).css({"z-index":-1}).animate({"opacity":0}, 900);
 			$j(curGrp).css({"opacity":1, "z-index":1});
-		}
 
-		function prepNext() {
-
-			// Set current var, reset if higher than array's length
-				current++;
-			if (current == thumbGroups.length) 
-				current = 0;
-
-			showNext();
 			startTimer();
 		}
-
-		function prev(){
-			var prev = current - 1;
-			if (prev < min) prev = max;
-			return prev;
-		}
-
-		function init() {
-			for (var i = 0; i < thumbGroups.length; i++) {
-				$j(thumbGroups[i]).css({"opacity":0, "z-index":-1});
-			}
-			prepNext();
-		}
-		init();
 	}
 	responsiveSlideshow();
 
