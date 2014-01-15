@@ -130,6 +130,7 @@ $j(document).ready(function() {
 		}*/
 	}
 
+	// Init window scroll function
 	onWindowScroll();
 
 
@@ -140,7 +141,8 @@ $j(document).ready(function() {
 
 	function responsiveSlideshow(){
 
-		// If not single-responsive page, do not continue
+		// If current page is not 'single-responsive', do not continue
+
 		if (!$j("body").hasClass("single-responsive")) return;
 
 		// Vars
@@ -154,6 +156,8 @@ $j(document).ready(function() {
         var _time           = 5000;
         var _delayOffset    = 150;
 
+        // Init: Fade out all thumb groups and move to back
+
 		function init() {
 			for (var i = 0; i < thumbGroups.length; i++) {
 				$j(thumbGroups[i]).css({"opacity":0, "z-index":-1});
@@ -161,7 +165,7 @@ $j(document).ready(function() {
 			showNext();
 		}
 
-		init();
+		// Return previous group's array index
 
 		function prev(){
 			var prev = current - 1;
@@ -169,13 +173,15 @@ $j(document).ready(function() {
 			return prev;
 		}
 
-		// Slideshow Timer
+		// Start slideshow timer
 
 		function startTimer() {
 			_timer = setTimeout( function(){
 				showNext();
 			}, _time);
 		}
+
+		// Fade in next set of thumbs
 
 		function showNext(){
 
@@ -209,12 +215,21 @@ $j(document).ready(function() {
 				thm.css({"opacity":0}).delay(i * _delayOffset).animate({ "opacity" : 1}, _animTime, _animType);
 			}	
 				
+			// Fade out previous group
 			if (prvGrp) $j(prvGrp).css({"z-index":-1}).animate({"opacity":0}, 900);
+			
+			// Fade in current group and bring to front
 			$j(curGrp).css({"opacity":1, "z-index":1});
 
+			// Start timer
 			startTimer();
 		}
+
+		// Init sequence
+		init();
 	}
+
+	// Call Responsive Slideshow
 	responsiveSlideshow();
 
 
@@ -237,20 +252,4 @@ $j(document).ready(function() {
 	});
 
 
-
-	/*
-	 * 	Auto Scroll
-	 */
-
-	/*var i = -1;
-	window.setInterval(function(){
-		i++;
-		$j(window).scrollTop(i);
-	}, 1);*/
-
-	// intro animation
-
-	/*function introAnimation() {
-		// fade in elements
-	}*/
 });
