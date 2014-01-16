@@ -686,10 +686,12 @@ button {
   color: #666;
 }
 
-/* line 80, ../scss/_footer.scss */
-#footer > .container {
-  padding-top: 15px;
-  padding-bottom: 15px;
+/* line 74, ../scss/_footer.scss */
+#footer {
+  /* > .container {
+      padding-top:    15px;
+      padding-bottom: 15px;
+  } */
 }
 
 /* line 92, ../scss/_footer.scss */
