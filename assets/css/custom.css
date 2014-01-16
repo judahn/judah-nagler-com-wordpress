@@ -712,35 +712,34 @@ button {
 @media only all and (max-width: 767px) {
   /* line 102, ../scss/_footer.scss */
   #bottom-footer > .container {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 15px 25px;
   }
 }
-/* line 112, ../scss/_footer.scss */
+/* line 111, ../scss/_footer.scss */
 #bottom-footer a {
   color: #d19aa7;
 }
-/* line 115, ../scss/_footer.scss */
+/* line 114, ../scss/_footer.scss */
 #bottom-footer a:hover, #bottom-footer a:focus {
   color: #efdde1;
 }
-/* line 119, ../scss/_footer.scss */
+/* line 118, ../scss/_footer.scss */
 #bottom-footer span {
   color: black;
 }
-/* line 121, ../scss/_footer.scss */
+/* line 120, ../scss/_footer.scss */
 #bottom-footer span a {
   color: black;
 }
-/* line 124, ../scss/_footer.scss */
+/* line 123, ../scss/_footer.scss */
 #bottom-footer span a:hover, #bottom-footer span a:focus {
   color: #2ea2cc;
 }
-/* line 129, ../scss/_footer.scss */
+/* line 128, ../scss/_footer.scss */
 #bottom-footer phone {
   white-space: nowrap;
 }
-/* line 132, ../scss/_footer.scss */
+/* line 131, ../scss/_footer.scss */
 #bottom-footer .fa {
   margin: 5px;
 }
@@ -755,17 +754,18 @@ button {
   #bottom-footer {
     font-size: 12px;
   }
-  /* line 143, ../scss/_footer.scss */
+  /* line 142, ../scss/_footer.scss */
   #bottom-footer .text-right {
     text-align: left;
   }
-  /* line 146, ../scss/_footer.scss */
+  /* line 145, ../scss/_footer.scss */
   #bottom-footer .pull-right {
     float: left;
   }
-  /* line 149, ../scss/_footer.scss */
+  /* line 148, ../scss/_footer.scss */
   #bottom-footer .col-sm-6 {
     width: 100%;
+    padding: 0;
   }
 }
 

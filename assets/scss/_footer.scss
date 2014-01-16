@@ -105,8 +105,7 @@
         margin-bottom: 5px;
 
         @include max_tablet {
-            margin-top: 10px;
-            margin-bottom: 10px;
+            margin: 15px 25px;
         }
     }
     a {
@@ -148,6 +147,7 @@
         }
         .col-sm-6 {
             width: 100%;
+            padding: 0;
         }
     }
 }
