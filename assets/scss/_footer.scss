@@ -77,10 +77,14 @@
     // @include background( image-url( "bg/goth.jpg" ));
     // margin-top: 30px;
 
-    /* > .container {
-        padding-top:    15px;
-        padding-bottom: 15px;
-    } */
+    > .container {
+        // padding-top:    15px;
+        // padding-bottom: 15px;
+
+        @include max_tablet {
+            margin-bottom: -20px;
+        }
+    }
 }
 
 // Sticky Footer
