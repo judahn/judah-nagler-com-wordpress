@@ -12,7 +12,7 @@ $j = jQuery.noConflict();
 
 $j(document).ready(function() {
 
-
+	
 
 	/*
 	 *	Navigation
@@ -62,14 +62,14 @@ $j(document).ready(function() {
 
 	
 	/* 
-	 * 	Scroll Functions
+	 * 	Window Scroll
 	 */
 
 	var winW 		= $j(window).width();
 	var tablet      = 768;
 	var phone       = 480;
 	var currView    = 0;
-	var lastView    = -1;
+	var prevView    = -1;
 
 	// On window scroll, update certain properties for UI elements
 
@@ -84,53 +84,39 @@ $j(document).ready(function() {
 		var hdrOp 		= ((offsetTop * 0.618) - scroll) / 100;
 
 		// Get window width
-
 		winW = $j(window).width();
 
-		// Fade in main content & fade out top header
-
+		// If not 'single' page and above 'tablet' breakpoint
 		if (!isSingle && winW >= tablet){
+
+			// Set target opacity for header and main-content
 			if (tgtOp >= maxOp){
 				tgtOp  = maxOp;
 			}
 			if (tgtOp <= minOp){
 				tgtOp  = minOp;
-			}
-			if (navOp <= 0){
-				navOp  = 0;
 			}	
-			if (currView != lastView) {
-				$j.stellar();
-			}
+
+			// Set current view
 			currView = 1;
+
 		} else {
-			currView = 0;
+			// Set opacity on all target elements to 1
 			tgtOp = navOp = hdrOp = 1;
+
+			// Set current view
+			currView = 0;
 		}
 
+		// Apply target opacities to elements
 		$j(".main-content").css({"opacity":tgtOp});
 		$j(".above-header h1").css({"opacity":(hdrOp)});
 
-		lastView = currView;
-
-
-		// set min top position for cherry blossoms on mobile scroll 
-
-		/*var cba     = $j("#cb-a");
-		var cbaMin  = -86;
-		var cbaTop 	= parseInt(cba.position().top);
-
-		console.log("cbaTop: "+cbaTop, "cbaMin: "+cbaMin, cbaTop <= cbaMin);
-
-		if (isSingle && winW <= tablet){
-			
-			if (cbaTop <= cbaMin){
-				cba.css({ "top" : cbaMin + " !important" });
-			}
-		}*/
+		// Set previous view
+		prevView = currView;
 	}
 
-	// Init window scroll function
+	// Init Window Scroll
 	onWindowScroll();
 
 
@@ -153,7 +139,7 @@ $j(document).ready(function() {
         var max             = 0;
 
 		var _timer;
-        var _time           = 2000;
+        var _time           = 6000;
         var _delayOffset    = 150;
 
         // Init: Fade out all thumb groups and move to back
@@ -239,13 +225,13 @@ $j(document).ready(function() {
 		init();
 	}
 
-	// Call Responsive Slideshow
+	// Init Responsive Slideshow
 	responsiveSlideshow();
 
 
 
 	/*
-	 * 	Bind window scroll function to 'scroll' and 'resize'
+	 * 	Window Event Bindings
 	 */
 	
 	$j(window).bind("scroll", onWindowScroll);
@@ -254,8 +240,10 @@ $j(document).ready(function() {
 
 
 	/*
-	 * 	Stellar.js
+	 *  Stellar.js
 	 */ 
+
+	// Init Stellar
 
 	$j.stellar({
 		hideDistantElements: false

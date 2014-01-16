@@ -154,6 +154,11 @@
     }
 }
 .credits {
+    font-size: 16px !important;
+
+    @include max_laptop {
+        font-size: 14px !important;
+    }
     td {
         padding: 3px !important;
     }

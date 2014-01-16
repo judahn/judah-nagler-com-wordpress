@@ -95,4 +95,9 @@ p {
     line-height:    23px;
     font-weight:    100;
     letter-spacing: 1px;
+
+    @include max_laptop {
+        font-size: 14px;
+        line-height: 21px;
+    }
 }

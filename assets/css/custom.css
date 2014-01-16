@@ -145,7 +145,7 @@ code, pre, .highlight {
 
 /* line 88, ../scss/_mixins.scss */
 .navbar > .container, #footer {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 /* line 91, ../scss/_mixins.scss */
@@ -274,6 +274,13 @@ p {
   font-weight: 100;
   letter-spacing: 1px;
 }
+@media only all and (max-width: 991px) {
+  /* line 91, ../scss/_typography.scss */
+  p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
 
 /*
  *  RESPONSIVE
@@ -288,36 +295,36 @@ p {
  *  MIN / MAX
  */
 /* Logo */
-/* line 6, ../scss/_navbar.scss */
+/* line 5, ../scss/_navbar.scss */
 .navbar-brand {
   padding: 15px 30px 0 15px;
 }
 @media only all and (max-width: 991px) {
-  /* line 6, ../scss/_navbar.scss */
+  /* line 5, ../scss/_navbar.scss */
   .navbar-brand {
     padding: 15px 23px 0 15px;
   }
 }
 @media only all and (max-width: 767px) {
-  /* line 6, ../scss/_navbar.scss */
+  /* line 5, ../scss/_navbar.scss */
   .navbar-brand {
     padding-top: 12px;
     padding-left: 15px;
     line-height: 25px;
   }
-  /* line 16, ../scss/_navbar.scss */
+  /* line 15, ../scss/_navbar.scss */
   .navbar-brand #avatar {
     width: 24px;
     height: 24px;
   }
 }
 
-/* line 22, ../scss/_navbar.scss */
+/* line 21, ../scss/_navbar.scss */
 .navbar-inverse .navbar-brand {
   color: white;
 }
 
-/* line 26, ../scss/_navbar.scss */
+/* line 25, ../scss/_navbar.scss */
 .site-navigation-inner {
   padding-left: 0;
   padding-right: 0;
@@ -326,36 +333,36 @@ p {
 }
 
 @media only all and (max-width: 767px) {
-  /* line 33, ../scss/_navbar.scss */
+  /* line 32, ../scss/_navbar.scss */
   .navbar-fixed-top {
     position: relative;
   }
 }
 
 /* Nav */
-/* line 42, ../scss/_navbar.scss */
+/* line 41, ../scss/_navbar.scss */
 .nav > li > a {
   padding: 15px;
 }
 @media only all and (max-width: 1199px) {
-  /* line 42, ../scss/_navbar.scss */
+  /* line 41, ../scss/_navbar.scss */
   .nav > li > a {
     padding: 15px 11px;
   }
 }
 @media only all and (max-width: 991px) {
-  /* line 42, ../scss/_navbar.scss */
+  /* line 41, ../scss/_navbar.scss */
   .nav > li > a {
     padding: 15px 6px 15px;
   }
 }
 @media only all and (max-width: 767px) {
-  /* line 42, ../scss/_navbar.scss */
+  /* line 41, ../scss/_navbar.scss */
   .nav > li > a {
     padding: 0 0 15px 52px;
   }
 }
-/* line 54, ../scss/_navbar.scss */
+/* line 53, ../scss/_navbar.scss */
 .nav > li > a:hover, .nav > li > a:focus {
   background-color: transparent;
 }
@@ -363,30 +370,30 @@ p {
 /* 
  *   Navbar 
  */
-/* line 66, ../scss/_navbar.scss */
+/* line 65, ../scss/_navbar.scss */
 .navbar {
   font-family: "Dosis", sans-serif;
   text-transform: uppercase;
 }
-/* line 70, ../scss/_navbar.scss */
+/* line 69, ../scss/_navbar.scss */
 .navbar a {
   font-size: 18px;
   letter-spacing: 3px;
 }
 @media only all and (min-width: 992px) and (max-width: 1199px) {
-  /* line 70, ../scss/_navbar.scss */
+  /* line 69, ../scss/_navbar.scss */
   .navbar a {
     font-size: 16px;
   }
 }
 @media only all and (min-width: 768px) and (max-width: 991px) {
-  /* line 70, ../scss/_navbar.scss */
+  /* line 69, ../scss/_navbar.scss */
   .navbar a {
     font-size: 14px;
     letter-spacing: 2px;
   }
 }
-/* line 82, ../scss/_navbar.scss */
+/* line 81, ../scss/_navbar.scss */
 .navbar > .container {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -395,13 +402,13 @@ p {
   border-radius: 10px;
 }
 @media only all and (max-width: 767px) {
-  /* line 82, ../scss/_navbar.scss */
+  /* line 81, ../scss/_navbar.scss */
   .navbar > .container {
     border-radius: 0;
   }
 }
 
-/* line 90, ../scss/_navbar.scss */
+/* line 89, ../scss/_navbar.scss */
 .navbar-nav {
   margin: 0 0 0 -15px;
 }
@@ -409,7 +416,7 @@ p {
 /* 
  *  Active 
  */
-/* line 100, ../scss/_navbar.scss */
+/* line 99, ../scss/_navbar.scss */
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
@@ -417,61 +424,61 @@ p {
   color: #cf486a;
 }
 
-/* line 104, ../scss/_navbar.scss */
+/* line 103, ../scss/_navbar.scss */
 .navbar-inverse {
   background-color: transparent;
   border: 0;
 }
 
-/* line 109, ../scss/_navbar.scss */
+/* line 108, ../scss/_navbar.scss */
 .navbar-collapse {
   border-top: 0;
   box-shadow: none !important;
 }
 
-/* line 114, ../scss/_navbar.scss */
+/* line 113, ../scss/_navbar.scss */
 #nav-row {
   height: 50px;
   z-index: 9999;
   position: fixed;
 }
 
-/* line 124, ../scss/_navbar.scss */
+/* line 123, ../scss/_navbar.scss */
 #nav-below .btn {
   margin-top: 20px;
 }
-/* line 127, ../scss/_navbar.scss */
+/* line 126, ../scss/_navbar.scss */
 #nav-below .btn-primary {
   margin-top: 10px;
 }
-/* line 130, ../scss/_navbar.scss */
+/* line 129, ../scss/_navbar.scss */
 #nav-below span {
   line-height: 17px;
 }
 
-/* line 137, ../scss/_navbar.scss */
+/* line 136, ../scss/_navbar.scss */
 .nav-previous {
   float: left;
   margin-right: 10px;
 }
 
-/* line 144, ../scss/_navbar.scss */
+/* line 143, ../scss/_navbar.scss */
 button {
   margin-right: 15px !important;
 }
 
-/* line 148, ../scss/_navbar.scss */
+/* line 147, ../scss/_navbar.scss */
 .btn a {
   text-transform: uppercase;
   color: white;
 }
-/* line 151, ../scss/_navbar.scss */
+/* line 150, ../scss/_navbar.scss */
 .btn a:hover {
   color: white;
   text-decoration: none;
 }
 
-/* line 157, ../scss/_navbar.scss */
+/* line 156, ../scss/_navbar.scss */
 .btn-primary {
   background-color: #bf7485;
   border-color: #bf7485;
@@ -481,7 +488,7 @@ button {
   transition: background-color, 0.5s;
 }
 
-/* line 162, ../scss/_navbar.scss */
+/* line 161, ../scss/_navbar.scss */
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
   background-color: #d4a1ad;
   border-color: #d4a1ad;
@@ -492,7 +499,7 @@ button {
   transition: background-color, 0.5s;
 }
 
-/* line 169, ../scss/_navbar.scss */
+/* line 168, ../scss/_navbar.scss */
 .btn-danger {
   background-color: #b12e4f;
   border-color: #b12e4f;
@@ -501,14 +508,14 @@ button {
   -o-transition: background-color, 0.5s;
   transition: background-color, 0.5s;
 }
-/* line 174, ../scss/_navbar.scss */
+/* line 173, ../scss/_navbar.scss */
 .btn-danger .fa-arrow-left {
   line-height: 19px;
   margin-right: 5px;
   margin-left: -5px;
 }
 
-/* line 180, ../scss/_navbar.scss */
+/* line 179, ../scss/_navbar.scss */
 .btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active {
   background-color: #d15070;
   border-color: #d15070;
@@ -518,7 +525,7 @@ button {
   transition: background-color, 0.5s;
 }
 
-/* line 186, ../scss/_navbar.scss */
+/* line 185, ../scss/_navbar.scss */
 .btn-info {
   background-color: #555555;
   border-color: #555555;
@@ -528,7 +535,7 @@ button {
   transition: background-color, 0.5s;
 }
 
-/* line 191, ../scss/_navbar.scss */
+/* line 190, ../scss/_navbar.scss */
 .btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active {
   background-color: #767676;
   border-color: #767676;
@@ -538,32 +545,32 @@ button {
   transition: background-color, 0.5s;
 }
 
-/* line 196, ../scss/_navbar.scss */
+/* line 195, ../scss/_navbar.scss */
 .btn-block {
   margin-bottom: 20px;
   color: black;
   font-size: 100%;
 }
 
-/* line 204, ../scss/_navbar.scss */
+/* line 203, ../scss/_navbar.scss */
 .affix {
   top: 0;
 }
 
 @media only all and (max-width: 767px) {
-  /* line 207, ../scss/_navbar.scss */
+  /* line 206, ../scss/_navbar.scss */
   .affix-top {
     position: fixed;
     top: 0;
   }
 }
 
-/* line 215, ../scss/_navbar.scss */
+/* line 214, ../scss/_navbar.scss */
 .single .affix, .single .affix-top {
   position: fixed;
 }
 @media only all and (max-width: 767px) {
-  /* line 215, ../scss/_navbar.scss */
+  /* line 214, ../scss/_navbar.scss */
   .single .affix, .single .affix-top {
     position: static;
   }
@@ -722,7 +729,7 @@ code, pre, .highlight {
 
 /* line 88, ../scss/_mixins.scss */
 .navbar > .container, #footer {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 /* line 91, ../scss/_mixins.scss */
@@ -1455,42 +1462,52 @@ section .col-sm-5, section .col-md-6 {
   margin: 10px 0 30px;
 }
 
-/* line 157, ../scss/_page-specific.scss */
+/* line 156, ../scss/_page-specific.scss */
+.credits {
+  font-size: 16px !important;
+}
+@media only all and (max-width: 991px) {
+  /* line 156, ../scss/_page-specific.scss */
+  .credits {
+    font-size: 14px !important;
+  }
+}
+/* line 162, ../scss/_page-specific.scss */
 .credits td {
   padding: 3px !important;
 }
 @media only all and (max-width: 1199px) {
-  /* line 161, ../scss/_page-specific.scss */
+  /* line 166, ../scss/_page-specific.scss */
   .credits td {
     padding: 1px !important;
   }
 }
 
-/* line 166, ../scss/_page-specific.scss */
+/* line 171, ../scss/_page-specific.scss */
 .media, .description {
   margin-bottom: 30px;
 }
 
-/* line 170, ../scss/_page-specific.scss */
+/* line 175, ../scss/_page-specific.scss */
 .media p {
   margin: 0;
 }
-/* line 173, ../scss/_page-specific.scss */
+/* line 178, ../scss/_page-specific.scss */
 .media img {
   margin: 0;
 }
-/* line 177, ../scss/_page-specific.scss */
+/* line 182, ../scss/_page-specific.scss */
 .media object {
   margin-right: 10px !important;
   margin-bottom: 15px !important;
 }
 
-/* line 182, ../scss/_page-specific.scss */
+/* line 187, ../scss/_page-specific.scss */
 .single-design .media {
   border: 1px solid black;
 }
 
-/* line 191, ../scss/_page-specific.scss */
+/* line 196, ../scss/_page-specific.scss */
 .page-id-21 #cherry-blossoms {
   z-index: 999;
 }
