@@ -1191,7 +1191,12 @@ section .col-sm-5, section .col-md-6 {
   }
 }
 
-/* line 28, ../scss/_cherry-blossoms.scss */
+/* line 27, ../scss/_cherry-blossoms.scss */
+.ie #cherry-blossoms {
+  z-index: -1;
+}
+
+/* line 31, ../scss/_cherry-blossoms.scss */
 #cb-a {
   background: url('/wp-content/themes/jn-wpbs/assets/img/cherry-blossom-shadow.png?1389436022');
   background-position: -135px -97px;
@@ -1200,36 +1205,36 @@ section .col-sm-5, section .col-md-6 {
   width: 100%;
 }
 @media only all and (max-width: 1199px) {
-  /* line 28, ../scss/_cherry-blossoms.scss */
+  /* line 31, ../scss/_cherry-blossoms.scss */
   #cb-a {
     background-position: -370px -97px;
   }
 }
 @media only all and (max-width: 991px) {
-  /* line 28, ../scss/_cherry-blossoms.scss */
+  /* line 31, ../scss/_cherry-blossoms.scss */
   #cb-a {
     background-position: -490px -97px;
   }
 }
 
-/* line 46, ../scss/_cherry-blossoms.scss */
+/* line 49, ../scss/_cherry-blossoms.scss */
 .above-header {
   overflow: visible;
   height: 500px;
 }
 @media only all and (max-width: 767px) {
-  /* line 46, ../scss/_cherry-blossoms.scss */
+  /* line 49, ../scss/_cherry-blossoms.scss */
   .above-header {
     height: 190px;
   }
 }
 @media only all and (max-width: 479px) {
-  /* line 46, ../scss/_cherry-blossoms.scss */
+  /* line 49, ../scss/_cherry-blossoms.scss */
   .above-header {
     height: 180px;
   }
 }
-/* line 57, ../scss/_cherry-blossoms.scss */
+/* line 60, ../scss/_cherry-blossoms.scss */
 .above-header h1 {
   margin-top: 30px;
   padding: 15px;
@@ -1240,20 +1245,20 @@ section .col-sm-5, section .col-md-6 {
   font-size: 75px;
 }
 @media only all and (max-width: 1199px) {
-  /* line 57, ../scss/_cherry-blossoms.scss */
+  /* line 60, ../scss/_cherry-blossoms.scss */
   .above-header h1 {
     font-size: 65px;
   }
 }
 @media only all and (max-width: 767px) {
-  /* line 57, ../scss/_cherry-blossoms.scss */
+  /* line 60, ../scss/_cherry-blossoms.scss */
   .above-header h1 {
     font-size: 49px;
     top: 155px !important;
   }
 }
 @media only all and (max-width: 479px) {
-  /* line 57, ../scss/_cherry-blossoms.scss */
+  /* line 60, ../scss/_cherry-blossoms.scss */
   .above-header h1 {
     font-size: 32px;
     margin-left: 0;
@@ -1264,7 +1269,7 @@ section .col-sm-5, section .col-md-6 {
   }
 }
 
-/* line 85, ../scss/_cherry-blossoms.scss */
+/* line 88, ../scss/_cherry-blossoms.scss */
 #above-header-container {
   height: 100%;
   position: relative;
