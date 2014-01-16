@@ -95,6 +95,7 @@
 
     font-size:      13px;
     letter-spacing: 1px;
+    text-transform: uppercase;
 
     background-color: $red;
 
@@ -105,11 +106,39 @@
 
         @include max_tablet {
             margin-top: 10px;
-            margin-bottom: 14px;
+            margin-bottom: 10px;
         }
+    }
+    a {
+        color: lighten($blue, 11%);
+
+        &:hover, &:focus {
+            color: lighten($blue, 30%);
+        }
+    }
+    span {
+        color: black;
+        a{
+            color: black;
+
+            &:hover, &:focus {
+                color: $cyan;
+            }
+        }
+    }
+    phone {
+        white-space: nowrap;
+    }
+    .fa {
+        margin: 5px;
+    }
+
+    @include max_laptop {
+        font-size: 11px;
     }
 
     @include max_tablet {
+        font-size: 12px;
 
         .text-right{
             text-align: left;
@@ -119,13 +148,6 @@
         }
         .col-sm-6 {
             width: 100%;
-        }
-    }
-
-    a {
-        color: lighten($blue, 11%);
-        &:hover, &:focus {
-            color: lighten($blue, 30%);
         }
     }
 }
