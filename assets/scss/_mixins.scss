@@ -38,6 +38,19 @@
 .pos-rel{
     position: relative;
 }
+.text-right {
+    text-align: right;
+}
+
+%add-grayscale {
+    filter: url('../js/filters.svg#grayscale'); /* Firefox 3.5+ */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(1); /* Webkit Nightlies & Google Chrome Canary */
+}
+%remove-grayscale {
+    filter: none; /* Applies to FF + IE */
+    -webkit-filter: grayscale(0);
+}
 
 @mixin center-vertically($h1, $h2) {
     position: fixed;

@@ -21,6 +21,16 @@
 	</div><!-- close .container -->
 </footer><!-- close #colophon -->
 
+<footer id="bottom-footer" class="row">
+	<div class="container">
+		<div class="col-sm-6">
+			&copy; 2014 <a href="mailto:info@judahnagler.com">Judah Nagler</a> All rights reserved. 
+		</div>
+		<div class="col-sm-6 pull-right text-right">
+			Cherry blossom painting by <a href="http://www.killlovewithguns.com">Anna Marie Smith</a>.
+		</div>
+	</div>
+</footer>
 
 <?php wp_footer(); ?>
 

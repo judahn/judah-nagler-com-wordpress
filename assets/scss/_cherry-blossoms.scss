@@ -24,11 +24,12 @@
         position: fixed;
     }
 }
+
 .ie #cherry-blossoms{
     z-index: -1;
 }
 
-#cb-a{
+#cherry-blossom-main{
     @include background( image-url( "cherry-blossom-shadow.png" ));
     background-position: -135px -97px;
     background-repeat: no-repeat;

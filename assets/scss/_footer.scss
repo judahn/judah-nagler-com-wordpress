@@ -52,18 +52,82 @@
     }
 }
 
+// Footer Menu
+
 #footer-menu {
     li {
         width: 100%;
     }
 }
+
+// Root footer & footer (for Sticky Footer)
+
 #root-footer, #footer {
     height: auto;
     p {
         color: #666;
     }
 }
+
+// Footer
+
 #footer {
-    @extend %opaqueBg;
+    // @extend %opaqueBg;
+    // background-color: #222;
+    // @include background( image-url( "bg/goth.jpg" ));
+    // margin-top: 30px;
+
+    > .container {
+        padding-top:    15px;
+        padding-bottom: 15px;
+    }
 }
+
+// Sticky Footer
 // @include sticky-footer(300px, "#root", "#root-footer", "#footer");
+
+
+// Bottom Footer
+
+#bottom-footer {
+    min-height: 10px;
+    padding:    0;
+
+    font-size:      13px;
+    letter-spacing: 1px;
+
+    background-color: $red;
+
+    > .container {
+        padding: 0;
+        margin-top:    5px;
+        margin-bottom: 5px;
+
+        @include max_tablet {
+            margin-top: 10px;
+            margin-bottom: 14px;
+        }
+    }
+
+    @include max_tablet {
+
+        .text-right{
+            text-align: left;
+        }
+        .pull-right {
+            float: left;
+        }
+        .col-sm-6 {
+            width: 100%;
+        }
+    }
+
+    a {
+        color: lighten($blue, 11%);
+        &:hover, &:focus {
+            color: lighten($blue, 30%);
+        }
+    }
+}
+
+

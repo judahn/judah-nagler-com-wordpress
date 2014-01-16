@@ -16,7 +16,7 @@
         // @include opacity(0.5);
     }
 }
-#cb-a{
+#cherry-blossom-main{
     @include background(image-url("cherry-blossom-shadow.png"));
     background-position: -162px 50px;
     background-repeat: no-repeat;
@@ -40,7 +40,7 @@
         background-position: -95px -100px;
     }
 }
-.home #cb-a {
+.home #cherry-blossom-main {
     background-position: -550px 13px;
 
     @include max_desktop {
@@ -68,7 +68,7 @@
         margin-top: -15px;        
     }
 }
-.blog #cb-a {
+.blog #cherry-blossom-main {
     background-position: 70% -84px;
 
     @include max_tablet{

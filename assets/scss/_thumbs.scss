@@ -44,13 +44,14 @@ $thumb_hover:   $red;
         border: 3px dotted #aaa;
 
         @include opacity(0.35);
-        @include filter(grayscale(100%));
         @include transition(opacity, 1s);
         @include transition(border, 1s);
 
+        // @include filter(grayscale(100%));
+        @extend %add-grayscale;
+
         @include max_tablet {
             @include opacity(0.8);
-            @include filter(grayscale(100%));
             border: 3px dotted #666;
             width: 100% !important;
         }
@@ -75,7 +76,9 @@ $thumb_hover:   $red;
             border: 3px dotted $thumb_hover;
             border-bottom: 3px dotted $thumb_hover;
 
-            @include filter(grayscale(0%));
+            // @include filter(grayscale(0%));
+            @extend %remove-grayscale;
+
             @include opacity(1);
             @include transition(opacity, 0.5s);
         }

@@ -40,14 +40,18 @@
     }
     a {
         img {
+            // @include filter(grayscale(100%));
+            @extend %add-grayscale;
+
             @include opacity(0.68);
-            @include filter(grayscale(100%));
             @include transition(filter, 0.5s);
         }
         &:hover {
             img {
+                // @include filter(grayscale(0%));
+                @extend %remove-grayscale;
+
                 @include opacity(1);
-                @include filter(grayscale(0%));
                 @include transition(filter, 0.25s);
             }
         }

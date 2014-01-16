@@ -4,7 +4,7 @@
  */
 
 .home {
-    #cb-a {
+    #cherry-blossom-main {
         background-position: -550px 13px;
 
         @include max_desktop {
@@ -62,7 +62,7 @@
  * 	Blog 
  */
 
-.blog #cb-a {
+.blog #cherry-blossom-main {
     background-position: 70% -84px;
 
     @extend %mobile-blossoms;
@@ -154,11 +154,6 @@
     }
 }
 .credits {
-    font-size: 16px !important;
-
-    @include max_laptop {
-        font-size: 14px !important;
-    }
     td {
         padding: 3px !important;
     }

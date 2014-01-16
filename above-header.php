@@ -1,5 +1,5 @@
 <div id="cherry-blossoms" class="pos-abs">
-	<div id="cb-a" class="pos-rel" data-stellar-ratio="1.5"></div>
+	<div id="cherry-blossom-main" class="pos-rel" data-stellar-ratio="1.5"></div>
 </div>
 
 <article class="row above-header">

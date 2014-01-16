@@ -41,6 +41,10 @@
     line-height: 21px !important;
     margin: 15px 0 !important;
     color: #999 !important;
+
+    @include max_laptop{
+        line-height: 17px !important;
+    }
 }
 
 

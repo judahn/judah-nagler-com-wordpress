@@ -124,31 +124,53 @@ time, mark, audio, video {
   position: relative;
 }
 
-/* line 65, ../scss/_mixins.scss */
+/* line 41, ../scss/_mixins.scss */
+.text-right {
+  text-align: right;
+}
+
+/* line 45, ../scss/_mixins.scss */
+.thumbnail img, #social-nav a img {
+  filter: url("../js/filters.svg#grayscale");
+  /* Firefox 3.5+ */
+  filter: gray;
+  /* IE6-9 */
+  -webkit-filter: grayscale(1);
+  /* Webkit Nightlies & Google Chrome Canary */
+}
+
+/* line 50, ../scss/_mixins.scss */
+.thumbnail:hover img, .thumbnail:focus img, #social-nav a:hover img {
+  filter: none;
+  /* Applies to FF + IE */
+  -webkit-filter: grayscale(0);
+}
+
+/* line 78, ../scss/_mixins.scss */
 #row-masthead {
   background-color: black;
   background-attachment: fixed;
   background-size: cover;
 }
 
-/* line 80, ../scss/_mixins.scss */
+/* line 93, ../scss/_mixins.scss */
 code, pre, .highlight {
   background-color: #666;
   border-color: #666;
 }
 
-/* line 84, ../scss/_mixins.scss */
+/* line 97, ../scss/_mixins.scss */
 .thumbnail {
   background-color: transparent;
   border: 0;
 }
 
-/* line 88, ../scss/_mixins.scss */
-.navbar > .container, #footer {
+/* line 101, ../scss/_mixins.scss */
+.navbar > .container {
   background-color: rgba(0, 0, 0, 0.75);
 }
 
-/* line 91, ../scss/_mixins.scss */
+/* line 104, ../scss/_mixins.scss */
 .hero-right, .single-design .media, .design-slider {
   -webkit-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
   -moz-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
@@ -172,25 +194,41 @@ code, pre, .highlight {
 body {
   font-family: "Dosis", sans-serif;
   color: #ccc;
+  font-size: 16px;
+  line-height: 23px;
+}
+@media only all and (max-width: 1199px) {
+  /* line 29, ../scss/_typography.scss */
+  body {
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
+@media only all and (max-width: 991px) {
+  /* line 29, ../scss/_typography.scss */
+  body {
+    font-size: 14px;
+    line-height: 21px;
+  }
 }
 
-/* line 33, ../scss/_typography.scss */
+/* line 44, ../scss/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway Dots", sans-serif;
   text-transform: uppercase;
   color: white;
   margin-top: 0;
 }
-/* line 38, ../scss/_typography.scss */
+/* line 49, ../scss/_typography.scss */
 h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
   color: #ccc;
 }
-/* line 41, ../scss/_typography.scss */
+/* line 52, ../scss/_typography.scss */
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   text-decoration: none;
 }
 
-/* line 45, ../scss/_typography.scss */
+/* line 56, ../scss/_typography.scss */
 h1 {
   font-size: 60px;
   margin-bottom: 50px;
@@ -198,35 +236,35 @@ h1 {
   text-shadow: 0px 2px 3px black;
 }
 @media only all and (max-width: 1199px) {
-  /* line 45, ../scss/_typography.scss */
+  /* line 56, ../scss/_typography.scss */
   h1 {
     font-size: 49px;
     margin-bottom: 40px;
   }
 }
 @media only all and (max-width: 767px) {
-  /* line 45, ../scss/_typography.scss */
+  /* line 56, ../scss/_typography.scss */
   h1 {
     font-size: 47px;
     margin-bottom: 40px;
   }
 }
-/* line 58, ../scss/_typography.scss */
+/* line 69, ../scss/_typography.scss */
 h1 a {
   color: white;
 }
-/* line 60, ../scss/_typography.scss */
+/* line 71, ../scss/_typography.scss */
 h1 a:hover {
   color: #e7cbd2;
 }
 
-/* line 65, ../scss/_typography.scss */
+/* line 76, ../scss/_typography.scss */
 h2 {
   font-size: 230%;
   color: #bf7485;
 }
 
-/* line 69, ../scss/_typography.scss */
+/* line 80, ../scss/_typography.scss */
 h3 {
   margin: 0px 0 15px 0;
   padding: 5px 7px 5px;
@@ -234,21 +272,21 @@ h3 {
   line-height: 130%;
   letter-spacing: 1px;
 }
-/* line 76, ../scss/_typography.scss */
+/* line 87, ../scss/_typography.scss */
 h3 i {
   margin-right: 5px;
   margin-top: 2px;
   color: #60192b;
 }
 
-/* line 82, ../scss/_typography.scss */
+/* line 93, ../scss/_typography.scss */
 a {
   -webkit-transition: color, 0.25s;
   -moz-transition: color, 0.25s;
   -o-transition: color, 0.25s;
   transition: color, 0.25s;
 }
-/* line 84, ../scss/_typography.scss */
+/* line 95, ../scss/_typography.scss */
 a:hover {
   -webkit-transition: color, 0.25s;
   -moz-transition: color, 0.25s;
@@ -256,7 +294,7 @@ a:hover {
   transition: color, 0.25s;
 }
 @media only all and (max-width: 767px) {
-  /* line 82, ../scss/_typography.scss */
+  /* line 93, ../scss/_typography.scss */
   a {
     -webkit-transition: 0;
     -moz-transition: 0;
@@ -265,7 +303,7 @@ a:hover {
   }
 }
 
-/* line 91, ../scss/_typography.scss */
+/* line 102, ../scss/_typography.scss */
 p {
   color: #ccc;
   font-family: "Dosis", sans-serif;
@@ -275,7 +313,7 @@ p {
   letter-spacing: 1px;
 }
 @media only all and (max-width: 991px) {
-  /* line 91, ../scss/_typography.scss */
+  /* line 102, ../scss/_typography.scss */
   p {
     font-size: 14px;
     line-height: 21px;
@@ -634,18 +672,68 @@ button {
   color: #b12e4f;
 }
 
-/* line 56, ../scss/_footer.scss */
+/* line 58, ../scss/_footer.scss */
 #footer-menu li {
   width: 100%;
 }
 
-/* line 60, ../scss/_footer.scss */
+/* line 65, ../scss/_footer.scss */
 #root-footer, #footer {
   height: auto;
 }
-/* line 62, ../scss/_footer.scss */
+/* line 67, ../scss/_footer.scss */
 #root-footer p, #footer p {
   color: #666;
+}
+
+/* line 80, ../scss/_footer.scss */
+#footer > .container {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* line 92, ../scss/_footer.scss */
+#bottom-footer {
+  min-height: 10px;
+  padding: 0;
+  font-size: 13px;
+  letter-spacing: 1px;
+  background-color: #b12e4f;
+}
+/* line 101, ../scss/_footer.scss */
+#bottom-footer > .container {
+  padding: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+@media only all and (max-width: 767px) {
+  /* line 101, ../scss/_footer.scss */
+  #bottom-footer > .container {
+    margin-top: 10px;
+    margin-bottom: 14px;
+  }
+}
+@media only all and (max-width: 767px) {
+  /* line 114, ../scss/_footer.scss */
+  #bottom-footer .text-right {
+    text-align: left;
+  }
+  /* line 117, ../scss/_footer.scss */
+  #bottom-footer .pull-right {
+    float: left;
+  }
+  /* line 120, ../scss/_footer.scss */
+  #bottom-footer .col-sm-6 {
+    width: 100%;
+  }
+}
+/* line 125, ../scss/_footer.scss */
+#bottom-footer a {
+  color: #d19aa7;
+}
+/* line 127, ../scss/_footer.scss */
+#bottom-footer a:hover, #bottom-footer a:focus {
+  color: #efdde1;
 }
 
 /*
@@ -708,31 +796,53 @@ button {
   position: relative;
 }
 
-/* line 65, ../scss/_mixins.scss */
+/* line 41, ../scss/_mixins.scss */
+.text-right {
+  text-align: right;
+}
+
+/* line 45, ../scss/_mixins.scss */
+.thumbnail img, #social-nav a img {
+  filter: url("../js/filters.svg#grayscale");
+  /* Firefox 3.5+ */
+  filter: gray;
+  /* IE6-9 */
+  -webkit-filter: grayscale(1);
+  /* Webkit Nightlies & Google Chrome Canary */
+}
+
+/* line 50, ../scss/_mixins.scss */
+.thumbnail:hover img, .thumbnail:focus img, #social-nav a:hover img {
+  filter: none;
+  /* Applies to FF + IE */
+  -webkit-filter: grayscale(0);
+}
+
+/* line 78, ../scss/_mixins.scss */
 #row-masthead {
   background-color: black;
   background-attachment: fixed;
   background-size: cover;
 }
 
-/* line 80, ../scss/_mixins.scss */
+/* line 93, ../scss/_mixins.scss */
 code, pre, .highlight {
   background-color: #666;
   border-color: #666;
 }
 
-/* line 84, ../scss/_mixins.scss */
+/* line 97, ../scss/_mixins.scss */
 .thumbnail {
   background-color: transparent;
   border: 0;
 }
 
-/* line 88, ../scss/_mixins.scss */
-.navbar > .container, #footer {
+/* line 101, ../scss/_mixins.scss */
+.navbar > .container {
   background-color: rgba(0, 0, 0, 0.75);
 }
 
-/* line 91, ../scss/_mixins.scss */
+/* line 104, ../scss/_mixins.scss */
 .hero-right, .single-design .media, .design-slider {
   -webkit-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
   -moz-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
@@ -985,9 +1095,6 @@ section .col-sm-5, section .col-md-6 {
   border: 3px dotted #aaa;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=35);
   opacity: 0.35;
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  filter: grayscale(100%);
   -webkit-transition: opacity, 1s;
   -moz-transition: opacity, 1s;
   -o-transition: opacity, 1s;
@@ -1002,14 +1109,11 @@ section .col-sm-5, section .col-md-6 {
   .thumbnail img {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
     opacity: 0.8;
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    filter: grayscale(100%);
     border: 3px dotted #666;
     width: 100% !important;
   }
 }
-/* line 59, ../scss/_thumbs.scss */
+/* line 60, ../scss/_thumbs.scss */
 .thumbnail i {
   color: #bf7485;
   -webkit-transition: color, 0.5s;
@@ -1018,23 +1122,20 @@ section .col-sm-5, section .col-md-6 {
   transition: color, 0.5s;
 }
 @media only all and (max-width: 767px) {
-  /* line 59, ../scss/_thumbs.scss */
+  /* line 60, ../scss/_thumbs.scss */
   .thumbnail i {
     color: black;
   }
 }
-/* line 66, ../scss/_thumbs.scss */
+/* line 67, ../scss/_thumbs.scss */
 .thumbnail .caption {
   text-align: center;
   padding: 10px 0 0 0;
 }
-/* line 74, ../scss/_thumbs.scss */
+/* line 75, ../scss/_thumbs.scss */
 .thumbnail:hover img, .thumbnail:focus img {
   border: 3px dotted #b12e4f;
   border-bottom: 3px dotted #b12e4f;
-  -webkit-filter: grayscale(0%);
-  -moz-filter: grayscale(0%);
-  filter: grayscale(0%);
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
   -webkit-transition: opacity, 0.5s;
@@ -1042,7 +1143,7 @@ section .col-sm-5, section .col-md-6 {
   -o-transition: opacity, 0.5s;
   transition: opacity, 0.5s;
 }
-/* line 82, ../scss/_thumbs.scss */
+/* line 85, ../scss/_thumbs.scss */
 .thumbnail:hover h3, .thumbnail:focus h3 {
   background: #b12e4f;
   color: white;
@@ -1056,7 +1157,7 @@ section .col-sm-5, section .col-md-6 {
   -o-transition: padding, 0.2s;
   transition: padding, 0.2s;
 }
-/* line 89, ../scss/_thumbs.scss */
+/* line 92, ../scss/_thumbs.scss */
 .thumbnail:hover i, .thumbnail:focus i {
   color: black;
   -webkit-transition: color, 0.2s;
@@ -1065,7 +1166,7 @@ section .col-sm-5, section .col-md-6 {
   transition: color, 0.2s;
 }
 
-/* line 96, ../scss/_thumbs.scss */
+/* line 99, ../scss/_thumbs.scss */
 .thumb-title {
   min-height: 47px;
   /* @include max_tablet{
@@ -1138,21 +1239,15 @@ section .col-sm-5, section .col-md-6 {
 #social-nav a img {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=68);
   opacity: 0.68;
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  filter: grayscale(100%);
   -webkit-transition: filter, 0.5s;
   -moz-transition: filter, 0.5s;
   -o-transition: filter, 0.5s;
   transition: filter, 0.5s;
 }
-/* line 48, ../scss/_social.scss */
+/* line 50, ../scss/_social.scss */
 #social-nav a:hover img {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
-  -webkit-filter: grayscale(0%);
-  -moz-filter: grayscale(0%);
-  filter: grayscale(0%);
   -webkit-transition: filter, 0.25s;
   -moz-transition: filter, 0.25s;
   -o-transition: filter, 0.25s;
@@ -1161,7 +1256,7 @@ section .col-sm-5, section .col-md-6 {
 
 @media only all and (max-width: 767px) {
   /* line 4, ../scss/_cherry-blossoms.scss */
-  #cb-a, .home #cb-a, .blog #cb-a {
+  #cherry-blossom-main, .home #cherry-blossom-main, .blog #cherry-blossom-main {
     height: 1100px;
     width: 930px !important;
     background-position: -379px -247px !important;
@@ -1170,7 +1265,7 @@ section .col-sm-5, section .col-md-6 {
 }
 @media only all and (max-width: 479px) {
   /* line 4, ../scss/_cherry-blossoms.scss */
-  #cb-a, .home #cb-a, .blog #cb-a {
+  #cherry-blossom-main, .home #cherry-blossom-main, .blog #cherry-blossom-main {
     width: 560px !important;
     background-position: -189px -110px !important;
   }
@@ -1191,13 +1286,13 @@ section .col-sm-5, section .col-md-6 {
   }
 }
 
-/* line 27, ../scss/_cherry-blossoms.scss */
+/* line 28, ../scss/_cherry-blossoms.scss */
 .ie #cherry-blossoms {
   z-index: -1;
 }
 
-/* line 31, ../scss/_cherry-blossoms.scss */
-#cb-a {
+/* line 32, ../scss/_cherry-blossoms.scss */
+#cherry-blossom-main {
   background: url('/wp-content/themes/jn-wpbs/assets/img/cherry-blossom-shadow.png?1389436022');
   background-position: -135px -97px;
   background-repeat: no-repeat;
@@ -1205,36 +1300,36 @@ section .col-sm-5, section .col-md-6 {
   width: 100%;
 }
 @media only all and (max-width: 1199px) {
-  /* line 31, ../scss/_cherry-blossoms.scss */
-  #cb-a {
+  /* line 32, ../scss/_cherry-blossoms.scss */
+  #cherry-blossom-main {
     background-position: -370px -97px;
   }
 }
 @media only all and (max-width: 991px) {
-  /* line 31, ../scss/_cherry-blossoms.scss */
-  #cb-a {
+  /* line 32, ../scss/_cherry-blossoms.scss */
+  #cherry-blossom-main {
     background-position: -490px -97px;
   }
 }
 
-/* line 49, ../scss/_cherry-blossoms.scss */
+/* line 50, ../scss/_cherry-blossoms.scss */
 .above-header {
   overflow: visible;
   height: 500px;
 }
 @media only all and (max-width: 767px) {
-  /* line 49, ../scss/_cherry-blossoms.scss */
+  /* line 50, ../scss/_cherry-blossoms.scss */
   .above-header {
     height: 190px;
   }
 }
 @media only all and (max-width: 479px) {
-  /* line 49, ../scss/_cherry-blossoms.scss */
+  /* line 50, ../scss/_cherry-blossoms.scss */
   .above-header {
     height: 180px;
   }
 }
-/* line 60, ../scss/_cherry-blossoms.scss */
+/* line 61, ../scss/_cherry-blossoms.scss */
 .above-header h1 {
   margin-top: 30px;
   padding: 15px;
@@ -1245,20 +1340,20 @@ section .col-sm-5, section .col-md-6 {
   font-size: 75px;
 }
 @media only all and (max-width: 1199px) {
-  /* line 60, ../scss/_cherry-blossoms.scss */
+  /* line 61, ../scss/_cherry-blossoms.scss */
   .above-header h1 {
     font-size: 65px;
   }
 }
 @media only all and (max-width: 767px) {
-  /* line 60, ../scss/_cherry-blossoms.scss */
+  /* line 61, ../scss/_cherry-blossoms.scss */
   .above-header h1 {
     font-size: 49px;
     top: 155px !important;
   }
 }
 @media only all and (max-width: 479px) {
-  /* line 60, ../scss/_cherry-blossoms.scss */
+  /* line 61, ../scss/_cherry-blossoms.scss */
   .above-header h1 {
     font-size: 32px;
     margin-left: 0;
@@ -1269,7 +1364,7 @@ section .col-sm-5, section .col-md-6 {
   }
 }
 
-/* line 88, ../scss/_cherry-blossoms.scss */
+/* line 89, ../scss/_cherry-blossoms.scss */
 #above-header-container {
   height: 100%;
   position: relative;
@@ -1279,24 +1374,24 @@ section .col-sm-5, section .col-md-6 {
  * 	Home
  */
 /* line 7, ../scss/_page-specific.scss */
-.home #cb-a {
+.home #cherry-blossom-main {
   background-position: -550px 13px;
 }
 @media only all and (max-width: 1199px) {
   /* line 7, ../scss/_page-specific.scss */
-  .home #cb-a {
+  .home #cherry-blossom-main {
     background-position: -650px 20px;
   }
 }
 @media only all and (max-width: 991px) {
   /* line 7, ../scss/_page-specific.scss */
-  .home #cb-a {
+  .home #cherry-blossom-main {
     background-position: -750px 20px;
   }
 }
 @media only all and (max-width: 479px) {
   /* line 7, ../scss/_page-specific.scss */
-  .home #cb-a {
+  .home #cherry-blossom-main {
     width: 740px !important;
     background-position: -276px -90px !important;
   }
@@ -1356,7 +1451,7 @@ section .col-sm-5, section .col-md-6 {
  * 	Blog 
  */
 /* line 65, ../scss/_page-specific.scss */
-.blog #cb-a {
+.blog #cherry-blossom-main {
   background-position: 70% -84px;
 }
 
@@ -1467,52 +1562,42 @@ section .col-sm-5, section .col-md-6 {
   margin: 10px 0 30px;
 }
 
-/* line 156, ../scss/_page-specific.scss */
-.credits {
-  font-size: 16px !important;
-}
-@media only all and (max-width: 991px) {
-  /* line 156, ../scss/_page-specific.scss */
-  .credits {
-    font-size: 14px !important;
-  }
-}
-/* line 162, ../scss/_page-specific.scss */
+/* line 157, ../scss/_page-specific.scss */
 .credits td {
   padding: 3px !important;
 }
 @media only all and (max-width: 1199px) {
-  /* line 166, ../scss/_page-specific.scss */
+  /* line 161, ../scss/_page-specific.scss */
   .credits td {
     padding: 1px !important;
   }
 }
 
-/* line 171, ../scss/_page-specific.scss */
+/* line 166, ../scss/_page-specific.scss */
 .media, .description {
   margin-bottom: 30px;
 }
 
-/* line 175, ../scss/_page-specific.scss */
+/* line 170, ../scss/_page-specific.scss */
 .media p {
   margin: 0;
 }
-/* line 178, ../scss/_page-specific.scss */
+/* line 173, ../scss/_page-specific.scss */
 .media img {
   margin: 0;
 }
-/* line 182, ../scss/_page-specific.scss */
+/* line 177, ../scss/_page-specific.scss */
 .media object {
   margin-right: 10px !important;
   margin-bottom: 15px !important;
 }
 
-/* line 187, ../scss/_page-specific.scss */
+/* line 182, ../scss/_page-specific.scss */
 .single-design .media {
   border: 1px solid black;
 }
 
-/* line 196, ../scss/_page-specific.scss */
+/* line 191, ../scss/_page-specific.scss */
 .page-id-21 #cherry-blossoms {
   z-index: 999;
 }
@@ -1569,21 +1654,27 @@ section .col-sm-5, section .col-md-6 {
   margin: 15px 0 !important;
   color: #999 !important;
 }
+@media only all and (max-width: 991px) {
+  /* line 40, ../scss/_wp-plugins.scss */
+  .ktext {
+    line-height: 17px !important;
+  }
+}
 
 /* 
  *  Contact Form 
  */
-/* line 52, ../scss/_wp-plugins.scss */
+/* line 56, ../scss/_wp-plugins.scss */
 .cscfForm > p {
   margin-bottom: 20px;
 }
-/* line 55, ../scss/_wp-plugins.scss */
+/* line 59, ../scss/_wp-plugins.scss */
 .cscfForm label {
   margin-bottom: 10px;
   color: #bf7485;
 }
 
-/* line 61, ../scss/_wp-plugins.scss */
+/* line 65, ../scss/_wp-plugins.scss */
 #frmCSCF .btn {
   border: #b12e4f;
   background-color: #b12e4f;
@@ -1593,7 +1684,7 @@ section .col-sm-5, section .col-md-6 {
   -o-transition: background-color, 0.25s;
   transition: background-color, 0.25s;
 }
-/* line 66, ../scss/_wp-plugins.scss */
+/* line 70, ../scss/_wp-plugins.scss */
 #frmCSCF .btn:hover {
   background-color: #bf7485;
   -webkit-transition: background-color, 0.25s;
@@ -1605,19 +1696,19 @@ section .col-sm-5, section .col-md-6 {
 /* 
  *  Calendar
  */
-/* line 77, ../scss/_wp-plugins.scss */
+/* line 81, ../scss/_wp-plugins.scss */
 #calendar_wrap {
   padding: 0;
 }
-/* line 80, ../scss/_wp-plugins.scss */
+/* line 84, ../scss/_wp-plugins.scss */
 #calendar_wrap .table-striped > tbody > tr:nth-child(odd) > td, #calendar_wrap .table-striped > tbody > tr:nth-child(odd) > th {
   background-color: #222;
 }
-/* line 83, ../scss/_wp-plugins.scss */
+/* line 87, ../scss/_wp-plugins.scss */
 #calendar_wrap .table > thead > tr > th, #calendar_wrap .table > tbody > tr > th, #calendar_wrap .table > tfoot > tr > th, #calendar_wrap .table > thead > tr > td, #calendar_wrap .table > tbody > tr > td, #calendar_wrap .table > tfoot > tr > td {
   border-top: 1px solid #444;
 }
-/* line 86, ../scss/_wp-plugins.scss */
+/* line 90, ../scss/_wp-plugins.scss */
 #calendar_wrap caption {
   color: #bf7485;
   margin-bottom: 10px;
@@ -1626,7 +1717,7 @@ section .col-sm-5, section .col-md-6 {
 /* 
  *  Kebo Tweets
  */
-/* line 98, ../scss/_wp-plugins.scss */
+/* line 102, ../scss/_wp-plugins.scss */
 .kebo-tweets a.kaccount, .kebo-tweets a.kdate {
   font-size: 96% !important;
 }
@@ -1634,21 +1725,21 @@ section .col-sm-5, section .col-md-6 {
 /*  
  *  Mailchimp Email Signup 
  */
-/* line 108, ../scss/_wp-plugins.scss */
+/* line 112, ../scss/_wp-plugins.scss */
 #mc_signup {
   padding: 0 !important;
 }
-/* line 110, ../scss/_wp-plugins.scss */
+/* line 114, ../scss/_wp-plugins.scss */
 #mc_signup .mergeRow {
   display: none !important;
   padding: 0 !important;
 }
-/* line 114, ../scss/_wp-plugins.scss */
+/* line 118, ../scss/_wp-plugins.scss */
 #mc_signup form {
   padding: 0 !important;
 }
 
-/* line 118, ../scss/_wp-plugins.scss */
+/* line 122, ../scss/_wp-plugins.scss */
 #mc_signup_submit {
   margin-top: 0;
   width: 100% !important;
@@ -1667,7 +1758,7 @@ section .col-sm-5, section .col-md-6 {
   -o-transition: background-color, 0.25s;
   transition: background-color, 0.25s;
 }
-/* line 128, ../scss/_wp-plugins.scss */
+/* line 132, ../scss/_wp-plugins.scss */
 #mc_signup_submit:hover {
   background-color: #d15070;
   -webkit-transition: background-color, 0.25s;
@@ -1676,12 +1767,12 @@ section .col-sm-5, section .col-md-6 {
   transition: background-color, 0.25s;
 }
 
-/* line 133, ../scss/_wp-plugins.scss */
+/* line 137, ../scss/_wp-plugins.scss */
 .mc_success_msg {
   color: #bf7485;
 }
 
-/* line 136, ../scss/_wp-plugins.scss */
+/* line 140, ../scss/_wp-plugins.scss */
 #mc_message {
   margin-bottom: 15px;
   margin-top: -2px;

@@ -29,6 +29,17 @@ $default-text-shadow-v-offset:  2px;
 body {
     font-family:    "Dosis", sans-serif;
     color:          #ccc;
+    font-size:      16px;
+    line-height:    23px;
+
+    @include max_desktop {
+        font-size:      15px;
+        line-height:    22px;
+    }
+    @include max_laptop {
+        font-size:      14px;
+        line-height:    21px;
+    }
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: "Raleway Dots", sans-serif;
