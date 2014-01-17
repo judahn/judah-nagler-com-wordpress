@@ -107,11 +107,12 @@ a:hover {
 
     @include max_desktop {
         padding-top: 75px;
+        padding-bottom: 20px;
     }
 
     @include max_laptop {
         padding-top: 70px;
-        padding-bottom: 30px;
+        padding-bottom: 10px;
     }
     @include max_tablet{
         padding-top: 0px;
