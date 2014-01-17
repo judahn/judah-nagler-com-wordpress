@@ -662,9 +662,10 @@ button {
 .footer-widgets .menu-item {
   margin: 3px 0;
   text-transform: uppercase;
-  font-size: 115%;
+  font-size: 14px;
+  line-height: 20px;
 }
-/* line 46, ../scss/_footer.scss */
+/* line 47, ../scss/_footer.scss */
 .footer-widgets .menu-item:before {
   margin-left: 10px;
   margin-right: 5px;
@@ -672,28 +673,28 @@ button {
   color: #b12e4f;
 }
 
-/* line 58, ../scss/_footer.scss */
+/* line 59, ../scss/_footer.scss */
 #footer-menu li {
   width: 100%;
 }
 
-/* line 65, ../scss/_footer.scss */
+/* line 66, ../scss/_footer.scss */
 #root-footer, #footer {
   height: auto;
 }
-/* line 67, ../scss/_footer.scss */
+/* line 68, ../scss/_footer.scss */
 #root-footer p, #footer p {
   color: #666;
 }
 
 @media only all and (max-width: 767px) {
-  /* line 80, ../scss/_footer.scss */
+  /* line 81, ../scss/_footer.scss */
   #footer > .container {
     margin-bottom: -20px;
   }
 }
 
-/* line 96, ../scss/_footer.scss */
+/* line 97, ../scss/_footer.scss */
 #bottom-footer {
   min-height: 10px;
   padding: 0;
@@ -702,66 +703,66 @@ button {
   text-transform: uppercase;
   background-color: #b12e4f;
 }
-/* line 106, ../scss/_footer.scss */
+/* line 107, ../scss/_footer.scss */
 #bottom-footer > .container {
   padding: 0;
   margin-top: 5px;
   margin-bottom: 5px;
 }
 @media only all and (max-width: 767px) {
-  /* line 106, ../scss/_footer.scss */
+  /* line 107, ../scss/_footer.scss */
   #bottom-footer > .container {
     margin: 15px 25px;
   }
 }
-/* line 115, ../scss/_footer.scss */
+/* line 116, ../scss/_footer.scss */
 #bottom-footer a {
   color: #d19aa7;
 }
-/* line 118, ../scss/_footer.scss */
+/* line 119, ../scss/_footer.scss */
 #bottom-footer a:hover, #bottom-footer a:focus {
   color: #efdde1;
 }
-/* line 122, ../scss/_footer.scss */
+/* line 123, ../scss/_footer.scss */
 #bottom-footer span {
   color: black;
 }
-/* line 124, ../scss/_footer.scss */
+/* line 125, ../scss/_footer.scss */
 #bottom-footer span a {
   color: black;
 }
-/* line 127, ../scss/_footer.scss */
+/* line 128, ../scss/_footer.scss */
 #bottom-footer span a:hover, #bottom-footer span a:focus {
   color: #2ea2cc;
 }
-/* line 132, ../scss/_footer.scss */
+/* line 133, ../scss/_footer.scss */
 #bottom-footer phone {
   white-space: nowrap;
 }
-/* line 135, ../scss/_footer.scss */
+/* line 136, ../scss/_footer.scss */
 #bottom-footer .fa {
   margin: 5px;
 }
 @media only all and (max-width: 991px) {
-  /* line 96, ../scss/_footer.scss */
+  /* line 97, ../scss/_footer.scss */
   #bottom-footer {
     font-size: 11px;
   }
 }
 @media only all and (max-width: 767px) {
-  /* line 96, ../scss/_footer.scss */
+  /* line 97, ../scss/_footer.scss */
   #bottom-footer {
     font-size: 12px;
   }
-  /* line 146, ../scss/_footer.scss */
+  /* line 147, ../scss/_footer.scss */
   #bottom-footer .text-right {
     text-align: left;
   }
-  /* line 149, ../scss/_footer.scss */
+  /* line 150, ../scss/_footer.scss */
   #bottom-footer .pull-right {
     float: left;
   }
-  /* line 152, ../scss/_footer.scss */
+  /* line 153, ../scss/_footer.scss */
   #bottom-footer .col-sm-6 {
     width: 100%;
     padding: 0;
@@ -1946,7 +1947,7 @@ a:hover {
 
 /* line 104, ../scss/custom.scss */
 .main-content {
-  padding-top: 80px;
+  padding-top: 75px;
   padding-bottom: 30px;
 }
 @media only all and (max-width: 1199px) {

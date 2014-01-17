@@ -149,6 +149,7 @@ function _tk_scripts() {
 	 *	CUSTOM JS
 	 */
 
+	// wp_enqueue_script('_tk-css3-media-queries', get_template_directory_uri() . '/assets/js/css3-mediaqueries.js');
 	wp_enqueue_script('_tk-holder', get_template_directory_uri() . '/assets/js/holder.js', array('jquery') );
 	wp_enqueue_script('_tk-stellar', get_template_directory_uri() . '/assets/js/jquery.stellar.min.js', array('jquery') );
 	wp_enqueue_script('_tk-easing', get_template_directory_uri() . '/assets/js/jquery.easing.min.js', array('jquery') );
