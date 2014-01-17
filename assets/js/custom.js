@@ -127,7 +127,7 @@ $j(document).ready(function() {
 
 		// If current page is not 'single-responsive', go no further
 
-		if (!$j("body").hasClass("single-responsive")) return;
+		if (!$j("body").hasClass("single-developer")) return;
 
 		// Vars
 

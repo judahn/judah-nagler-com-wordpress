@@ -9,7 +9,7 @@ get_header(); ?>
 
 	<?php
 		$args = array(
-			'post_type' => 'responsive',
+			'post_type' => 'developer',
 			'posts_per_page' => '-1',
 			'orderby' => 'menu_order',
 			'order' => 'ASC',

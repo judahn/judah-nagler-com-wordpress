@@ -9,12 +9,12 @@ get_header(); ?>
 <?php include 'section-opener.php' ?>
 
 <?php
-  $args = array( 'post_type' => 'responsive' );
+  $args = array( 'post_type' => 'developer' );
   $the_query = new WP_Query( $args );
 ?>
 
 <?php while ( have_posts() ) : the_post(); ?>
-	<?php get_template_part( 'content', 'responsive' ); ?>
+	<?php get_template_part( 'content', 'developer' ); ?>
 	<?php _tk_content_nav( 'nav-below' ); ?>
 <?php endwhile; ?>
 

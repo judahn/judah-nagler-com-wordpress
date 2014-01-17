@@ -9,12 +9,12 @@ get_header(); ?>
 <?php include 'section-opener.php' ?>
 
 <?php
-  $args = array( 'post_type' => 'interactive' );
+  $args = array( 'post_type' => 'programmer' );
   $the_query = new WP_Query( $args );
 ?>
 
 <?php while ( have_posts() ) : the_post(); ?>
-	<?php get_template_part( 'content', 'interactive' ); ?>
+	<?php get_template_part( 'content', 'programmer' ); ?>
 	<?php _tk_content_nav( 'nav-below' ); ?>
 <?php edit_post_link( __( 'Edit', '_tk' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>
 	
