@@ -86,9 +86,11 @@
 }
 
 .mq-list {
-    padding-bottom: 20px;
-    // position: absolute;
-    top: 0;
+    padding-bottom: 30px;
+
+    @include max_laptop {
+        padding-bottom: 20px;
+    }
     li {
         margin-right: 18px;
         padding: 0;
@@ -153,7 +155,12 @@
         margin: 10px 0 30px;
     }
 }
+#col-credits {
+    padding-left: 5px;
+}
 .credits {
+    overflow-y: hidden;
+    overflow-x: hidden;
     td {
         padding: 3px !important;
     }
@@ -162,9 +169,12 @@
             padding: 1px !important;
         }
     }
+    a {
+        padding-left: 10px;
+    }
 }
 .media, .description{
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 .media {
     p {

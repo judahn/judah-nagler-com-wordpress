@@ -12,8 +12,6 @@ $j = jQuery.noConflict();
 
 $j(document).ready(function() {
 
-	
-
 	/*
 	 *	Navigation
 	 */
@@ -140,7 +138,9 @@ $j(document).ready(function() {
 
 		var _timer;
         var _time           = 6000;
-        var _delayOffset    = 150;
+        var _delayOffset    = 210;
+        var _animTime   	= 1000;
+        var _animType   	= "easeInOutQuad";
 
         // Init: Fade out all thumb groups and move to back
 
@@ -198,12 +198,6 @@ $j(document).ready(function() {
 			// Fade in list elements (thumbs)
 			for (var i = 0; i < thms.length; i++) {
 
-				var _animTime = 500;
-				var _animType = "easeInOutQuad";
-
-				// Set delay time
-				var _delay = (i * 100);
-
 				// Set target thumb
 				var thm = $j($j(thms)[i]);
 
@@ -212,7 +206,7 @@ $j(document).ready(function() {
 			}	
 				
 			// Fade out previous group
-			if (prvGrp) $j(prvGrp).css({"z-index":-1}).animate({"opacity":0}, 900);
+			if (prvGrp) $j(prvGrp).css({"z-index":-1}).delay(_animTime * 2).animate({"opacity":0}, 900);
 			
 			// Fade in current group and bring to front
 			$j(curGrp).css({"opacity":1, "z-index":1});

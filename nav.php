@@ -45,7 +45,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="http://www.twitter.com/judahnagler" target="_blank">
+								<a href="http://twitter.com/JudahNaglerWeb" target="_blank">
 									<img src="<?php echo get_template_directory_uri() . '/assets/img/social/icon-twitter.png' ?>" alt="">
 								</a>
 							</li>
@@ -80,11 +80,11 @@
 									<img src="<?php echo get_template_directory_uri() . '/assets/img/social/icon-youtube.png' ?>" alt="">
 								</a>
 							</li> -->
-							<li>
+							<!-- <li>
 								<a href="http://www.torproject.org" target="_blank">
 									<img src="<?php echo get_template_directory_uri() . '/assets/img/social/icon-tor.png' ?>" alt="">
 								</a>
-							</li>
+							</li> -->
 						</ul>
 					</div>
 				</div>

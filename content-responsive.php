@@ -71,14 +71,14 @@
 
 <article id="post-<?php the_ID(); ?>" class="row" >
 
-    <div class="description col-sm-6 col-content">
+    <div class="description col-sm-7 col-content">
       <!-- Description -->
       <?php if( get_field('description') ): ?> 
          <?php the_field( 'description' ); ?>
       <?php endif; ?>
     </div>
 
-    <div class="col-sm-6 col-content">
+    <div id="col-credits" class="col-sm-5 col-content">
       <?php include 'credits.php' ?>
 
       <?php if( get_field('view_templates_url') ): ?> 
