@@ -3,7 +3,7 @@
 
 // Responsive
 
-add_action('init', 'cptui_register_my_cpt_responsive');
+/*add_action('init', 'cptui_register_my_cpt_responsive');
 function cptui_register_my_cpt_responsive() {
 register_post_type('responsive', array(
 'label' => 'Responsive',
@@ -35,12 +35,12 @@ register_post_type('responsive', array(
   'not_found_in_trash' => 'No Responsive Found in Trash',
   'parent' => 'Parent Project',
 )
-) ); }
+) ); }*/
 
 
 // Interactive
 
-add_action('init', 'cptui_register_my_cpt_interactive');
+/*add_action('init', 'cptui_register_my_cpt_interactive');
 function cptui_register_my_cpt_interactive() {
 register_post_type('interactive', array(
 'label' => 'Interactive',
@@ -72,12 +72,12 @@ register_post_type('interactive', array(
   'not_found_in_trash' => 'No Interactive Found in Trash',
   'parent' => 'Parent Project',
 )
-) ); }
+) ); }*/
 
 
 // Design
 
-add_action('init', 'cptui_register_my_cpt_design');
+/*add_action('init', 'cptui_register_my_cpt_design');
 function cptui_register_my_cpt_design() {
 register_post_type('design', array(
 'label' => 'Design',
@@ -109,6 +109,6 @@ register_post_type('design', array(
   'not_found_in_trash' => 'No Design Found in Trash',
   'parent' => 'Parent Design Project',
 )
-) ); }
+) ); }*/
 
  ?>
