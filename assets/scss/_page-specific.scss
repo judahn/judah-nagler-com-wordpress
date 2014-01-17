@@ -30,14 +30,13 @@
     }
     .main-content-inner span{
         color: $blue;
+        font-size: 26px;
+        line-height: 14px;
     }
     .above-header {
         @include max_phone {
             height: 304px;
         }
-    }
-    .navbar-brand {
-
     }
 }
 .col-page-left {
