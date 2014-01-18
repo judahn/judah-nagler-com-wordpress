@@ -30,11 +30,18 @@
     }
     .main-content {
         padding-top: 100px;
+
+        @include max_desktop {
+            padding-top: 80px;
+        }
+        @include max_laptop {
+            padding-top: 0px;
+        }
     }
     .main-content-inner span{
         color: $blue;
-        font-size: 26px;
-        line-height: 14px;
+        // font-size: 26px;
+        // line-height: 14px;
     }
     .above-header {
         @include max_phone {
@@ -43,9 +50,9 @@
     }
 }
 .col-page-left {
-    padding: 0 10px 0 0;
+    padding: 0 10px 10px 10px;
     @include max_tablet {
-        padding: 0;
+        padding: 10px 0 !important;
     }
 }
 .hero-right {
@@ -140,6 +147,17 @@
 /* 
  * 	All Pages
  */
+
+
+
+.home, .blog, .single, .page-id-21 {
+    .main-content-inner{
+        margin: 5px;
+        @include max_tablet{
+            margin: 10px; 
+        }
+    }
+}
 
 .home, .blog, .page-id-21{
     .hentry {

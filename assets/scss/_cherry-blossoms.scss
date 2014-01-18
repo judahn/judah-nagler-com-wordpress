@@ -21,7 +21,7 @@
     pointer-events: none;
     z-index: 21;
     @include max_tablet{
-        position: fixed;
+        position: absolute;
     }
 }
 

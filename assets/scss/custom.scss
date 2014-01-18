@@ -137,15 +137,6 @@ a:hover {
         }
     }
 }
-
-.home, .blog, .single, .page-id-21 {
-    .main-content-inner{
-        margin: 15px;
-        @include max_tablet{
-            margin: 10px; 
-        }
-    }
-}
 .content{
     margin-left: 15px;
     margin-right: 15px;

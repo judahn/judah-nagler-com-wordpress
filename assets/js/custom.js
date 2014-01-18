@@ -97,6 +97,11 @@ $j(document).ready(function() {
 
 			// Set current view
 			currView = 1;
+			
+			// Init Stellar
+			$j.stellar({
+				hideDistantElements: false
+			});
 
 		} else {
 			// Set opacity on all target elements to 1
@@ -230,18 +235,6 @@ $j(document).ready(function() {
 	
 	$j(window).bind("scroll", onWindowScroll);
 	$j(window).bind("resize", onWindowScroll);
-
-
-
-	/*
-	 *  Stellar.js
-	 */ 
-
-	// Init Stellar
-
-	$j.stellar({
-		hideDistantElements: false
-	});
 
 
 });
