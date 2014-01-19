@@ -1462,24 +1462,24 @@ section .col-sm-5, section .col-md-6 {
   color: #bf7485;
 }
 @media only all and (max-width: 479px) {
-  /* line 46, ../scss/_page-specific.scss */
+  /* line 44, ../scss/_page-specific.scss */
   .home .above-header {
     height: 304px;
   }
 }
 
-/* line 52, ../scss/_page-specific.scss */
+/* line 50, ../scss/_page-specific.scss */
 .col-page-left {
   padding: 0 10px 10px 10px;
 }
 @media only all and (max-width: 767px) {
-  /* line 52, ../scss/_page-specific.scss */
+  /* line 50, ../scss/_page-specific.scss */
   .col-page-left {
     padding: 10px 0 !important;
   }
 }
 
-/* line 58, ../scss/_page-specific.scss */
+/* line 56, ../scss/_page-specific.scss */
 .hero-right {
   margin-top: 8px;
   margin-bottom: 40px;
@@ -1490,7 +1490,7 @@ section .col-sm-5, section .col-md-6 {
   border-radius: 10px;
 }
 @media only all and (max-width: 767px) {
-  /* line 58, ../scss/_page-specific.scss */
+  /* line 56, ../scss/_page-specific.scss */
   .hero-right {
     margin-bottom: 0;
   }
@@ -1499,7 +1499,7 @@ section .col-sm-5, section .col-md-6 {
 /* 
  * 	Blog 
  */
-/* line 74, ../scss/_page-specific.scss */
+/* line 72, ../scss/_page-specific.scss */
 .blog #cherry-blossom-main {
   background-position: 70% -84px;
 }
@@ -1507,81 +1507,81 @@ section .col-sm-5, section .col-md-6 {
 /* 
  * 	Responsive 
  */
-/* line 88, ../scss/_page-specific.scss */
+/* line 86, ../scss/_page-specific.scss */
 .mq-thumbs-container {
   position: relative;
 }
 
-/* line 92, ../scss/_page-specific.scss */
+/* line 90, ../scss/_page-specific.scss */
 #mq-thumbs-b, #mq-thumbs-c {
   position: absolute;
   top: 0;
 }
 
-/* line 97, ../scss/_page-specific.scss */
+/* line 95, ../scss/_page-specific.scss */
 .mq-list {
   padding-bottom: 30px;
 }
 @media only all and (max-width: 991px) {
-  /* line 97, ../scss/_page-specific.scss */
+  /* line 95, ../scss/_page-specific.scss */
   .mq-list {
     padding-bottom: 20px;
   }
 }
-/* line 103, ../scss/_page-specific.scss */
+/* line 101, ../scss/_page-specific.scss */
 .mq-list li {
   margin-right: 18px;
   padding: 0;
 }
 @media only all and (max-width: 1199px) {
-  /* line 103, ../scss/_page-specific.scss */
+  /* line 101, ../scss/_page-specific.scss */
   .mq-list li {
     margin-right: 15px;
   }
 }
 @media only all and (max-width: 991px) {
-  /* line 103, ../scss/_page-specific.scss */
+  /* line 101, ../scss/_page-specific.scss */
   .mq-list li {
     margin-right: 10px;
   }
 }
 @media only all and (max-width: 767px) {
-  /* line 103, ../scss/_page-specific.scss */
+  /* line 101, ../scss/_page-specific.scss */
   .mq-list li {
     margin-right: 0.9%;
   }
 }
-/* line 121, ../scss/_page-specific.scss */
+/* line 119, ../scss/_page-specific.scss */
 .mq-list .smartphone {
   width: 8.1%;
 }
 @media only all and (min-width: 480px) and (max-width: 767px) {
-  /* line 121, ../scss/_page-specific.scss */
+  /* line 119, ../scss/_page-specific.scss */
   .mq-list .smartphone {
     width: 8%;
   }
 }
 @media only all and (max-width: 767px) {
-  /* line 121, ../scss/_page-specific.scss */
+  /* line 119, ../scss/_page-specific.scss */
   .mq-list .smartphone {
     width: 8.1%;
   }
 }
-/* line 130, ../scss/_page-specific.scss */
+/* line 128, ../scss/_page-specific.scss */
 .mq-list .tablet {
   width: 19.5%;
 }
 @media only all and (max-width: 767px) {
-  /* line 130, ../scss/_page-specific.scss */
+  /* line 128, ../scss/_page-specific.scss */
   .mq-list .tablet {
     width: 19.4%;
   }
 }
-/* line 136, ../scss/_page-specific.scss */
+/* line 134, ../scss/_page-specific.scss */
 .mq-list .netbook {
   width: 25.9%;
 }
-/* line 139, ../scss/_page-specific.scss */
+/* line 137, ../scss/_page-specific.scss */
 .mq-list .desktop {
   margin-right: 0;
   width: 40.5%;
@@ -1590,93 +1590,104 @@ section .col-sm-5, section .col-md-6 {
 /* 
  * 	All Pages
  */
-/* line 154, ../scss/_page-specific.scss */
-.home .main-content-inner, .blog .main-content-inner, .single .main-content-inner, .page-id-21 .main-content-inner {
+/* line 152, ../scss/_page-specific.scss */
+.home .main-content-inner, .blog .main-content-inner, .page-id-21 .main-content-inner {
   margin: 5px;
 }
 @media only all and (max-width: 767px) {
-  /* line 154, ../scss/_page-specific.scss */
-  .home .main-content-inner, .blog .main-content-inner, .single .main-content-inner, .page-id-21 .main-content-inner {
+  /* line 152, ../scss/_page-specific.scss */
+  .home .main-content-inner, .blog .main-content-inner, .page-id-21 .main-content-inner {
     margin: 10px;
   }
 }
 
-/* line 163, ../scss/_page-specific.scss */
+/* line 160, ../scss/_page-specific.scss */
+.single .main-content-inner {
+  margin: 15px;
+}
+@media only all and (max-width: 767px) {
+  /* line 160, ../scss/_page-specific.scss */
+  .single .main-content-inner {
+    margin: 10px;
+  }
+}
+
+/* line 168, ../scss/_page-specific.scss */
 .home .hentry, .blog .hentry, .page-id-21 .hentry {
   margin: 0;
 }
 
-/* line 167, ../scss/_page-specific.scss */
+/* line 172, ../scss/_page-specific.scss */
 .entry-content {
   padding: 15px 3px;
 }
-/* line 169, ../scss/_page-specific.scss */
+/* line 174, ../scss/_page-specific.scss */
 .entry-content p {
   margin-bottom: 15px;
   text-shadow: 0px 2px 3px black;
 }
 @media only all and (max-width: 991px) {
-  /* line 169, ../scss/_page-specific.scss */
+  /* line 174, ../scss/_page-specific.scss */
   .entry-content p {
     font-size: 15px;
     line-height: 21px;
   }
 }
-/* line 177, ../scss/_page-specific.scss */
+/* line 182, ../scss/_page-specific.scss */
 .entry-content img {
   margin: 10px 0 30px;
 }
 
-/* line 181, ../scss/_page-specific.scss */
+/* line 186, ../scss/_page-specific.scss */
 #col-credits {
   padding-left: 5px;
 }
 
-/* line 184, ../scss/_page-specific.scss */
+/* line 189, ../scss/_page-specific.scss */
 .credits {
   overflow-y: hidden;
   overflow-x: hidden;
 }
-/* line 187, ../scss/_page-specific.scss */
+/* line 192, ../scss/_page-specific.scss */
 .credits td {
   padding: 3px !important;
 }
 @media only all and (max-width: 1199px) {
-  /* line 191, ../scss/_page-specific.scss */
+  /* line 196, ../scss/_page-specific.scss */
   .credits td {
     padding: 1px !important;
   }
 }
-/* line 195, ../scss/_page-specific.scss */
+/* line 200, ../scss/_page-specific.scss */
 .credits a {
   padding-left: 10px;
 }
 
-/* line 199, ../scss/_page-specific.scss */
+/* line 204, ../scss/_page-specific.scss */
 .media, .description {
   margin-bottom: 10px;
 }
 
-/* line 203, ../scss/_page-specific.scss */
+/* line 208, ../scss/_page-specific.scss */
 .media p {
   margin: 0;
 }
-/* line 206, ../scss/_page-specific.scss */
+/* line 211, ../scss/_page-specific.scss */
 .media img {
   margin: 0;
 }
-/* line 210, ../scss/_page-specific.scss */
+/* line 215, ../scss/_page-specific.scss */
 .media object {
   margin-right: 10px !important;
   margin-bottom: 15px !important;
 }
 
-/* line 215, ../scss/_page-specific.scss */
+/* line 220, ../scss/_page-specific.scss */
 .single-design .media {
   border: 1px solid black;
 }
 
-/* line 224, ../scss/_page-specific.scss */
+/* line 229, ../scss/_page-specific.scss */
 .page-id-21 #cherry-blossoms {
   z-index: 999;
 }

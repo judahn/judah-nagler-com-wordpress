@@ -40,8 +40,6 @@
     }
     .main-content-inner span{
         color: $blue;
-        // font-size: 26px;
-        // line-height: 14px;
     }
     .above-header {
         @include max_phone {
@@ -150,12 +148,19 @@
 
 
 
-.home, .blog, .single, .page-id-21 {
+.home, .blog, .page-id-21 {
     .main-content-inner{
         margin: 5px;
         @include max_tablet{
             margin: 10px; 
         }
+    }
+}
+
+.single .main-content-inner {
+    margin: 15px;
+    @include max_tablet{
+        margin: 10px; 
     }
 }
 
