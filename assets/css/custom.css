@@ -306,8 +306,8 @@ a:hover {
 p {
   color: #ccc;
   font-family: "Dosis", sans-serif;
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 17px;
+  line-height: 24px;
   font-weight: 100;
   letter-spacing: 0.7px;
   margin-bottom: 20px;
@@ -1109,7 +1109,7 @@ section .col-sm-5, section .col-md-6 {
   margin-right: -15px;
   margin-bottom: 0;
 }
-@media only all and (max-width: 419px) {
+@media only all and (max-width: 459px) {
   /* line 15, ../scss/_thumbs.scss */
   .row-thumbnails li {
     width: 100% !important;
@@ -1229,12 +1229,19 @@ section .col-sm-5, section .col-md-6 {
 /* line 99, ../scss/_thumbs.scss */
 .thumb-title {
   min-height: 47px;
+  transition: none !important;
   /* @include max_tablet{
       min-height: 35px;
   }
   @include max($max_thumb){
       min-height: 45px;
   } */
+}
+@media only all and (max-width: 991px) {
+  /* line 99, ../scss/_thumbs.scss */
+  .thumb-title {
+    font-size: 12px;
+  }
 }
 
 /*
@@ -1873,30 +1880,34 @@ code, pre, .highlight {
 }
 
 /* line 244, ../scss/_page-specific.scss */
-.media, .description {
+.description {
   margin-bottom: 10px;
 }
 
-/* line 248, ../scss/_page-specific.scss */
+/* line 247, ../scss/_page-specific.scss */
+.media {
+  margin-bottom: 30px;
+}
+/* line 249, ../scss/_page-specific.scss */
 .media p {
   margin: 0;
 }
-/* line 251, ../scss/_page-specific.scss */
+/* line 252, ../scss/_page-specific.scss */
 .media img {
   margin: 0;
 }
-/* line 255, ../scss/_page-specific.scss */
+/* line 256, ../scss/_page-specific.scss */
 .media object {
   margin-right: 10px !important;
   margin-bottom: 15px !important;
 }
 
-/* line 260, ../scss/_page-specific.scss */
+/* line 261, ../scss/_page-specific.scss */
 .single-design .media {
   border: 1px solid black;
 }
 
-/* line 269, ../scss/_page-specific.scss */
+/* line 270, ../scss/_page-specific.scss */
 .page-id-21 #cherry-blossoms {
   z-index: 999;
 }
