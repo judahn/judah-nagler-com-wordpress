@@ -131,12 +131,12 @@ time, mark, audio, video {
 
 /* line 45, ../scss/_mixins.scss */
 .thumbnail img, #social-nav a img {
-  filter: url("../js/filters.svg#grayscale");
-  /* Firefox 3.5+ */
-  filter: gray;
-  /* IE6-9 */
   -webkit-filter: grayscale(1);
-  /* Webkit Nightlies & Google Chrome Canary */
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: gray;
+  filter: grayscale(100%);
+  filter: url(desaturate.svg#greyscale);
 }
 
 /* line 50, ../scss/_mixins.scss */
@@ -848,12 +848,12 @@ button {
 
 /* line 45, ../scss/_mixins.scss */
 .thumbnail img, #social-nav a img {
-  filter: url("../js/filters.svg#grayscale");
-  /* Firefox 3.5+ */
-  filter: gray;
-  /* IE6-9 */
   -webkit-filter: grayscale(1);
-  /* Webkit Nightlies & Google Chrome Canary */
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: gray;
+  filter: grayscale(100%);
+  filter: url(desaturate.svg#greyscale);
 }
 
 /* line 50, ../scss/_mixins.scss */

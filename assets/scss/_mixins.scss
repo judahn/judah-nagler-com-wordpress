@@ -43,9 +43,9 @@
 }
 
 %add-grayscale {
-    filter: url('../js/filters.svg#grayscale'); /* Firefox 3.5+ */
-    filter: gray; /* IE6-9 */
-    -webkit-filter: grayscale(1); /* Webkit Nightlies & Google Chrome Canary */
+    -webkit-filter: grayscale(1); -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%);
+    filter: gray; filter: grayscale(100%);
+    filter: url(desaturate.svg#greyscale);
 }
 %remove-grayscale {
     filter: none; /* Applies to FF + IE */
