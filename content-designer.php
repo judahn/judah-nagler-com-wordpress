@@ -11,7 +11,7 @@
 		<h1 class="entry-title"><?php the_title(); ?></h1>
 	</header><!-- .entry-header -->
 
-	<div class="col-sm-8 no-pad-left">
+	<div class="col-sm-7 no-pad-left">
 		<div class="media">
 			<!-- Check for media -->
 			<?php if( get_field('media') ): ?>
@@ -22,7 +22,7 @@
 		</div>
 	</div>
 
-	<div class="description col-sm-4 no-pad-mobile">
+	<div class="description col-sm-5 no-pad-mobile">
 
 		<!-- Description -->
 		<?php if( get_field('description') ): ?>

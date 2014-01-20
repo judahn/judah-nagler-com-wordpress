@@ -325,7 +325,7 @@ p {
   /* line 96, ../scss/_typography.scss */
   p {
     font-size: 13px;
-    line-height: 17px;
+    line-height: 19px;
     margin-bottom: 13px;
     letter-spacing: 0.4px;
   }
@@ -1883,31 +1883,53 @@ code, pre, .highlight {
 .description {
   margin-bottom: 10px;
 }
+@media only all and (max-width: 767px) {
+  /* line 244, ../scss/_page-specific.scss */
+  .description {
+    margin-top: 20px;
+  }
+}
+/* line 251, ../scss/_page-specific.scss */
+.description button {
+  margin-top: 5px;
+}
+@media only all and (max-width: 767px) {
+  /* line 251, ../scss/_page-specific.scss */
+  .description button {
+    margin-top: 10px;
+  }
+}
 
-/* line 247, ../scss/_page-specific.scss */
+/* line 259, ../scss/_page-specific.scss */
 .media {
   margin-bottom: 30px;
 }
-/* line 249, ../scss/_page-specific.scss */
+@media only all and (max-width: 767px) {
+  /* line 259, ../scss/_page-specific.scss */
+  .media {
+    margin-bottom: 0px;
+  }
+}
+/* line 266, ../scss/_page-specific.scss */
 .media p {
   margin: 0;
 }
-/* line 252, ../scss/_page-specific.scss */
+/* line 269, ../scss/_page-specific.scss */
 .media img {
   margin: 0;
 }
-/* line 256, ../scss/_page-specific.scss */
+/* line 273, ../scss/_page-specific.scss */
 .media object {
   margin-right: 10px !important;
   margin-bottom: 15px !important;
 }
 
-/* line 261, ../scss/_page-specific.scss */
+/* line 278, ../scss/_page-specific.scss */
 .single-design .media {
   border: 1px solid black;
 }
 
-/* line 270, ../scss/_page-specific.scss */
+/* line 287, ../scss/_page-specific.scss */
 .page-id-21 #cherry-blossoms {
   z-index: 999;
 }

@@ -243,9 +243,26 @@
 }
 .description{
     margin-bottom: 10px;
+
+    @include max_tablet {
+        margin-top: 20px;
+    }
+
+    button {
+        margin-top: 5px;
+        
+        @include max_tablet {
+            margin-top: 10px;
+        }
+    }
 }
 .media {
     margin-bottom: 30px;
+
+    @include max_tablet {
+        margin-bottom: 0px;
+    }
+
     p {
         margin: 0;
     }
