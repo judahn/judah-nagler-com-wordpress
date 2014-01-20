@@ -102,13 +102,27 @@ a{
 p {
     color:          #ccc;
     font-family:    "Dosis", sans-serif;
-    font-size:      16px;
-    line-height:    23px;
+    font-size:      18px;
+    line-height:    25px;
     font-weight:    100;
-    letter-spacing: 1px;
+    letter-spacing: 0.7px;
+    margin-bottom:  20px;
 
+    @include max_desktop {
+        font-size:      15px;
+        line-height:    21px;
+        margin-bottom:  18px;
+            letter-spacing: 0.5px;
+    }
     @include max_laptop {
-        font-size: 14px;
-        line-height: 21px;
+        font-size:      12px;
+        line-height:    16px;
+        margin-bottom:  13px;
+        letter-spacing: 0.4px;
+    }
+     @include max_tablet{
+        font-size:      16px;
+        line-height:    23px;
+        letter-spacing: 0.7px;
     }
 }

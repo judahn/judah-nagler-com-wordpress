@@ -16,34 +16,26 @@ $j(document).ready(function() {
 	 *	Navigation
 	 */
 	
-	// Set active nav item for single posts based on URL
+	// Set active nav item based on URL
 
-	var pathname        = window.location.pathname;
-	var nav_about       = $j("#menu-item-130");
-	var nav_blog        = $j("#menu-item-359");
-	var nav_responsive  = $j("#menu-item-360");
-	var nav_interactive = $j("#menu-item-160");
-	var nav_design      = $j("#menu-item-135");
-	var nav_contact  	= $j("#menu-item-145");
-	
-	if (pathname.indexOf("about") >= 0) {
-		nav_about.addClass("active");
+	function setActiveNav() {
+        var navItems    = $j("#main-menu li");
+        var pathname    = String(window.location.pathname);
+
+        // Cycle thru nav items
+
+        for (var i = 0; i < navItems.length; i++) {
+
+        	// Get item name
+			var itemName = String($j(navItems[i]).children()[0].innerHTML.toLowerCase());
+
+			// If item name contains path name, add 'active' claSS
+			if (pathname.indexOf(itemName) === 1) {
+				$j(navItems[i]).addClass("active");
+			}
+        }
 	}
-	if (pathname.indexOf("blog") >= 0) {
-		nav_blog.addClass("active");
-	}
-	if (pathname.indexOf("responsive") >= 0) {
-		nav_responsive.addClass("active");
-	}
-	if (pathname.indexOf("interactive") >= 0) {
-		nav_interactive.addClass("active");
-	}
-	if (pathname.indexOf("design") >= 0) {
-		nav_design.addClass("active");
-	}
-	if (pathname.indexOf("contact") >= 0) {
-		nav_contact.addClass("active");
-	}
+	setActiveNav();
 
 
 
@@ -125,12 +117,12 @@ $j(document).ready(function() {
 
 	
 	/*
-	 * 	Responsive Slideshow
+	 * 	Developer Slideshow
 	 */ 
 
-	function responsiveSlideshow(){
+	function developerSlideshow(){
 
-		// If current page is not 'single-responsive', go no further
+		// If current page is not 'single-developer', go no further
 
 		if (!$j("body").hasClass("single-developer")) return;
 
@@ -225,7 +217,7 @@ $j(document).ready(function() {
 	}
 
 	// Init Responsive Slideshow
-	responsiveSlideshow();
+	developerSlideshow();
 
 
 

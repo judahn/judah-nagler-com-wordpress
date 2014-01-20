@@ -7,10 +7,14 @@
         width: 930px !important;
         background-position: -379px -247px !important;
         background-size: contain !important;
+        left: 0 !important;
+        top: 0 !important;
     }
     @include max_phone {
         width: 560px !important;
         background-position: -189px -110px !important;
+        left: 0 !important;
+        top: 0 !important;
     }
 }
 
