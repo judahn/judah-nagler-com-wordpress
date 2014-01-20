@@ -9,12 +9,12 @@ get_header(); ?>
 <?php include 'section-opener.php' ?>
 
 <?php
-  $args = array( 'post_type' => 'design' );
+  $args = array( 'post_type' => 'designer' );
   $the_query = new WP_Query( $args );
 ?>
 
 <?php while ( have_posts() ) : the_post(); ?>
-	<?php get_template_part( 'content', 'design' ); ?>
+	<?php get_template_part( 'content', 'designer' ); ?>
 <?php endwhile; ?>
 
 <div class="row">

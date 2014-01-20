@@ -12,6 +12,11 @@
 .no-pad-right {
     padding-right: 0 !important;
 }
+.no-pad-mobile {
+    @include max_tablet{
+        padding: 0 !important;
+    }
+}
 .no-border, .no-border tbody > tr > td {
     border: 0;
     border-top: 0;
@@ -42,6 +47,12 @@
     text-align: right;
 }
 
+@mixin grayscale($prc){
+    $webkit-amt: $prc / 100;
+    -webkit-filter: grayscale($webkit-amt); -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%);
+    filter: gray; filter: grayscale(100%);
+    filter: url(desaturate.svg#greyscale);
+}
 %add-grayscale {
     -webkit-filter: grayscale(1); -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%);
     filter: gray; filter: grayscale(100%);

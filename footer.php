@@ -10,27 +10,29 @@
 
 
 
-	<!-- <div id="root-footer"></div> -->
+	<div id="root-footer"></div>
 </div>
 
 <footer id="footer" class="site-footer footer row" role="contentinfo">
+
 	<div class="container">
 		<div class="footer-widgets row">
 			<?php if ( dynamic_sidebar('Footer') ) : else : endif; ?>
 		</div>	
 	</div><!-- close .container -->
-</footer><!-- close #colophon -->
 
-<footer id="bottom-footer" class="row">
-	<div class="container">
-		<div class="col-sm-6">
-			&copy; 2014 <a href="<?php echo esc_url( home_url( '/contact' ) ); ?>">Judah Nagler</a> <br class="visible-xs">All rights reserved <a href="tel://1-855-779-3248"><i class="fa fa-phone"></i>855 779 3248</a>
-		</div>
-		<div class="col-sm-6 pull-right text-right">
-			Cherry blossom painting <br class="visible-xs"> by <a href="http://www.killlovewithguns.com" target="_blank">Anna-Marie Smith</a><i class="fa fa-pagelines"></i>
+	<div id="bottom-footer" class="row">
+		<div class="container">
+			<div class="col-sm-6">
+				&copy; 2014 <a href="<?php echo esc_url( home_url( '/contact' ) ); ?>">Judah Nagler</a> <br class="visible-xs">All rights reserved <a href="tel://1-855-779-3248"><i class="fa fa-phone"></i>855 779 3248</a>
+			</div>
+			<div class="col-sm-6 pull-right text-right">
+				Cherry blossom painting <br class="visible-xs"> by <a href="http://www.killlovewithguns.com" target="_blank">Anna-Marie Smith</a><i class="fa fa-pagelines"></i>
+			</div>
 		</div>
 	</div>
-</footer>
+	
+</footer><!-- close #colophon -->
 
 <?php wp_footer(); ?>
 

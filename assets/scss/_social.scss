@@ -1,3 +1,5 @@
+@import "mixins";
+
 #social-nav {
     position: relative;
 
@@ -40,17 +42,14 @@
     }
     a {
         img {
-            // @include filter(grayscale(100%));
-            @extend %add-grayscale;
-
+            // @extend %add-grayscale;
+            @include grayscale(50);
             @include opacity(0.68);
             @include transition(filter, 0.5s);
         }
         &:hover {
             img {
-                // @include filter(grayscale(0%));
                 @extend %remove-grayscale;
-
                 @include opacity(1);
                 @include transition(filter, 0.25s);
             }

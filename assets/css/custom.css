@@ -82,55 +82,62 @@ time, mark, audio, video {
   padding-right: 0 !important;
 }
 
-/* line 15, ../scss/_mixins.scss */
+@media only all and (max-width: 767px) {
+  /* line 15, ../scss/_mixins.scss */
+  .no-pad-mobile {
+    padding: 0 !important;
+  }
+}
+
+/* line 20, ../scss/_mixins.scss */
 .no-border, .no-border tbody > tr > td {
   border: 0;
   border-top: 0;
 }
 
-/* line 19, ../scss/_mixins.scss */
+/* line 24, ../scss/_mixins.scss */
 .v-pad {
   padding: 15px 0;
 }
 
-/* line 22, ../scss/_mixins.scss */
+/* line 27, ../scss/_mixins.scss */
 .pad-content {
   padding: 10px 0;
 }
 
-/* line 25, ../scss/_mixins.scss */
+/* line 30, ../scss/_mixins.scss */
 .pad-none {
   padding: 0;
 }
 
-/* line 28, ../scss/_mixins.scss */
+/* line 33, ../scss/_mixins.scss */
 .width-100 {
   width: 100%;
 }
 
-/* line 31, ../scss/_mixins.scss */
+/* line 36, ../scss/_mixins.scss */
 .media img {
   width: 100%;
   height: auto;
 }
 
-/* line 35, ../scss/_mixins.scss */
+/* line 40, ../scss/_mixins.scss */
 .pos-abs {
   position: absolute;
 }
 
-/* line 38, ../scss/_mixins.scss */
+/* line 43, ../scss/_mixins.scss */
 .pos-rel {
   position: relative;
 }
 
-/* line 41, ../scss/_mixins.scss */
+/* line 46, ../scss/_mixins.scss */
 .text-right {
   text-align: right;
 }
 
-/* line 45, ../scss/_mixins.scss */
-.thumbnail img, #social-nav a img {
+/* line 56, ../scss/_mixins.scss */
+.thumbnail img {
   -webkit-filter: grayscale(1);
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
@@ -139,38 +146,38 @@ time, mark, audio, video {
   filter: url(desaturate.svg#greyscale);
 }
 
-/* line 50, ../scss/_mixins.scss */
+/* line 61, ../scss/_mixins.scss */
 .thumbnail:hover img, .thumbnail:focus img, #social-nav a:hover img {
   filter: none;
   /* Applies to FF + IE */
   -webkit-filter: grayscale(0);
 }
 
-/* line 79, ../scss/_mixins.scss */
+/* line 90, ../scss/_mixins.scss */
 #row-masthead {
   background-color: black;
   background-attachment: fixed;
   background-size: cover;
 }
 
-/* line 94, ../scss/_mixins.scss */
+/* line 105, ../scss/_mixins.scss */
 code, pre, .highlight {
   background-color: #666;
   border-color: #666;
 }
 
-/* line 98, ../scss/_mixins.scss */
+/* line 109, ../scss/_mixins.scss */
 .thumbnail {
   background-color: transparent;
   border: 0;
 }
 
-/* line 102, ../scss/_mixins.scss */
+/* line 113, ../scss/_mixins.scss */
 .navbar > .container {
   background-color: rgba(0, 0, 0, 0.75);
 }
 
-/* line 105, ../scss/_mixins.scss */
+/* line 116, ../scss/_mixins.scss */
 .hero-right, .single-design .media, .design-slider {
   -webkit-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
   -moz-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
@@ -317,8 +324,8 @@ p {
 @media only all and (max-width: 991px) {
   /* line 96, ../scss/_typography.scss */
   p {
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 13px;
+    line-height: 17px;
     margin-bottom: 13px;
     letter-spacing: 0.4px;
   }
@@ -348,6 +355,7 @@ p {
 /* line 5, ../scss/_navbar.scss */
 .navbar-brand {
   padding: 15px 30px 0 15px;
+  white-space: nowrap;
 }
 @media only all and (max-width: 991px) {
   /* line 5, ../scss/_navbar.scss */
@@ -362,19 +370,19 @@ p {
     padding-left: 15px;
     line-height: 25px;
   }
-  /* line 15, ../scss/_navbar.scss */
+  /* line 17, ../scss/_navbar.scss */
   .navbar-brand #avatar {
     width: 24px;
     height: 24px;
   }
 }
 
-/* line 21, ../scss/_navbar.scss */
+/* line 23, ../scss/_navbar.scss */
 .navbar-inverse .navbar-brand {
   color: white;
 }
 
-/* line 25, ../scss/_navbar.scss */
+/* line 27, ../scss/_navbar.scss */
 .site-navigation-inner {
   padding-left: 0;
   padding-right: 0;
@@ -383,36 +391,36 @@ p {
 }
 
 @media only all and (max-width: 767px) {
-  /* line 32, ../scss/_navbar.scss */
+  /* line 34, ../scss/_navbar.scss */
   .navbar-fixed-top {
     position: relative;
   }
 }
 
 /* Nav */
-/* line 41, ../scss/_navbar.scss */
+/* line 43, ../scss/_navbar.scss */
 .nav > li > a {
   padding: 15px;
 }
 @media only all and (max-width: 1199px) {
-  /* line 41, ../scss/_navbar.scss */
+  /* line 43, ../scss/_navbar.scss */
   .nav > li > a {
     padding: 15px 11px;
   }
 }
 @media only all and (max-width: 991px) {
-  /* line 41, ../scss/_navbar.scss */
+  /* line 43, ../scss/_navbar.scss */
   .nav > li > a {
     padding: 15px 6px 15px;
   }
 }
 @media only all and (max-width: 767px) {
-  /* line 41, ../scss/_navbar.scss */
+  /* line 43, ../scss/_navbar.scss */
   .nav > li > a {
     padding: 0 0 15px 52px;
   }
 }
-/* line 53, ../scss/_navbar.scss */
+/* line 55, ../scss/_navbar.scss */
 .nav > li > a:hover, .nav > li > a:focus {
   background-color: transparent;
 }
@@ -420,30 +428,30 @@ p {
 /* 
  *   Navbar 
  */
-/* line 65, ../scss/_navbar.scss */
+/* line 67, ../scss/_navbar.scss */
 .navbar {
   font-family: "Dosis", sans-serif;
   text-transform: uppercase;
 }
-/* line 69, ../scss/_navbar.scss */
+/* line 71, ../scss/_navbar.scss */
 .navbar a {
   font-size: 18px;
   letter-spacing: 3px;
 }
 @media only all and (min-width: 992px) and (max-width: 1199px) {
-  /* line 69, ../scss/_navbar.scss */
+  /* line 71, ../scss/_navbar.scss */
   .navbar a {
     font-size: 16px;
   }
 }
 @media only all and (min-width: 768px) and (max-width: 991px) {
-  /* line 69, ../scss/_navbar.scss */
+  /* line 71, ../scss/_navbar.scss */
   .navbar a {
     font-size: 14px;
     letter-spacing: 2px;
   }
 }
-/* line 81, ../scss/_navbar.scss */
+/* line 83, ../scss/_navbar.scss */
 .navbar > .container {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -452,13 +460,13 @@ p {
   border-radius: 10px;
 }
 @media only all and (max-width: 767px) {
-  /* line 81, ../scss/_navbar.scss */
+  /* line 83, ../scss/_navbar.scss */
   .navbar > .container {
     border-radius: 0;
   }
 }
 
-/* line 89, ../scss/_navbar.scss */
+/* line 91, ../scss/_navbar.scss */
 .navbar-nav {
   margin: 0 0 0 -15px;
 }
@@ -466,7 +474,7 @@ p {
 /* 
  *  Active 
  */
-/* line 99, ../scss/_navbar.scss */
+/* line 101, ../scss/_navbar.scss */
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
@@ -474,61 +482,61 @@ p {
   color: #cf486a;
 }
 
-/* line 103, ../scss/_navbar.scss */
+/* line 105, ../scss/_navbar.scss */
 .navbar-inverse {
   background-color: transparent;
   border: 0;
 }
 
-/* line 108, ../scss/_navbar.scss */
+/* line 110, ../scss/_navbar.scss */
 .navbar-collapse {
   border-top: 0;
   box-shadow: none !important;
 }
 
-/* line 113, ../scss/_navbar.scss */
+/* line 115, ../scss/_navbar.scss */
 #nav-row {
   height: 50px;
   z-index: 9999;
   position: fixed;
 }
 
-/* line 123, ../scss/_navbar.scss */
+/* line 125, ../scss/_navbar.scss */
 #nav-below .btn {
   margin-top: 20px;
 }
-/* line 126, ../scss/_navbar.scss */
+/* line 128, ../scss/_navbar.scss */
 #nav-below .btn-primary {
   margin-top: 10px;
 }
-/* line 129, ../scss/_navbar.scss */
+/* line 131, ../scss/_navbar.scss */
 #nav-below span {
   line-height: 17px;
 }
 
-/* line 136, ../scss/_navbar.scss */
+/* line 138, ../scss/_navbar.scss */
 .nav-previous {
   float: left;
   margin-right: 10px;
 }
 
-/* line 143, ../scss/_navbar.scss */
+/* line 145, ../scss/_navbar.scss */
 button {
   margin-right: 15px !important;
 }
 
-/* line 147, ../scss/_navbar.scss */
+/* line 149, ../scss/_navbar.scss */
 .btn a {
   text-transform: uppercase;
   color: white;
 }
-/* line 150, ../scss/_navbar.scss */
+/* line 152, ../scss/_navbar.scss */
 .btn a:hover {
   color: white;
   text-decoration: none;
 }
 
-/* line 156, ../scss/_navbar.scss */
+/* line 158, ../scss/_navbar.scss */
 .btn-primary {
   background-color: #bf7485;
   border-color: #bf7485;
@@ -538,7 +546,7 @@ button {
   transition: background-color, 0.5s;
 }
 
-/* line 161, ../scss/_navbar.scss */
+/* line 163, ../scss/_navbar.scss */
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
   background-color: #d4a1ad;
   border-color: #d4a1ad;
@@ -549,7 +557,7 @@ button {
   transition: background-color, 0.5s;
 }
 
-/* line 168, ../scss/_navbar.scss */
+/* line 170, ../scss/_navbar.scss */
 .btn-danger {
   background-color: #b12e4f;
   border-color: #b12e4f;
@@ -558,14 +566,14 @@ button {
   -o-transition: background-color, 0.5s;
   transition: background-color, 0.5s;
 }
-/* line 173, ../scss/_navbar.scss */
+/* line 175, ../scss/_navbar.scss */
 .btn-danger .fa-arrow-left {
   line-height: 19px;
   margin-right: 5px;
   margin-left: -5px;
 }
 
-/* line 179, ../scss/_navbar.scss */
+/* line 181, ../scss/_navbar.scss */
 .btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active {
   background-color: #d15070;
   border-color: #d15070;
@@ -575,7 +583,7 @@ button {
   transition: background-color, 0.5s;
 }
 
-/* line 185, ../scss/_navbar.scss */
+/* line 187, ../scss/_navbar.scss */
 .btn-info {
   background-color: #555555;
   border-color: #555555;
@@ -585,7 +593,7 @@ button {
   transition: background-color, 0.5s;
 }
 
-/* line 190, ../scss/_navbar.scss */
+/* line 192, ../scss/_navbar.scss */
 .btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active {
   background-color: #767676;
   border-color: #767676;
@@ -595,49 +603,65 @@ button {
   transition: background-color, 0.5s;
 }
 
-/* line 195, ../scss/_navbar.scss */
+/* line 197, ../scss/_navbar.scss */
 .btn-block {
   margin-bottom: 20px;
   color: black;
   font-size: 100%;
 }
 
-/* line 203, ../scss/_navbar.scss */
+/* line 205, ../scss/_navbar.scss */
 .affix {
   top: 0;
 }
 
 @media only all and (max-width: 767px) {
-  /* line 206, ../scss/_navbar.scss */
+  /* line 208, ../scss/_navbar.scss */
   .affix-top {
     position: fixed;
     top: 0;
   }
 }
 
-/* line 214, ../scss/_navbar.scss */
+/* line 216, ../scss/_navbar.scss */
 .single .affix, .single .affix-top {
   position: fixed;
 }
 @media only all and (max-width: 767px) {
-  /* line 214, ../scss/_navbar.scss */
+  /* line 216, ../scss/_navbar.scss */
   .single .affix, .single .affix-top {
     position: static;
   }
 }
 
-/* line 4, ../scss/_footer.scss */
+/* line 5, ../scss/_footer.scss */
+#footer, #root-footer {
+  height: auto;
+}
+/* line 7, ../scss/_footer.scss */
+#footer p, #root-footer p {
+  color: #666;
+}
+
+@media only all and (max-width: 767px) {
+  /* line 18, ../scss/_footer.scss */
+  #footer > .container {
+    margin-bottom: -20px;
+  }
+}
+
+/* line 36, ../scss/_footer.scss */
 .footer-widgets .nav {
   margin-top: 0px;
 }
-/* line 7, ../scss/_footer.scss */
+/* line 39, ../scss/_footer.scss */
 .footer-widgets .widget {
   height: 170px;
   padding: 0 23px;
   margin-top: 30px;
   border-left: 1px dashed #444;
 }
-/* line 13, ../scss/_footer.scss */
+/* line 45, ../scss/_footer.scss */
 .footer-widgets .widget h2 {
   font-family: "Dosis", sans-serif !important;
   font-size: 110%;
@@ -646,38 +670,38 @@ button {
   letter-spacing: 3px;
 }
 @media only all and (max-width: 767px) {
-  /* line 7, ../scss/_footer.scss */
+  /* line 39, ../scss/_footer.scss */
   .footer-widgets .widget {
     padding: 0;
     margin-top: 30px;
     border-left: 0;
   }
 }
-/* line 26, ../scss/_footer.scss */
+/* line 58, ../scss/_footer.scss */
 .footer-widgets .widget:first-child {
   border-left: 0;
 }
 @media only all and (max-width: 767px) {
-  /* line 29, ../scss/_footer.scss */
+  /* line 61, ../scss/_footer.scss */
   .footer-widgets .widget:last-child {
     padding: 0;
     margin-top: 0;
   }
 }
-/* line 36, ../scss/_footer.scss */
+/* line 68, ../scss/_footer.scss */
 .footer-widgets ul {
   padding: 0;
   list-style: none;
   list-style-type: none;
 }
-/* line 41, ../scss/_footer.scss */
+/* line 73, ../scss/_footer.scss */
 .footer-widgets .menu-item {
   margin: 3px 0;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 20px;
 }
-/* line 47, ../scss/_footer.scss */
+/* line 79, ../scss/_footer.scss */
 .footer-widgets .menu-item:before {
   margin-left: 10px;
   margin-right: 5px;
@@ -685,28 +709,12 @@ button {
   color: #b12e4f;
 }
 
-/* line 59, ../scss/_footer.scss */
+/* line 91, ../scss/_footer.scss */
 #footer-menu li {
   width: 100%;
 }
 
-/* line 66, ../scss/_footer.scss */
-#root-footer, #footer {
-  height: auto;
-}
-/* line 68, ../scss/_footer.scss */
-#root-footer p, #footer p {
-  color: #666;
-}
-
-@media only all and (max-width: 767px) {
-  /* line 81, ../scss/_footer.scss */
-  #footer > .container {
-    margin-bottom: -20px;
-  }
-}
-
-/* line 97, ../scss/_footer.scss */
+/* line 98, ../scss/_footer.scss */
 #bottom-footer {
   min-height: 10px;
   padding: 0;
@@ -715,66 +723,66 @@ button {
   text-transform: uppercase;
   background-color: #b12e4f;
 }
-/* line 107, ../scss/_footer.scss */
+/* line 108, ../scss/_footer.scss */
 #bottom-footer > .container {
   padding: 0;
   margin-top: 5px;
   margin-bottom: 5px;
 }
 @media only all and (max-width: 767px) {
-  /* line 107, ../scss/_footer.scss */
+  /* line 108, ../scss/_footer.scss */
   #bottom-footer > .container {
     margin: 15px 25px;
   }
 }
-/* line 116, ../scss/_footer.scss */
+/* line 117, ../scss/_footer.scss */
 #bottom-footer a {
   color: #d19aa7;
 }
-/* line 119, ../scss/_footer.scss */
+/* line 120, ../scss/_footer.scss */
 #bottom-footer a:hover, #bottom-footer a:focus {
   color: #efdde1;
 }
-/* line 123, ../scss/_footer.scss */
+/* line 124, ../scss/_footer.scss */
 #bottom-footer span {
   color: black;
 }
-/* line 125, ../scss/_footer.scss */
+/* line 126, ../scss/_footer.scss */
 #bottom-footer span a {
   color: black;
 }
-/* line 128, ../scss/_footer.scss */
+/* line 129, ../scss/_footer.scss */
 #bottom-footer span a:hover, #bottom-footer span a:focus {
   color: #2ea2cc;
 }
-/* line 133, ../scss/_footer.scss */
+/* line 134, ../scss/_footer.scss */
 #bottom-footer phone {
   white-space: nowrap;
 }
-/* line 136, ../scss/_footer.scss */
+/* line 137, ../scss/_footer.scss */
 #bottom-footer .fa {
   margin: 5px;
 }
 @media only all and (max-width: 991px) {
-  /* line 97, ../scss/_footer.scss */
+  /* line 98, ../scss/_footer.scss */
   #bottom-footer {
     font-size: 11px;
   }
 }
 @media only all and (max-width: 767px) {
-  /* line 97, ../scss/_footer.scss */
+  /* line 98, ../scss/_footer.scss */
   #bottom-footer {
     font-size: 12px;
   }
-  /* line 147, ../scss/_footer.scss */
+  /* line 148, ../scss/_footer.scss */
   #bottom-footer .text-right {
     text-align: left;
   }
-  /* line 150, ../scss/_footer.scss */
+  /* line 151, ../scss/_footer.scss */
   #bottom-footer .pull-right {
     float: left;
   }
-  /* line 153, ../scss/_footer.scss */
+  /* line 154, ../scss/_footer.scss */
   #bottom-footer .col-sm-6 {
     width: 100%;
     padding: 0;
@@ -799,55 +807,62 @@ button {
   padding-right: 0 !important;
 }
 
-/* line 15, ../scss/_mixins.scss */
+@media only all and (max-width: 767px) {
+  /* line 15, ../scss/_mixins.scss */
+  .no-pad-mobile {
+    padding: 0 !important;
+  }
+}
+
+/* line 20, ../scss/_mixins.scss */
 .no-border, .no-border tbody > tr > td {
   border: 0;
   border-top: 0;
 }
 
-/* line 19, ../scss/_mixins.scss */
+/* line 24, ../scss/_mixins.scss */
 .v-pad {
   padding: 15px 0;
 }
 
-/* line 22, ../scss/_mixins.scss */
+/* line 27, ../scss/_mixins.scss */
 .pad-content {
   padding: 10px 0;
 }
 
-/* line 25, ../scss/_mixins.scss */
+/* line 30, ../scss/_mixins.scss */
 .pad-none {
   padding: 0;
 }
 
-/* line 28, ../scss/_mixins.scss */
+/* line 33, ../scss/_mixins.scss */
 .width-100 {
   width: 100%;
 }
 
-/* line 31, ../scss/_mixins.scss */
+/* line 36, ../scss/_mixins.scss */
 .media img {
   width: 100%;
   height: auto;
 }
 
-/* line 35, ../scss/_mixins.scss */
+/* line 40, ../scss/_mixins.scss */
 .pos-abs {
   position: absolute;
 }
 
-/* line 38, ../scss/_mixins.scss */
+/* line 43, ../scss/_mixins.scss */
 .pos-rel {
   position: relative;
 }
 
-/* line 41, ../scss/_mixins.scss */
+/* line 46, ../scss/_mixins.scss */
 .text-right {
   text-align: right;
 }
 
-/* line 45, ../scss/_mixins.scss */
-.thumbnail img, #social-nav a img {
+/* line 56, ../scss/_mixins.scss */
+.thumbnail img {
   -webkit-filter: grayscale(1);
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
@@ -856,38 +871,38 @@ button {
   filter: url(desaturate.svg#greyscale);
 }
 
-/* line 50, ../scss/_mixins.scss */
+/* line 61, ../scss/_mixins.scss */
 .thumbnail:hover img, .thumbnail:focus img, #social-nav a:hover img {
   filter: none;
   /* Applies to FF + IE */
   -webkit-filter: grayscale(0);
 }
 
-/* line 79, ../scss/_mixins.scss */
+/* line 90, ../scss/_mixins.scss */
 #row-masthead {
   background-color: black;
   background-attachment: fixed;
   background-size: cover;
 }
 
-/* line 94, ../scss/_mixins.scss */
+/* line 105, ../scss/_mixins.scss */
 code, pre, .highlight {
   background-color: #666;
   border-color: #666;
 }
 
-/* line 98, ../scss/_mixins.scss */
+/* line 109, ../scss/_mixins.scss */
 .thumbnail {
   background-color: transparent;
   border: 0;
 }
 
-/* line 102, ../scss/_mixins.scss */
+/* line 113, ../scss/_mixins.scss */
 .navbar > .container {
   background-color: rgba(0, 0, 0, 0.75);
 }
 
-/* line 105, ../scss/_mixins.scss */
+/* line 116, ../scss/_mixins.scss */
 .hero-right, .single-design .media, .design-slider {
   -webkit-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
   -moz-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
@@ -1222,66 +1237,192 @@ section .col-sm-5, section .col-md-6 {
   } */
 }
 
-/* line 1, ../scss/_social.scss */
+/*
+ * 	Mixins
+ */
+/* line 6, ../scss/_mixins.scss */
+.no-pad {
+  padding: 0;
+}
+
+/* line 9, ../scss/_mixins.scss */
+.no-pad-left {
+  padding-left: 0 !important;
+}
+
+/* line 12, ../scss/_mixins.scss */
+.no-pad-right {
+  padding-right: 0 !important;
+}
+
+@media only all and (max-width: 767px) {
+  /* line 15, ../scss/_mixins.scss */
+  .no-pad-mobile {
+    padding: 0 !important;
+  }
+}
+
+/* line 20, ../scss/_mixins.scss */
+.no-border, .no-border tbody > tr > td {
+  border: 0;
+  border-top: 0;
+}
+
+/* line 24, ../scss/_mixins.scss */
+.v-pad {
+  padding: 15px 0;
+}
+
+/* line 27, ../scss/_mixins.scss */
+.pad-content {
+  padding: 10px 0;
+}
+
+/* line 30, ../scss/_mixins.scss */
+.pad-none {
+  padding: 0;
+}
+
+/* line 33, ../scss/_mixins.scss */
+.width-100 {
+  width: 100%;
+}
+
+/* line 36, ../scss/_mixins.scss */
+.media img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 40, ../scss/_mixins.scss */
+.pos-abs {
+  position: absolute;
+}
+
+/* line 43, ../scss/_mixins.scss */
+.pos-rel {
+  position: relative;
+}
+
+/* line 46, ../scss/_mixins.scss */
+.text-right {
+  text-align: right;
+}
+
+/* line 56, ../scss/_mixins.scss */
+.thumbnail img {
+  -webkit-filter: grayscale(1);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: gray;
+  filter: grayscale(100%);
+  filter: url(desaturate.svg#greyscale);
+}
+
+/* line 61, ../scss/_mixins.scss */
+.thumbnail:hover img, .thumbnail:focus img, #social-nav a:hover img {
+  filter: none;
+  /* Applies to FF + IE */
+  -webkit-filter: grayscale(0);
+}
+
+/* line 90, ../scss/_mixins.scss */
+#row-masthead {
+  background-color: black;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* line 105, ../scss/_mixins.scss */
+code, pre, .highlight {
+  background-color: #666;
+  border-color: #666;
+}
+
+/* line 109, ../scss/_mixins.scss */
+.thumbnail {
+  background-color: transparent;
+  border: 0;
+}
+
+/* line 113, ../scss/_mixins.scss */
+.navbar > .container {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+/* line 116, ../scss/_mixins.scss */
+.hero-right, .single-design .media, .design-slider {
+  -webkit-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
+}
+
+/* line 3, ../scss/_social.scss */
 #social-nav {
   position: relative;
 }
-/* line 4, ../scss/_social.scss */
+/* line 6, ../scss/_social.scss */
 #social-nav ul {
   position: absolute;
   top: -37px;
   right: 0px;
 }
 @media only all and (max-width: 991px) {
-  /* line 4, ../scss/_social.scss */
+  /* line 6, ../scss/_social.scss */
   #social-nav ul {
     top: -34px;
   }
 }
 @media only all and (max-width: 767px) {
-  /* line 4, ../scss/_social.scss */
+  /* line 6, ../scss/_social.scss */
   #social-nav ul {
     right: 60px;
   }
 }
-/* line 16, ../scss/_social.scss */
+/* line 18, ../scss/_social.scss */
 #social-nav ul li {
   padding-left: 0;
   padding-right: 5px;
 }
 @media only all and (max-width: 1199px) {
-  /* line 16, ../scss/_social.scss */
+  /* line 18, ../scss/_social.scss */
   #social-nav ul li {
     padding-right: 4px;
   }
 }
 @media only all and (max-width: 767px) {
-  /* line 16, ../scss/_social.scss */
+  /* line 18, ../scss/_social.scss */
   #social-nav ul li {
     padding-right: 3px;
   }
 }
-/* line 28, ../scss/_social.scss */
+/* line 30, ../scss/_social.scss */
 #social-nav img {
   width: 22px;
   height: 22px;
 }
 @media only all and (max-width: 1199px) {
-  /* line 28, ../scss/_social.scss */
+  /* line 30, ../scss/_social.scss */
   #social-nav img {
     width: 21px;
     height: 21px;
   }
 }
 @media only all and (max-width: 991px) {
-  /* line 28, ../scss/_social.scss */
+  /* line 30, ../scss/_social.scss */
   #social-nav img {
     width: 17px;
     height: 17px;
   }
 }
-/* line 42, ../scss/_social.scss */
+/* line 44, ../scss/_social.scss */
 #social-nav a img {
+  -webkit-filter: grayscale(0.5);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: gray;
+  filter: grayscale(100%);
+  filter: url(desaturate.svg#greyscale);
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=68);
   opacity: 0.68;
   -webkit-transition: filter, 0.5s;
@@ -1289,7 +1430,7 @@ section .col-sm-5, section .col-md-6 {
   -o-transition: filter, 0.5s;
   transition: filter, 0.5s;
 }
-/* line 50, ../scss/_social.scss */
+/* line 51, ../scss/_social.scss */
 #social-nav a:hover img {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;

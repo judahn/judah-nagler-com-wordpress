@@ -1,3 +1,35 @@
+@import "compass/layout/sticky-footer";
+
+// Footer
+
+#footer, #root-footer {
+    height: auto;// 280px;
+    p {
+        color: #666;
+    }
+}
+
+#footer {
+    // @extend %opaqueBg;
+    // background-color: #222;
+    // @include background( image-url( "bg/goth.jpg" ));
+    // margin-top: 30px;
+
+    > .container {
+        // padding-top:    15px;
+        // padding-bottom: 15px;
+
+        @include max_tablet {
+            margin-bottom: -20px;
+        }
+    }
+}
+
+// Sticky Footer
+// @include sticky-footer(280px, "#root", "#root-footer", "#footer");
+
+
+
 // Footer menu
 
 .footer-widgets {
@@ -60,37 +92,6 @@
         width: 100%;
     }
 }
-
-// Root footer & footer (for Sticky Footer)
-
-#root-footer, #footer {
-    height: auto;
-    p {
-        color: #666;
-    }
-}
-
-// Footer
-
-#footer {
-    // @extend %opaqueBg;
-    // background-color: #222;
-    // @include background( image-url( "bg/goth.jpg" ));
-    // margin-top: 30px;
-
-    > .container {
-        // padding-top:    15px;
-        // padding-bottom: 15px;
-
-        @include max_tablet {
-            margin-bottom: -20px;
-        }
-    }
-}
-
-// Sticky Footer
-// @include sticky-footer(300px, "#root", "#root-footer", "#footer");
-
 
 // Bottom Footer
 
