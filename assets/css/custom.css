@@ -178,7 +178,7 @@ code, pre, .highlight {
 }
 
 /* line 116, ../scss/_mixins.scss */
-.hero-right, .single-design .media, .design-slider {
+.hero-right, .design-slider {
   -webkit-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
   -moz-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
   box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
@@ -903,7 +903,7 @@ code, pre, .highlight {
 }
 
 /* line 116, ../scss/_mixins.scss */
-.hero-right, .single-design .media, .design-slider {
+.hero-right, .design-slider {
   -webkit-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
   -moz-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
   box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
@@ -1358,7 +1358,7 @@ code, pre, .highlight {
 }
 
 /* line 116, ../scss/_mixins.scss */
-.hero-right, .single-design .media, .design-slider {
+.hero-right, .design-slider {
   -webkit-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
   -moz-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
   box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
@@ -1734,10 +1734,10 @@ code, pre, .highlight {
 .mq-list {
   padding-bottom: 30px;
 }
-@media only all and (max-width: 991px) {
+@media only all and (max-width: 767px) {
   /* line 130, ../scss/_page-specific.scss */
   .mq-list {
-    padding-bottom: 20px;
+    padding-bottom: 0px;
   }
 }
 /* line 136, ../scss/_page-specific.scss */
@@ -1925,11 +1925,11 @@ code, pre, .highlight {
 }
 
 /* line 278, ../scss/_page-specific.scss */
-.single-design .media {
-  border: 1px solid black;
+.single-programmer .media {
+  margin-bottom: 20px;
 }
 
-/* line 287, ../scss/_page-specific.scss */
+/* line 286, ../scss/_page-specific.scss */
 .page-id-21 #cherry-blossoms {
   z-index: 999;
 }
