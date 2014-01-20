@@ -75,10 +75,39 @@
  * 	Blog 
  */
 
-.blog #cherry-blossom-main {
-    background-position: 70% -84px;
-
-    @extend %mobile-blossoms;
+.blog {
+    .main-content-inner {
+        .page-title {
+            @include max_tablet {
+                text-align: right;
+            }
+            @include max_phone {
+                text-align: left;
+            }
+        }
+        /* .post .page-title {
+            @include max_tablet {
+                text-align: left;
+            }
+        } */
+        @include min_tablet {
+            h2 a {
+                font-size: 49px;
+            }
+        }
+        @include max_tablet {
+            h1 {
+                margin-top: 23px;
+            }
+            h2 a {
+                font-size: 37px;
+            }
+        }
+    }
+    #cherry-blossom-main {
+        background-position: 70% -84px;
+        @extend %mobile-blossoms;
+    }
 }
 
 
@@ -154,7 +183,7 @@
 
 
 
-.home, .blog, .page-id-21 {
+.home, .page-id-21 {
     .main-content-inner{
         margin: 5px;
         @include max_tablet{
@@ -163,16 +192,21 @@
     }
 }
 
-.single .main-content-inner {
-    margin: 15px;
-    @include max_tablet{
-        margin: 10px; 
+.single, .blog {
+    .main-content-inner {
+        margin: 15px;
+        @include max_tablet{
+            margin: 10px; 
+        }
     }
 }
 
 .home, .blog, .page-id-21{
     .hentry {
         margin: 0;
+    }
+    .post {
+        margin-top: -10px;
     }
 }
 .entry-content {

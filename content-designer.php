@@ -6,6 +6,8 @@
 
 <article id="post-<?php the_ID(); ?>" class="row" >
 
+	hello
+
 	<!-- Entry header -->
 	<header class="page-header">
 		<h1 class="entry-title"><?php the_title(); ?></h1>

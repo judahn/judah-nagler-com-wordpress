@@ -5,7 +5,7 @@
 ?>
 
 
-<div class="row">
+<div class="col-sm-8 col-md-12 no-pad">
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		
 		<div class="page-header">

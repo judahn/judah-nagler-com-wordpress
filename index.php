@@ -17,8 +17,8 @@ get_header(); ?>
 <?php include 'section-opener.php' ?>
 
 
-<div class="col-md-8 no-pad">
-
+<div class="col-sm-8 no-pad">
+	<h1 class="page-title">Blog</h1>
 	<?php if ( have_posts() ) : ?>
 
 		<?php /* Start the Loop */ ?>

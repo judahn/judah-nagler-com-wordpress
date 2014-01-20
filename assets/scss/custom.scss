@@ -206,12 +206,15 @@ a:hover {
 //  Sidebar
 
 .sidebar {
-    padding: 10px 30px;
-    margin-top: 20px;
+    padding: 10px 10px 30px 50px;
+    margin-top: 25px;
     background-color: black;
 
     @include max_laptop {
-        padding: 0;
+        padding: 0 10px 0 30px;
+    }
+    @include max_tablet {
+        padding: 20px 0;
     }
 
     h3 {
@@ -222,7 +225,9 @@ a:hover {
         padding: 10px 0;
     }
 }
-
+.blog .sidebar {
+    margin-top: 10px;
+}
 
 //  Modal
 

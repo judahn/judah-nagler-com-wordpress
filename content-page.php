@@ -8,7 +8,14 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="page-header hidden-sm hidden-md hidden-lg">
+
+		<?php if ( get_the_ID() == 163): ?>
+		<h1 class="page-title">Blog</h1>
+		<?php elseif( is_front_page()): ?>
+		<h1 class="page-title">Judah Nagler</h1>
+		<?php else: ?>
 		<h1 class="page-title"><?php the_title(); ?></h1>
+		<?php endif; ?>
 	</header><!-- .entry-header -->
 
 	<?php if( the_content() != "" ): ?>
