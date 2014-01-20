@@ -29,12 +29,15 @@ $j(document).ready(function() {
         	// Get item name
 			var itemName = String($j(navItems[i]).children()[0].innerHTML.toLowerCase());
 
+			console.log("setActiveNav: "+ $j(navItems[i]).children()[0].innerHTML.toLowerCase(), pathname.indexOf(itemName));
+
 			// If item name contains path name, add 'active' claSS
 			if (pathname.indexOf(itemName) === 1) {
 				$j(navItems[i]).addClass("active");
 			}
         }
 	}
+
 	setActiveNav();
 
 
@@ -112,6 +115,7 @@ $j(document).ready(function() {
 	}
 
 	// Init Window Scroll
+
 	onWindowScroll();
 
 
@@ -217,6 +221,7 @@ $j(document).ready(function() {
 	}
 
 	// Init Responsive Slideshow
+
 	developerSlideshow();
 
 
