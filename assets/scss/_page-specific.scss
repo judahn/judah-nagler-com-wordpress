@@ -76,6 +76,12 @@
 
 .blog {
     .main-content-inner {
+        h2 a {
+            color: white;
+            &:hover {
+                color: #ccc;
+            }
+        }
         .page-title {
             @include max_tablet {
                 text-align: right;
