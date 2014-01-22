@@ -67,18 +67,19 @@ $j(document).ready(function() {
 	function onWindowScroll() {
 		var scroll      = $j(window).scrollTop();
 		var isSingle	= $j("body").hasClass("single");
+		var isSearch	= $j("body").hasClass("search");
 		var minOp       = 0;
 		var maxOp       = 1;
 		var mainOffset  = 391;
-		var h1_Offset   = 618;
-		var h1_Op 		= ((h1_Offset * 0.618) - scroll) / 270;
+		var h1_Offset   = 666;
+		var h1_Op 		= ((h1_Offset * 0.618) - scroll) / 200;
 		var tgtOp		= (scroll / mainOffset);	
 
 		// Get window width
 		winW = $j(window).width();
 
 		// If not 'single' page and above 'tablet' breakpoint
-		if (!isSingle && winW >= tablet){
+		if (!isSingle && !isSearch && winW >= tablet){
 
 			// Set target opacity for header and main-content
 			if (tgtOp >= maxOp){

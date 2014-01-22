@@ -7,6 +7,13 @@
 
 get_header(); ?>
 
+<?php include 'above-header.php' ?>
+<?php include 'section-opener.php' ?>
+
+
+<div class="col-sm-8 no-pad">
+	<h1 class="page-title">Blog</h1>
+
 	<?php // add the class "panel" below here to wrap the content-padder in Bootstrap style ;) ?>	
 	<section class="content-padder error-404 not-found">
 
@@ -25,4 +32,7 @@ get_header(); ?>
 	</section><!-- .content-padder -->
 		
 <?php get_sidebar(); ?>
+
+<?php include 'section-closer.php' ?>
+
 <?php get_footer(); ?>

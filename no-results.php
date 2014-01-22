@@ -6,7 +6,9 @@
  *
  * @package _tk
  */
-?>
+get_header(); ?>
+
+<?php include 'section-opener.php' ?>
 
 <section class="no-results not-found">
 	<header class="page-header">
@@ -31,3 +33,6 @@
 		<?php endif; ?>
 	</div><!-- .page-content -->
 </section><!-- .no-results -->
+
+<?php include 'section-closer.php' ?>
+<?php get_footer(); ?>

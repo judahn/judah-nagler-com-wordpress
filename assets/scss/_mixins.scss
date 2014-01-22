@@ -8,9 +8,11 @@
 }
 .no-pad-left {
     padding-left: 0 !important;
+    @include max_tablet { padding-right: 0; }
 }
 .no-pad-right {
     padding-right: 0 !important;
+    @include max_tablet { padding-left: 0; }
 }
 .no-pad-mobile {
     @include max_tablet{
