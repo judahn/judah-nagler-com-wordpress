@@ -57,7 +57,7 @@
     height: 500px;
 
     @include max_tablet{
-        height: 190px;
+        height: 170px;
     }
     @include max_phone {
         height: 180px;

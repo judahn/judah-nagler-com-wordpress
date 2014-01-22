@@ -1558,7 +1558,7 @@ code, pre, .highlight {
 @media only all and (max-width: 767px) {
   /* line 55, ../scss/_cherry-blossoms.scss */
   .above-header {
-    height: 190px;
+    height: 170px;
   }
 }
 @media only all and (max-width: 479px) {
