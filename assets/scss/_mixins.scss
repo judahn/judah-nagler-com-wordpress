@@ -3,6 +3,11 @@
  */
 
 // Helpers
+%removeFocusOutline {
+    outline: 0 !important;
+    text-decoration: none !important;
+    @include box-shadow(0 0 0 rgba(black, 0));
+}
 .no-pad {
 	padding: 0;
 }
@@ -133,4 +138,7 @@
 }
 %boxShadowSm {
     @include box-shadow(0px 2px 10px rgba(black, 1));
+}
+%boxShadowNone {
+    @include box-shadow(0 0 0 rgba(black, 0));
 }

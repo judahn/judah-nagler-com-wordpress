@@ -62,7 +62,6 @@
 .hero-right {
     margin-top:     8px;
     margin-bottom:  40px;
-    @extend %boxShadow;
     @include border-radius(10px);
 
     @include max_tablet {
@@ -178,6 +177,30 @@
 
 
 /* 
+ *  Contact 
+ */
+
+.cscfForm {
+    p {
+        font-size: 17px;
+    }  
+    label {
+        font-size: 16px;
+    }
+}
+.form-control {
+    color: #FFFFFF;
+    border: 0 dotted #333;
+    background-color: #222;
+    letter-spacing: 1px;
+    &:focus {
+        @extend %boxShadowNone;
+        border: 2px dotted #444;
+    }
+}
+
+
+/* 
  * 	All Pages
  */
 
@@ -189,6 +212,12 @@
         @include max_tablet{
             margin: 10px; 
         }
+    }
+}
+.page-id-21 {
+    h3 {
+        padding: 10px 0;
+        font-size: 37px;
     }
 }
 

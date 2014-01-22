@@ -46,8 +46,9 @@ table {
 }
 a{
     color: $blue;
-    &:hover {
+    &:hover, &:focus{
         color: lighten($blue, 13%);
+        @extend %removeFocusOutline;
     }
 }
 a:hover {
@@ -237,8 +238,6 @@ a:hover {
 .modal {
     top: 10%;
 }
-
-
 
 
 /*
