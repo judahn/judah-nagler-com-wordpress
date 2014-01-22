@@ -15,7 +15,7 @@ get_header(); ?>
 <?php include 'above-header.php' ?>
 <?php include 'section-opener.php' ?>
 
-<div class="col-sm-6 no-pad">
+<div class="col-sm-8 no-pad">
 
 	<?php while ( have_posts() ) : the_post(); ?>
 
@@ -31,7 +31,7 @@ get_header(); ?>
 
 </div>
 
-<div class="col-sm-6">
+<div class="col-sm-4">
 </div>
 
 

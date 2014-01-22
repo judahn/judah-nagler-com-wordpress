@@ -47,6 +47,13 @@
     text-align: right;
 }
 
+@mixin blur($amt: 10px) {
+    -webkit-filter: blur($amt);
+    -moz-filter:    blur($amt);
+    -o-filter:      blur($amt);
+    -ms-filter:     blur($amt);
+    filter:         blur($amt);
+}
 @mixin grayscale($prc){
     $webkit-amt: $prc / 100;
     -webkit-filter: grayscale($webkit-amt); -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%);
@@ -111,7 +118,7 @@
     border: 0;
 }
 %opaqueBg {
-    background-color: rgba(black, 0.75);
+    background-color: rgba(black, $opaqueBg);
 }
 %boxShadow {
     @include box-shadow(0px 2px 30px rgba(black, 0.7));
