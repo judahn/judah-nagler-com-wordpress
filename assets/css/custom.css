@@ -1610,7 +1610,7 @@ code, pre, .highlight {
 @media only all and (max-width: 767px) {
   /* line 55, ../scss/_cherry-blossoms.scss */
   .above-header {
-    height: 170px;
+    height: 190px;
   }
 }
 @media only all and (max-width: 479px) {

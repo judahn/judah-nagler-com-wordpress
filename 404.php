@@ -32,7 +32,5 @@ get_header(); ?>
 	</section><!-- .content-padder -->
 		
 <?php get_sidebar(); ?>
-
 <?php include 'section-closer.php' ?>
-
 <?php get_footer(); ?>
