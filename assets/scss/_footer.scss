@@ -65,6 +65,7 @@
         }
     }
 
+    // Menu
     ul {
         padding: 0;
         list-style: none;
@@ -74,7 +75,9 @@
         margin: 3px 0;
         text-transform: uppercase;
         font-size: 14px;
-        line-height: 20px;
+        line-height: 17px;
+        letter-spacing: 1.3px;
+
 
         &:before {
             margin-left: 10px;

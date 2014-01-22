@@ -19,21 +19,21 @@ $j(document).ready(function() {
 	// Set active nav item based on URL
 
 	function setActiveNav() {
-        var navItems    = $j("#main-menu li");
-        var pathname    = String(window.location.pathname);
+		var navItems    = $j("#main-menu li");
+		var pathname    = String(window.location.pathname);
 
-        // Cycle thru nav items
+		// Cycle thru nav items
 
-        for (var i = 0; i < navItems.length; i++) {
+		for (var i = 0; i < navItems.length; i++) {
 
-        	// Get item name
+			// Get item name
 			var itemName = String($j(navItems[i]).children()[0].innerHTML.toLowerCase());
 
 			// If item name contains path name, add 'active' claSS
 			if (pathname.indexOf(itemName) === 1) {
 				$j(navItems[i]).addClass("active");
 			}
-        }
+		}
 	}
 
 	setActiveNav();
@@ -67,12 +67,12 @@ $j(document).ready(function() {
 	function onWindowScroll() {
 		var scroll      = $j(window).scrollTop();
 		var isSingle	= $j("body").hasClass("single");
-		var offsetTop   = 350;
 		var minOp       = 0;
 		var maxOp       = 1;
-		var tgtOp		= (scroll / offsetTop);	
-		var navOp		= tgtOp * 4;		
-		var hdrOp 		= ((offsetTop * 0.618) - scroll) / 100;
+		var mainOffset  = 391;
+		var h1_Offset   = 618;
+		var h1_Op 		= ((h1_Offset * 0.618) - scroll) / 270;
+		var tgtOp		= (scroll / mainOffset);	
 
 		// Get window width
 		winW = $j(window).width();
@@ -98,15 +98,16 @@ $j(document).ready(function() {
 
 		} else {
 			// Set opacity on all target elements to 1
-			tgtOp = navOp = hdrOp = 1;
+			tgtOp = navOp = h1_Op = 1;
 
 			// Set current view
 			currView = 0;
 		}
 
 		// Apply target opacities to elements
-		$j(".main-content").css({"opacity":tgtOp});
-		$j(".above-header h1").css({"opacity":(hdrOp)});
+		$j(".above-header h1").css({"opacity":h1_Op});
+		   $j(".main-content").css({"opacity":tgtOp});
+				 $j("#footer").css({"opacity":tgtOp});
 
 		// Set previous view
 		prevView = currView;
@@ -130,18 +131,18 @@ $j(document).ready(function() {
 
 		// Vars
 
-        var current         = -1;
-        var thumbGroups     = [];
-        var min             = 0;
-        var max             = 0;
+		var current         = -1;
+		var thumbGroups     = [];
+		var min             = 0;
+		var max             = 0;
 
 		var _timer;
-        var _time           = 6000;
-        var _delayOffset    = 210;
-        var _animTime   	= 1000;
-        var _animType   	= "easeInOutQuad";
+		var _time           = 6000;
+		var _delayOffset    = 210;
+		var _animTime   	= 1000;
+		var _animType   	= "easeInOutQuad";
 
-        // Init: Fade out all thumb groups and move to back
+		// Init: Fade out all thumb groups and move to back
 
 		function init() {
 

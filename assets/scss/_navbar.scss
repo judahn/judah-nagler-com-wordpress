@@ -8,6 +8,7 @@
     white-space: nowrap;
     @include max_laptop {
         padding: 15px 23px 0 15px;
+        letter-spacing: 1.3px;
     }
     @include max_tablet {
         padding-top: 12px;
@@ -70,14 +71,14 @@
 
     a{
         font-size: 18px;
-        letter-spacing: 3px;
+        letter-spacing: 2px;
 
         @include desktop {
             font-size: 16px;
         }
         @include laptop {
             font-size: 14px;
-            letter-spacing: 2px;
+            letter-spacing: 1.3px;
         }
     }
     > .container{
@@ -110,6 +111,7 @@
 .navbar-collapse {
     border-top: 0;
     box-shadow: none !important;
+    padding-bottom: 20px;
 }
 
 #nav-row{
@@ -156,15 +158,13 @@ button {
     }
 }
 .btn-primary {
-    background-color:   $blue;
-    border-color:       $blue;
+    background-color:   $red;
+    border-color:       $red;
     @include transition(background-color, 0.5s);
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
-    background-color:   lighten($blue, 13%);
-    border-color:       lighten($blue, 13%);
-    color: black;
-    
+    background-color:   lighten($red, 13%);
+    border-color:       lighten($red, 13%);
     @include transition(background-color, 0.5s);
 }
 .btn-danger {
