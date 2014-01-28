@@ -181,6 +181,10 @@ button {
         margin-right: 5px;
         margin-left: -5px;
     }
+    &:focus {
+        @extend %removeFocusOutline;
+        background-color:   $red;
+    }
 }
 .btn-danger:hover, .btn-danger:active, .btn-danger.active {
     background-color:   lighten($red, 13%);

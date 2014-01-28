@@ -603,8 +603,12 @@ button {
   margin-right: 5px;
   margin-left: -5px;
 }
+/* line 184, ../scss/_navbar.scss */
+.btn-danger:focus {
+  background-color: #b12e4f;
+}
 
-/* line 185, ../scss/_navbar.scss */
+/* line 189, ../scss/_navbar.scss */
 .btn-danger:hover, .btn-danger:active, .btn-danger.active {
   background-color: #d15070;
   border-color: #d15070;
@@ -614,7 +618,7 @@ button {
   transition: background-color, 0.5s;
 }
 
-/* line 191, ../scss/_navbar.scss */
+/* line 195, ../scss/_navbar.scss */
 .btn-info {
   background-color: #555555;
   border-color: #555555;
@@ -623,12 +627,12 @@ button {
   -o-transition: background-color, 0.5s;
   transition: background-color, 0.5s;
 }
-/* line 196, ../scss/_navbar.scss */
+/* line 200, ../scss/_navbar.scss */
 .btn-info:focus {
   border: 2px dotted #444 !important;
 }
 
-/* line 201, ../scss/_navbar.scss */
+/* line 205, ../scss/_navbar.scss */
 .btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active {
   background-color: #767676;
   border-color: #767676;
@@ -638,32 +642,32 @@ button {
   transition: background-color, 0.5s;
 }
 
-/* line 206, ../scss/_navbar.scss */
+/* line 210, ../scss/_navbar.scss */
 .btn-block {
   margin-bottom: 20px;
   color: black;
   font-size: 100%;
 }
 
-/* line 214, ../scss/_navbar.scss */
+/* line 218, ../scss/_navbar.scss */
 .affix {
   top: 0;
 }
 
 @media only all and (max-width: 767px) {
-  /* line 217, ../scss/_navbar.scss */
+  /* line 221, ../scss/_navbar.scss */
   .affix-top {
     position: fixed;
     top: 0;
   }
 }
 
-/* line 225, ../scss/_navbar.scss */
+/* line 229, ../scss/_navbar.scss */
 .single .affix, .single .affix-top {
   position: fixed;
 }
 @media only all and (max-width: 767px) {
-  /* line 225, ../scss/_navbar.scss */
+  /* line 229, ../scss/_navbar.scss */
   .single .affix, .single .affix-top {
     position: static;
   }
