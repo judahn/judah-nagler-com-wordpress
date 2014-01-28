@@ -12,15 +12,5 @@
         </tr>
         <?php endif; ?>
 
-        <?php if( get_field('designer') ): ?>
-        <tr>
-          <td class="no-pad-left">Designer: </td>
-          <td>
-            <?php if( get_field('designer_url') ): ?><a href="<?php the_field( 'designer_url' ); ?>" target="_blank"><?php endif; ?> 
-               <?php the_field( 'designer' ); ?>
-            <?php if( get_field('designer_url') ): ?></a><?php endif; ?> 
-          </td>
-        </tr>
-        <?php endif; ?>
       </table>
     </div>
