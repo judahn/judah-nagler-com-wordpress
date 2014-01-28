@@ -33,7 +33,7 @@ get_header(); ?>
 			?>
 
 		<?php endwhile; ?>
-		<?php _tk_content_nav( 'nav-below' ); ?>
+		<!-- <?php _tk_content_nav( 'nav-below' ); ?> -->
 
 	<?php else : ?>
 		<?php get_template_part( 'no-results', 'index' ); ?>

@@ -48,7 +48,7 @@
 				if ( $categories_list && _tk_categorized_blog() ) :
 			?>
 			<span class="cat-links">
-				<?php printf( __( 'Posted in %1$s', '_tk' ), $categories_list ); ?>
+				<!-- <?php printf( __( 'Posted in %1$s', '_tk' ), $categories_list ); ?> -->
 			</span>
 			<?php endif; // End if categories ?>
 
