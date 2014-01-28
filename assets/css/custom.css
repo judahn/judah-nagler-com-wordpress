@@ -1912,15 +1912,19 @@ code, pre, .highlight {
 .cscfForm label {
   font-size: 16px;
 }
+/* line 196, ../scss/_page-specific.scss */
+.cscfForm textarea {
+  resize: none !important;
+}
 
-/* line 197, ../scss/_page-specific.scss */
+/* line 200, ../scss/_page-specific.scss */
 .form-control {
   color: #FFFFFF;
   border: 0 dotted #333;
   background-color: #222;
   letter-spacing: 1px;
 }
-/* line 202, ../scss/_page-specific.scss */
+/* line 205, ../scss/_page-specific.scss */
 .form-control:focus {
   border: 2px dotted #444;
 }
@@ -1928,144 +1932,144 @@ code, pre, .highlight {
 /* 
  * 	All Pages
  */
-/* line 216, ../scss/_page-specific.scss */
+/* line 219, ../scss/_page-specific.scss */
 .home .main-content-inner, .page-id-21 .main-content-inner {
   margin: 5px;
 }
 @media only all and (max-width: 767px) {
-  /* line 216, ../scss/_page-specific.scss */
+  /* line 219, ../scss/_page-specific.scss */
   .home .main-content-inner, .page-id-21 .main-content-inner {
     margin: 10px;
   }
 }
 
-/* line 224, ../scss/_page-specific.scss */
+/* line 227, ../scss/_page-specific.scss */
 .page-id-21 h3 {
   padding: 10px 0;
   font-size: 37px;
 }
 
-/* line 231, ../scss/_page-specific.scss */
+/* line 234, ../scss/_page-specific.scss */
 .single .main-content-inner, .blog .main-content-inner {
   margin: 15px;
 }
 @media only all and (max-width: 767px) {
-  /* line 231, ../scss/_page-specific.scss */
+  /* line 234, ../scss/_page-specific.scss */
   .single .main-content-inner, .blog .main-content-inner {
     margin: 10px;
   }
 }
 
-/* line 240, ../scss/_page-specific.scss */
+/* line 243, ../scss/_page-specific.scss */
 .home .hentry, .blog .hentry, .page-id-21 .hentry {
   margin: 0;
 }
-/* line 243, ../scss/_page-specific.scss */
+/* line 246, ../scss/_page-specific.scss */
 .home .post, .blog .post, .page-id-21 .post {
   margin-top: -10px;
 }
 
-/* line 247, ../scss/_page-specific.scss */
+/* line 250, ../scss/_page-specific.scss */
 .entry-content {
   padding: 15px 3px;
 }
-/* line 249, ../scss/_page-specific.scss */
+/* line 252, ../scss/_page-specific.scss */
 .entry-content p {
   margin-bottom: 15px;
   text-shadow: 0px 2px 3px black;
 }
 @media only all and (max-width: 991px) {
-  /* line 249, ../scss/_page-specific.scss */
+  /* line 252, ../scss/_page-specific.scss */
   .entry-content p {
     font-size: 15px;
     line-height: 21px;
   }
 }
-/* line 257, ../scss/_page-specific.scss */
+/* line 260, ../scss/_page-specific.scss */
 .entry-content img {
   margin: 10px 0 30px;
 }
 
-/* line 261, ../scss/_page-specific.scss */
+/* line 264, ../scss/_page-specific.scss */
 #col-credits {
   padding-left: 5px;
 }
 
-/* line 264, ../scss/_page-specific.scss */
+/* line 267, ../scss/_page-specific.scss */
 .credits {
   overflow-y: hidden;
   overflow-x: hidden;
 }
-/* line 267, ../scss/_page-specific.scss */
+/* line 270, ../scss/_page-specific.scss */
 .credits td {
   padding: 3px !important;
 }
 @media only all and (max-width: 1199px) {
-  /* line 271, ../scss/_page-specific.scss */
+  /* line 274, ../scss/_page-specific.scss */
   .credits td {
     padding: 1px !important;
   }
 }
-/* line 275, ../scss/_page-specific.scss */
+/* line 278, ../scss/_page-specific.scss */
 .credits a {
   padding-left: 10px;
 }
 
-/* line 279, ../scss/_page-specific.scss */
+/* line 282, ../scss/_page-specific.scss */
 .description {
   margin-bottom: 10px;
 }
 @media only all and (max-width: 767px) {
-  /* line 279, ../scss/_page-specific.scss */
+  /* line 282, ../scss/_page-specific.scss */
   .description {
     margin-top: 20px;
   }
 }
-/* line 286, ../scss/_page-specific.scss */
+/* line 289, ../scss/_page-specific.scss */
 .description button {
   margin-top: 5px;
 }
 @media only all and (max-width: 767px) {
-  /* line 286, ../scss/_page-specific.scss */
+  /* line 289, ../scss/_page-specific.scss */
   .description button {
     margin-top: 10px;
   }
 }
-/* line 293, ../scss/_page-specific.scss */
+/* line 296, ../scss/_page-specific.scss */
 .description p {
   text-align: justify;
 }
 
-/* line 297, ../scss/_page-specific.scss */
+/* line 300, ../scss/_page-specific.scss */
 .media {
   margin-bottom: 30px;
 }
 @media only all and (max-width: 767px) {
-  /* line 297, ../scss/_page-specific.scss */
+  /* line 300, ../scss/_page-specific.scss */
   .media {
     margin-bottom: 0px;
   }
 }
-/* line 304, ../scss/_page-specific.scss */
+/* line 307, ../scss/_page-specific.scss */
 .media p {
   margin: 0;
 }
-/* line 307, ../scss/_page-specific.scss */
+/* line 310, ../scss/_page-specific.scss */
 .media img {
   margin: 0;
 }
-/* line 311, ../scss/_page-specific.scss */
+/* line 314, ../scss/_page-specific.scss */
 .media object {
   margin-right: 10px !important;
   margin-bottom: 15px !important;
 }
 
-/* line 316, ../scss/_page-specific.scss */
+/* line 319, ../scss/_page-specific.scss */
 .single-programmer .media {
   margin-bottom: 20px;
 }
 
-/* line 324, ../scss/_page-specific.scss */
+/* line 327, ../scss/_page-specific.scss */
 .page-id-21 #cherry-blossoms {
   z-index: 999;
 }
