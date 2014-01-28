@@ -11,7 +11,7 @@
 <!--[if IE 7]>     <html class="ie ie7 lte9 lte8 lte7"> <![endif]-->
 <!--[if IE 8]>     <html class="ie ie8 lte9 lte8"> <![endif]-->
 <!--[if IE 9]>     <html class="ie ie9 lte9"> <![endif]-->
-<!--[if gt IE 9]>  <html> <![endif]-->
+<!--[if gt IE 9]>  <html class="ie"> <![endif]-->
 <!--[if !IE]><!--> <html <?php language_attributes(); ?>>	<!--<![endif]-->  
 <head profile="http://www.w3.org/2005/10/profile">
 <link rel="icon" 
