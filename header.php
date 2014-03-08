@@ -35,8 +35,6 @@
 <body <?php body_class(); ?>>
 	<?php do_action( 'before' ); ?>
 
-	<?php include "update-browser.php"; ?>
-	
 <div class="root">
 
 
