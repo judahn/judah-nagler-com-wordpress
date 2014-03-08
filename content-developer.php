@@ -71,22 +71,39 @@
 
 <article id="post-<?php the_ID(); ?>" class="row" >
 
-    <div class="col-sm-7 col-content">
-      <!-- Description -->
-      <?php if( get_field('media') ): ?> 
-         <?php the_field( 'media' ); ?>
-      <?php endif; ?>
-    </div>
+    <!-- If 'media' -->
+    <?php if( get_field('media') ): ?> 
+  
+      <div class="col-sm-7 col-content">
+        <!-- Description -->
+           <?php the_field( 'media' ); ?>
+      </div>
+
+      <div id="col-credits" class="col-sm-5 no-pad">
+        <?php if( get_field('description') ): ?> 
+          <!-- Description -->
+          <div class="">
+            <?php the_field( 'description' ); ?>
+          </div>
+        <?php endif; ?>
+
+    <?php else: ?>
+
+      <div class="col-sm-7 col-content">
+        <!-- Description -->
+        <?php if( get_field('description') ): ?> 
+          <!-- Description -->
+          <div class="">
+            <?php the_field( 'description' ); ?>
+          </div>
+        <?php endif; ?>
+      </div>
 
     <div id="col-credits" class="col-sm-5 no-pad">
 
-      <?php if( get_field('description') ): ?> 
-        <!-- Description -->
-        <div class="">
-          <?php the_field( 'description' ); ?>
-        </div>
-      <?php endif; ?>
+    <?php endif; ?><!-- If 'media' -->
 
+    
       <?php include 'credits.php' ?>
 
       <?php if( get_field('view_templates_url') ): ?> 
