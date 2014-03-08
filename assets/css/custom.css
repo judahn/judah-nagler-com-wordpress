@@ -2004,77 +2004,78 @@ code, pre, .highlight {
 .credits {
   overflow-y: hidden;
   overflow-x: hidden;
+  padding-top: 15px;
 }
-/* line 272, ../scss/_page-specific.scss */
+/* line 273, ../scss/_page-specific.scss */
 .credits td {
   padding: 3px !important;
 }
 @media only all and (max-width: 1199px) {
-  /* line 276, ../scss/_page-specific.scss */
+  /* line 277, ../scss/_page-specific.scss */
   .credits td {
     padding: 1px !important;
   }
 }
-/* line 280, ../scss/_page-specific.scss */
+/* line 281, ../scss/_page-specific.scss */
 .credits a {
   padding-left: 10px;
 }
 
-/* line 284, ../scss/_page-specific.scss */
+/* line 285, ../scss/_page-specific.scss */
 .description {
   margin-bottom: 10px;
 }
 @media only all and (max-width: 767px) {
-  /* line 284, ../scss/_page-specific.scss */
+  /* line 285, ../scss/_page-specific.scss */
   .description {
     margin-top: 20px;
   }
 }
-/* line 291, ../scss/_page-specific.scss */
+/* line 292, ../scss/_page-specific.scss */
 .description button {
   margin-top: 5px;
 }
 @media only all and (max-width: 767px) {
-  /* line 291, ../scss/_page-specific.scss */
+  /* line 292, ../scss/_page-specific.scss */
   .description button {
     margin-top: 10px;
   }
 }
-/* line 298, ../scss/_page-specific.scss */
+/* line 299, ../scss/_page-specific.scss */
 .description p {
   text-align: justify;
 }
 
-/* line 302, ../scss/_page-specific.scss */
+/* line 303, ../scss/_page-specific.scss */
 .media {
   margin-bottom: 30px;
 }
 @media only all and (max-width: 767px) {
-  /* line 302, ../scss/_page-specific.scss */
+  /* line 303, ../scss/_page-specific.scss */
   .media {
     margin-bottom: 0px;
   }
 }
-/* line 309, ../scss/_page-specific.scss */
+/* line 310, ../scss/_page-specific.scss */
 .media p {
   margin: 0;
 }
-/* line 312, ../scss/_page-specific.scss */
+/* line 313, ../scss/_page-specific.scss */
 .media img {
   margin: 0;
 }
-/* line 316, ../scss/_page-specific.scss */
+/* line 317, ../scss/_page-specific.scss */
 .media object {
   margin-right: 10px !important;
   margin-bottom: 15px !important;
 }
 
-/* line 321, ../scss/_page-specific.scss */
+/* line 322, ../scss/_page-specific.scss */
 .single-programmer .media {
   margin-bottom: 20px;
 }
 
-/* line 329, ../scss/_page-specific.scss */
+/* line 330, ../scss/_page-specific.scss */
 .page-id-21 #cherry-blossoms {
   z-index: 999;
 }
