@@ -262,6 +262,7 @@
     }
 }
 #col-credits {
+
     @include max_tablet {
         padding-top: 20px;
     }
@@ -269,7 +270,7 @@
 .credits {
     overflow-y: hidden;
     overflow-x: hidden;
-    padding-top: 15px;
+    // padding-top: 15px;
     td {
         padding: 3px !important;
     }
@@ -297,7 +298,22 @@
         }
     }
     p {
-        text-align:justify;
+        // text-align:justify;
+        font-size: 32px;
+        line-height: 42px;
+        font-style: italic;
+
+        @include max_desktop {
+            font-size:   27px;
+            line-height: 37px;
+        }
+        @include max_laptop {
+            font-size:   21px;
+            line-height: 33px;
+        }
+        @include max_tablet {
+
+        }
     }
 }
 .media {
