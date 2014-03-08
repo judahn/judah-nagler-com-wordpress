@@ -71,7 +71,7 @@
 
 <article id="post-<?php the_ID(); ?>" class="row" >
 
-    <div class="description col-sm-7 col-content">
+    <div class="col-sm-7 col-content">
       <!-- Description -->
       <?php if( get_field('media') ): ?> 
          <?php the_field( 'media' ); ?>

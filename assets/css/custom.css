@@ -523,52 +523,51 @@ p {
   border-top: 0;
   box-shadow: none !important;
   padding-bottom: 20px;
-  height: 220px !important;
 }
 
-/* line 118, ../scss/_navbar.scss */
+/* line 117, ../scss/_navbar.scss */
 #nav-row {
   height: 50px;
   z-index: 9999;
   position: fixed;
 }
 
-/* line 128, ../scss/_navbar.scss */
+/* line 127, ../scss/_navbar.scss */
 #nav-below .btn {
   margin-top: 20px;
 }
-/* line 131, ../scss/_navbar.scss */
+/* line 130, ../scss/_navbar.scss */
 #nav-below .btn-primary {
   margin-top: 10px;
 }
-/* line 134, ../scss/_navbar.scss */
+/* line 133, ../scss/_navbar.scss */
 #nav-below span {
   line-height: 17px;
 }
 
-/* line 141, ../scss/_navbar.scss */
+/* line 140, ../scss/_navbar.scss */
 .nav-previous {
   float: left;
   margin-right: 10px;
 }
 
-/* line 148, ../scss/_navbar.scss */
+/* line 147, ../scss/_navbar.scss */
 button {
   margin-right: 15px !important;
 }
 
-/* line 152, ../scss/_navbar.scss */
+/* line 151, ../scss/_navbar.scss */
 .btn a {
   text-transform: uppercase;
   color: white;
 }
-/* line 155, ../scss/_navbar.scss */
+/* line 154, ../scss/_navbar.scss */
 .btn a:hover {
   color: white;
   text-decoration: none;
 }
 
-/* line 164, ../scss/_navbar.scss */
+/* line 163, ../scss/_navbar.scss */
 .btn-primary {
   background-color: #b12e4f;
   border-color: #b12e4f;
@@ -578,7 +577,7 @@ button {
   transition: background-color, 0.5s;
 }
 
-/* line 169, ../scss/_navbar.scss */
+/* line 168, ../scss/_navbar.scss */
 .btn-primary:hover, .btn-primary:active, .btn-primary.active {
   background-color: #d15070;
   border-color: #d15070;
@@ -588,7 +587,7 @@ button {
   transition: background-color, 0.5s;
 }
 
-/* line 174, ../scss/_navbar.scss */
+/* line 173, ../scss/_navbar.scss */
 .btn-danger {
   background-color: #b12e4f;
   border-color: #b12e4f;
@@ -597,18 +596,18 @@ button {
   -o-transition: background-color, 0.5s;
   transition: background-color, 0.5s;
 }
-/* line 179, ../scss/_navbar.scss */
+/* line 178, ../scss/_navbar.scss */
 .btn-danger .fa-arrow-left {
   line-height: 19px;
   margin-right: 5px;
   margin-left: -5px;
 }
-/* line 184, ../scss/_navbar.scss */
+/* line 183, ../scss/_navbar.scss */
 .btn-danger:focus {
   background-color: #b12e4f;
 }
 
-/* line 189, ../scss/_navbar.scss */
+/* line 188, ../scss/_navbar.scss */
 .btn-danger:hover, .btn-danger:active, .btn-danger.active {
   background-color: #d15070;
   border-color: #d15070;
@@ -618,7 +617,7 @@ button {
   transition: background-color, 0.5s;
 }
 
-/* line 195, ../scss/_navbar.scss */
+/* line 194, ../scss/_navbar.scss */
 .btn-info {
   background-color: #555555;
   border-color: #555555;
@@ -627,12 +626,12 @@ button {
   -o-transition: background-color, 0.5s;
   transition: background-color, 0.5s;
 }
-/* line 200, ../scss/_navbar.scss */
+/* line 199, ../scss/_navbar.scss */
 .btn-info:focus {
   border: 2px dotted #444 !important;
 }
 
-/* line 205, ../scss/_navbar.scss */
+/* line 204, ../scss/_navbar.scss */
 .btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active {
   background-color: #767676;
   border-color: #767676;
@@ -642,32 +641,32 @@ button {
   transition: background-color, 0.5s;
 }
 
-/* line 210, ../scss/_navbar.scss */
+/* line 209, ../scss/_navbar.scss */
 .btn-block {
   margin-bottom: 20px;
   color: black;
   font-size: 100%;
 }
 
-/* line 218, ../scss/_navbar.scss */
+/* line 217, ../scss/_navbar.scss */
 .affix {
   top: 0;
 }
 
 @media only all and (max-width: 767px) {
-  /* line 221, ../scss/_navbar.scss */
+  /* line 220, ../scss/_navbar.scss */
   .affix-top {
     position: fixed;
     top: 0;
   }
 }
 
-/* line 229, ../scss/_navbar.scss */
+/* line 228, ../scss/_navbar.scss */
 .single .affix, .single .affix-top {
   position: fixed;
 }
 @media only all and (max-width: 767px) {
-  /* line 229, ../scss/_navbar.scss */
+  /* line 228, ../scss/_navbar.scss */
   .single .affix, .single .affix-top {
     position: static;
   }
