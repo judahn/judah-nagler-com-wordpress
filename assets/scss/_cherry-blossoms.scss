@@ -35,7 +35,7 @@
 }
 
 #cherry-blossom-main{
-    @include background( image-url( "cherry-blossom-shadow.png" ));
+    @include background( image-url( "cherry-blossom.png" ));
     background-position: -220px -93px;
     background-repeat: no-repeat;
     height: 1100px;
@@ -55,6 +55,7 @@
 .above-header {
     overflow: visible;
     height: 500px;
+    // background-color: #222;
 
     @include max_tablet{
         height: 190px;

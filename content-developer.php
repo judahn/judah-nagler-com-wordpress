@@ -73,12 +73,20 @@
 
     <div class="description col-sm-7 col-content">
       <!-- Description -->
-      <?php if( get_field('description') ): ?> 
-         <?php the_field( 'description' ); ?>
+      <?php if( get_field('media') ): ?> 
+         <?php the_field( 'media' ); ?>
       <?php endif; ?>
     </div>
 
-    <div id="col-credits" class="col-sm-5 col-content">
+    <div id="col-credits" class="col-sm-5 no-pad">
+
+      <?php if( get_field('description') ): ?> 
+        <!-- Description -->
+        <div class="">
+          <?php the_field( 'description' ); ?>
+        </div>
+      <?php endif; ?>
+
       <?php include 'credits.php' ?>
 
       <?php if( get_field('view_templates_url') ): ?> 
