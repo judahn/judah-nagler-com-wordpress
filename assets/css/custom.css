@@ -1993,86 +1993,88 @@ code, pre, .highlight {
   margin: 10px 0 30px;
 }
 
-/* line 264, ../scss/_page-specific.scss */
-#col-credits {
-  padding-left: 5px;
+@media only all and (max-width: 767px) {
+  /* line 264, ../scss/_page-specific.scss */
+  #col-credits {
+    padding-top: 20px;
+  }
 }
 
-/* line 267, ../scss/_page-specific.scss */
+/* line 269, ../scss/_page-specific.scss */
 .credits {
   overflow-y: hidden;
   overflow-x: hidden;
 }
-/* line 270, ../scss/_page-specific.scss */
+/* line 272, ../scss/_page-specific.scss */
 .credits td {
   padding: 3px !important;
 }
 @media only all and (max-width: 1199px) {
-  /* line 274, ../scss/_page-specific.scss */
+  /* line 276, ../scss/_page-specific.scss */
   .credits td {
     padding: 1px !important;
   }
 }
-/* line 278, ../scss/_page-specific.scss */
+/* line 280, ../scss/_page-specific.scss */
 .credits a {
   padding-left: 10px;
 }
 
-/* line 282, ../scss/_page-specific.scss */
+/* line 284, ../scss/_page-specific.scss */
 .description {
   margin-bottom: 10px;
 }
 @media only all and (max-width: 767px) {
-  /* line 282, ../scss/_page-specific.scss */
+  /* line 284, ../scss/_page-specific.scss */
   .description {
     margin-top: 20px;
   }
 }
-/* line 289, ../scss/_page-specific.scss */
+/* line 291, ../scss/_page-specific.scss */
 .description button {
   margin-top: 5px;
 }
 @media only all and (max-width: 767px) {
-  /* line 289, ../scss/_page-specific.scss */
+  /* line 291, ../scss/_page-specific.scss */
   .description button {
     margin-top: 10px;
   }
 }
-/* line 296, ../scss/_page-specific.scss */
+/* line 298, ../scss/_page-specific.scss */
 .description p {
   text-align: justify;
 }
 
-/* line 300, ../scss/_page-specific.scss */
+/* line 302, ../scss/_page-specific.scss */
 .media {
   margin-bottom: 30px;
 }
 @media only all and (max-width: 767px) {
-  /* line 300, ../scss/_page-specific.scss */
+  /* line 302, ../scss/_page-specific.scss */
   .media {
     margin-bottom: 0px;
   }
 }
-/* line 307, ../scss/_page-specific.scss */
+/* line 309, ../scss/_page-specific.scss */
 .media p {
   margin: 0;
 }
-/* line 310, ../scss/_page-specific.scss */
+/* line 312, ../scss/_page-specific.scss */
 .media img {
   margin: 0;
 }
-/* line 314, ../scss/_page-specific.scss */
+/* line 316, ../scss/_page-specific.scss */
 .media object {
   margin-right: 10px !important;
   margin-bottom: 15px !important;
 }
 
-/* line 319, ../scss/_page-specific.scss */
+/* line 321, ../scss/_page-specific.scss */
 .single-programmer .media {
   margin-bottom: 20px;
 }
 
-/* line 327, ../scss/_page-specific.scss */
+/* line 329, ../scss/_page-specific.scss */
 .page-id-21 #cherry-blossoms {
   z-index: 999;
 }

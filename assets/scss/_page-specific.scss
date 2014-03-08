@@ -262,7 +262,9 @@
     }
 }
 #col-credits {
-    padding-left: 5px;
+    @include max_tablet {
+        padding-top: 20px;
+    }
 }
 .credits {
     overflow-y: hidden;
