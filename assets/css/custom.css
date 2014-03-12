@@ -649,24 +649,37 @@ button {
 }
 
 /* line 217, ../scss/_navbar.scss */
+.affix .navbar-inverse, .affix-top .navbar > .container {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* line 221, ../scss/_navbar.scss */
 .affix {
   top: 0;
 }
+/* line 227, ../scss/_navbar.scss */
+.affix .navbar > .container {
+  background-color: transparent;
+}
 
+/* line 233, ../scss/_navbar.scss */
+.affix-top .navbar-inverse {
+  background-color: transparent;
+}
 @media only all and (max-width: 767px) {
-  /* line 220, ../scss/_navbar.scss */
+  /* line 231, ../scss/_navbar.scss */
   .affix-top {
     position: fixed;
     top: 0;
   }
 }
 
-/* line 228, ../scss/_navbar.scss */
+/* line 246, ../scss/_navbar.scss */
 .single .affix, .single .affix-top {
   position: fixed;
 }
 @media only all and (max-width: 767px) {
-  /* line 228, ../scss/_navbar.scss */
+  /* line 246, ../scss/_navbar.scss */
   .single .affix, .single .affix-top {
     position: static;
   }

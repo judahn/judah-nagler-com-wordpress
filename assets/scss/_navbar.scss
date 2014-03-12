@@ -214,10 +214,28 @@ button {
 
 //  Affix
 
+%navBg{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
 .affix {
     top: 0;
+
+    .navbar-inverse {
+        @extend %navBg;
+    }
+    .navbar > .container {
+        background-color: transparent;
+    }
 }
 .affix-top {
+
+    .navbar-inverse {
+        background-color: transparent;
+    }
+    .navbar > .container {
+        @extend %navBg;
+    }
     @include max_tablet{
         position: fixed;
         top: 0;
