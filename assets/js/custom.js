@@ -91,11 +91,6 @@ $j(document).ready(function() {
 
 			// Set current view
 			currView = 1;
-			
-			// Init Stellar
-			$j.stellar({
-				hideDistantElements: false
-			});
 
 		} else {
 			// Set opacity on all target elements to 1
@@ -103,6 +98,15 @@ $j(document).ready(function() {
 
 			// Set current view
 			currView = 0;
+		}
+
+
+		// If not search page or mobile view, init Stellar parallax fx
+
+		if (!isSearch && winW >= tablet) {
+			$j.stellar({
+				hideDistantElements: false
+			});
 		}
 
 		// Apply target opacities to elements

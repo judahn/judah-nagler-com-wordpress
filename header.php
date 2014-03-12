@@ -39,5 +39,11 @@
 
 <div class="root">
 
+	<div class="pos-abs bg-img">
+		<div class="pos-rel" data-stellar-ratio="0.5">
+			<img src="<?php echo get_template_directory_uri() . '/assets/img/temple1c.jpg' ?>" alt="" class="bg-img-responsive">
+		</div>
+	</div>
+
 
 
