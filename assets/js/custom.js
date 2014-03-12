@@ -150,7 +150,7 @@ $j(document).ready(function() {
 		});
 		_scrollState = 1;
 	}
-	scrollDownIn();
+	// scrollDownIn();
 
 	
 	/*

@@ -4,9 +4,21 @@
  */
 
 .home {
+    .above-header {
+        @include max_phone{
+            height: 227px;
+        }
+        @include max_pager {
+            height: 257px;
+        }
+    }
     #cherry-blossom-main {
+        @include max_tablet{
+            background-position: -321px -227px !important;
+        }
         @include max_phone {
             width: 740px !important;
+            background-position: -321px -117px !important;
         }
     }
     .entry-content {
@@ -29,11 +41,6 @@
     }
     .main-content-inner span{
         color: $blue;
-    }
-    .above-header {
-        @include max_phone {
-            height: 304px;
-        }
     }
 }
 .col-page-left {
@@ -236,6 +243,11 @@
 .single #scroll-down {
     display: none !important;
 }
+@include max(800px) {
+     #scroll-down {
+        zoom: 60% !important;
+    }
+}
 
 .home, .blog, .page-id-21{
     .hentry {
@@ -260,9 +272,8 @@
     }
 }
 #col-credits {
-
     @include max_tablet {
-        padding-top: 20px;
+        padding-top: 10px;
     }
 }
 .credits {

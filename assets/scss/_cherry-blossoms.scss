@@ -43,7 +43,6 @@
     background-repeat: no-repeat;
     height: 1100px;
     width: 100%;
-    // z-index: 10;
 }
 
 #cherry-blossom-center{
@@ -53,7 +52,6 @@
     height: 1100px;
     width: 100%;
     z-index: 9999;
-    // zoom: 110%;
 }
 
 #cherry-blossom-main{
@@ -62,26 +60,12 @@
     background-repeat: no-repeat;
     height: 1100px;
     width: 100%;
-    // zoom: 81%;
-    // @include opacity(0.5);
-
-    /* @include max_desktop {
-        background-position: -650px -87px;
-    }
-    @include max_laptop {
-        background-position: -750px -87px;
-    } */
     @include max_laptop {
         background-position: -760px -113px;
     }
     @extend %mobile-blossoms;
 }
 
-.home #cherry-blossom-main{
-    @include max_phone {
-        background-position: -321px -70px !important;
-    }
-}
 
 // Above Header
 

@@ -1,14 +1,6 @@
-<!-- <div class="pos-abs cherry-blossom">
-	<div id="cherry-blossom-center" class="pos-rel" data-stellar-ratio="3"></div>
-</div> -->
-
 <div class="pos-abs cherry-blossom">
 	<div id="cherry-blossom-main" class="pos-rel" data-stellar-ratio="1.618"></div>
 </div>
-
-<!-- <div class="pos-abs cherry-blossom">
-	<div id="cherry-blossom-inv" class="pos-rel" data-stellar-ratio="1.5"></div>
-</div> -->
 
 <?php $title_ratio = "0.17"; ?>
 <?php $title_class = "pos-abs hidden-xs"; ?>

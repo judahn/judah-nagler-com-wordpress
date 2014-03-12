@@ -84,7 +84,7 @@ a:hover {
     }
     .page-title{
         @include max_tablet{
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
     }
 }
@@ -144,6 +144,14 @@ a:hover {
     .col-sm-6 {
         @include max_tablet{
             padding: 0;
+        }
+    }
+    .page-title {
+        @include max_tablet {
+            text-align: right !important;
+        }
+        @include max_phone {
+            text-align: left;
         }
     }
 }
