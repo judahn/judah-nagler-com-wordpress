@@ -1,5 +1,5 @@
 /*
- *  CUSTOM.JS - Authored by Judah Nagler, 2014
+ *  CUSTOM.JS - JS authored by Judah Nagler, 2014
  */
 
 
