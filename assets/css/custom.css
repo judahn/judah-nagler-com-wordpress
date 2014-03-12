@@ -1228,12 +1228,9 @@ section .col-sm-5, section .col-md-6 {
   transition: padding, 1s;
   font-family: "Dosis", sans-serif !important;
   background-color: #393939;
-}
-@media only all and (max-width: 767px) {
-  /* line 33, ../scss/_thumbs.scss */
-  .thumbnail h3 {
-    background-color: #b12e4f;
-  }
+  /* @include max_tablet {
+      background-color: $red;
+  } */
 }
 /* line 42, ../scss/_thumbs.scss */
 .thumbnail img {
@@ -1249,15 +1246,11 @@ section .col-sm-5, section .col-md-6 {
   -moz-transition: border, 1s;
   -o-transition: border, 1s;
   transition: border, 1s;
-}
-@media only all and (max-width: 767px) {
-  /* line 42, ../scss/_thumbs.scss */
-  .thumbnail img {
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
-    opacity: 0.8;
-    border: 3px dotted #666;
-    width: 100% !important;
-  }
+  /* @include max_tablet {
+      @include opacity(0.8);
+      border: 3px dotted #666;
+      width: 100% !important;
+  } */
 }
 /* line 59, ../scss/_thumbs.scss */
 .thumbnail .image {
@@ -1270,12 +1263,9 @@ section .col-sm-5, section .col-md-6 {
   -moz-transition: color, 0.5s;
   -o-transition: color, 0.5s;
   transition: color, 0.5s;
-}
-@media only all and (max-width: 767px) {
-  /* line 62, ../scss/_thumbs.scss */
-  .thumbnail i {
-    color: black;
-  }
+  /* @include max_tablet {
+      color: black;
+  } */
 }
 /* line 69, ../scss/_thumbs.scss */
 .thumbnail .caption {
