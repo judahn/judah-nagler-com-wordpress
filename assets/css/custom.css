@@ -2019,13 +2019,6 @@ code, pre, .highlight {
   margin: 10px 0 30px;
 }
 
-@media only all and (max-width: 767px) {
-  /* line 274, ../scss/_page-specific.scss */
-  #col-credits {
-    padding-top: 10px;
-  }
-}
-
 /* line 279, ../scss/_page-specific.scss */
 .credits {
   overflow-y: hidden;
@@ -2049,24 +2042,6 @@ code, pre, .highlight {
 /* line 295, ../scss/_page-specific.scss */
 .description {
   margin-bottom: 10px;
-    /* p {
-        // text-align:justify;
-        font-size: 32px;
-        line-height: 42px;
-        font-style: italic;
-
-        @include max_desktop {
-            font-size:   27px;
-            line-height: 37px;
-        }
-        @include max_laptop {
-            font-size:   21px;
-            line-height: 33px;
-        }
-        @include max_tablet {
-
-        }
-    } */
 }
 @media only all and (max-width: 767px) {
   /* line 295, ../scss/_page-specific.scss */
@@ -2084,41 +2059,37 @@ code, pre, .highlight {
     margin-top: 10px;
   }
 }
-/* line 327, ../scss/_page-specific.scss */
-.description p {
-  text-align: justify;
-}
 
-/* line 331, ../scss/_page-specific.scss */
+/* line 310, ../scss/_page-specific.scss */
 .media {
   margin-bottom: 30px;
 }
 @media only all and (max-width: 767px) {
-  /* line 331, ../scss/_page-specific.scss */
+  /* line 310, ../scss/_page-specific.scss */
   .media {
     margin-bottom: 0px;
   }
 }
-/* line 338, ../scss/_page-specific.scss */
+/* line 317, ../scss/_page-specific.scss */
 .media p {
   margin: 0;
 }
-/* line 341, ../scss/_page-specific.scss */
+/* line 320, ../scss/_page-specific.scss */
 .media img {
   margin: 0;
 }
-/* line 345, ../scss/_page-specific.scss */
+/* line 324, ../scss/_page-specific.scss */
 .media object {
   margin-right: 10px !important;
   margin-bottom: 15px !important;
 }
 
-/* line 350, ../scss/_page-specific.scss */
+/* line 329, ../scss/_page-specific.scss */
 .single-programmer .media {
   margin-bottom: 20px;
 }
 
-/* line 358, ../scss/_page-specific.scss */
+/* line 337, ../scss/_page-specific.scss */
 .page-id-21 #cherry-blossoms {
   z-index: 999;
 }

@@ -273,7 +273,7 @@
 }
 #col-credits {
     @include max_tablet {
-        padding-top: 10px;
+        // padding-top: 10px;
     }
 }
 .credits {
@@ -305,27 +305,6 @@
         @include max_tablet {
             margin-top: 10px;
         }
-    }
-    /* p {
-        // text-align:justify;
-        font-size: 32px;
-        line-height: 42px;
-        font-style: italic;
-
-        @include max_desktop {
-            font-size:   27px;
-            line-height: 37px;
-        }
-        @include max_laptop {
-            font-size:   21px;
-            line-height: 33px;
-        }
-        @include max_tablet {
-
-        }
-    } */
-    p {
-        text-align:justify;
     }
 }
 .media {
