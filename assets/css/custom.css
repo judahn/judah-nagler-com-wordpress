@@ -2579,66 +2579,71 @@ a:hover {
   max-width: auto !important;
 }
 
-/* line 224, ../scss/custom.scss */
+/* line 222, ../scss/custom.scss */
+#mc_signup_form {
+  background-color: transparent !important;
+}
+
+/* line 228, ../scss/custom.scss */
 .fa-desktop {
   line-height: 21px;
 }
 
-/* line 227, ../scss/custom.scss */
+/* line 231, ../scss/custom.scss */
 .fa-globe {
   line-height: 19px;
 }
 
-/* line 230, ../scss/custom.scss */
+/* line 234, ../scss/custom.scss */
 .fa-responsive {
   margin-right: 5px;
 }
 
-/* line 237, ../scss/custom.scss */
+/* line 241, ../scss/custom.scss */
 .sidebar {
   padding: 10px 10px 30px 50px;
   margin-top: 25px;
 }
 @media only all and (max-width: 991px) {
-  /* line 237, ../scss/custom.scss */
+  /* line 241, ../scss/custom.scss */
   .sidebar {
     padding: 0 10px 0 30px;
   }
 }
 @media only all and (max-width: 767px) {
-  /* line 237, ../scss/custom.scss */
+  /* line 241, ../scss/custom.scss */
   .sidebar {
     padding: 20px 0;
   }
 }
-/* line 248, ../scss/custom.scss */
+/* line 252, ../scss/custom.scss */
 .sidebar h3 {
   padding: 0 0 10px;
   margin: 0 !important;
 }
-/* line 252, ../scss/custom.scss */
+/* line 256, ../scss/custom.scss */
 .sidebar .nav > li > a {
   padding: 10px 0;
 }
 
-/* line 256, ../scss/custom.scss */
+/* line 260, ../scss/custom.scss */
 .blog .sidebar {
   margin-top: 10px;
 }
 
-/* line 262, ../scss/custom.scss */
+/* line 266, ../scss/custom.scss */
 .modal {
   top: 10%;
 }
 
-/* line 266, ../scss/custom.scss */
+/* line 270, ../scss/custom.scss */
 #update-browser {
   width: 0;
   height: 0;
   z-index: -999999999999;
 }
 
-/* line 272, ../scss/custom.scss */
+/* line 276, ../scss/custom.scss */
 .ie8 #update-browser {
   display: block !important;
   visibility: visible !important;
@@ -2649,7 +2654,7 @@ a:hover {
   z-index: 999999999999;
   padding: 30px;
 }
-/* line 282, ../scss/custom.scss */
+/* line 286, ../scss/custom.scss */
 .ie8 #update-browser a {
   font-size: 37px;
   line-height: 47px;
@@ -2658,7 +2663,7 @@ a:hover {
 /*
  *  Admin Menu 
  */
-/* line 293, ../scss/custom.scss */
+/* line 297, ../scss/custom.scss */
 #adminmenu #menu-posts-design .wp-menu-image:before {
   content: '\f85' !important;
 }
