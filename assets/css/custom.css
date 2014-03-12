@@ -649,7 +649,7 @@ button {
 }
 
 /* line 217, ../scss/_navbar.scss */
-.affix .navbar-inverse, .affix-top .navbar > .container {
+.affix .navbar-inverse, .affix-top .navbar > .container, .single .affix .navbar-inverse, .single .affix-top .navbar-inverse {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -677,6 +677,10 @@ button {
 /* line 246, ../scss/_navbar.scss */
 .single .affix, .single .affix-top {
   position: fixed;
+}
+/* line 251, ../scss/_navbar.scss */
+.single .affix .navbar > .container, .single .affix-top .navbar > .container {
+  background-color: transparent;
 }
 @media only all and (max-width: 767px) {
   /* line 246, ../scss/_navbar.scss */

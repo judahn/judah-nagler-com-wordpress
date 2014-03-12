@@ -245,6 +245,12 @@ button {
 
     .affix, .affix-top {
         position: fixed;
+        .navbar-inverse {
+            @extend %navBg;
+        }
+        .navbar > .container {
+            background-color: transparent;
+        }
         @include max_tablet {
             position: static;
         }
