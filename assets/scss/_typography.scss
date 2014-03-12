@@ -25,13 +25,11 @@
     @include max_desktop {
         font-size:      15px;
         line-height:    21px;
-        margin-bottom:  18px;
-            letter-spacing: 0.5px;
+        letter-spacing: 0.5px;
     }
     @include max_laptop {
         font-size:      14px;
         line-height:    20px;
-        margin-bottom:  13px;
         letter-spacing: 0.4px;
     }
     @include max_tablet{
@@ -110,4 +108,11 @@ a{
 p {
     @include globalText;
     margin-bottom:  20px;
+
+    @include max_desktop {
+        margin-bottom:  18px;
+    }
+    @include max_laptop {
+        margin-bottom:  13px;
+    }
 }

@@ -227,7 +227,7 @@ code, pre, .highlight {
 /*
  *	BASICS
  */
-/* line 56, ../scss/_typography.scss */
+/* line 54, ../scss/_typography.scss */
 body {
   color: #ccc;
   font-family: "Dosis", sans-serif;
@@ -237,25 +237,23 @@ body {
   letter-spacing: 0.7px;
 }
 @media only all and (max-width: 1199px) {
-  /* line 56, ../scss/_typography.scss */
+  /* line 54, ../scss/_typography.scss */
   body {
     font-size: 15px;
     line-height: 21px;
-    margin-bottom: 18px;
     letter-spacing: 0.5px;
   }
 }
 @media only all and (max-width: 991px) {
-  /* line 56, ../scss/_typography.scss */
+  /* line 54, ../scss/_typography.scss */
   body {
     font-size: 14px;
     line-height: 20px;
-    margin-bottom: 13px;
     letter-spacing: 0.4px;
   }
 }
 @media only all and (max-width: 767px) {
-  /* line 56, ../scss/_typography.scss */
+  /* line 54, ../scss/_typography.scss */
   body {
     font-size: 15px;
     line-height: 21px;
@@ -263,23 +261,23 @@ body {
   }
 }
 
-/* line 59, ../scss/_typography.scss */
+/* line 57, ../scss/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway Dots", sans-serif;
   text-transform: uppercase;
   color: white;
   margin-top: 0;
 }
-/* line 64, ../scss/_typography.scss */
+/* line 62, ../scss/_typography.scss */
 h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
   color: #ccc;
 }
-/* line 67, ../scss/_typography.scss */
+/* line 65, ../scss/_typography.scss */
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   text-decoration: none;
 }
 
-/* line 71, ../scss/_typography.scss */
+/* line 69, ../scss/_typography.scss */
 h1 {
   font-size: 60px;
   margin-bottom: 50px;
@@ -287,26 +285,26 @@ h1 {
   text-shadow: 0px 2px 3px black;
 }
 @media only all and (max-width: 1199px) {
-  /* line 71, ../scss/_typography.scss */
+  /* line 69, ../scss/_typography.scss */
   h1 {
     font-size: 49px;
     margin-bottom: 40px;
   }
 }
 @media only all and (max-width: 767px) {
-  /* line 71, ../scss/_typography.scss */
+  /* line 69, ../scss/_typography.scss */
   h1 {
     font-size: 33px;
     margin-bottom: 40px;
   }
 }
 
-/* line 85, ../scss/_typography.scss */
+/* line 83, ../scss/_typography.scss */
 h2 {
   font-size: 230%;
 }
 
-/* line 88, ../scss/_typography.scss */
+/* line 86, ../scss/_typography.scss */
 h3 {
   margin: 0px 0 15px 0;
   padding: 5px 7px 5px;
@@ -314,21 +312,21 @@ h3 {
   line-height: 130%;
   letter-spacing: 1px;
 }
-/* line 95, ../scss/_typography.scss */
+/* line 93, ../scss/_typography.scss */
 h3 i {
   margin-right: 5px;
   margin-top: 2px;
   color: #60192b;
 }
 
-/* line 101, ../scss/_typography.scss */
+/* line 99, ../scss/_typography.scss */
 a {
   -webkit-transition: color, 0.25s;
   -moz-transition: color, 0.25s;
   -o-transition: color, 0.25s;
   transition: color, 0.25s;
 }
-/* line 103, ../scss/_typography.scss */
+/* line 101, ../scss/_typography.scss */
 a:hover {
   -webkit-transition: color, 0.25s;
   -moz-transition: color, 0.25s;
@@ -336,7 +334,7 @@ a:hover {
   transition: color, 0.25s;
 }
 @media only all and (max-width: 767px) {
-  /* line 101, ../scss/_typography.scss */
+  /* line 99, ../scss/_typography.scss */
   a {
     -webkit-transition: 0;
     -moz-transition: 0;
@@ -345,7 +343,7 @@ a:hover {
   }
 }
 
-/* line 110, ../scss/_typography.scss */
+/* line 108, ../scss/_typography.scss */
 p {
   color: #ccc;
   font-family: "Dosis", sans-serif;
@@ -356,29 +354,39 @@ p {
   margin-bottom: 20px;
 }
 @media only all and (max-width: 1199px) {
-  /* line 110, ../scss/_typography.scss */
+  /* line 108, ../scss/_typography.scss */
   p {
     font-size: 15px;
     line-height: 21px;
-    margin-bottom: 18px;
     letter-spacing: 0.5px;
   }
 }
 @media only all and (max-width: 991px) {
-  /* line 110, ../scss/_typography.scss */
+  /* line 108, ../scss/_typography.scss */
   p {
     font-size: 14px;
     line-height: 20px;
-    margin-bottom: 13px;
     letter-spacing: 0.4px;
   }
 }
 @media only all and (max-width: 767px) {
-  /* line 110, ../scss/_typography.scss */
+  /* line 108, ../scss/_typography.scss */
   p {
     font-size: 15px;
     line-height: 21px;
     letter-spacing: 0.7px;
+  }
+}
+@media only all and (max-width: 1199px) {
+  /* line 108, ../scss/_typography.scss */
+  p {
+    margin-bottom: 18px;
+  }
+}
+@media only all and (max-width: 991px) {
+  /* line 108, ../scss/_typography.scss */
+  p {
+    margin-bottom: 13px;
   }
 }
 
