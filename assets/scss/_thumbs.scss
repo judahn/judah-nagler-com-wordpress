@@ -35,26 +35,16 @@ $thumb_hover:   $red;
         @include transition (padding,           1s);
         font-family: "Dosis", sans-serif !important;
         background-color: $thumb_back;
-        /* @include max_tablet {
-            background-color: $red;
-        } */
     }
     img {
         height: auto !important;
         border: 3px dotted #aaa;
 
+        @extend %add-grayscale;
+
         @include opacity(0.35);
         @include transition(opacity, 1s);
         @include transition(border, 1s);
-
-        // @include filter(grayscale(100%));
-        @extend %add-grayscale;
-
-        /* @include max_tablet {
-            @include opacity(0.8);
-            border: 3px dotted #666;
-            width: 100% !important;
-        } */
     }
     .image {
         background-color: black;
@@ -62,9 +52,6 @@ $thumb_hover:   $red;
     i {
         color: $blue;
         @include transition (color, 0.5s);
-        /* @include max_tablet {
-            color: black;
-        } */
     }
     .caption {
         text-align: center;
@@ -78,7 +65,6 @@ $thumb_hover:   $red;
             border: 3px dotted $thumb_hover;
             border-bottom: 3px dotted $thumb_hover;
 
-            // @include filter(grayscale(0%));
             @extend %remove-grayscale;
 
             @include opacity(1);
@@ -105,11 +91,4 @@ $thumb_hover:   $red;
     @include max_laptop{
         font-size: 12px;
     }
-
-    /* @include max_tablet{
-        min-height: 35px;
-    }
-    @include max($max_thumb){
-        min-height: 45px;
-    } */
 }

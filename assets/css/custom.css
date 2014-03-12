@@ -1228,11 +1228,8 @@ section .col-sm-5, section .col-md-6 {
   transition: padding, 1s;
   font-family: "Dosis", sans-serif !important;
   background-color: #393939;
-  /* @include max_tablet {
-      background-color: $red;
-  } */
 }
-/* line 42, ../scss/_thumbs.scss */
+/* line 39, ../scss/_thumbs.scss */
 .thumbnail img {
   height: auto !important;
   border: 3px dotted #aaa;
@@ -1246,33 +1243,25 @@ section .col-sm-5, section .col-md-6 {
   -moz-transition: border, 1s;
   -o-transition: border, 1s;
   transition: border, 1s;
-  /* @include max_tablet {
-      @include opacity(0.8);
-      border: 3px dotted #666;
-      width: 100% !important;
-  } */
 }
-/* line 59, ../scss/_thumbs.scss */
+/* line 49, ../scss/_thumbs.scss */
 .thumbnail .image {
   background-color: black;
 }
-/* line 62, ../scss/_thumbs.scss */
+/* line 52, ../scss/_thumbs.scss */
 .thumbnail i {
   color: #bf7485;
   -webkit-transition: color, 0.5s;
   -moz-transition: color, 0.5s;
   -o-transition: color, 0.5s;
   transition: color, 0.5s;
-  /* @include max_tablet {
-      color: black;
-  } */
 }
-/* line 69, ../scss/_thumbs.scss */
+/* line 56, ../scss/_thumbs.scss */
 .thumbnail .caption {
   text-align: center;
   padding: 10px 0 0 0;
 }
-/* line 77, ../scss/_thumbs.scss */
+/* line 64, ../scss/_thumbs.scss */
 .thumbnail:hover img, .thumbnail:focus img {
   border: 3px dotted #b12e4f;
   border-bottom: 3px dotted #b12e4f;
@@ -1283,7 +1272,7 @@ section .col-sm-5, section .col-md-6 {
   -o-transition: opacity, 0.5s;
   transition: opacity, 0.5s;
 }
-/* line 87, ../scss/_thumbs.scss */
+/* line 73, ../scss/_thumbs.scss */
 .thumbnail:hover h3, .thumbnail:focus h3 {
   background: #b12e4f;
   color: white;
@@ -1297,7 +1286,7 @@ section .col-sm-5, section .col-md-6 {
   -o-transition: padding, 0.2s;
   transition: padding, 0.2s;
 }
-/* line 94, ../scss/_thumbs.scss */
+/* line 80, ../scss/_thumbs.scss */
 .thumbnail:hover i, .thumbnail:focus i {
   color: black;
   -webkit-transition: color, 0.2s;
@@ -1306,19 +1295,13 @@ section .col-sm-5, section .col-md-6 {
   transition: color, 0.2s;
 }
 
-/* line 101, ../scss/_thumbs.scss */
+/* line 87, ../scss/_thumbs.scss */
 .thumb-title {
   min-height: 47px;
   transition: none !important;
-  /* @include max_tablet{
-      min-height: 35px;
-  }
-  @include max($max_thumb){
-      min-height: 45px;
-  } */
 }
 @media only all and (max-width: 991px) {
-  /* line 101, ../scss/_thumbs.scss */
+  /* line 87, ../scss/_thumbs.scss */
   .thumb-title {
     font-size: 12px;
   }
