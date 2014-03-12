@@ -1198,9 +1198,6 @@ section .col-sm-5, section .col-md-6 {
 .thumbnail {
   padding: 0;
   margin-bottom: 1%;
-  /* .image {
-      background-color: black;
-  } */
 }
 /* line 33, ../scss/_thumbs.scss */
 .thumbnail h3 {
@@ -1225,8 +1222,8 @@ section .col-sm-5, section .col-md-6 {
 .thumbnail img {
   height: auto !important;
   border: 3px dotted #aaa;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
-  opacity: 0.5;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=35);
+  opacity: 0.35;
   -webkit-transition: opacity, 1s;
   -moz-transition: opacity, 1s;
   -o-transition: opacity, 1s;
@@ -1244,6 +1241,10 @@ section .col-sm-5, section .col-md-6 {
     border: 3px dotted #666;
     width: 100% !important;
   }
+}
+/* line 59, ../scss/_thumbs.scss */
+.thumbnail .image {
+  background-color: black;
 }
 /* line 62, ../scss/_thumbs.scss */
 .thumbnail i {

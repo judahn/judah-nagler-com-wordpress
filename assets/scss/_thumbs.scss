@@ -43,7 +43,7 @@ $thumb_hover:   $red;
         height: auto !important;
         border: 3px dotted #aaa;
 
-        @include opacity(0.5);
+        @include opacity(0.35);
         @include transition(opacity, 1s);
         @include transition(border, 1s);
 
@@ -56,9 +56,9 @@ $thumb_hover:   $red;
             width: 100% !important;
         }
     }
-    /* .image {
+    .image {
         background-color: black;
-    } */
+    }
     i {
         color: $blue;
         @include transition (color, 0.5s);

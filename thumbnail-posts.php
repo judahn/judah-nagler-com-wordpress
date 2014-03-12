@@ -13,8 +13,9 @@
 						} else {?>
 							<img class="attachment- img-responsive wp-post-image" src="holder.js/300x200/industrial">
 						<?php } ?>
-						<div class="thumb-title"><h3><i class="fa fa-arrow-right"></i><?php the_title(); ?></h3></div>
 					</div>
+					<div class="thumb-title"><h3><i class="fa fa-arrow-right"></i><?php the_title(); ?></h3></div>
+					
 				</div>
 			</a>
 		</li>
