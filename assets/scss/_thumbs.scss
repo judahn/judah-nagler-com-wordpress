@@ -56,7 +56,9 @@ $thumb_hover:   $red;
             width: 100% !important;
         }
     }
-
+    /* .image {
+        background-color: black;
+    } */
     i {
         color: $blue;
         @include transition (color, 0.5s);

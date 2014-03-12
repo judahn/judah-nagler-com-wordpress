@@ -5,19 +5,8 @@
 
 .home {
     #cherry-blossom-main {
-        background-position: -550px 13px;
-
-        @include max_desktop {
-            background-position: -650px 20px;
-        }
-        @include max_laptop {
-            background-position: -750px 20px;
-        }
-        @extend %mobile-blossoms;
-
         @include max_phone {
             width: 740px !important;
-            background-position: -276px -90px !important;
         }
     }
     .entry-content {
@@ -75,6 +64,14 @@
  */
 
 .blog {
+    .page-header {
+        @include max_tablet {
+            margin: 80px 0 0;
+        }
+        @include max_phone {
+            margin: 50px 0 0;
+        }
+    }
     .main-content-inner {
         h2 a {
             color: white;
@@ -114,8 +111,6 @@
         @extend %mobile-blossoms;
     }
 }
-
-
 
 /* 
  * 	Responsive 
@@ -237,6 +232,9 @@
             margin: 10px; 
         }
     }
+}
+.single #scroll-down {
+    display: none !important;
 }
 
 .home, .blog, .page-id-21{

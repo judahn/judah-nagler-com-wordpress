@@ -112,12 +112,41 @@ $j(document).ready(function() {
 
 		// Set previous view
 		prevView = currView;
+
+		if (scroll > 1){
+			scrollDownStop();
+		}
 	}
 
 	// Init Window Scroll
 
 	onWindowScroll();
 
+
+
+
+	/*
+	 * 	Scroll Down Teaser
+	 */
+
+	var _scrollDown  		= $j("#scroll-down");
+	var _scrollDownTime 	= 300;
+	var _scrollState		= 0;
+
+	function scrollDownIn() {
+		$j(_scrollDown).delay(1500).animate({"bottom":"20px"}, _scrollDownTime, "easeOutQuad", scrollDownOut);
+	}
+	function scrollDownOut() {
+		$j(_scrollDown).animate({"bottom":"0px"}, _scrollDownTime * 3, "easeOutBounce", scrollDownIn);
+	}
+	function scrollDownStop() {
+		if (_scrollState == 1) return;
+		$j(_scrollDown).stop().animate({"opacity":0}, _scrollDownTime, "easeOutQuad", function(){
+			_scrollDown.remove();
+		});
+		_scrollState = 1;
+	}
+	scrollDownIn();
 
 	
 	/*

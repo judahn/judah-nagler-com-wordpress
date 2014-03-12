@@ -18,7 +18,7 @@
     }
 }
 
-#cherry-blossoms{
+%cherry-blossom {
     @if ($TESTING) { display: none; }
     width: 100%;
     height: auto;
@@ -29,25 +29,58 @@
         position: absolute;
     }
 }
+.cherry-blossom{
+    @extend %cherry-blossom;
+}
 
 .ie #cherry-blossoms{
     z-index: -1;
 }
 
-#cherry-blossom-main{
-    @include background( image-url( "cherry-blossom.png" ));
-    background-position: -220px -93px;
+#cherry-blossom-inv{
+    @include background( image-url( "cherry-blossom-shadow-inv.png" ));
+    background-position: 350px -200px;
     background-repeat: no-repeat;
     height: 1100px;
     width: 100%;
+    // z-index: 10;
+}
 
-    @include max_desktop{
-        background-position: -370px -97px;
+#cherry-blossom-center{
+    @include background( image-url( "cherry-blossom.png" ));
+    background-position: 0 -300px;
+    background-repeat: no-repeat;
+    height: 1100px;
+    width: 100%;
+    z-index: 9999;
+    // zoom: 110%;
+}
+
+#cherry-blossom-main{
+    @include background( image-url( "cherry-blossom-shadow.png" ));
+    background-position: -720px -87px;
+    background-repeat: no-repeat;
+    height: 1100px;
+    width: 100%;
+    // zoom: 81%;
+    // @include opacity(0.5);
+
+    /* @include max_desktop {
+        background-position: -650px -87px;
     }
-    @include max_laptop{
-        background-position: -490px -97px;
+    @include max_laptop {
+        background-position: -750px -87px;
+    } */
+    @include max_laptop {
+        background-position: -760px -113px;
     }
     @extend %mobile-blossoms;
+}
+
+.home #cherry-blossom-main{
+    @include max_phone {
+        background-position: -321px -70px !important;
+    }
 }
 
 // Above Header
@@ -73,13 +106,13 @@
         left: auto !important;
         right: 0;
 
-        font-size: 75px;
+        font-size: 91px;
 
         @include max_desktop{
             font-size: 65px;
         }
         @include max_tablet {
-            font-size: 49px;
+            font-size: 52px;
             top: 155px !important;
         }
         @include max_phone {

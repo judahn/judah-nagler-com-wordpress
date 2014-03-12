@@ -1,5 +1,5 @@
 	<nav class="site-navigation" role="navigation" >
-		<div class="site-navigation-inner col-sm-12 row affix-top" <?php if( !is_single() ): ?>data-spy="affix" data-offset-top="500" <?php endif; ?>>
+		<div class="site-navigation-inner col-sm-12 row affix-top" <?php if( !is_single() ): ?>data-spy="affix" data-offset-top="590" <?php endif; ?>>
 			<div class="navbar navbar-inverse <?php if( is_single() ): ?>navbar-static-top <?php else: ?>navbar-static-top <?php endif; ?>'">
 				<div class="container">
 					<div class="navbar-header">

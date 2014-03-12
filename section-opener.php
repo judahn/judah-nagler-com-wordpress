@@ -1,4 +1,4 @@
-<?php include 'nav.php' ?>
+	<?php include 'nav.php' ?>
 
 <div class="main-content">
 	<div class="container">

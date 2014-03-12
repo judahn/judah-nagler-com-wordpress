@@ -18,7 +18,7 @@ get_header(); ?>
 
 
 <div class="col-sm-8 no-pad">
-	<h1 class="page-title visible-xs">Blog</h1>
+	<!-- <h1 class="page-title visible-xs">Blog</h1> -->
 	<?php if ( have_posts() ) : ?>
 
 		<?php /* Start the Loop */ ?>
