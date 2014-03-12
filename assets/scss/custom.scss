@@ -150,8 +150,8 @@ a:hover {
         @include max_tablet {
             text-align: right !important;
         }
-        @include max_phone {
-            text-align: left;
+        @include max_pager {
+            text-align: left !important;
         }
     }
 }

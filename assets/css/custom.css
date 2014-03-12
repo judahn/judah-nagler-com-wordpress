@@ -296,7 +296,7 @@ h1 {
 @media only all and (max-width: 767px) {
   /* line 71, ../scss/_typography.scss */
   h1 {
-    font-size: 35px;
+    font-size: 33px;
     margin-bottom: 40px;
   }
 }
@@ -2463,10 +2463,10 @@ a:hover {
     text-align: right !important;
   }
 }
-@media only all and (max-width: 479px) {
+@media only all and (max-width: 319px) {
   /* line 149, ../scss/custom.scss */
   .main-content-inner .page-title {
-    text-align: left;
+    text-align: left !important;
   }
 }
 
