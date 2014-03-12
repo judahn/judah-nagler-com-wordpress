@@ -14,6 +14,33 @@
 	$lineRhythm: ($line-height-base	* $scale) * 0.8;
 }
 
+@mixin globalText {
+    color:          #ccc;
+    font-family:    "Dosis", sans-serif;
+    font-size:      16px;
+    line-height:    23px;
+    font-weight:    100;
+    letter-spacing: 0.7px;
+
+    @include max_desktop {
+        font-size:      15px;
+        line-height:    21px;
+        margin-bottom:  18px;
+            letter-spacing: 0.5px;
+    }
+    @include max_laptop {
+        font-size:      13px;
+        line-height:    19px;
+        margin-bottom:  13px;
+        letter-spacing: 0.4px;
+    }
+    @include max_tablet{
+        font-size:      16px;
+        line-height:    23px;
+        letter-spacing: 0.7px;
+    }
+}
+
 
 $default-text-shadow-color:     rgba(black, 1);
 $default-text-shadow-blur:      3px;
@@ -27,19 +54,7 @@ $default-text-shadow-v-offset:  2px;
  */
 
 body {
-    font-family:    "Dosis", sans-serif;
-    color:          #ccc;
-    font-size:      16px;
-    line-height:    23px;
-
-    @include max_desktop {
-        font-size:      15px;
-        line-height:    22px;
-    }
-    @include max_laptop {
-        font-size:      14px;
-        line-height:    21px;
-    }
+    @include globalText;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: "Raleway Dots", sans-serif;
@@ -93,29 +108,6 @@ a{
     }
 }
 p {
-    color:          #ccc;
-    font-family:    "Dosis", sans-serif;
-    font-size:      17px;
-    line-height:    24px;
-    font-weight:    100;
-    letter-spacing: 0.7px;
+    @include globalText;
     margin-bottom:  20px;
-
-    @include max_desktop {
-        font-size:      15px;
-        line-height:    21px;
-        margin-bottom:  18px;
-            letter-spacing: 0.5px;
-    }
-    @include max_laptop {
-        font-size:      13px;
-        line-height:    19px;
-        margin-bottom:  13px;
-        letter-spacing: 0.4px;
-    }
-     @include max_tablet{
-        font-size:      16px;
-        line-height:    23px;
-        letter-spacing: 0.7px;
-    }
 }

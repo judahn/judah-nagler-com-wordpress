@@ -227,45 +227,59 @@ code, pre, .highlight {
 /*
  *	BASICS
  */
-/* line 29, ../scss/_typography.scss */
+/* line 56, ../scss/_typography.scss */
 body {
-  font-family: "Dosis", sans-serif;
   color: #ccc;
+  font-family: "Dosis", sans-serif;
   font-size: 16px;
   line-height: 23px;
+  font-weight: 100;
+  letter-spacing: 0.7px;
 }
 @media only all and (max-width: 1199px) {
-  /* line 29, ../scss/_typography.scss */
+  /* line 56, ../scss/_typography.scss */
   body {
     font-size: 15px;
-    line-height: 22px;
+    line-height: 21px;
+    margin-bottom: 18px;
+    letter-spacing: 0.5px;
   }
 }
 @media only all and (max-width: 991px) {
-  /* line 29, ../scss/_typography.scss */
+  /* line 56, ../scss/_typography.scss */
   body {
-    font-size: 14px;
-    line-height: 21px;
+    font-size: 13px;
+    line-height: 19px;
+    margin-bottom: 13px;
+    letter-spacing: 0.4px;
+  }
+}
+@media only all and (max-width: 767px) {
+  /* line 56, ../scss/_typography.scss */
+  body {
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.7px;
   }
 }
 
-/* line 44, ../scss/_typography.scss */
+/* line 59, ../scss/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway Dots", sans-serif;
   text-transform: uppercase;
   color: white;
   margin-top: 0;
 }
-/* line 49, ../scss/_typography.scss */
+/* line 64, ../scss/_typography.scss */
 h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
   color: #ccc;
 }
-/* line 52, ../scss/_typography.scss */
+/* line 67, ../scss/_typography.scss */
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   text-decoration: none;
 }
 
-/* line 56, ../scss/_typography.scss */
+/* line 71, ../scss/_typography.scss */
 h1 {
   font-size: 60px;
   margin-bottom: 50px;
@@ -273,26 +287,26 @@ h1 {
   text-shadow: 0px 2px 3px black;
 }
 @media only all and (max-width: 1199px) {
-  /* line 56, ../scss/_typography.scss */
+  /* line 71, ../scss/_typography.scss */
   h1 {
     font-size: 49px;
     margin-bottom: 40px;
   }
 }
 @media only all and (max-width: 767px) {
-  /* line 56, ../scss/_typography.scss */
+  /* line 71, ../scss/_typography.scss */
   h1 {
     font-size: 35px;
     margin-bottom: 40px;
   }
 }
 
-/* line 70, ../scss/_typography.scss */
+/* line 85, ../scss/_typography.scss */
 h2 {
   font-size: 230%;
 }
 
-/* line 73, ../scss/_typography.scss */
+/* line 88, ../scss/_typography.scss */
 h3 {
   margin: 0px 0 15px 0;
   padding: 5px 7px 5px;
@@ -300,21 +314,21 @@ h3 {
   line-height: 130%;
   letter-spacing: 1px;
 }
-/* line 80, ../scss/_typography.scss */
+/* line 95, ../scss/_typography.scss */
 h3 i {
   margin-right: 5px;
   margin-top: 2px;
   color: #60192b;
 }
 
-/* line 86, ../scss/_typography.scss */
+/* line 101, ../scss/_typography.scss */
 a {
   -webkit-transition: color, 0.25s;
   -moz-transition: color, 0.25s;
   -o-transition: color, 0.25s;
   transition: color, 0.25s;
 }
-/* line 88, ../scss/_typography.scss */
+/* line 103, ../scss/_typography.scss */
 a:hover {
   -webkit-transition: color, 0.25s;
   -moz-transition: color, 0.25s;
@@ -322,7 +336,7 @@ a:hover {
   transition: color, 0.25s;
 }
 @media only all and (max-width: 767px) {
-  /* line 86, ../scss/_typography.scss */
+  /* line 101, ../scss/_typography.scss */
   a {
     -webkit-transition: 0;
     -moz-transition: 0;
@@ -331,18 +345,18 @@ a:hover {
   }
 }
 
-/* line 95, ../scss/_typography.scss */
+/* line 110, ../scss/_typography.scss */
 p {
   color: #ccc;
   font-family: "Dosis", sans-serif;
-  font-size: 17px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 23px;
   font-weight: 100;
   letter-spacing: 0.7px;
   margin-bottom: 20px;
 }
 @media only all and (max-width: 1199px) {
-  /* line 95, ../scss/_typography.scss */
+  /* line 110, ../scss/_typography.scss */
   p {
     font-size: 15px;
     line-height: 21px;
@@ -351,7 +365,7 @@ p {
   }
 }
 @media only all and (max-width: 991px) {
-  /* line 95, ../scss/_typography.scss */
+  /* line 110, ../scss/_typography.scss */
   p {
     font-size: 13px;
     line-height: 19px;
@@ -360,7 +374,7 @@ p {
   }
 }
 @media only all and (max-width: 767px) {
-  /* line 95, ../scss/_typography.scss */
+  /* line 110, ../scss/_typography.scss */
   p {
     font-size: 16px;
     line-height: 23px;
@@ -2023,73 +2037,74 @@ code, pre, .highlight {
 .credits {
   overflow-y: hidden;
   overflow-x: hidden;
+  padding-bottom: 15px;
 }
-/* line 283, ../scss/_page-specific.scss */
+/* line 284, ../scss/_page-specific.scss */
 .credits td {
   padding: 3px !important;
 }
 @media only all and (max-width: 1199px) {
-  /* line 287, ../scss/_page-specific.scss */
+  /* line 288, ../scss/_page-specific.scss */
   .credits td {
     padding: 1px !important;
   }
 }
-/* line 291, ../scss/_page-specific.scss */
+/* line 292, ../scss/_page-specific.scss */
 .credits a {
   padding-left: 10px;
 }
 
-/* line 295, ../scss/_page-specific.scss */
+/* line 296, ../scss/_page-specific.scss */
 .description {
   margin-bottom: 10px;
 }
 @media only all and (max-width: 767px) {
-  /* line 295, ../scss/_page-specific.scss */
+  /* line 296, ../scss/_page-specific.scss */
   .description {
     margin-top: 20px;
   }
 }
-/* line 302, ../scss/_page-specific.scss */
+/* line 303, ../scss/_page-specific.scss */
 .description button {
   margin-top: 5px;
 }
 @media only all and (max-width: 767px) {
-  /* line 302, ../scss/_page-specific.scss */
+  /* line 303, ../scss/_page-specific.scss */
   .description button {
     margin-top: 10px;
   }
 }
 
-/* line 310, ../scss/_page-specific.scss */
+/* line 311, ../scss/_page-specific.scss */
 .media {
   margin-bottom: 30px;
 }
 @media only all and (max-width: 767px) {
-  /* line 310, ../scss/_page-specific.scss */
+  /* line 311, ../scss/_page-specific.scss */
   .media {
     margin-bottom: 0px;
   }
 }
-/* line 317, ../scss/_page-specific.scss */
+/* line 318, ../scss/_page-specific.scss */
 .media p {
   margin: 0;
 }
-/* line 320, ../scss/_page-specific.scss */
+/* line 321, ../scss/_page-specific.scss */
 .media img {
   margin: 0;
 }
-/* line 324, ../scss/_page-specific.scss */
+/* line 325, ../scss/_page-specific.scss */
 .media object {
   margin-right: 10px !important;
   margin-bottom: 15px !important;
 }
 
-/* line 329, ../scss/_page-specific.scss */
+/* line 330, ../scss/_page-specific.scss */
 .single-programmer .media {
   margin-bottom: 20px;
 }
 
-/* line 337, ../scss/_page-specific.scss */
+/* line 338, ../scss/_page-specific.scss */
 .page-id-21 #cherry-blossoms {
   z-index: 999;
 }
