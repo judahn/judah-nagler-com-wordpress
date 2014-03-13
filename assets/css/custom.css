@@ -1254,9 +1254,7 @@ section .col-sm-5, section .col-md-6 {
 /* line 39, ../scss/_thumbs.scss */
 .thumbnail img {
   height: auto !important;
-  border: 3px dotted #aaa;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=35);
-  opacity: 0.35;
+  border: 3px dotted #333;
   -webkit-transition: opacity, 1s;
   -moz-transition: opacity, 1s;
   -o-transition: opacity, 1s;

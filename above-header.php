@@ -2,7 +2,7 @@
 	<div id="cherry-blossom-main" class="pos-rel" data-stellar-ratio="1.618"></div>
 </div>
 
-<?php $title_ratio = "0.17"; ?>
+<?php $title_ratio = "0.67"; ?>
 <?php $title_class = "pos-abs hidden-xs"; ?>
 
 <article class="row above-header">

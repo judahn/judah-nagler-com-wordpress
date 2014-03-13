@@ -38,11 +38,11 @@ $thumb_hover:   $red;
     }
     img {
         height: auto !important;
-        border: 3px dotted #aaa;
+        border: 3px dotted #333;
 
         @extend %add-grayscale;
 
-        @include opacity(0.35);
+        // @include opacity(0.75);
         @include transition(opacity, 1s);
         @include transition(border, 1s);
     }
