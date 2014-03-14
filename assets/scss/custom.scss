@@ -99,6 +99,11 @@ a:hover {
         margin: 10px 0 20px;
     }
 }
+.single .page-header {
+    @include max_tablet {
+        margin: 0;
+    }
+}
 .hentry {
     margin: 10px;
 }

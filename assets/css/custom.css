@@ -2404,65 +2404,72 @@ a:hover {
   }
 }
 
-/* line 102, ../scss/custom.scss */
+@media only all and (max-width: 767px) {
+  /* line 102, ../scss/custom.scss */
+  .single .page-header {
+    margin: 0;
+  }
+}
+
+/* line 107, ../scss/custom.scss */
 .hentry {
   margin: 10px;
 }
 
-/* line 105, ../scss/custom.scss */
+/* line 110, ../scss/custom.scss */
 .post {
   margin: 0 0 40px 0;
 }
 
-/* line 108, ../scss/custom.scss */
+/* line 113, ../scss/custom.scss */
 .entry-meta {
   margin-bottom: 20px;
   line-height: 150%;
 }
 
-/* line 112, ../scss/custom.scss */
+/* line 117, ../scss/custom.scss */
 .main-content {
   padding-top: 85px;
   padding-bottom: 20px;
 }
 @media only all and (max-width: 1199px) {
-  /* line 112, ../scss/custom.scss */
+  /* line 117, ../scss/custom.scss */
   .main-content {
     padding-top: 75px;
     padding-bottom: 10px;
   }
 }
 @media only all and (max-width: 991px) {
-  /* line 112, ../scss/custom.scss */
+  /* line 117, ../scss/custom.scss */
   .main-content {
     padding-top: 70px;
     padding-bottom: 10px;
   }
 }
 @media only all and (max-width: 767px) {
-  /* line 112, ../scss/custom.scss */
+  /* line 117, ../scss/custom.scss */
   .main-content {
     padding-top: 0px;
     padding-bottom: 0px;
   }
 }
-/* line 130, ../scss/custom.scss */
+/* line 135, ../scss/custom.scss */
 .main-content > .container {
   padding: 0;
 }
 @media only all and (max-width: 767px) {
-  /* line 130, ../scss/custom.scss */
+  /* line 135, ../scss/custom.scss */
   .main-content > .container {
     background-color: transparent;
     padding: 0 15px;
   }
 }
 
-/* line 139, ../scss/custom.scss */
+/* line 144, ../scss/custom.scss */
 .main-content-inner {
   padding-bottom: 0;
 }
-/* line 142, ../scss/custom.scss */
+/* line 147, ../scss/custom.scss */
 .main-content-inner section {
   height: auto;
   min-height: 0;
@@ -2470,42 +2477,42 @@ a:hover {
   padding: 9px 0;
 }
 @media only all and (max-width: 767px) {
-  /* line 149, ../scss/custom.scss */
+  /* line 154, ../scss/custom.scss */
   .main-content-inner .col-sm-6 {
     padding: 0;
   }
 }
 
-/* line 155, ../scss/custom.scss */
+/* line 160, ../scss/custom.scss */
 .content {
   margin-left: 15px;
   margin-right: 15px;
 }
 @media only all and (max-width: 767px) {
-  /* line 155, ../scss/custom.scss */
+  /* line 160, ../scss/custom.scss */
   .content {
     margin-left: 0;
     margin-right: 0;
   }
 }
 
-/* line 166, ../scss/custom.scss */
+/* line 171, ../scss/custom.scss */
 .image img {
   width: 100% !important;
   height: auto !important;
 }
 @media only all and (max-width: 991px) {
-  /* line 163, ../scss/custom.scss */
+  /* line 168, ../scss/custom.scss */
   .image {
     width: 100%;
   }
-  /* line 173, ../scss/custom.scss */
+  /* line 178, ../scss/custom.scss */
   .image img {
     width: 100% !important;
   }
 }
 
-/* line 179, ../scss/custom.scss */
+/* line 184, ../scss/custom.scss */
 #avatar {
   width: 17px;
   height: 17px;
@@ -2513,30 +2520,30 @@ a:hover {
   margin-right: 13px;
 }
 
-/* line 186, ../scss/custom.scss */
+/* line 191, ../scss/custom.scss */
 .col-content {
   padding-left: 0px;
   padding-right: 50px;
   overflow: hidden;
 }
-/* line 191, ../scss/custom.scss */
+/* line 196, ../scss/custom.scss */
 .col-content ul {
   list-style: disc !important;
 }
 @media only all and (max-width: 991px) {
-  /* line 186, ../scss/custom.scss */
+  /* line 191, ../scss/custom.scss */
   .col-content {
     padding-right: 40px;
   }
 }
 @media only all and (max-width: 767px) {
-  /* line 186, ../scss/custom.scss */
+  /* line 191, ../scss/custom.scss */
   .col-content {
     padding-right: 0;
   }
 }
 
-/* line 203, ../scss/custom.scss */
+/* line 208, ../scss/custom.scss */
 #scroll-down {
   zoom: 80%;
   width: 100px;
@@ -2550,83 +2557,83 @@ a:hover {
   z-index: 9999;
 }
 
-/* line 217, ../scss/custom.scss */
+/* line 222, ../scss/custom.scss */
 .bg-img, .bg-img img {
   width: 100% !important;
   z-index: -1;
 }
 
-/* line 222, ../scss/custom.scss */
+/* line 227, ../scss/custom.scss */
 .img-responsive {
   width: 100%;
   max-width: auto !important;
 }
 
-/* line 227, ../scss/custom.scss */
+/* line 232, ../scss/custom.scss */
 #mc_signup_form {
   background-color: transparent !important;
 }
 
-/* line 233, ../scss/custom.scss */
+/* line 238, ../scss/custom.scss */
 .fa-desktop {
   line-height: 21px;
 }
 
-/* line 236, ../scss/custom.scss */
+/* line 241, ../scss/custom.scss */
 .fa-globe {
   line-height: 19px;
 }
 
-/* line 239, ../scss/custom.scss */
+/* line 244, ../scss/custom.scss */
 .fa-responsive {
   margin-right: 5px;
 }
 
-/* line 246, ../scss/custom.scss */
+/* line 251, ../scss/custom.scss */
 .sidebar {
   padding: 10px 10px 30px 50px;
   margin-top: 25px;
 }
 @media only all and (max-width: 991px) {
-  /* line 246, ../scss/custom.scss */
+  /* line 251, ../scss/custom.scss */
   .sidebar {
     padding: 0 10px 0 30px;
   }
 }
 @media only all and (max-width: 767px) {
-  /* line 246, ../scss/custom.scss */
+  /* line 251, ../scss/custom.scss */
   .sidebar {
     padding: 20px 0;
   }
 }
-/* line 257, ../scss/custom.scss */
+/* line 262, ../scss/custom.scss */
 .sidebar h3 {
   padding: 0 0 10px;
   margin: 0 !important;
 }
-/* line 261, ../scss/custom.scss */
+/* line 266, ../scss/custom.scss */
 .sidebar .nav > li > a {
   padding: 10px 0;
 }
 
-/* line 265, ../scss/custom.scss */
+/* line 270, ../scss/custom.scss */
 .blog .sidebar {
   margin-top: 10px;
 }
 
-/* line 271, ../scss/custom.scss */
+/* line 276, ../scss/custom.scss */
 .modal {
   top: 10%;
 }
 
-/* line 275, ../scss/custom.scss */
+/* line 280, ../scss/custom.scss */
 #update-browser {
   width: 0;
   height: 0;
   z-index: -999999999999;
 }
 
-/* line 281, ../scss/custom.scss */
+/* line 286, ../scss/custom.scss */
 .ie8 #update-browser {
   display: block !important;
   visibility: visible !important;
@@ -2637,7 +2644,7 @@ a:hover {
   z-index: 999999999999;
   padding: 30px;
 }
-/* line 291, ../scss/custom.scss */
+/* line 296, ../scss/custom.scss */
 .ie8 #update-browser a {
   font-size: 37px;
   line-height: 47px;
@@ -2646,7 +2653,7 @@ a:hover {
 /*
  *  Admin Menu 
  */
-/* line 302, ../scss/custom.scss */
+/* line 307, ../scss/custom.scss */
 #adminmenu #menu-posts-design .wp-menu-image:before {
   content: '\f85' !important;
 }
