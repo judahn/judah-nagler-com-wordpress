@@ -2043,7 +2043,7 @@ code, pre, .highlight {
 .credits {
   overflow-y: hidden;
   overflow-x: hidden;
-  padding-bottom: 5px;
+  padding-bottom: 5px !important;
 }
 /* line 284, ../scss/_page-specific.scss */
 .credits td {
