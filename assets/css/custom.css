@@ -1676,7 +1676,6 @@ code, pre, .highlight {
 @media only all and (max-width: 479px) {
   /* line 84, ../scss/_cherry-blossoms.scss */
   .above-header h1 {
-    font-size: 32px;
     margin-left: 0;
     padding: 0;
     right: auto;
@@ -1685,7 +1684,7 @@ code, pre, .highlight {
   }
 }
 
-/* line 112, ../scss/_cherry-blossoms.scss */
+/* line 111, ../scss/_cherry-blossoms.scss */
 #above-header-container {
   height: 100%;
   position: relative;
