@@ -103,14 +103,14 @@ $j(document).ready(function() {
 
 		// If not search page or mobile view, init Stellar parallax fx
 
-		if (!isSearch && winW >= tablet) {
+		/*if (!isSearch && winW >= tablet) {
 			$j.stellar({
 				hideDistantElements: false
 			});
-		}
+		}*/
 
 		// Apply target opacities to elements
-		$j(".above-header h1").css({"opacity":h1_Op});
+		// $j(".above-header h1").css({"opacity":h1_Op});
 		   $j(".main-content").css({"opacity":tgtOp});
 				 $j("#footer").css({"opacity":tgtOp});
 
@@ -125,6 +125,10 @@ $j(document).ready(function() {
 	// Init Window Scroll
 
 	onWindowScroll();
+
+	$j.stellar({
+		hideDistantElements: false
+	});
 
 
 

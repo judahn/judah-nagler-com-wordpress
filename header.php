@@ -44,6 +44,3 @@
 			<img src="<?php echo get_template_directory_uri() . '/assets/img/temple1c.jpg' ?>" alt="" class="bg-img-responsive">
 		</div>
 	</div>
-
-
-
