@@ -69,6 +69,7 @@ a:hover {
         padding: 0 25px 5px;
     }
 }
+
 .page-header {
     border: 0;
     margin: 20px 0 0;
@@ -106,8 +107,9 @@ a:hover {
 }
 .single .media img {
     padding-top: 10px;
-    border-top: 7px solid $red;
+    @extend %pink_border;
 }
+
 .hentry {
     margin: 10px;
 }

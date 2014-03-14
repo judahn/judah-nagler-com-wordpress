@@ -58,7 +58,7 @@
 .hero-right {
     margin-top:     8px;
     margin-bottom:  40px;
-    @include border-radius(10px);
+    // @include border-radius(10px);
 
     @include max_tablet {
         margin-bottom: 0;
@@ -143,8 +143,9 @@
     li {
         margin-right: 18px;
         padding: 0;
-        border-top: 7px solid $red;
         padding-top: 20px;
+
+        @extend %pink_border;
         // @extend %boxShadow;
 
         @include max_desktop {
