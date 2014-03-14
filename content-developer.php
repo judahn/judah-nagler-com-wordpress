@@ -74,7 +74,7 @@
     <!-- If 'media' -->
     <?php if( get_field('media') ): ?> 
   
-      <div class="col-sm-7 col-content">
+      <div class="col-sm-7 col-content media">
         <!-- Description -->
            <?php the_field( 'media' ); ?>
       </div>

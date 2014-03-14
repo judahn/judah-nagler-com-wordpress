@@ -104,6 +104,10 @@ a:hover {
         margin: 0 !important;
     }
 }
+.single .media img {
+    padding-top: 10px;
+    border-top: 7px solid $red;
+}
 .hentry {
     margin: 10px;
 }

@@ -143,6 +143,8 @@
     li {
         margin-right: 18px;
         padding: 0;
+        border-top: 7px solid $red;
+        padding-top: 20px;
         // @extend %boxShadow;
 
         @include max_desktop {
