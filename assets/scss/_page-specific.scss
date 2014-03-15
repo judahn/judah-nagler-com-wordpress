@@ -6,7 +6,7 @@
 .home {
     .above-header {
         @include max_phone{
-            height: 227px;
+            height: 197px;
         }
         @include max_pager {
             height: 257px;
@@ -334,6 +334,15 @@
 }
 .single-programmer .media {
     margin-bottom: 20px;
+}
+
+.home .page-content {
+    span {
+        color: white;
+    }
+    button {
+        margin-top: 5px;
+    }
 }
 
 

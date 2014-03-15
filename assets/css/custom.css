@@ -240,10 +240,10 @@ code, pre, .highlight {
  */
 /* line 54, ../scss/_typography.scss */
 body {
-  color: #ccc;
+  color: #aaa;
   font-family: "Dosis", sans-serif;
   font-size: 17px;
-  line-height: 24px;
+  line-height: 27px;
   font-weight: 100;
   letter-spacing: 0.7px;
 }
@@ -356,10 +356,10 @@ a:hover {
 
 /* line 108, ../scss/_typography.scss */
 p {
-  color: #ccc;
+  color: #aaa;
   font-family: "Dosis", sans-serif;
   font-size: 17px;
-  line-height: 24px;
+  line-height: 27px;
   font-weight: 100;
   letter-spacing: 0.7px;
   margin-bottom: 20px;
@@ -611,7 +611,7 @@ button {
 }
 
 /* line 168, ../scss/_navbar.scss */
-.btn-primary:hover, .btn-primary:active, .btn-primary.active {
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
   background-color: #d15070;
   border-color: #d15070;
   -webkit-transition: background-color, 0.5s;
@@ -1729,7 +1729,7 @@ code, pre, .highlight {
 @media only all and (max-width: 479px) {
   /* line 7, ../scss/_page-specific.scss */
   .home .above-header {
-    height: 227px;
+    height: 197px;
   }
 }
 @media only all and (max-width: 319px) {
@@ -2137,7 +2137,16 @@ code, pre, .highlight {
   margin-bottom: 20px;
 }
 
+/* line 340, ../scss/_page-specific.scss */
+.home .page-content span {
+  color: white;
+}
 /* line 343, ../scss/_page-specific.scss */
+.home .page-content button {
+  margin-top: 5px;
+}
+
+/* line 352, ../scss/_page-specific.scss */
 .page-id-21 #cherry-blossoms {
   z-index: 999;
 }

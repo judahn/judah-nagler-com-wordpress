@@ -22,7 +22,7 @@ get_header(); ?>
 </div>
 
 
-<div class="col-sm-6">
+<div class="col-sm-6 page-content">
 
 	<?php while ( have_posts() ) : the_post(); ?>
 
@@ -35,6 +35,10 @@ get_header(); ?>
 		?>
 
 	<?php endwhile; // end of the loop. ?>
+	<?php _tk_content_nav( 'nav-below' ); ?>
+	<a href="<?php echo get_template_directory_uri() . '/assets/download/JudahNagler-Resume-2014.pdf' ?>" target="_blank" title="Download Resume">
+		<button type="button" class="btn btn-primary">Download Resume</button>
+	</a>
 
 </div>
 

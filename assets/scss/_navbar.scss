@@ -165,7 +165,7 @@ button {
     border-color:       $red;
     @include transition(background-color, 0.5s);
 }
-.btn-primary:hover, .btn-primary:active, .btn-primary.active {
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
     background-color:   lighten($red, 13%);
     border-color:       lighten($red, 13%);
     @include transition(background-color, 0.5s);
