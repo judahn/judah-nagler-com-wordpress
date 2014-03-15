@@ -167,58 +167,53 @@ time, mark, audio, video {
 
 /* line 75, ../scss/_mixins.scss */
 .thumbnail img, #social-nav a img {
-  -webkit-filter: grayscale(1);
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  filter: gray;
-  filter: grayscale(100%);
-  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
-  /* Firefox 10+ */
-  -webkit-transition: all .6s ease;
-  /* Fade to color for Chrome and Safari */
-  -webkit-backface-visibility: hidden;
-  /* Fix for transition flickering */
+  filter: url("data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg'&gt;&lt;filter id='grayscale'&gt;&lt;feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale") !important;
+  /* Firefox 10+, Firefox on Android */
+  filter: gray !important;
+  /* IE6-9 */
+  -webkit-filter: grayscale(100%) !important;
+  /* Chrome 19+, Safari 6+, Safari 6+ iOS */
 }
 
-/* line 84, ../scss/_mixins.scss */
+/* line 80, ../scss/_mixins.scss */
 .thumbnail:hover img, .thumbnail:focus img, #social-nav a:hover img {
-  filter: none;
+  filter: none !important;
   /* Applies to FF + IE */
-  -webkit-filter: grayscale(0);
+  -webkit-filter: grayscale(0) !important;
 }
 
-/* line 113, ../scss/_mixins.scss */
+/* line 109, ../scss/_mixins.scss */
 #row-masthead {
   background-color: black;
   background-attachment: fixed;
   background-size: cover;
 }
 
-/* line 128, ../scss/_mixins.scss */
+/* line 124, ../scss/_mixins.scss */
 code, pre, .highlight {
   background-color: #666;
   border-color: #666;
 }
 
-/* line 132, ../scss/_mixins.scss */
+/* line 128, ../scss/_mixins.scss */
 .thumbnail {
   background-color: transparent;
   border: 0;
 }
 
-/* line 136, ../scss/_mixins.scss */
+/* line 132, ../scss/_mixins.scss */
 .navbar > .container {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* line 139, ../scss/_mixins.scss */
+/* line 135, ../scss/_mixins.scss */
 .design-slider {
   -webkit-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
   -moz-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
   box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
 }
 
-/* line 151, ../scss/_mixins.scss */
+/* line 147, ../scss/_mixins.scss */
 .form-control:focus {
   -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
   -moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
@@ -985,58 +980,53 @@ button {
 
 /* line 75, ../scss/_mixins.scss */
 .thumbnail img, #social-nav a img {
-  -webkit-filter: grayscale(1);
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  filter: gray;
-  filter: grayscale(100%);
-  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
-  /* Firefox 10+ */
-  -webkit-transition: all .6s ease;
-  /* Fade to color for Chrome and Safari */
-  -webkit-backface-visibility: hidden;
-  /* Fix for transition flickering */
+  filter: url("data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg'&gt;&lt;filter id='grayscale'&gt;&lt;feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale") !important;
+  /* Firefox 10+, Firefox on Android */
+  filter: gray !important;
+  /* IE6-9 */
+  -webkit-filter: grayscale(100%) !important;
+  /* Chrome 19+, Safari 6+, Safari 6+ iOS */
 }
 
-/* line 84, ../scss/_mixins.scss */
+/* line 80, ../scss/_mixins.scss */
 .thumbnail:hover img, .thumbnail:focus img, #social-nav a:hover img {
-  filter: none;
+  filter: none !important;
   /* Applies to FF + IE */
-  -webkit-filter: grayscale(0);
+  -webkit-filter: grayscale(0) !important;
 }
 
-/* line 113, ../scss/_mixins.scss */
+/* line 109, ../scss/_mixins.scss */
 #row-masthead {
   background-color: black;
   background-attachment: fixed;
   background-size: cover;
 }
 
-/* line 128, ../scss/_mixins.scss */
+/* line 124, ../scss/_mixins.scss */
 code, pre, .highlight {
   background-color: #666;
   border-color: #666;
 }
 
-/* line 132, ../scss/_mixins.scss */
+/* line 128, ../scss/_mixins.scss */
 .thumbnail {
   background-color: transparent;
   border: 0;
 }
 
-/* line 136, ../scss/_mixins.scss */
+/* line 132, ../scss/_mixins.scss */
 .navbar > .container {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* line 139, ../scss/_mixins.scss */
+/* line 135, ../scss/_mixins.scss */
 .design-slider {
   -webkit-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
   -moz-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
   box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
 }
 
-/* line 151, ../scss/_mixins.scss */
+/* line 147, ../scss/_mixins.scss */
 .form-control:focus {
   -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
   -moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
@@ -1450,58 +1440,53 @@ section .col-sm-5, section .col-md-6 {
 
 /* line 75, ../scss/_mixins.scss */
 .thumbnail img, #social-nav a img {
-  -webkit-filter: grayscale(1);
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  filter: gray;
-  filter: grayscale(100%);
-  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
-  /* Firefox 10+ */
-  -webkit-transition: all .6s ease;
-  /* Fade to color for Chrome and Safari */
-  -webkit-backface-visibility: hidden;
-  /* Fix for transition flickering */
+  filter: url("data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg'&gt;&lt;filter id='grayscale'&gt;&lt;feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale") !important;
+  /* Firefox 10+, Firefox on Android */
+  filter: gray !important;
+  /* IE6-9 */
+  -webkit-filter: grayscale(100%) !important;
+  /* Chrome 19+, Safari 6+, Safari 6+ iOS */
 }
 
-/* line 84, ../scss/_mixins.scss */
+/* line 80, ../scss/_mixins.scss */
 .thumbnail:hover img, .thumbnail:focus img, #social-nav a:hover img {
-  filter: none;
+  filter: none !important;
   /* Applies to FF + IE */
-  -webkit-filter: grayscale(0);
+  -webkit-filter: grayscale(0) !important;
 }
 
-/* line 113, ../scss/_mixins.scss */
+/* line 109, ../scss/_mixins.scss */
 #row-masthead {
   background-color: black;
   background-attachment: fixed;
   background-size: cover;
 }
 
-/* line 128, ../scss/_mixins.scss */
+/* line 124, ../scss/_mixins.scss */
 code, pre, .highlight {
   background-color: #666;
   border-color: #666;
 }
 
-/* line 132, ../scss/_mixins.scss */
+/* line 128, ../scss/_mixins.scss */
 .thumbnail {
   background-color: transparent;
   border: 0;
 }
 
-/* line 136, ../scss/_mixins.scss */
+/* line 132, ../scss/_mixins.scss */
 .navbar > .container {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* line 139, ../scss/_mixins.scss */
+/* line 135, ../scss/_mixins.scss */
 .design-slider {
   -webkit-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
   -moz-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
   box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.7);
 }
 
-/* line 151, ../scss/_mixins.scss */
+/* line 147, ../scss/_mixins.scss */
 .form-control:focus {
   -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
   -moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
@@ -2097,46 +2082,50 @@ code, pre, .highlight {
     margin-top: 10px;
   }
 }
+/* line 315, ../scss/_page-specific.scss */
+.description strong {
+  color: white;
+}
 
-/* line 316, ../scss/_page-specific.scss */
+/* line 319, ../scss/_page-specific.scss */
 .media {
   margin-bottom: 30px;
 }
 @media only all and (max-width: 767px) {
-  /* line 316, ../scss/_page-specific.scss */
+  /* line 319, ../scss/_page-specific.scss */
   .media {
     margin-bottom: 0px;
   }
 }
-/* line 323, ../scss/_page-specific.scss */
+/* line 326, ../scss/_page-specific.scss */
 .media p {
   margin: 0;
 }
-/* line 326, ../scss/_page-specific.scss */
+/* line 329, ../scss/_page-specific.scss */
 .media img {
   margin: 0;
 }
-/* line 330, ../scss/_page-specific.scss */
+/* line 333, ../scss/_page-specific.scss */
 .media object {
   margin-right: 10px !important;
   margin-bottom: 15px !important;
 }
 
-/* line 335, ../scss/_page-specific.scss */
+/* line 338, ../scss/_page-specific.scss */
 .single-programmer .media {
   margin-bottom: 20px;
 }
 
-/* line 340, ../scss/_page-specific.scss */
+/* line 343, ../scss/_page-specific.scss */
 .home .page-content span {
   color: white;
 }
-/* line 343, ../scss/_page-specific.scss */
+/* line 346, ../scss/_page-specific.scss */
 .home .page-content button {
   margin-top: 5px;
 }
 
-/* line 352, ../scss/_page-specific.scss */
+/* line 355, ../scss/_page-specific.scss */
 .page-id-21 #cherry-blossoms {
   z-index: 999;
 }
