@@ -2083,7 +2083,7 @@ code, pre, .highlight {
   }
 }
 /* line 315, ../scss/_page-specific.scss */
-.description strong {
+.description strong, .description p strong {
   color: white !important;
 }
 
