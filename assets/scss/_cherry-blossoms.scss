@@ -24,17 +24,14 @@
     height: auto;
     overflow-x: hidden;
     pointer-events: none;
-    z-index: 21;
+    z-index: -1;//21;
     @include max_tablet{
         position: absolute;
+        z-index: 21;
     }
 }
 .cherry-blossom{
     @extend %cherry-blossom;
-}
-
-.ie #cherry-blossoms{
-    z-index: -1;
 }
 
 #cherry-blossom-inv{

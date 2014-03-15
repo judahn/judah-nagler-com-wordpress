@@ -42,8 +42,8 @@
     }
     a {
         img {
-            // @extend %add-grayscale;
-            @include grayscale(50);
+            @extend %add-grayscale;
+            // @include grayscale(50);
             @include opacity(0.68);
             @include transition(filter, 0.5s);
         }

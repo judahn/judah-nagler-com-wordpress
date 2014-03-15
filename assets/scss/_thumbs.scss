@@ -87,8 +87,4 @@ $thumb_hover:   $red;
 .thumb-title {
     min-height: 47px;
     transition: none !important;
-
-    @include max_laptop{
-        font-size: 12px;
-    }
 }

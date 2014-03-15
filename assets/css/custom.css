@@ -166,7 +166,7 @@ time, mark, audio, video {
 }
 
 /* line 75, ../scss/_mixins.scss */
-.thumbnail img {
+.thumbnail img, #social-nav a img {
   -webkit-filter: grayscale(1);
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
@@ -319,25 +319,31 @@ h2 {
 h3 {
   margin: 0px 0 15px 0;
   padding: 5px 7px 5px;
-  font-size: 95%;
+  font-size: 15px;
   line-height: 130%;
   letter-spacing: 1px;
 }
-/* line 93, ../scss/_typography.scss */
+@media only all and (max-width: 991px) {
+  /* line 86, ../scss/_typography.scss */
+  h3 {
+    font-size: 12px;
+  }
+}
+/* line 97, ../scss/_typography.scss */
 h3 i {
   margin-right: 5px;
   margin-top: 2px;
   color: #60192b;
 }
 
-/* line 99, ../scss/_typography.scss */
+/* line 103, ../scss/_typography.scss */
 a {
   -webkit-transition: color, 0.25s;
   -moz-transition: color, 0.25s;
   -o-transition: color, 0.25s;
   transition: color, 0.25s;
 }
-/* line 101, ../scss/_typography.scss */
+/* line 105, ../scss/_typography.scss */
 a:hover {
   -webkit-transition: color, 0.25s;
   -moz-transition: color, 0.25s;
@@ -345,7 +351,7 @@ a:hover {
   transition: color, 0.25s;
 }
 @media only all and (max-width: 767px) {
-  /* line 99, ../scss/_typography.scss */
+  /* line 103, ../scss/_typography.scss */
   a {
     -webkit-transition: 0;
     -moz-transition: 0;
@@ -354,7 +360,7 @@ a:hover {
   }
 }
 
-/* line 108, ../scss/_typography.scss */
+/* line 112, ../scss/_typography.scss */
 p {
   color: #aaa;
   font-family: "Dosis", sans-serif;
@@ -365,7 +371,7 @@ p {
   margin-bottom: 20px;
 }
 @media only all and (max-width: 1199px) {
-  /* line 108, ../scss/_typography.scss */
+  /* line 112, ../scss/_typography.scss */
   p {
     font-size: 15px;
     line-height: 21px;
@@ -373,7 +379,7 @@ p {
   }
 }
 @media only all and (max-width: 991px) {
-  /* line 108, ../scss/_typography.scss */
+  /* line 112, ../scss/_typography.scss */
   p {
     font-size: 14px;
     line-height: 20px;
@@ -381,7 +387,7 @@ p {
   }
 }
 @media only all and (max-width: 767px) {
-  /* line 108, ../scss/_typography.scss */
+  /* line 112, ../scss/_typography.scss */
   p {
     font-size: 15px;
     line-height: 21px;
@@ -389,13 +395,13 @@ p {
   }
 }
 @media only all and (max-width: 1199px) {
-  /* line 108, ../scss/_typography.scss */
+  /* line 112, ../scss/_typography.scss */
   p {
     margin-bottom: 18px;
   }
 }
 @media only all and (max-width: 991px) {
-  /* line 108, ../scss/_typography.scss */
+  /* line 112, ../scss/_typography.scss */
   p {
     margin-bottom: 13px;
   }
@@ -978,7 +984,7 @@ button {
 }
 
 /* line 75, ../scss/_mixins.scss */
-.thumbnail img {
+.thumbnail img, #social-nav a img {
   -webkit-filter: grayscale(1);
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
@@ -1342,12 +1348,6 @@ section .col-sm-5, section .col-md-6 {
   min-height: 47px;
   transition: none !important;
 }
-@media only all and (max-width: 991px) {
-  /* line 87, ../scss/_thumbs.scss */
-  .thumb-title {
-    font-size: 12px;
-  }
-}
 
 /*
  * 	Mixins
@@ -1449,7 +1449,7 @@ section .col-sm-5, section .col-md-6 {
 }
 
 /* line 75, ../scss/_mixins.scss */
-.thumbnail img {
+.thumbnail img, #social-nav a img {
   -webkit-filter: grayscale(1);
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
@@ -1568,12 +1568,6 @@ code, pre, .highlight {
 }
 /* line 44, ../scss/_social.scss */
 #social-nav a img {
-  -webkit-filter: grayscale(0.5);
-  -webkit-filter: grayscale(0.5);
-  -moz-filter: grayscale(0.5);
-  filter: gray;
-  filter: grayscale(0.5);
-  filter: url(desaturate.svg#greyscale);
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=68);
   opacity: 0.68;
   -webkit-transition: filter, 0.5s;
@@ -1618,21 +1612,17 @@ code, pre, .highlight {
   height: auto;
   overflow-x: hidden;
   pointer-events: none;
-  z-index: 21;
+  z-index: -1;
 }
 @media only all and (max-width: 767px) {
   /* line 21, ../scss/_cherry-blossoms.scss */
   .cherry-blossom {
     position: absolute;
+    z-index: 21;
   }
 }
 
-/* line 36, ../scss/_cherry-blossoms.scss */
-.ie #cherry-blossoms {
-  z-index: -1;
-}
-
-/* line 40, ../scss/_cherry-blossoms.scss */
+/* line 37, ../scss/_cherry-blossoms.scss */
 #cherry-blossom-inv {
   background: url('/wp-content/themes/jn-wpbs/assets/img/cherry-blossom-shadow-inv.png?1394366123');
   background-position: 350px -200px;
@@ -1641,7 +1631,7 @@ code, pre, .highlight {
   width: 100%;
 }
 
-/* line 48, ../scss/_cherry-blossoms.scss */
+/* line 45, ../scss/_cherry-blossoms.scss */
 #cherry-blossom-center {
   background: url('/wp-content/themes/jn-wpbs/assets/img/cherry-blossom.png?1388933978');
   background-position: 0 -300px;
@@ -1651,7 +1641,7 @@ code, pre, .highlight {
   z-index: 9999;
 }
 
-/* line 57, ../scss/_cherry-blossoms.scss */
+/* line 54, ../scss/_cherry-blossoms.scss */
 #cherry-blossom-main {
   background: url('/wp-content/themes/jn-wpbs/assets/img/cherry-blossom-shadow.png?1389436022');
   background-position: -720px -80px;
@@ -1660,30 +1650,30 @@ code, pre, .highlight {
   width: 100%;
 }
 @media only all and (max-width: 991px) {
-  /* line 57, ../scss/_cherry-blossoms.scss */
+  /* line 54, ../scss/_cherry-blossoms.scss */
   #cherry-blossom-main {
     background-position: -760px -113px;
   }
 }
 
-/* line 72, ../scss/_cherry-blossoms.scss */
+/* line 69, ../scss/_cherry-blossoms.scss */
 .above-header {
   overflow: visible;
   height: 500px;
 }
 @media only all and (max-width: 767px) {
-  /* line 72, ../scss/_cherry-blossoms.scss */
+  /* line 69, ../scss/_cherry-blossoms.scss */
   .above-header {
     height: 190px;
   }
 }
 @media only all and (max-width: 479px) {
-  /* line 72, ../scss/_cherry-blossoms.scss */
+  /* line 69, ../scss/_cherry-blossoms.scss */
   .above-header {
     height: 180px;
   }
 }
-/* line 84, ../scss/_cherry-blossoms.scss */
+/* line 81, ../scss/_cherry-blossoms.scss */
 .above-header h1 {
   margin-top: 37px;
   padding: 15px;
@@ -1694,20 +1684,20 @@ code, pre, .highlight {
   font-size: 91px;
 }
 @media only all and (max-width: 1199px) {
-  /* line 84, ../scss/_cherry-blossoms.scss */
+  /* line 81, ../scss/_cherry-blossoms.scss */
   .above-header h1 {
     font-size: 65px;
   }
 }
 @media only all and (max-width: 767px) {
-  /* line 84, ../scss/_cherry-blossoms.scss */
+  /* line 81, ../scss/_cherry-blossoms.scss */
   .above-header h1 {
     font-size: 52px;
     top: 155px !important;
   }
 }
 @media only all and (max-width: 479px) {
-  /* line 84, ../scss/_cherry-blossoms.scss */
+  /* line 81, ../scss/_cherry-blossoms.scss */
   .above-header h1 {
     margin-left: 0;
     padding: 0;
@@ -1717,7 +1707,7 @@ code, pre, .highlight {
   }
 }
 
-/* line 111, ../scss/_cherry-blossoms.scss */
+/* line 108, ../scss/_cherry-blossoms.scss */
 #above-header-container {
   height: 100%;
   position: relative;
