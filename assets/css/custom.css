@@ -568,7 +568,7 @@ p {
 
 /* line 127, ../scss/_navbar.scss */
 #nav-below .btn {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 /* line 130, ../scss/_navbar.scss */
 #nav-below .btn-primary {
@@ -2084,7 +2084,7 @@ code, pre, .highlight {
 }
 /* line 315, ../scss/_page-specific.scss */
 .description strong {
-  color: white;
+  color: white !important;
 }
 
 /* line 319, ../scss/_page-specific.scss */
