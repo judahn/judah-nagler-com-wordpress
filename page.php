@@ -16,7 +16,13 @@ get_header(); ?>
 <?php include 'section-opener.php' ?>
 
 
-<div class="col-page-left col-sm-6 no-pad">
+
+<div class="col-sm-6">
+	<img src="<?php echo get_template_directory_uri() . '/assets/img/sharkdurag.png' ?>" class="hero-right" alt="">
+</div>
+
+
+<div class="col-sm-6">
 
 	<?php while ( have_posts() ) : the_post(); ?>
 
@@ -31,11 +37,6 @@ get_header(); ?>
 	<?php endwhile; // end of the loop. ?>
 
 </div>
-
-<div class="col-sm-6">
-	<img src="<?php echo get_template_directory_uri() . '/assets/img/sharkdurag.png' ?>" class="hero-right" alt="">
-</div>
-
 
 <?php include 'section-closer.php' ?>
 <?php get_footer(); ?>

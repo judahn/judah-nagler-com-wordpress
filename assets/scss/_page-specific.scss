@@ -45,6 +45,7 @@
 }
 .col-page-left {
     padding: 0 30px 10px 10px;
+
     @include max_desktop {
         padding: 0 20px 10px 10px !important;
     }
@@ -56,8 +57,9 @@
     }
 }
 .hero-right {
-    margin-top:     8px;
+    // margin-top:     8px;
     margin-bottom:  40px;
+    @extend %pink_border;
     // @include border-radius(10px);
 
     @include max_tablet {
