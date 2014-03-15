@@ -2082,50 +2082,51 @@ code, pre, .highlight {
     margin-top: 10px;
   }
 }
-/* line 315, ../scss/_page-specific.scss */
-.description strong, .description p strong {
+
+/* line 317, ../scss/_page-specific.scss */
+strong, p strong {
   color: white !important;
 }
 
-/* line 319, ../scss/_page-specific.scss */
+/* line 320, ../scss/_page-specific.scss */
 .media {
   margin-bottom: 30px;
 }
 @media only all and (max-width: 767px) {
-  /* line 319, ../scss/_page-specific.scss */
+  /* line 320, ../scss/_page-specific.scss */
   .media {
     margin-bottom: 0px;
   }
 }
-/* line 326, ../scss/_page-specific.scss */
+/* line 327, ../scss/_page-specific.scss */
 .media p {
   margin: 0;
 }
-/* line 329, ../scss/_page-specific.scss */
+/* line 330, ../scss/_page-specific.scss */
 .media img {
   margin: 0;
 }
-/* line 333, ../scss/_page-specific.scss */
+/* line 334, ../scss/_page-specific.scss */
 .media object {
   margin-right: 10px !important;
   margin-bottom: 15px !important;
 }
 
-/* line 338, ../scss/_page-specific.scss */
+/* line 339, ../scss/_page-specific.scss */
 .single-programmer .media {
   margin-bottom: 20px;
 }
 
-/* line 343, ../scss/_page-specific.scss */
+/* line 344, ../scss/_page-specific.scss */
 .home .page-content span {
   color: white;
 }
-/* line 346, ../scss/_page-specific.scss */
+/* line 347, ../scss/_page-specific.scss */
 .home .page-content button {
   margin-top: 5px;
 }
 
-/* line 355, ../scss/_page-specific.scss */
+/* line 356, ../scss/_page-specific.scss */
 .page-id-21 #cherry-blossoms {
   z-index: 999;
 }
