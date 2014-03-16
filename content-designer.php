@@ -30,6 +30,8 @@
 		<!-- End -->
 		<?php endif; ?>
 
+		<?php include 'credits.php' ?>
+
 
 	  	<!-- Visit Website Button -->
 		<?php if( get_field('visit_website_url') ): ?> 

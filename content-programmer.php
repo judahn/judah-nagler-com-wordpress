@@ -26,7 +26,7 @@
 		<?php endif; ?>
 	</div>
 	
-	<div class="description">
+	<div class="description col-sm-8">
 		<!-- Description -->
 		<?php if( get_field('description') ): ?> 
 			 <?php the_field( 'description' ); ?>
