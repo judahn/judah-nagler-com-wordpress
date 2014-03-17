@@ -42,7 +42,7 @@ $thumb_hover:   $red;
 
         @extend %add-grayscale;
 
-        // @include opacity(0.75);
+        @include opacity(0.75);
         @include transition(opacity, 1s);
         @include transition(border, 1s);
     }

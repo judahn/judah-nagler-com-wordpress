@@ -12,6 +12,10 @@ $j = jQuery.noConflict();
 
 $j(document).ready(function() {
 
+	if ($j.browser.msie) {
+	  $j("html").addClass("ie");
+	}
+
 	/*
 	 *	Navigation
 	 */

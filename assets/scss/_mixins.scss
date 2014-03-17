@@ -4,7 +4,7 @@
 
 %pink_border {
     border-top: 7px solid $red;
-    padding-top: 1.5% !important;
+    padding-top: 1.3% !important;
 }
 
 // Helpers
@@ -73,8 +73,8 @@
     filter: url(desaturate.svg#greyscale);
 }
 %add-grayscale {
-    filter: url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale") !important; /* Firefox 10+, Firefox on Android */
-    filter: gray !important; /* IE6-9 */
+    filter: gray; filter: grayscale(100%);
+    filter: url(desaturate.svg#greyscale);
     -webkit-filter: grayscale(100%) !important; /* Chrome 19+, Safari 6+, Safari 6+ iOS */
 }
 %remove-grayscale {

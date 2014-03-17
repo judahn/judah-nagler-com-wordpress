@@ -17,10 +17,6 @@ get_header(); ?>
 
 
 
-<div class="col-sm-6">
-	<img src="<?php echo get_template_directory_uri() . '/assets/img/sharkdurag.png' ?>" class="hero-right" alt="">
-</div>
-
 
 <div class="col-sm-6 page-content">
 
@@ -40,6 +36,13 @@ get_header(); ?>
 		<button type="button" class="btn btn-primary">Download Resume</button>
 	</a>
 
+</div>
+
+
+
+
+<div class="col-sm-6">
+	<img src="<?php echo get_template_directory_uri() . '/assets/img/sharkdurag.png' ?>" class="hero-right" alt="">
 </div>
 
 <?php include 'section-closer.php' ?>
