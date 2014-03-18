@@ -2117,16 +2117,20 @@ strong, p strong {
   margin-bottom: 20px;
 }
 
-/* line 345, ../scss/_page-specific.scss */
+/* line 344, ../scss/_page-specific.scss */
+.home .page-content {
+  padding-bottom: 30px;
+}
+/* line 347, ../scss/_page-specific.scss */
 .home .page-content span {
   color: white;
 }
-/* line 348, ../scss/_page-specific.scss */
+/* line 350, ../scss/_page-specific.scss */
 .home .page-content button {
   margin-top: 5px;
 }
 
-/* line 357, ../scss/_page-specific.scss */
+/* line 359, ../scss/_page-specific.scss */
 .page-id-21 #cherry-blossoms {
   z-index: 999;
 }

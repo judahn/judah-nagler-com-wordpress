@@ -59,7 +59,7 @@
 .hero-right {
     margin-bottom:  40px;
     padding-top: 1.7% !important;
-    
+
     @extend %pink_border;
     // @include border-radius(10px);
 
@@ -342,6 +342,8 @@ strong, p strong {
 }
 
 .home .page-content {
+    padding-bottom: 30px;
+    
     span {
         color: white;
     }
