@@ -79,7 +79,7 @@
            <?php the_field( 'media' ); ?>
       </div>
 
-      <div id="col-credits" class="col-sm-5 description">
+      <div id="col-credits" class="col-sm-5 description no-pad">
         <?php if( get_field('description') ): ?> 
           <!-- Description -->
           <div class="">
@@ -89,7 +89,7 @@
 
     <?php else: ?>
 
-      <div class="col-sm-7 col-content description">
+      <div class="col-sm-7 col-content description no-pad">
         <!-- Description -->
         <?php if( get_field('description') ): ?> 
           <!-- Description -->
