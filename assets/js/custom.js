@@ -12,6 +12,10 @@ $j = jQuery.noConflict();
 
 $j(document).ready(function() {
 
+	// Fix widows / orpan text in each instance of 'p'
+	$j('p').widowFix();
+
+	// Add 'ie' class to html if browser is Internet Explorer
 	if ($j.browser.msie) {
 	  $j("html").addClass("ie");
 	}
