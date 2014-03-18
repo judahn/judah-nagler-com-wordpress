@@ -20,6 +20,11 @@ $j(document).ready(function() {
 	  $j("html").addClass("ie");
 	}
 
+	// Set image container height and bottom padding on load
+	$j(".image").load(function(){
+		$j(this).height("auto").css({"padding-bottom":"0 !important"});
+	});
+
 	/*
 	 *	Navigation
 	 */
@@ -45,18 +50,6 @@ $j(document).ready(function() {
 	}
 
 	setActiveNav();
-
-
-
-	/*
-	 *	Image Padding
-	 */
-
-	// Set image container height and bottom padding on load
-
-	$j(".image").load(function(){
-		$j(this).height("auto").css({"padding-bottom":"0 !important"});
-	});
 
 
 	
@@ -127,6 +120,8 @@ $j(document).ready(function() {
 
 		if (scroll > 1){
 			scrollDownStop();
+		} else {
+			scrollDownStart();
 		}
 	}
 
@@ -142,8 +137,10 @@ $j(document).ready(function() {
 	 */
 
 	var _scrollDown  		= $j("#scroll-down");
+	var _scrollDownDiv  	= $j("#scroll-down-div");
 	var _scrollDownTime 	= 300;
 	var _scrollState		= 0;
+	var _scrollFirstTime	= true;
 
 	function scrollDownIn() {
 		$j(_scrollDown).delay(1500).animate({"bottom":"20px"}, _scrollDownTime, "easeOutQuad", scrollDownOut);
@@ -153,13 +150,15 @@ $j(document).ready(function() {
 	}
 	function scrollDownStop() {
 		if (_scrollState == 1) return;
-		$j(_scrollDown).stop().animate({"opacity":0}, _scrollDownTime, "easeOutQuad", function(){
-			_scrollDown.remove();
-		});
+		$j(_scrollDownDiv).stop().animate({"opacity":0}, _scrollDownTime, "easeOutQuad");
 		_scrollState = 1;
 	}
+	function scrollDownStart() {
+		if (_scrollState == 0) return;
+		$j(_scrollDownDiv).stop().animate({"opacity":1}, _scrollDownTime, "easeOutQuad");
+		_scrollState = 0;
+	}
 	scrollDownIn();
-
 	
 	/*
 	 * 	Developer Slideshow

@@ -35,7 +35,9 @@
 <body <?php body_class(); ?>>
 	<?php do_action( 'before' ); ?>
 
-	<div id="scroll-down" class="hidden-xs"></div>
+	<div id="scroll-down-div">
+		<div id="scroll-down" class="hidden-xs"></div>
+	</div>
 
 <div class="root">
 
