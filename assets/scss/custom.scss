@@ -225,7 +225,7 @@ a:hover {
 }
 
 .ie #scroll-down {
-    display: none;
+    display: none !important;
 }
 
 .bg-img, .bg-img img {

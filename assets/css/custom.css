@@ -2601,7 +2601,7 @@ a:hover {
 
 /* line 227, ../scss/custom.scss */
 .ie #scroll-down {
-  display: none;
+  display: none !important;
 }
 
 /* line 231, ../scss/custom.scss */
