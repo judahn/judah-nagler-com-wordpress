@@ -224,6 +224,10 @@ a:hover {
     z-index: 9999;
 }
 
+.ie #scroll-down {
+    display: none;
+}
+
 .bg-img, .bg-img img {
     width: 100% !important;
     z-index: -1;

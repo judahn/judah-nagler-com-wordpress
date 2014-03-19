@@ -66,16 +66,16 @@
     -ms-filter:     blur($amt);
     filter:         blur($amt);
 }
-@mixin grayscale($prc){
+/* @mixin grayscale($prc){
     $webkit-amt: $prc / 100;
     -webkit-filter: grayscale($webkit-amt); -webkit-filter: grayscale($webkit-amt); -moz-filter: grayscale($webkit-amt);
     filter: gray; filter: grayscale($webkit-amt);
     filter: url(desaturate.svg#greyscale);
-}
+} */
 %add-grayscale {
-    filter: gray; filter: grayscale(100%);
-    filter: url(desaturate.svg#greyscale);
-    -webkit-filter: grayscale(100%) !important; /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+    filter: url('../js/iegray-filters.svg#grayscale'); /* Firefox 3.5+ */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(1); /* Webkit Nightlies & Google Chrome Canary */
 }
 %remove-grayscale {
     filter: none !important; /* Applies to FF + IE */

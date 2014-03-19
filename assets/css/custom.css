@@ -165,13 +165,20 @@ time, mark, audio, video {
   text-align: right;
 }
 
+/* @mixin grayscale($prc){
+    $webkit-amt: $prc / 100;
+    -webkit-filter: grayscale($webkit-amt); -webkit-filter: grayscale($webkit-amt); -moz-filter: grayscale($webkit-amt);
+    filter: gray; filter: grayscale($webkit-amt);
+    filter: url(desaturate.svg#greyscale);
+} */
 /* line 75, ../scss/_mixins.scss */
 .thumbnail img, #social-nav a img, .ie #social-nav img {
+  filter: url("../js/iegray-filters.svg#grayscale");
+  /* Firefox 3.5+ */
   filter: gray;
-  filter: grayscale(100%);
-  filter: url(desaturate.svg#greyscale);
-  -webkit-filter: grayscale(100%) !important;
-  /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+  /* IE6-9 */
+  -webkit-filter: grayscale(1);
+  /* Webkit Nightlies & Google Chrome Canary */
 }
 
 /* line 80, ../scss/_mixins.scss */
@@ -977,13 +984,20 @@ button {
   text-align: right;
 }
 
+/* @mixin grayscale($prc){
+    $webkit-amt: $prc / 100;
+    -webkit-filter: grayscale($webkit-amt); -webkit-filter: grayscale($webkit-amt); -moz-filter: grayscale($webkit-amt);
+    filter: gray; filter: grayscale($webkit-amt);
+    filter: url(desaturate.svg#greyscale);
+} */
 /* line 75, ../scss/_mixins.scss */
 .thumbnail img, #social-nav a img, .ie #social-nav img {
+  filter: url("../js/iegray-filters.svg#grayscale");
+  /* Firefox 3.5+ */
   filter: gray;
-  filter: grayscale(100%);
-  filter: url(desaturate.svg#greyscale);
-  -webkit-filter: grayscale(100%) !important;
-  /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+  /* IE6-9 */
+  -webkit-filter: grayscale(1);
+  /* Webkit Nightlies & Google Chrome Canary */
 }
 
 /* line 80, ../scss/_mixins.scss */
@@ -1438,13 +1452,20 @@ section .col-sm-5, section .col-md-6 {
   text-align: right;
 }
 
+/* @mixin grayscale($prc){
+    $webkit-amt: $prc / 100;
+    -webkit-filter: grayscale($webkit-amt); -webkit-filter: grayscale($webkit-amt); -moz-filter: grayscale($webkit-amt);
+    filter: gray; filter: grayscale($webkit-amt);
+    filter: url(desaturate.svg#greyscale);
+} */
 /* line 75, ../scss/_mixins.scss */
 .thumbnail img, #social-nav a img, .ie #social-nav img {
+  filter: url("../js/iegray-filters.svg#grayscale");
+  /* Firefox 3.5+ */
   filter: gray;
-  filter: grayscale(100%);
-  filter: url(desaturate.svg#greyscale);
-  -webkit-filter: grayscale(100%) !important;
-  /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+  /* IE6-9 */
+  -webkit-filter: grayscale(1);
+  /* Webkit Nightlies & Google Chrome Canary */
 }
 
 /* line 80, ../scss/_mixins.scss */
@@ -1559,7 +1580,7 @@ code, pre, .highlight {
   -o-transition: filter, 0.5s;
   transition: filter, 0.5s;
 }
-/* line 52, ../scss/_social.scss */
+/* line 51, ../scss/_social.scss */
 #social-nav a:hover img {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
@@ -2579,82 +2600,87 @@ a:hover {
 }
 
 /* line 227, ../scss/custom.scss */
+.ie #scroll-down {
+  display: none;
+}
+
+/* line 231, ../scss/custom.scss */
 .bg-img, .bg-img img {
   width: 100% !important;
   z-index: -1;
 }
 
-/* line 232, ../scss/custom.scss */
+/* line 236, ../scss/custom.scss */
 .img-responsive {
   width: 100%;
   max-width: auto !important;
 }
 
-/* line 237, ../scss/custom.scss */
+/* line 241, ../scss/custom.scss */
 #mc_signup_form {
   background-color: transparent !important;
 }
 
-/* line 243, ../scss/custom.scss */
+/* line 247, ../scss/custom.scss */
 .fa-desktop {
   line-height: 21px;
 }
 
-/* line 246, ../scss/custom.scss */
+/* line 250, ../scss/custom.scss */
 .fa-globe {
   line-height: 19px;
 }
 
-/* line 249, ../scss/custom.scss */
+/* line 253, ../scss/custom.scss */
 .fa-responsive {
   margin-right: 5px;
 }
 
-/* line 256, ../scss/custom.scss */
+/* line 260, ../scss/custom.scss */
 .sidebar {
   padding: 10px 10px 30px 50px;
   margin-top: 25px;
 }
 @media only all and (max-width: 991px) {
-  /* line 256, ../scss/custom.scss */
+  /* line 260, ../scss/custom.scss */
   .sidebar {
     padding: 0 10px 0 30px;
   }
 }
 @media only all and (max-width: 767px) {
-  /* line 256, ../scss/custom.scss */
+  /* line 260, ../scss/custom.scss */
   .sidebar {
     padding: 20px 0;
   }
 }
-/* line 267, ../scss/custom.scss */
+/* line 271, ../scss/custom.scss */
 .sidebar h3 {
   padding: 0 0 10px;
   margin: 0 !important;
 }
-/* line 271, ../scss/custom.scss */
+/* line 275, ../scss/custom.scss */
 .sidebar .nav > li > a {
   padding: 10px 0;
 }
 
-/* line 275, ../scss/custom.scss */
+/* line 279, ../scss/custom.scss */
 .blog .sidebar {
   margin-top: 10px;
 }
 
-/* line 281, ../scss/custom.scss */
+/* line 285, ../scss/custom.scss */
 .modal {
   top: 10%;
 }
 
-/* line 285, ../scss/custom.scss */
+/* line 289, ../scss/custom.scss */
 #update-browser {
   width: 0;
   height: 0;
   z-index: -999999999999;
 }
 
-/* line 291, ../scss/custom.scss */
+/* line 295, ../scss/custom.scss */
 .ie8 #update-browser {
   display: block !important;
   visibility: visible !important;
@@ -2665,7 +2691,7 @@ a:hover {
   z-index: 999999999999;
   padding: 30px;
 }
-/* line 301, ../scss/custom.scss */
+/* line 305, ../scss/custom.scss */
 .ie8 #update-browser a {
   font-size: 37px;
   line-height: 47px;
@@ -2674,7 +2700,7 @@ a:hover {
 /*
  *  Admin Menu 
  */
-/* line 312, ../scss/custom.scss */
+/* line 316, ../scss/custom.scss */
 #adminmenu #menu-posts-design .wp-menu-image:before {
   content: '\f85' !important;
 }
