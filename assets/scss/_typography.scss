@@ -79,6 +79,10 @@ h1 {
         font-size: 42px;
         margin-bottom:  40px;
     }
+    @include max_phone {
+        font-size: 36px;
+        margin-bottom:  40px;
+    }
 }
 h2 {
     font-size: 230%;
