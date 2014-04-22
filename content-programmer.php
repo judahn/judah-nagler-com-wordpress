@@ -39,3 +39,5 @@
 	  	<?php endif; ?>	
 	</div>
 </article>
+
+<?php edit_post_link( __( 'Edit', '_tk' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>
