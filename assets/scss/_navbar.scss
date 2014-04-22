@@ -198,7 +198,7 @@ button {
 
     &:focus {
         @extend %removeFocusOutline;
-        border: 2px dotted #444 !important;
+        // border: 2px dotted #444 !important;
     }
 }
 .btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active {
