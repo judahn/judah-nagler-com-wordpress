@@ -210,7 +210,7 @@
     letter-spacing: 1px;
     &:focus {
         @extend %boxShadowNone;
-        border: 2px dotted #444;
+        // border: 2px dotted #444;
     }
 }
 
