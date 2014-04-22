@@ -297,8 +297,11 @@
         padding-left: 10px;
     }
 }
-.single-developer #col-credits-media .credits {
-    margin-top: 20px;
+.single-developer #col-credits-media {
+    margin-top: -4px;
+    .credits {
+        margin-top: 20px;
+    }
 }
 
 .description{
