@@ -202,11 +202,11 @@ a:hover {
         list-style: disc !important;
     }
 
-    @include max_laptop {
+    @include max_desktop {
         padding-right: 40px !important;
     }
     @include max_tablet {
-        padding-right: 0;
+        padding-right: 0 !important
     }
 }
 
