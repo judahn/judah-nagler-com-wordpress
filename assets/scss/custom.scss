@@ -203,7 +203,7 @@ a:hover {
     }
 
     @include max_laptop {
-        padding-right: 40px;
+        padding-right: 40px !important;
     }
     @include max_tablet {
         padding-right: 0;
