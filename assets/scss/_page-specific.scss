@@ -298,7 +298,11 @@
     }
 }
 .single-developer #col-credits-media {
-    margin-top: -4px;
+    
+    @include min_tablet {
+        margin-top: -4px;
+    }
+
     .credits {
         margin-top: 20px;
     }
