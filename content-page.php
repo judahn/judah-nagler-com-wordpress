@@ -29,5 +29,4 @@
 		?>
 	</div><!-- .entry-content -->
 <?php endif; ?>
-	<!--<?php edit_post_link( __( 'Edit', '_tk' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>-->
 </article><!-- #post-## -->

@@ -22,7 +22,7 @@
     }
 }
 .navbar-inverse .navbar-brand {
-    color: white;
+    color: $white;
 }
 
 .site-navigation-inner {
@@ -150,9 +150,9 @@ button {
 .btn {
     a {
         text-transform: uppercase;
-        color: white;
+        color: $white;
         &:hover {
-            color: white;
+            color: $white;
             text-decoration: none;
         }
     }
@@ -170,6 +170,35 @@ button {
     border-color:       lighten($red, 13%);
     @include transition(background-color, 0.5s);
 }
+
+// Currently just 'edit this post' buttons. i know, i know...
+.btn-default {
+    background-color:   black;
+    border:             2px dotted #333;
+    color:              $red;
+    line-height:        23px;
+    margin-top:         20px;
+    i {
+        margin:0 0 0 3px;
+    }
+    i, a {
+        color: $white;
+        @include transition(color, 0.35s);
+    }
+    i {
+        color: $red;
+    }
+    @include transition(background-color, 0.35s);
+}
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active {
+    background-color:   black;
+    border-color:       $red;
+    i, a {
+        color: $white;
+    }
+    @include transition(background-color, 0.5s);
+}
+
 .btn-danger {
     background-color:   $red;
     border-color:       $red;

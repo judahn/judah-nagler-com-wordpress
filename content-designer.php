@@ -11,7 +11,7 @@
 		<h1 class="entry-title"><?php the_title(); ?></h1>
 	</header><!-- .entry-header -->
 
-	<div class="col-sm-7 no-pad-left">
+	<div class="col-sm-12 col-md-7 no-pad-left">
 		<div class="media">
 			<!-- Check for media -->
 			<?php if( get_field('media') ): ?>
@@ -22,11 +22,12 @@
 		</div>
 	</div>
 
-	<div class="description col-sm-5 no-pad-mobile">
+	<div class="description col-sm-12 col-md-5 no-pad-mobile">
 
 		<!-- Description -->
 		<?php if( get_field('description') ): ?>
 			<?php the_field( 'description' ); ?>
+			<?php edit_post_link( __( 'Edit', '_tk' ), '<div class="row">', '</div>' ); ?>
 		<!-- End -->
 		<?php endif; ?>
 
@@ -42,3 +43,5 @@
 	</div>
 
 </article><!-- #post-## -->
+
+<?php include "edit-post-link.php"; ?>

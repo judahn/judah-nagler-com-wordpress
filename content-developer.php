@@ -74,32 +74,36 @@
     <!-- If 'media' -->
     <?php if( get_field('media') ): ?> 
   
-      <div class="col-sm-7 col-content media">
+      <div class="col-sm-12 col-md-7 col-content media">
         <!-- Description -->
            <?php the_field( 'media' ); ?>
       </div>
 
-      <div id="col-credits-media" class="col-sm-5 description no-pad">
+      <div id="col-credits-media" class="col-sm-12 col-md-5 description no-pad">
         <?php if( get_field('description') ): ?> 
           <!-- Description -->
           <div class="">
             <?php the_field( 'description' ); ?>
+            <?php include "edit-post-link.php"; ?>
           </div>
         <?php endif; ?>
 
     <?php else: ?>
 
-      <div class="col-sm-7 col-content description no-pad">
+      <div class="col-sm-7 col-md-7 col-content description no-pad">
         <!-- Description -->
         <?php if( get_field('description') ): ?> 
           <!-- Description -->
           <div class="">
             <?php the_field( 'description' ); ?>
+            <?php include "edit-post-link.php"; ?>
+
           </div>
         <?php endif; ?>
       </div>
 
-    <div id="col-credits" class="col-sm-5">
+
+    <div id="col-credits" class="col-sm-5 col-md-5">
 
     <?php endif; ?><!-- If 'media' -->
 
@@ -115,7 +119,5 @@
       <?php endif; ?>
     </div>
 
+
 </article><!-- #post-## -->
-
-<?php edit_post_link( __( 'Edit', '_tk' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>
-

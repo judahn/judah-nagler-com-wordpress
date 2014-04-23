@@ -113,11 +113,8 @@ function _tk_scripts() {
 
 	// load bootstrap css
 	wp_enqueue_style( '_tk-bootstrap', get_template_directory_uri() . '/includes/resources/bootstrap/css/bootstrap.css' );
-	// font awesome css
 	wp_enqueue_style( '_tk-font-awesome', get_template_directory_uri() . '/assets/css/font-awesome.min.css' );
-	// syntax css
 	wp_enqueue_style( '_tk-syntax', get_template_directory_uri() . '/assets/css/syntax.css' );
-	// custom css
 	wp_enqueue_style( '_tk-custom', get_template_directory_uri() . '/assets/css/custom.css' );
 
 

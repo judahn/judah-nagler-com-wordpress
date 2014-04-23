@@ -1,0 +1,1 @@
+<?php edit_post_link( __( 'Edit this post', '_tk' ), '<div class="btn btn-xs btn-default">', ' <i class="fa fa-edit fa-2x"></i></div>' ); ?>

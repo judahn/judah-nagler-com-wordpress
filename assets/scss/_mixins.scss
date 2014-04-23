@@ -24,6 +24,11 @@
     padding-right: 0 !important;
     @include max_tablet { padding-left: 0; }
 }
+.no-pad-tablet {
+    @include tablet{
+        padding: 0 !important;
+    }
+}
 .no-pad-mobile {
     @include max_tablet{
         padding: 0 !important;
@@ -112,7 +117,7 @@
     background-size: cover;
 }
 %redtape {
-	color: white;
+	color: $white;
     background-color: $red;
 }
 

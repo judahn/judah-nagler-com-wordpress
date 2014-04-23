@@ -85,7 +85,7 @@
     }
     .main-content-inner {
         h2 a {
-            color: white;
+            color: $white;
             &:hover {
                 color: #ccc;
             }
@@ -335,10 +335,19 @@
         padding-left: 0;
     }
 }
-
+.single-designer .description{
+    @include laptop {
+        padding-left: 0;
+    }
+}
+.single .col-content {
+    @include max_laptop {
+        padding-right: 0 !important;
+    }
+}
 
 strong, p strong {
-    color: white !important;
+    color: $white !important;
 }
 .media {
     margin-bottom: 30px;
@@ -367,7 +376,7 @@ strong, p strong {
     padding-bottom: 30px !important;
 
     span {
-        color: white;
+        color: $white;
     }
     button {
         margin-top: 5px;
