@@ -297,6 +297,27 @@
         padding-left: 10px;
     }
 }
+
+.description{
+    margin-bottom: 10px;
+
+    @include max_tablet {
+        margin-top: 30px;
+    }
+
+    button {
+        margin-top: 5px;
+
+        @include max_tablet {
+            margin-top: 10px;
+        }
+    }
+}
+
+/*
+ *    Main categories
+ */
+
 .single-developer #col-credits-media {
     
     @include min_tablet {
@@ -314,22 +335,6 @@
         }
     }
 }
-
-.description{
-    margin-bottom: 10px;
-
-    @include max_tablet {
-        margin-top: 30px;
-    }
-
-    button {
-        margin-top: 5px;
-
-        @include max_tablet {
-            margin-top: 10px;
-        }
-    }
-}
 .single-programmer {
     .description {
         padding-left: 0;
@@ -342,7 +347,7 @@
 }
 .single .col-content {
     @include max_laptop {
-        padding-right: 0 !important;
+        padding-right: 10px !important;
     }
 }
 

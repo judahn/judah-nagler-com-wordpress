@@ -174,10 +174,10 @@ button {
 // Currently just 'edit this post' buttons. i know, i know...
 .btn-default {
     background-color:   black;
-    border:             2px dotted #333;
+    border:             2px dotted #555;
     color:              $red;
     line-height:        23px;
-    margin-top:         20px;
+    margin:             10px 0;
     i {
         margin:0 0 0 3px;
     }
@@ -186,7 +186,7 @@ button {
         @include transition(color, 0.35s);
     }
     i {
-        color: $red;
+        color: $vm_green;
     }
     @include transition(background-color, 0.35s);
 }

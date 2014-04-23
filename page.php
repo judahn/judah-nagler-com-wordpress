@@ -15,31 +15,21 @@ get_header(); ?>
 <?php include 'above-header.php' ?>
 <?php include 'section-opener.php' ?>
 
-
-
-
 <div class="col-sm-6 page-content">
-
 	<?php while ( have_posts() ) : the_post(); ?>
-
 		<?php get_template_part( 'content', 'page' ); ?>
-
 		<?php
 			// If comments are open or we have at least one comment, load up the comment template
 			if ( comments_open() || '0' != get_comments_number() )
 				comments_template();
 		?>
-
 	<?php endwhile; // end of the loop. ?>
+	<?php include "edit-post-link.php"; ?>
 	<?php _tk_content_nav( 'nav-below' ); ?>
 	<a href="<?php echo get_template_directory_uri() . '/assets/download/JudahNagler-Resume-2014.pdf' ?>" target="_blank" title="Download Resume">
 		<button type="button" class="btn btn-primary">Download Resume</button>
 	</a>
-
 </div>
-
-
-
 
 <div class="col-sm-6">
 	<img src="<?php echo get_template_directory_uri() . '/assets/img/sharkdurag.png' ?>" class="hero-right" alt="">

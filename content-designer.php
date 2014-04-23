@@ -27,7 +27,6 @@
 		<!-- Description -->
 		<?php if( get_field('description') ): ?>
 			<?php the_field( 'description' ); ?>
-			<?php edit_post_link( __( 'Edit', '_tk' ), '<div class="row">', '</div>' ); ?>
 		<!-- End -->
 		<?php endif; ?>
 

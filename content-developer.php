@@ -82,10 +82,8 @@
       <div id="col-credits-media" class="col-sm-12 col-md-5 description no-pad">
         <?php if( get_field('description') ): ?> 
           <!-- Description -->
-          <div class="">
             <?php the_field( 'description' ); ?>
             <?php include "edit-post-link.php"; ?>
-          </div>
         <?php endif; ?>
 
     <?php else: ?>
@@ -94,11 +92,8 @@
         <!-- Description -->
         <?php if( get_field('description') ): ?> 
           <!-- Description -->
-          <div class="">
             <?php the_field( 'description' ); ?>
             <?php include "edit-post-link.php"; ?>
-
-          </div>
         <?php endif; ?>
       </div>
 
