@@ -142,8 +142,16 @@
 .mq-list {
     padding-bottom: 30px;
 
+    @include desktop {
+        padding-bottom: 25px;
+    }
+
+    @include laptop {
+        padding-bottom: 20px;
+    }
+
     @include max_tablet {
-        padding-bottom: 0px;
+        padding-bottom: 20px;
     }
     li {
         margin-right: 18px;
@@ -168,7 +176,7 @@
             width: 8%;
         }
         @include max_tablet{
-            width: 8.1%;
+            width: 8.15%;
         }
     }
     .tablet {
@@ -301,10 +309,6 @@
 .description{
     margin-bottom: 10px;
 
-    @include max_tablet {
-        margin-top: 30px;
-    }
-
     button {
         margin-top: 5px;
 
@@ -342,7 +346,7 @@
 }
 .single .col-content {
     @include max_laptop {
-        padding-right: 10px !important;
+        padding-right: 4px !important;
     }
 }
 

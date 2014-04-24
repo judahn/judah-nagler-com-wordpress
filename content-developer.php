@@ -83,7 +83,6 @@
         <?php if( get_field('description') ): ?> 
           <!-- Description -->
             <?php the_field( 'description' ); ?>
-            <?php include "edit-post-link.php"; ?>
         <?php endif; ?>
 
     <?php else: ?>
@@ -93,7 +92,6 @@
         <?php if( get_field('description') ): ?> 
           <!-- Description -->
             <?php the_field( 'description' ); ?>
-            <?php include "edit-post-link.php"; ?>
         <?php endif; ?>
       </div>
 
@@ -104,6 +102,8 @@
 
     
       <?php include 'credits.php' ?>
+      <?php include "edit-post-link.php"; ?>
+      
 
       <?php if( get_field('view_templates_url') ): ?> 
         <a href="<?php the_field( 'view_templates_url' ); ?>" target="_blank"><button class="btn btn-info btn-large pull-left"><i class="fa fa-responsive fa-desktop"></i> View project</button></a>
