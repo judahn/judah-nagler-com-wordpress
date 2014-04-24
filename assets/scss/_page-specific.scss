@@ -318,21 +318,16 @@
  *    Main categories
  */
 
-.single-developer #col-credits-media {
+.single-developer #col-credits {
     
-    @include min_tablet {
-        margin-top: -4px;
+    @include monitor {
+        padding-left: 9px !important;
     }
-
-    .credits {
-        margin-top: 25px;
-
-        @include max_laptop {
-            margin-top: 20px;            
-        }
-        @include max_tablet {
-            margin-top: 15px;            
-        }
+    @include desktop {
+        padding-left: 11px !important;
+    }
+    @include laptop {
+        padding-left: 5px !important;
     }
 }
 .single-programmer {
